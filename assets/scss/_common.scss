@@ -1,0 +1,17 @@
+input, textarea {
+    font-size: 1.4rem !important;
+    color: $cl-gray !important;
+}
+.text-inline {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.h-240 {
+    height: 24rem !important;
+}
+
+.bg-rgb-btn {
+    background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;
+}
