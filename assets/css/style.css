@@ -213,7 +213,7 @@ input, textarea {
 }
 .header-login .container .header-text {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.6;
 }
 @media screen and (min-width: 1024px) {
@@ -247,10 +247,15 @@ input, textarea {
   padding: 1.2rem 0;
   text-align: center;
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.6;
   color: #ffffff;
   background: linear-gradient(90deg, #e4a1c5, #dbe9f4) no-repeat;
+}
+@media screen and (min-width: 768px) {
+  .main .container .form-login .form-login-block .form-login-block-header {
+    font-size: 1.8rem;
+  }
 }
 .main .container .form-login .form-login-block .form-login-block-content {
   padding: 1.2rem 2.5rem 2rem;
@@ -357,6 +362,92 @@ input, textarea {
   color: #48a9ff;
   text-align: center;
   text-decoration: underline;
+}
+.main .container .form-reset-password h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.8;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .main .container .form-reset-password h4 {
+    font-size: 1.6rem;
+  }
+}
+.main .container .form-reset-password .list-input .input-group {
+  height: 3.5rem;
+}
+.main .container .form-reset-password .list-input .input-group > p {
+  color: #696969;
+}
+.main .container .form-reset-password .list-input .input-group .input-group-text {
+  position: relative;
+  width: 15rem;
+  height: 4rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.8;
+  text-align: center;
+  background-color: #dfe7f2;
+}
+@media screen and (min-width: 1024px) {
+  .main .container .form-reset-password .list-input .input-group .input-group-text {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main .container .form-reset-password .list-input .input-group .input-group-text {
+    width: 18rem;
+  }
+}
+.main .container .form-reset-password .list-input .input-group > input {
+  height: 4rem;
+  border-radius: 0.25rem !important;
+}
+.main .container .form-reset-password .list-input .input-group .required::after {
+  position: absolute;
+  content: "必須";
+  top: 50%;
+  right: 5px;
+  width: 35px;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+  color: #ffffff;
+  background-color: #f14a4a;
+}
+@media screen and (min-width: 1024px) {
+  .main .container .form-reset-password .list-input .input-group .required::after {
+    font-size: 1rem;
+  }
+}
+.main .container .form-reset-password .end-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.main .container .form-reset-password .end-form .back-login {
+  margin: 0 auto;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.8;
+  color: #3a84d7;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .main .container .form-reset-password .end-form .back-login {
+    font-size: 1.4rem;
+  }
+}
+.main .container .form-reset-password .end-form button {
+  width: 11rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8;
+  text-align: center;
+  border: 1px solid #a8a7a7;
+  color: #fff;
 }
 
 .wrapper .header-dashboard {
@@ -646,6 +737,9 @@ input, textarea {
   font-size: 2rem;
   font-weight: 400;
   line-height: 1.8;
+}
+.wrapper .main .container.profile .content .hbspt-form form .field {
+  display: flex !important;
 }
 .wrapper .main .container.profile .content.user-profile {
   width: 100%;

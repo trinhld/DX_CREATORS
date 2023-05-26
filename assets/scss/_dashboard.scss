@@ -222,6 +222,14 @@
                 h4 {
                     @include font(2rem, 400, 1.8);
                 }
+                .hbspt-form {
+                    form {
+                        .field {
+                            // @include flexbox(flex, flex-start, center, nowrap);
+                            display: flex !important;
+                        }
+                    }
+                }
             }
             .content.user-profile {
                 width: 100%;
