@@ -185,8 +185,28 @@ input, textarea {
   text-overflow: ellipsis;
 }
 
+.w-22 {
+  width: 18rem !important;
+}
+@media screen and (min-width: 1024px) {
+  .w-22 {
+    width: 22rem !important;
+  }
+}
+
 .h-240 {
   height: 24rem !important;
+}
+
+.fz-2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.8;
+}
+@media screen and (min-width: 1024px) {
+  .fz-2 {
+    font-size: 2rem;
+  }
 }
 
 .bg-rgb-btn {

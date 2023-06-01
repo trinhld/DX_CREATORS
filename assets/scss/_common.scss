@@ -8,16 +8,24 @@ input, textarea {
     text-overflow: ellipsis;
 }
 
+.w-22 {
+    width: 18rem !important;
+    @include mq_min_1024 {
+        width: 22rem !important;
+    }
+}
+
 .h-240 {
     height: 24rem !important;
+}
+
+.fz-2 {
+    @include font(1.6rem, 500, 1.8);
+    @include mq_min_1024 {
+        font-size: 2rem;
+    }
 }
 
 .bg-rgb-btn {
     background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;
 }
-
-// #hsForm_2951d792-bc88-4a45-8e1c-cf9a4af75518 {
-//     .hs-form-field {
-//         display: flex !important;
-//     }
-// }
