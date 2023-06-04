@@ -462,6 +462,7 @@
         }
       }
     }
+
     .container.create-notifi {
       @include mq_min_1024 {
         padding: 0.5rem !important;
@@ -471,7 +472,7 @@
         width: 100%;
         background-color: $cl-white;
         @include mq_min_1024 {
-          padding: 2rem;
+          padding: 2rem 8rem;
         }
         .notify-success {
           @include font(1.4rem, 600, 1.8);

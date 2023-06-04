@@ -1052,7 +1052,7 @@ input, textarea {
 }
 @media screen and (min-width: 1024px) {
   .wrapper .main .container.create-notifi .content {
-    padding: 2rem;
+    padding: 2rem 8rem;
   }
 }
 .wrapper .main .container.create-notifi .content .notify-success {
