@@ -213,6 +213,10 @@ input, textarea {
   background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;
 }
 
+.bg-purple {
+  background: #8b8ebb !important;
+}
+
 .header-login {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   padding: 1rem 0;
@@ -1034,6 +1038,298 @@ input, textarea {
   background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;
 }
 .wrapper .main .container.profile .modal-logout .modal-body .list-btn-modal-logut .btn-logout {
+  margin-left: 2rem;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .main .container.create-notifi {
+    padding: 0.5rem !important;
+    background: linear-gradient(90deg, #c3d5e1, #94d5ff, #ebceff) no-repeat;
+  }
+}
+.wrapper .main .container.create-notifi .content {
+  width: 100%;
+  background-color: #ffffff;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .main .container.create-notifi .content {
+    padding: 2rem;
+  }
+}
+.wrapper .main .container.create-notifi .content .notify-success {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.8;
+  padding: 1rem 1.5rem;
+  color: #000000;
+  border: 1px solid #e2e2e2;
+  border-left: 4px solid #e4a1c5;
+}
+.wrapper .main .container.create-notifi .content h3 {
+  margin: 2rem auto 4rem;
+  padding: 0.5rem 2rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #ffffff;
+  background: linear-gradient(90deg, #e4a1c5, #dbe9f4) no-repeat;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .main .container.create-notifi .content h3 {
+    margin-top: 4rem;
+  }
+}
+.wrapper .main .container.create-notifi .content h4 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.8;
+}
+.wrapper .main .container.create-notifi .content .hbspt-form form .field {
+  display: flex !important;
+}
+.wrapper .main .container.create-notifi .content > img {
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 2rem auto;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .main .container.create-notifi .content > img {
+    width: 18rem;
+    height: 18rem;
+  }
+}
+.wrapper .main .container.create-notifi .content form .input-group {
+  height: 3.5rem;
+}
+.wrapper .main .container.create-notifi .content form .input-group > p {
+  color: #696969;
+}
+.wrapper .main .container.create-notifi .content form .input-group .form-edit {
+  display: flex;
+  justify-content: flex-start;
+  align-items: normal;
+  flex-wrap: nowrap;
+}
+.wrapper .main .container.create-notifi .content form .input-group .form-edit div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.wrapper .main .container.create-notifi .content form .input-group .form-edit div span {
+  margin-right: 1rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.8;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  white-space: nowrap;
+}
+.wrapper .main .container.create-notifi .content form .input-group .form-edit > input, .wrapper .main .container.create-notifi .content form .input-group .form-edit select, .wrapper .main .container.create-notifi .content form .input-group .form-edit textarea {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.8;
+  border-radius: 6px;
+}
+.wrapper .main .container.create-notifi .content form .input-group .form-edit > select {
+  max-width: 21rem;
+}
+.wrapper .main .container.create-notifi .content form .input-group .input-group-text {
+  position: relative;
+  width: 15rem;
+  height: 4.5rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.8;
+  text-align: center;
+  color: #ffffff;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .main .container.create-notifi .content form .input-group .input-group-text {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .main .container.create-notifi .content form .input-group .input-group-text {
+    width: 18rem;
+  }
+}
+.wrapper .main .container.create-notifi .content form .input-group .form-upload-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 19rem;
+}
+.wrapper .main .container.create-notifi .content form .input-group .form-upload-image > img {
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.wrapper .main .container.create-notifi .content form .input-group .form-upload-image .btn-control {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.wrapper .main .container.create-notifi .content form .input-group .form-upload-image .btn-control .btn_upload {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  color: #212529;
+  background-color: #ffffff;
+  border: 1px solid #ced4da;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+}
+.wrapper .main .container.create-notifi .content form .input-group .form-upload-image .btn-control .btn_upload input[type=file] {
+  height: 100%;
+  position: absolute;
+  filter: alpha(opacity=1);
+  -moz-opacity: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.wrapper .main .container.create-notifi .content form .input-group .form-upload-image .btn-control .btn-delete-image {
+  margin-left: 2rem;
+  width: 1.8rem;
+  cursor: pointer;
+}
+.wrapper .main .container.create-notifi .content form .input-group .required::after {
+  position: absolute;
+  content: "必須";
+  top: 50%;
+  right: 5px;
+  width: 35px;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+  color: #ffffff;
+  background-color: #f14a4a;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .main .container.create-notifi .content form .input-group .required::after {
+    font-size: 1rem;
+  }
+}
+.wrapper .main .container.create-notifi .content form .input-group p {
+  height: 4rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.8;
+}
+.wrapper .main .container.create-notifi .content form .input-group p .btn-edit-profile {
+  width: 14rem;
+  margin-left: auto;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.8;
+  text-align: center;
+  border: 1px solid #a8a7a7;
+  color: #ffffff;
+  background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;
+}
+.wrapper .main .container.create-notifi .content .list-btn {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: normal;
+  flex-wrap: nowrap;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .main .container.create-notifi .content .list-btn {
+    justify-content: flex-end;
+  }
+}
+.wrapper .main .container.create-notifi .content .list-btn .btn-child {
+  width: 11rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8;
+  text-align: center;
+  border: 1px solid #a8a7a7;
+  background-color: #ffffff;
+}
+.wrapper .main .container.create-notifi .content .list-btn .btn-child:first-child {
+  color: #000000;
+}
+.wrapper .main .container.create-notifi .content .list-btn .btn-child:last-child {
+  margin-left: 1rem;
+  color: #ffffff;
+  background: #8b8ebb;
+}
+.wrapper .main .container.create-notifi .modal-logout {
+  padding: 0 1rem;
+  z-index: 1041;
+}
+.wrapper .main .container.create-notifi .modal-logout .modal-logout-header {
+  padding: 1.2rem 0;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #ffffff;
+  background: linear-gradient(90deg, #e4a1c5, #dbe9f4) no-repeat;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .main .container.create-notifi .modal-logout .modal-logout-header {
+    font-size: 1.8rem;
+  }
+}
+.wrapper .main .container.create-notifi .modal-logout .modal-body p {
+  margin-top: 6rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #696969;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .main .container.create-notifi .modal-logout .modal-body p {
+    font-size: 1.6rem;
+  }
+}
+.wrapper .main .container.create-notifi .modal-logout .modal-body .list-btn-modal-logut {
+  display: flex;
+  justify-content: center;
+  align-items: normal;
+  flex-wrap: nowrap;
+  margin: 3.5rem auto 10rem;
+}
+.wrapper .main .container.create-notifi .modal-logout .modal-body .list-btn-modal-logut .btn-back,
+.wrapper .main .container.create-notifi .modal-logout .modal-body .list-btn-modal-logut .btn-logout {
+  width: 12.5rem;
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #696969;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid #deecf6;
+  background: #ffffff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .main .container.create-notifi .modal-logout .modal-body .list-btn-modal-logut .btn-back,
+.wrapper .main .container.create-notifi .modal-logout .modal-body .list-btn-modal-logut .btn-logout {
+    width: 16.5rem;
+    font-size: 1.6rem;
+  }
+}
+.wrapper .main .container.create-notifi .modal-logout .modal-body .list-btn-modal-logut .btn-back:hover,
+.wrapper .main .container.create-notifi .modal-logout .modal-body .list-btn-modal-logut .btn-logout:hover {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;
+}
+.wrapper .main .container.create-notifi .modal-logout .modal-body .list-btn-modal-logut .btn-logout {
   margin-left: 2rem;
 }
 
