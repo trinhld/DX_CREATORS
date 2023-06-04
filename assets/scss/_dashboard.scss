@@ -1,4 +1,5 @@
 .wrapper {
+
   // Header
   .header-dashboard {
     position: relative;
@@ -6,49 +7,60 @@
     z-index: 9999;
     background-color: $cl-white;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
     .container {
       @include flexbox(flex, space-between, center, nowrap);
+
       .header-button-show-menu-sp {
         margin-right: 1rem;
         cursor: pointer;
+
         @include mq_min_768 {
           display: none;
         }
       }
+
       .header-logo {
         margin-right: auto;
         max-width: 12.5rem;
+
         @include mq_min_1024 {
           max-width: 100%;
         }
       }
+
       .header-text {
         @include font(1rem, 500, 1.6);
+
         @include mq_min_1024 {
           font-size: 1.8rem;
         }
       }
+
       .header-text-gradient {
         display: none;
+
         @include mq_min_768 {
           display: block;
           padding: 0.5rem 3rem;
           @include font(1.2rem, 500, 1.8);
           color: $cl-white;
-          background: linear-gradient(90deg, #c3d5e1, #57a1d0, #ab92bc)
-            no-repeat;
+          background: linear-gradient(90deg, #c3d5e1, #57a1d0, #ab92bc) no-repeat;
         }
+
         @include mq_min_1024 {
           padding: 0.5rem 5rem;
           font-size: 1.6rem;
         }
       }
+
       .user-notify {
         position: relative;
         max-width: 2.5rem;
         margin-right: 2rem;
         cursor: pointer;
-        & > span {
+
+        &>span {
           position: absolute;
           height: 1.4rem;
           width: 1.4rem;
@@ -62,21 +74,27 @@
           background-color: $cl-red;
           @include flexbox(flex, center, center, nowrap);
         }
+
         @include mq_min_768 {
           margin: 0 2rem;
         }
+
         @include mq_min_1024 {
           margin: 0 3rem;
         }
       }
+
       .header-user {
         position: relative;
         @include flexbox(flex, center, center, nowrap);
+
         .wrap-user {
           @include flexbox(flex, flex-end, center, nowrap);
           cursor: pointer;
+
           .user-avatar {
             margin-right: 0.5rem;
+
             img {
               max-width: 4.5rem;
               min-width: 4.5rem;
@@ -86,31 +104,38 @@
               border-radius: 50%;
             }
           }
+
           .user-show {
             max-width: 1.5rem;
           }
         }
+
         .user-list-option {
           display: none;
           position: absolute;
           top: 3.5rem;
           right: -15px;
           padding-top: 2rem;
+
           @include mq_min_1024 {
             top: 4rem;
           }
+
           ul {
             width: 28rem;
             text-align: center;
             border: 1px solid $cl-gray-light;
             background-color: $cl-white;
+
             @include mq_min_1024 {
               width: 25rem;
             }
+
             li {
               padding: 1.5rem 0;
               @include font(1.4rem, 400, 1.8);
               color: $cl-gray;
+
               &:not(:last-child) {
                 border-bottom: 1px solid $cl-gray-light;
               }
@@ -126,15 +151,19 @@
     position: relative;
     width: 100%;
     height: 100vh;
+
     @include mq_min_768 {
       position: static;
     }
+
     .container.profile {
       @include flexbox(flex, space-between, normal, nowrap);
+
       @include mq_min_1024 {
         padding: 0.5rem !important;
         background: linear-gradient(90deg, #c3d5e1, #94d5ff, #ebceff) no-repeat;
       }
+
       .sidebar {
         position: absolute;
         top: 0;
@@ -147,57 +176,71 @@
         height: 100vh;
         padding: 2rem 8rem;
         background-color: $cl-white;
+
         @include mq_min_768 {
           position: static;
           display: block;
           width: 35rem;
           padding: 2rem;
         }
+
         .sidebar-header {
           @include flexbox(flex, space-between, center, nowrap);
+
           .info-user {
             p {
               @include font(1.2rem, 600, 1.8);
+
               @include mq_min_1024 {
                 font-size: 1.5rem;
               }
             }
+
             span {
               @include flexbox(flex, flex-start, center, nowrap);
               @include font(1.2rem, 500, 1.8);
+
               @include mq_min_1024 {
                 font-size: 1.5rem;
               }
+
               img {
                 margin-left: 0.5rem;
               }
             }
           }
+
           .img-user {
             display: none;
             width: 6.2rem;
             height: 6.2rem;
             object-fit: cover;
             border-radius: 50%;
+
             @include mq_min_1024 {
               display: block;
             }
           }
         }
+
         .sidebar-body {
           margin-top: 2.5rem;
+
           // margin-bottom: 7.7rem;
           ul {
             li {
               @include flexbox(flex, space-between, center, nowrap);
               @include font(1.4rem, 400, 2);
+
               @include mq_min_1024 {
                 font-size: 1.6rem;
               }
+
               padding: 0.8rem 0;
               cursor: pointer;
             }
           }
+
           .text-cp {
             position: relative;
             margin-top: 5rem;
@@ -205,8 +248,8 @@
             @include font(1.4rem, 500, 1.8);
             color: $cl-white;
             text-align: center;
-            background: linear-gradient(90deg, #c3d5e1, #57a1d0, #ab92bc)
-              no-repeat;
+            background: linear-gradient(90deg, #c3d5e1, #57a1d0, #ab92bc) no-repeat;
+
             &::before {
               position: absolute;
               content: "";
@@ -220,10 +263,12 @@
           }
         }
       }
+
       .content {
         h4 {
           @include font(2rem, 400, 1.8);
         }
+
         .hbspt-form {
           form {
             .field {
@@ -233,13 +278,16 @@
           }
         }
       }
+
       .content.user-profile {
         width: 100%;
         background-color: $cl-white;
+
         @include mq_min_1024 {
           width: calc((100% - 35.5rem));
           padding: 2rem;
         }
+
         .notify-success {
           @include font(1.4rem, 600, 1.8);
           padding: 1rem 1.5rem;
@@ -247,38 +295,47 @@
           border: 1px solid #e2e2e2;
           border-left: 4px solid #e4a1c5;
         }
+
         h3 {
           margin: 2rem auto 4rem;
           padding: 0.5rem 2rem;
           @include font(1.8rem, 400, 1.8);
           color: $cl-white;
           background: linear-gradient(90deg, #e4a1c5, #dbe9f4) no-repeat;
+
           @include mq_min_1024 {
             margin-top: 4rem;
           }
         }
-        & > img {
+
+        &>img {
           width: 15rem;
           height: 15rem;
           object-fit: cover;
           border-radius: 50%;
           margin: 2rem auto;
+
           @include mq_min_1024 {
             width: 18rem;
             height: 18rem;
           }
         }
+
         form {
           .input-group {
             height: 3.5rem;
-            & > p {
+
+            &>p {
               color: $cl-gray;
             }
+
             .form-edit {
               @include flexbox(flex, space-around, normal, nowrap);
+
               div {
                 width: calc((100% / 2) - 3rem);
                 @include flexbox(flex, space-between, center, nowrap);
+
                 span {
                   margin-right: 1rem;
                   @include font(1.4rem, 400, 1.8);
@@ -288,12 +345,14 @@
                   -webkit-box-orient: vertical;
                   white-space: nowrap;
                 }
-                & > input {
+
+                &>input {
                   max-width: 21rem;
                   border-radius: 6px;
                 }
               }
             }
+
             .input-group-text {
               position: relative;
               width: 15rem;
@@ -301,28 +360,34 @@
               @include font(1.1rem, 400, 1.8);
               text-align: center;
               background-color: #dfe7f2;
+
               @include mq_min_1024 {
                 font-size: 1.4rem;
               }
+
               @include mq_min_1024 {
                 width: 18rem;
               }
             }
+
             .form-upload-image {
               display: flex;
               flex-direction: column;
               justify-content: center;
               align-items: center;
               max-width: 19rem;
-              & > img {
+
+              &>img {
                 width: 18rem;
                 height: 18rem;
                 border-radius: 50%;
                 object-fit: cover;
               }
+
               .btn-control {
                 margin-top: 1.5rem;
                 @include flexbox(flex, flex-start, center, nowrap);
+
                 .btn_upload {
                   display: inline-block;
                   overflow: hidden;
@@ -332,6 +397,7 @@
                   border: 1px solid #ced4da;
                   padding: 0.8rem 1.5rem;
                   border-radius: 6px;
+
                   // cursor: pointer;
                   input[type="file"] {
                     height: 100%;
@@ -343,6 +409,7 @@
                     // cursor: inherit;
                   }
                 }
+
                 .btn-delete-image {
                   margin-left: 2rem;
                   width: 1.8rem;
@@ -350,6 +417,7 @@
                 }
               }
             }
+
             .required {
               &::after {
                 position: absolute;
@@ -361,14 +429,17 @@
                 font-size: 0.8rem;
                 color: #ffffff;
                 background-color: #f14a4a;
+
                 @include mq_min_1024 {
                   font-size: 1rem;
                 }
               }
             }
+
             p {
               height: 4rem;
               @include font(1.4rem, 400, 1.8);
+
               .btn-edit-profile {
                 width: 14rem;
                 margin-left: auto;
@@ -382,12 +453,15 @@
             }
           }
         }
+
         .list-btn {
           margin-top: 4rem;
           @include flexbox(flex, center, normal, nowrap);
+
           @include mq_min_1024 {
             justify-content: flex-end;
           }
+
           .btn-child {
             width: 11rem;
             padding: 0.5rem 1rem;
@@ -395,9 +469,11 @@
             text-align: center;
             border: 1px solid #a8a7a7;
             background-color: $cl-white;
+
             &:first-child {
               color: $cl-black;
             }
+
             &:last-child {
               margin-left: 1rem;
               color: $cl-white;
@@ -410,29 +486,35 @@
       .modal-logout {
         padding: 0 1rem;
         z-index: 1041;
+
         .modal-logout-header {
           padding: 1.2rem 0;
           text-align: center;
           @include font(1.6rem, 500, 1.6);
           color: $cl-white;
           background: linear-gradient(90deg, #e4a1c5, #dbe9f4) no-repeat;
+
           @include mq_min_1024 {
             font-size: 1.8rem;
           }
         }
+
         .modal-body {
           p {
             margin-top: 6rem;
             @include font(1.2rem, 400, 1.6);
             color: $cl-gray;
             text-align: center;
+
             @include mq_min_1024 {
               font-size: 1.6rem;
             }
           }
+
           .list-btn-modal-logut {
             @include flexbox(flex, center, normal, nowrap);
             margin: 3.5rem auto 10rem;
+
             .btn-back,
             .btn-logout {
               width: 12.5rem;
@@ -445,16 +527,19 @@
               background: $cl-white;
               transition: all 0.3s ease;
               cursor: pointer;
+
               @include mq_min_1024 {
                 width: 16.5rem;
                 font-size: 1.6rem;
               }
+
               &:hover {
                 color: $cl-white;
                 border: 1px solid $cl-white;
                 background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;
               }
             }
+
             .btn-logout {
               margin-left: 2rem;
             }
@@ -468,12 +553,15 @@
         padding: 0.5rem !important;
         background: linear-gradient(90deg, #c3d5e1, #94d5ff, #ebceff) no-repeat;
       }
+
       .content {
         width: 100%;
         background-color: $cl-white;
+
         @include mq_min_1024 {
           padding: 2rem 8rem;
         }
+
         .notify-success {
           @include font(1.4rem, 600, 1.8);
           padding: 1rem 1.5rem;
@@ -481,19 +569,23 @@
           border: 1px solid #e2e2e2;
           border-left: 4px solid #e4a1c5;
         }
+
         h3 {
           margin: 2rem auto 4rem;
           padding: 0.5rem 2rem;
           @include font(1.8rem, 400, 1.8);
           color: $cl-white;
           background: linear-gradient(90deg, #e4a1c5, #dbe9f4) no-repeat;
+
           @include mq_min_1024 {
             margin-top: 4rem;
           }
         }
+
         h4 {
           @include font(2.5rem, 600, 1.8);
         }
+
         .hbspt-form {
           form {
             .field {
@@ -502,27 +594,34 @@
             }
           }
         }
-        & > img {
+
+        &>img {
           width: 15rem;
           height: 15rem;
           object-fit: cover;
           border-radius: 50%;
           margin: 2rem auto;
+
           @include mq_min_1024 {
             width: 18rem;
             height: 18rem;
           }
         }
+
         form {
           .input-group {
             height: 3.5rem;
-            & > p {
+
+            &>p {
               color: $cl-gray;
             }
+
             .form-edit {
-              @include flexbox(flex,flex-start, normal, nowrap);
+              @include flexbox(flex, flex-start, normal, nowrap);
+
               div {
                 @include flexbox(flex, flex-start, center, nowrap);
+
                 span {
                   margin-right: 1rem;
                   @include font(1.4rem, 400, 1.8);
@@ -533,14 +632,19 @@
                   white-space: nowrap;
                 }
               }
-              & > input, select, textarea {
+
+              &>input,
+              select,
+              textarea {
                 @include font(1.3rem, 400, 1.8);
                 border-radius: 6px;
               }
-              & > select {
+
+              &>select {
                 max-width: 21rem;
               }
             }
+
             .input-group-text {
               position: relative;
               width: 15rem;
@@ -548,28 +652,34 @@
               @include font(1.1rem, 400, 1.8);
               text-align: center;
               color: $cl-white;
+
               @include mq_min_1024 {
                 font-size: 1.4rem;
               }
+
               @include mq_min_1024 {
                 width: 18rem;
               }
             }
+
             .form-upload-image {
               display: flex;
               flex-direction: column;
               justify-content: center;
               align-items: center;
               max-width: 19rem;
-              & > img {
+
+              &>img {
                 width: 18rem;
                 height: 18rem;
                 border-radius: 50%;
                 object-fit: cover;
               }
+
               .btn-control {
                 margin-top: 1.5rem;
                 @include flexbox(flex, flex-start, center, nowrap);
+
                 .btn_upload {
                   display: inline-block;
                   overflow: hidden;
@@ -579,6 +689,7 @@
                   border: 1px solid #ced4da;
                   padding: 0.8rem 1.5rem;
                   border-radius: 6px;
+
                   // cursor: pointer;
                   input[type="file"] {
                     height: 100%;
@@ -590,6 +701,7 @@
                     // cursor: inherit;
                   }
                 }
+
                 .btn-delete-image {
                   margin-left: 2rem;
                   width: 1.8rem;
@@ -597,6 +709,7 @@
                 }
               }
             }
+
             .required {
               &::after {
                 position: absolute;
@@ -608,14 +721,17 @@
                 font-size: 0.8rem;
                 color: #ffffff;
                 background-color: #f14a4a;
+
                 @include mq_min_1024 {
                   font-size: 1rem;
                 }
               }
             }
+
             p {
               height: 4rem;
               @include font(1.4rem, 400, 1.8);
+
               .btn-edit-profile {
                 width: 14rem;
                 margin-left: auto;
@@ -628,13 +744,35 @@
               }
             }
           }
+
+          .select-item {
+            label {
+              @include font(1.4rem, 600, 1.8);
+            }
+
+            select,
+            input {
+              width: 17rem;
+
+              @include mq_min_1024 {
+                width: 18rem;
+              }
+
+              height: 3.5rem;
+              @include font(1.2rem, 400, 1.8);
+              border-radius: 6px;
+            }
+          }
         }
+
         .list-btn {
           margin-top: 4rem;
           @include flexbox(flex, center, normal, nowrap);
+
           @include mq_min_1024 {
             justify-content: flex-end;
           }
+
           .btn-child {
             width: 11rem;
             padding: 0.5rem 1rem;
@@ -642,9 +780,11 @@
             text-align: center;
             border: 1px solid #a8a7a7;
             background-color: $cl-white;
+
             &:first-child {
               color: $cl-black;
             }
+
             &:last-child {
               margin-left: 1rem;
               color: $cl-white;
@@ -652,34 +792,80 @@
             }
           }
         }
+
+        .wrapper-table {
+          overflow-x: auto;
+
+          table {
+            width: 100rem;
+
+            @include mq_min_1024 {
+              width: 100% !important;
+            }
+
+            .icon-pencil-form {
+              max-width: 2.5rem;
+              max-height: 1.9rem;
+              cursor: pointer;
+            }
+
+            .icon-trash-form {
+              max-width: 1.5rem;
+              max-height: 1.9rem;
+              margin-left: 1.5rem;
+              cursor: pointer;
+            }
+          }
+        }
+
+        .pagination {
+          li {
+            a {
+              padding: .1rem 1.5rem;
+              color: #7e7e7e;
+            }
+          }
+
+          .page-item.active .page-link {
+            color: #fff;
+            border-color: #dee2e6;
+            background-color: #8b8ebb;
+          }
+        }
       }
 
       .modal-logout {
         padding: 0 1rem;
         z-index: 1041;
+
         .modal-logout-header {
           padding: 1.2rem 0;
           text-align: center;
           @include font(1.6rem, 500, 1.6);
           color: $cl-white;
           background: linear-gradient(90deg, #e4a1c5, #dbe9f4) no-repeat;
+
           @include mq_min_1024 {
             font-size: 1.8rem;
           }
         }
+
         .modal-body {
           p {
             margin-top: 6rem;
             @include font(1.2rem, 400, 1.6);
             color: $cl-gray;
             text-align: center;
+
             @include mq_min_1024 {
               font-size: 1.6rem;
             }
           }
+
           .list-btn-modal-logut {
             @include flexbox(flex, center, normal, nowrap);
             margin: 3.5rem auto 10rem;
+
             .btn-back,
             .btn-logout {
               width: 12.5rem;
@@ -692,16 +878,19 @@
               background: $cl-white;
               transition: all 0.3s ease;
               cursor: pointer;
+
               @include mq_min_1024 {
                 width: 16.5rem;
                 font-size: 1.6rem;
               }
+
               &:hover {
                 color: $cl-white;
                 border: 1px solid $cl-white;
                 background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;
               }
             }
+
             .btn-logout {
               margin-left: 2rem;
             }

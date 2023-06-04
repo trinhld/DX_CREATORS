@@ -11,7 +11,6 @@ small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
@@ -1127,7 +1126,9 @@ input, textarea {
   -webkit-box-orient: vertical;
   white-space: nowrap;
 }
-.wrapper .main .container.create-notifi .content form .input-group .form-edit > input, .wrapper .main .container.create-notifi .content form .input-group .form-edit select, .wrapper .main .container.create-notifi .content form .input-group .form-edit textarea {
+.wrapper .main .container.create-notifi .content form .input-group .form-edit > input,
+.wrapper .main .container.create-notifi .content form .input-group .form-edit select,
+.wrapper .main .container.create-notifi .content form .input-group .form-edit textarea {
   font-size: 1.3rem;
   font-weight: 400;
   line-height: 1.8;
@@ -1233,6 +1234,26 @@ input, textarea {
   color: #ffffff;
   background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;
 }
+.wrapper .main .container.create-notifi .content form .select-item label {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.8;
+}
+.wrapper .main .container.create-notifi .content form .select-item select,
+.wrapper .main .container.create-notifi .content form .select-item input {
+  width: 17rem;
+  height: 3.5rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8;
+  border-radius: 6px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .main .container.create-notifi .content form .select-item select,
+.wrapper .main .container.create-notifi .content form .select-item input {
+    width: 18rem;
+  }
+}
 .wrapper .main .container.create-notifi .content .list-btn {
   margin-top: 4rem;
   display: flex;
@@ -1262,6 +1283,37 @@ input, textarea {
   margin-left: 1rem;
   color: #ffffff;
   background: #8b8ebb;
+}
+.wrapper .main .container.create-notifi .content .wrapper-table {
+  overflow-x: auto;
+}
+.wrapper .main .container.create-notifi .content .wrapper-table table {
+  width: 100rem;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .main .container.create-notifi .content .wrapper-table table {
+    width: 100% !important;
+  }
+}
+.wrapper .main .container.create-notifi .content .wrapper-table table .icon-pencil-form {
+  max-width: 2.5rem;
+  max-height: 1.9rem;
+  cursor: pointer;
+}
+.wrapper .main .container.create-notifi .content .wrapper-table table .icon-trash-form {
+  max-width: 1.5rem;
+  max-height: 1.9rem;
+  margin-left: 1.5rem;
+  cursor: pointer;
+}
+.wrapper .main .container.create-notifi .content .pagination li a {
+  padding: 0.1rem 1.5rem;
+  color: #7e7e7e;
+}
+.wrapper .main .container.create-notifi .content .pagination .page-item.active .page-link {
+  color: #fff;
+  border-color: #dee2e6;
+  background-color: #8b8ebb;
 }
 .wrapper .main .container.create-notifi .modal-logout {
   padding: 0 1rem;
