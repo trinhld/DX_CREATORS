@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html itemscope="" itemtype="http://schema.org/WebPage" lang="vi">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>DX_CREATORS_UI</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <header class="header-dashboard">
+            <div class="container">
+                <div class="header-button-show-menu-sp">
+                    <img src="../assets/images/icon_hamberger.png" alt="icon_hamberger" />
+                </div>
+                <a href="#" class="header-logo">
+                    <img src="../assets/images/logo.png" alt="logo" />
+                </a>
+                <!-- <div class="header-text-gradient">コース検索？お仕事検索？お知らせ表示バー？（仮）</div> -->
+                <div class="user-notify">
+                    <img src="../assets/images/icon_bell.png" alt="icon-bell" />
+                    <span>1</span>
+                </div>
+                <div class="header-user">
+                    <div class="wrap-user">
+                        <div class="user-avatar">
+                            <img src="../assets/images/image_user.png" alt="icon_user" />
+                        </div>
+                        <div class="user-show">
+                            <img src="../assets/images/icon_show_user.png" alt="icon_show_user" />
+                        </div>
+                    </div>
+                    <div class="user-list-option">
+                        <ul>
+                            <li><a href="#">プロフィール編集</a></li>
+                            <li><a href="#">予約確認</a></li>
+                            <li><a href="#">プラン確認・変更</a></li>
+                            <li><a href="#">パスワード変更</a></li>
+                            <li><a href="#">メールアドレス変更</a></li>
+                            <li><a href="#">よくあるご質問</a></li>
+                            <li><a href="#">利用規約</a></li>
+                            <li>
+                                <a class="btn-show-logout" data-bs-toggle="modal" href="#exampleModalToggle">ログアウト</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main -->
+        <section class="main">
+            <div class="container create-notifi">
+                <div class="content px-md-5">
+                    <div class="notify-success mt-3">停止処理が完了しました。</div>
+                    <h4 class="my-5">管理者情報一覧</h4>
+                    <form>
+                        <div class="d-flex justify-content-start flex-wrap">
+                            <div class="form-group select-item">
+                                <label for="exampleFormControlSelect1">タイトル</label>
+                                <div class="input-group input-search">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group select-item ms-5">
+                                <label for="exampleFormControlSelect1">生年月日</label>
+                                <div class="input-group">
+                                    <input type="date" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group select-item mt-5 mt-md-0 ms-md-5">
+                                <label for="exampleFormControlSelect1">メールアドレス</label>
+                                <div class="input-group input-search">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group select-item mt-5 mt-md-0 ms-5">
+                                <label for="exampleFormControlSelect1">アカウント区分</label>
+                                <select class="form-select">
+                                    <option>アカウント区分</option>
+                                    <option>アカウント区分</option>
+                                    <option>アカウント区分</option>
+                                </select>
+                            </div>
+                            <div class="form-group select-item mt-5 mt-md-0 ms-md-5">
+                                <label for="exampleFormControlSelect1">ステータス</label>
+                                <select class="form-select">
+                                    <option>ステータス</option>
+                                    <option>ステータス</option>
+                                    <option>ステータス</option>
+                                </select>
+                            </div>
+                            <div class="form-group select-item mt-5">
+                                <label for="exampleFormControlSelect1">ステータス</label>
+                                <div class="wraper d-flex">
+                                    <select class="form-select">
+                                        <option>登録日</option>
+                                        <option>登録日</option>
+                                        <option>登録日</option>
+                                    </select>
+                                    <select class="form-select ms-4">
+                                        <option>終了日</option>
+                                        <option>終了日</option>
+                                        <option>終了日</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group select-item mt-5 ms-md-5">
+                                <label for="exampleFormControlSelect1">停止日</label>
+                                <div class="wraper d-flex">
+                                    <select class="form-select">
+                                        <option>開始日</option>
+                                        <option>開始日</option>
+                                        <option>開始日</option>
+                                    </select>
+                                    <select class="form-select ms-4">
+                                        <option>終了日</option>
+                                        <option>終了日</option>
+                                        <option>終了日</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="list-btn">
+                        <button class="btn-child">クリア</button>
+                        <button class="bg-purple btn-child">検索</button>
+                        <button class="bg-purple btn-child">登録</button>
+                    </div>
+                    <div class="wrapper-table">
+                        <table class="table mt-5 text-center table-bordered">
+                            <thead class="bg-purple text-white">
+                                <tr>
+                                    <th scope="col">No.</th>
+                                    <th scope="col">名前</th>
+                                    <th scope="col">なまえ</th>
+                                    <th scope="col">生年月日</th>
+                                    <th scope="col">メールアドレス</th>
+                                    <th scope="col">電話番号</th>
+                                    <th scope="col">アカウント区分</th>
+                                    <th scope="col">ステータス</th>
+                                    <th scope="col">登録日</th>
+                                    <th scope="col">停止日</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-secondary">
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>
+                                        <a href="#" class="text-primary">山田涼介</a>
+                                    </td>
+                                    <td>やまだ　りょうすけ</td>
+                                    <td>2022-02-22</td>
+                                    <td>aaa@gmail,com</td>
+                                    <td>050-5555-5555</td>
+                                    <td>管理者</td>
+                                    <td>有効</td>
+                                    <td>2023-03-23</td>
+                                    <td>2023-03-23</td>
+                                    <td>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#">
+                                                <img src="../assets/images/icon_pencil.png" alt=""
+                                                    class="icon-pencil-form">
+                                            </a>
+                                            <a data-bs-toggle="modal" href="#modalDelete">
+                                                <img src="../assets/images/icon_trash.png" alt=""
+                                                    class="icon-trash-form">
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>
+                                        <a href="#" class="text-primary">山田涼介</a>
+                                    </td>
+                                    <td>やまだ　りょうすけ</td>
+                                    <td>2022-02-22</td>
+                                    <td>aaa@gmail,com</td>
+                                    <td>050-5555-5555</td>
+                                    <td>管理者</td>
+                                    <td>有効</td>
+                                    <td>2023-03-23</td>
+                                    <td>2023-03-23</td>
+                                    <td>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#">
+                                                <img src="../assets/images/icon_pencil.png" alt=""
+                                                    class="icon-pencil-form">
+                                            </a>
+                                            <a data-bs-toggle="modal" href="#modalDelete">
+                                                <img src="../assets/images/icon_trash.png" alt=""
+                                                    class="icon-trash-form">
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>
+                                        <a href="#" class="text-primary">山田涼介</a>
+                                    </td>
+                                    <td>やまだ　りょうすけ</td>
+                                    <td>2022-02-22</td>
+                                    <td>aaa@gmail,com</td>
+                                    <td>050-5555-5555</td>
+                                    <td>管理者</td>
+                                    <td>有効</td>
+                                    <td>2023-03-23</td>
+                                    <td>2023-03-23</td>
+                                    <td>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#">
+                                                <img src="../assets/images/icon_pencil.png" alt=""
+                                                    class="icon-pencil-form">
+                                            </a>
+                                            <a data-bs-toggle="modal" href="#modalDelete">
+                                                <img src="../assets/images/icon_trash.png" alt=""
+                                                    class="icon-trash-form">
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>
+                                        <a href="#" class="text-primary">山田涼介</a>
+                                    </td>
+                                    <td>やまだ　りょうすけ</td>
+                                    <td>2022-02-22</td>
+                                    <td>aaa@gmail,com</td>
+                                    <td>050-5555-5555</td>
+                                    <td>管理者</td>
+                                    <td>有効</td>
+                                    <td>2023-03-23</td>
+                                    <td>2023-03-23</td>
+                                    <td>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#">
+                                                <img src="../assets/images/icon_pencil.png" alt=""
+                                                    class="icon-pencil-form">
+                                            </a>
+                                            <a data-bs-toggle="modal" href="#modalDelete">
+                                                <img src="../assets/images/icon_trash.png" alt=""
+                                                    class="icon-trash-form">
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>
+                                        <a href="#" class="text-primary">山田涼介</a>
+                                    </td>
+                                    <td>やまだ　りょうすけ</td>
+                                    <td>2022-02-22</td>
+                                    <td>aaa@gmail,com</td>
+                                    <td>050-5555-5555</td>
+                                    <td>管理者</td>
+                                    <td>有効</td>
+                                    <td>2023-03-23</td>
+                                    <td>2023-03-23</td>
+                                    <td>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#">
+                                                <img src="../assets/images/icon_pencil.png" alt=""
+                                                    class="icon-pencil-form">
+                                            </a>
+                                            <a data-bs-toggle="modal" href="#modalDelete">
+                                                <img src="../assets/images/icon_trash.png" alt=""
+                                                    class="icon-trash-form">
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center justify-content-md-end my-5 pb-5">
+                            <li class="page-item d-flex">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                                <a class="page-link border-start-0" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&lt;</span>
+                                </a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item d-flex">
+                                <a class="page-link border-end-0" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&gt;</span>
+                                </a>
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Modal Logout -->
+                <div class="modal fade modal-logout" id="exampleModalToggle" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-logout-header">ログアウト</div>
+                            <div class="modal-body">
+                                <p>本当にログアウトしますか？</p>
+                                <div class="list-btn-modal-logut">
+                                    <div class="btn-back" data-bs-dismiss="modal">戻る</div>
+                                    <div class="btn-logout" data-bs-dismiss="modal">ログアウト</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Delete -->
+                <div class="modal fade modal-logout" id="modalDelete" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-logout-header bg-purple">ログアウト</div>
+                            <div class="modal-body">
+                                <p>停止処理してもよろしいでしょうか？</p>
+                                <div class="list-btn-modal">
+                                    <div class="btn-back rounded-0" data-bs-dismiss="modal">キャンセル</div>
+                                    <div class="btn-logout rounded-0" data-bs-dismiss="modal">OK</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer"></footer>
+    </div>
+
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

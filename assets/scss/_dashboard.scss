@@ -567,7 +567,7 @@
           padding: 1rem 1.5rem;
           color: $cl-black;
           border: 1px solid #e2e2e2;
-          border-left: 4px solid #e4a1c5;
+          border-left: 4px solid #8b8ebb;
         }
 
         h3 {
@@ -612,6 +612,7 @@
           .input-group {
             position: relative;
             height: 3.5rem;
+
             &>p {
               color: $cl-gray;
             }
@@ -756,6 +757,7 @@
               top: 50%;
               right: 10px;
               transform: translateY(-50%);
+              z-index: 9;
             }
           }
 
@@ -766,7 +768,7 @@
 
             select,
             input {
-              width: 17rem;
+              width: 16rem;
 
               @include mq_min_1024 {
                 width: 18rem;
@@ -797,6 +799,12 @@
 
             &:first-child {
               color: $cl-black;
+            }
+
+            &:nth-child(2) {
+              margin-left: 1rem;
+              color: $cl-white;
+              background: #8b8ebb
             }
 
             &:last-child {
@@ -902,6 +910,39 @@
                 color: $cl-white;
                 border: 1px solid $cl-white;
                 background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;
+              }
+            }
+
+            .btn-logout {
+              margin-left: 2rem;
+            }
+          }
+          .list-btn-modal {
+            @include flexbox(flex, center, normal, nowrap);
+            margin: 3.5rem auto 10rem;
+
+            .btn-back,
+            .btn-logout {
+              width: 12.5rem;
+              padding: 0.5rem 2rem;
+              @include font(1.2rem, 500, 1.6);
+              color: $cl-gray;
+              text-align: center;
+              border-radius: 20px;
+              border: 1px solid #deecf6;
+              background: $cl-white;
+              transition: all 0.3s ease;
+              cursor: pointer;
+
+              @include mq_min_1024 {
+                width: 16.5rem;
+                font-size: 1.6rem;
+              }
+
+              &:hover {
+                color: $cl-white;
+                border: 1px solid $cl-white;
+                background: #8b8ebb;
               }
             }
 
