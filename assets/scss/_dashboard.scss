@@ -610,8 +610,8 @@
 
         form {
           .input-group {
+            position: relative;
             height: 3.5rem;
-
             &>p {
               color: $cl-gray;
             }
@@ -742,6 +742,20 @@
                 color: $cl-white;
                 background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;
               }
+            }
+          }
+
+          .input-search {
+            &::after {
+              position: absolute;
+              content: "";
+              background-image: url('../images/icon_search.png');
+              background-size: 2rem 2rem;
+              width: 2rem;
+              height: 2rem;
+              top: 50%;
+              right: 10px;
+              transform: translateY(-50%);
             }
           }
 
