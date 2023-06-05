@@ -7,6 +7,9 @@
     z-index: 9999;
     background-color: $cl-white;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    @include mq_min_1024 {
+      padding: 0;
+    }
 
     .container {
       @include flexbox(flex, space-between, center, nowrap);
@@ -22,10 +25,28 @@
 
       .header-logo {
         margin-right: auto;
-        max-width: 12.5rem;
+        img {
+          max-width: 12.5rem;
+        }
+      }
 
+      .list-category-menu {
+        display: none;
+        margin: 0 auto;
         @include mq_min_1024 {
-          max-width: 100%;
+          display: block;
+        }
+        ul {
+          @include flexbox(flex, flex-start, normal, nowrap);
+          li {
+            padding: 1.5rem 2.5rem;
+            @include font(1.6rem, 600, 1.6);
+            cursor: pointer;
+          }
+          .active {
+            color: #fff;
+            background-color: #8b8ebb;
+          }
         }
       }
 

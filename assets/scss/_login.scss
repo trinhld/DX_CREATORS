@@ -5,9 +5,9 @@
   .container {
     @include flexbox(flex, space-between, center, nowrap);
     .header-logo {
-      max-width: 12.5rem;
-      @include mq_min_1024 {
-        max-width: 100%;
+      margin-right: auto;
+      img {
+        max-width: 12.5rem;
       }
     }
     .header-text {
