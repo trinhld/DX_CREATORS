@@ -1470,5 +1470,74 @@ input, textarea {
 .wrapper .main .container.create-notifi .modal-logout .modal-body .list-btn-modal .btn-logout {
   margin-left: 2rem;
 }
+.wrapper .main .modal-logout {
+  padding: 0 1rem;
+  z-index: 1041;
+}
+.wrapper .main .modal-logout .modal-logout-header {
+  padding: 1.2rem 0;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #ffffff;
+  background: linear-gradient(90deg, #e4a1c5, #dbe9f4) no-repeat;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .main .modal-logout .modal-logout-header {
+    font-size: 1.8rem;
+  }
+}
+.wrapper .main .modal-logout .modal-body p {
+  margin-top: 6rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #696969;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .main .modal-logout .modal-body p {
+    font-size: 1.6rem;
+  }
+}
+.wrapper .main .modal-logout .modal-body .list-btn-modal-logut {
+  display: flex;
+  justify-content: center;
+  align-items: normal;
+  flex-wrap: nowrap;
+  margin: 3.5rem auto 10rem;
+}
+.wrapper .main .modal-logout .modal-body .list-btn-modal-logut .btn-back,
+.wrapper .main .modal-logout .modal-body .list-btn-modal-logut .btn-logout {
+  width: 12.5rem;
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #696969;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid #deecf6;
+  background: #ffffff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .main .modal-logout .modal-body .list-btn-modal-logut .btn-back,
+.wrapper .main .modal-logout .modal-body .list-btn-modal-logut .btn-logout {
+    width: 16.5rem;
+    font-size: 1.6rem;
+  }
+}
+.wrapper .main .modal-logout .modal-body .list-btn-modal-logut .btn-back:hover,
+.wrapper .main .modal-logout .modal-body .list-btn-modal-logut .btn-logout:hover {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;
+}
+.wrapper .main .modal-logout .modal-body .list-btn-modal-logut .btn-logout {
+  margin-left: 2rem;
+}
 
 /*# sourceMappingURL=style.css.map */

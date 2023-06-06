@@ -974,6 +974,70 @@
         }
       }
     }
+
+    .modal-logout {
+      padding: 0 1rem;
+      z-index: 1041;
+
+      .modal-logout-header {
+        padding: 1.2rem 0;
+        text-align: center;
+        @include font(1.6rem, 500, 1.6);
+        color: $cl-white;
+        background: linear-gradient(90deg, #e4a1c5, #dbe9f4) no-repeat;
+
+        @include mq_min_1024 {
+          font-size: 1.8rem;
+        }
+      }
+
+      .modal-body {
+        p {
+          margin-top: 6rem;
+          @include font(1.2rem, 400, 1.6);
+          color: $cl-gray;
+          text-align: center;
+
+          @include mq_min_1024 {
+            font-size: 1.6rem;
+          }
+        }
+
+        .list-btn-modal-logut {
+          @include flexbox(flex, center, normal, nowrap);
+          margin: 3.5rem auto 10rem;
+
+          .btn-back,
+          .btn-logout {
+            width: 12.5rem;
+            padding: 0.5rem 2rem;
+            @include font(1.2rem, 500, 1.6);
+            color: $cl-gray;
+            text-align: center;
+            border-radius: 20px;
+            border: 1px solid #deecf6;
+            background: $cl-white;
+            transition: all 0.3s ease;
+            cursor: pointer;
+
+            @include mq_min_1024 {
+              width: 16.5rem;
+              font-size: 1.6rem;
+            }
+
+            &:hover {
+              color: $cl-white;
+              border: 1px solid $cl-white;
+              background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;
+            }
+          }
+
+          .btn-logout {
+            margin-left: 2rem;
+          }
+        }
+      }
+    }
   }
 
   // Footer
