@@ -1,9 +1,41 @@
 var RUN = {
-    // Show Menu
-    showMenu: () => {
+    // Show Menu User
+    showMenuUser: () => {
         $('.wrap-user').click(() => {
             $('.user-list-option').toggle();
         });
+    },
+
+    // Show Menu Admin
+    showMenuAdmin: () => {
+        $('.wrap-user').click(() => {
+             // $(".content-sub-menu").slideUp();
+            // $(".title-sub-menu").removeClass("active")
+            // $(".icon-arrow").removeClass("handle-arrow");
+            
+            $('.admin-list-option').toggle();
+        });
+    },
+
+    handleAccordionMenuAdmin: () => {
+        $(".content-sub-menu").slideUp();
+
+        $(".title-sub-menu").click(function (e) {
+            e.preventDefault();
+
+            // $(".content-sub-menu").slideUp();
+            // $(".title-sub-menu").removeClass("active")
+            // $(".icon-arrow").removeClass("handle-arrow");
+
+            // $(this).addClass("active");
+            // $(this).next(".content-sub-menu").slideDown();
+            // $(this).children(".icon-arrow").addClass("handle-arrow");
+
+            $(this).toggleClass("active");
+            $(this).next(".content-sub-menu").slideToggle();
+            $(this).children(".icon-arrow").toggleClass("handle-arrow");
+            
+        })
     },
 
     // Show Modal Logout
@@ -49,7 +81,9 @@ var RUN = {
 
     // Initial
     init: () => {
-        RUN.showMenu();
+        RUN.showMenuUser();
+        RUN.showMenuAdmin();
+        RUN.handleAccordionMenuAdmin();
         RUN.showModalLogout();
         RUN.showSidebar();
         RUN.uploadImage();

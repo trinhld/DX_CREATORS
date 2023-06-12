@@ -173,9 +173,235 @@ select {
   flex-wrap: nowrap;
 }
 
-input, textarea {
+input,
+textarea {
   font-size: 1.4rem !important;
   color: #696969 !important;
+}
+
+.user-list-option {
+  display: none;
+  position: absolute;
+  top: 3.5rem;
+  right: -15px;
+  padding-top: 2rem;
+}
+@media screen and (min-width: 1024px) {
+  .user-list-option {
+    top: 3rem;
+  }
+}
+.user-list-option ul {
+  width: 28rem;
+  text-align: center;
+  border: 1px solid #dbdbdb;
+  background-color: #ffffff;
+}
+@media screen and (min-width: 1024px) {
+  .user-list-option ul {
+    width: 25rem;
+  }
+}
+.user-list-option ul li {
+  padding: 1.5rem 1rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8;
+  color: #696969;
+}
+.user-list-option ul li:not(:last-child) {
+  border-bottom: 1px solid #dbdbdb;
+}
+.user-list-option ul .active {
+  color: #fff;
+  background-color: #e4a1c5;
+}
+.user-list-option ul .active a:hover {
+  color: #fff;
+}
+
+.admin-list-option {
+  display: none;
+  position: absolute;
+  top: 3.5rem;
+  right: -15px;
+  padding-top: 2rem;
+}
+@media screen and (min-width: 1024px) {
+  .admin-list-option {
+    top: 3rem;
+  }
+}
+.admin-list-option .list-option-item {
+  width: 28rem;
+  text-align: center;
+  border: 1px solid #dbdbdb;
+  background-color: #ffffff;
+}
+@media screen and (min-width: 1024px) {
+  .admin-list-option .list-option-item {
+    width: 25rem;
+  }
+}
+.admin-list-option .list-option-item .title-sub-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 1.5rem 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.8;
+  color: #696969;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.admin-list-option .list-option-item .title-sub-menu:not(:first-child) {
+  border-top: 1px solid #dbdbdb;
+}
+.admin-list-option .list-option-item .title-sub-menu a {
+  margin: 0 auto;
+  padding-left: 1.2rem;
+}
+.admin-list-option .list-option-item .title-sub-menu img {
+  width: 1.2rem;
+  transition: all 0.3s ease;
+  transform: rotate(-90deg);
+}
+.admin-list-option .list-option-item .title-sub-menu .handle-arrow {
+  transition: all 0.3s ease !important;
+  transform: rotate(0deg) !important;
+}
+.admin-list-option .list-option-item .content-sub-menu li {
+  padding: 1.5rem 1rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8;
+  color: #696969;
+  border-top: 1px solid #dbdbdb;
+}
+.admin-list-option .list-option-item .option-item {
+  padding: 1.5rem 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.8;
+  color: #696969;
+}
+.admin-list-option .list-option-item .option-item:not(:last-child) {
+  border-bottom: 1px solid #dbdbdb;
+}
+.admin-list-option .list-option-item .sub-menu {
+  padding: 0;
+}
+.admin-list-option .list-option-item .sub-menu .title-sub-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 1.5rem 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.8;
+  color: #696969;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.admin-list-option .list-option-item .sub-menu .title-sub-menu a {
+  margin: 0 auto;
+}
+.admin-list-option .list-option-item .sub-menu .title-sub-menu img {
+  width: 1.2rem;
+  transition: all 0.3s ease;
+  transform: rotate(-90deg);
+}
+.admin-list-option .list-option-item .sub-menu .title-sub-menu .handle-arrow {
+  transition: all 0.3s ease !important;
+  transform: rotate(0deg) !important;
+}
+.admin-list-option .list-option-item .sub-menu .content-sub-menu li {
+  padding: 1.5rem 1rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8;
+  color: #696969;
+  border-top: 1px solid #dbdbdb;
+}
+.admin-list-option .list-option-item .active {
+  color: #fff !important;
+  background-color: #8b8ebb !important;
+}
+.admin-list-option .list-option-item .active a:hover {
+  color: #fff !important;
+}
+
+.modal-logout {
+  padding: 0 1rem;
+  z-index: 1041;
+}
+.modal-logout .modal-logout-header {
+  padding: 1.2rem 0;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #ffffff;
+  background: linear-gradient(90deg, #e4a1c5, #dbe9f4) no-repeat;
+}
+@media screen and (min-width: 1024px) {
+  .modal-logout .modal-logout-header {
+    font-size: 1.8rem;
+  }
+}
+.modal-logout .modal-body p {
+  margin-top: 6rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #696969;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .modal-logout .modal-body p {
+    font-size: 1.6rem;
+  }
+}
+.modal-logout .modal-body .list-btn-modal-logut {
+  display: flex;
+  justify-content: center;
+  align-items: normal;
+  flex-wrap: nowrap;
+  margin: 3.5rem auto 10rem;
+}
+.modal-logout .modal-body .list-btn-modal-logut .btn-back,
+.modal-logout .modal-body .list-btn-modal-logut .btn-logout {
+  width: 12.5rem;
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #696969;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid #deecf6;
+  background: #ffffff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+@media screen and (min-width: 1024px) {
+  .modal-logout .modal-body .list-btn-modal-logut .btn-back,
+.modal-logout .modal-body .list-btn-modal-logut .btn-logout {
+    width: 16.5rem;
+    font-size: 1.6rem;
+  }
+}
+.modal-logout .modal-body .list-btn-modal-logut .btn-back:hover,
+.modal-logout .modal-body .list-btn-modal-logut .btn-logout:hover {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;
+}
+.modal-logout .modal-body .list-btn-modal-logut .btn-logout {
+  margin-left: 2rem;
 }
 
 .text-inline {
@@ -561,6 +787,7 @@ input, textarea {
 @media screen and (min-width: 1024px) {
   .wrapper .header-dashboard .container .header-text-gradient {
     padding: 0.5rem 5rem;
+    margin: 0.84rem 0;
     font-size: 1.6rem;
   }
 }
@@ -624,39 +851,6 @@ input, textarea {
 }
 .wrapper .header-dashboard .container .header-user .wrap-user .user-show {
   max-width: 1.5rem;
-}
-.wrapper .header-dashboard .container .header-user .user-list-option {
-  display: none;
-  position: absolute;
-  top: 3.5rem;
-  right: -15px;
-  padding-top: 2rem;
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .header-dashboard .container .header-user .user-list-option {
-    top: 4rem;
-  }
-}
-.wrapper .header-dashboard .container .header-user .user-list-option ul {
-  width: 28rem;
-  text-align: center;
-  border: 1px solid #dbdbdb;
-  background-color: #ffffff;
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .header-dashboard .container .header-user .user-list-option ul {
-    width: 25rem;
-  }
-}
-.wrapper .header-dashboard .container .header-user .user-list-option ul li {
-  padding: 1.5rem 0;
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.8;
-  color: #696969;
-}
-.wrapper .header-dashboard .container .header-user .user-list-option ul li:not(:last-child) {
-  border-bottom: 1px solid #dbdbdb;
 }
 .wrapper .main {
   position: relative;
@@ -1000,75 +1194,6 @@ input, textarea {
   color: #ffffff;
   background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;
 }
-.wrapper .main .container.profile .modal-logout {
-  padding: 0 1rem;
-  z-index: 1041;
-}
-.wrapper .main .container.profile .modal-logout .modal-logout-header {
-  padding: 1.2rem 0;
-  text-align: center;
-  font-size: 1.6rem;
-  font-weight: 500;
-  line-height: 1.6;
-  color: #ffffff;
-  background: linear-gradient(90deg, #e4a1c5, #dbe9f4) no-repeat;
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .main .container.profile .modal-logout .modal-logout-header {
-    font-size: 1.8rem;
-  }
-}
-.wrapper .main .container.profile .modal-logout .modal-body p {
-  margin-top: 6rem;
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 1.6;
-  color: #696969;
-  text-align: center;
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .main .container.profile .modal-logout .modal-body p {
-    font-size: 1.6rem;
-  }
-}
-.wrapper .main .container.profile .modal-logout .modal-body .list-btn-modal-logut {
-  display: flex;
-  justify-content: center;
-  align-items: normal;
-  flex-wrap: nowrap;
-  margin: 3.5rem auto 10rem;
-}
-.wrapper .main .container.profile .modal-logout .modal-body .list-btn-modal-logut .btn-back,
-.wrapper .main .container.profile .modal-logout .modal-body .list-btn-modal-logut .btn-logout {
-  width: 12.5rem;
-  padding: 0.5rem 2rem;
-  font-size: 1.2rem;
-  font-weight: 500;
-  line-height: 1.6;
-  color: #696969;
-  text-align: center;
-  border-radius: 20px;
-  border: 1px solid #deecf6;
-  background: #ffffff;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .main .container.profile .modal-logout .modal-body .list-btn-modal-logut .btn-back,
-.wrapper .main .container.profile .modal-logout .modal-body .list-btn-modal-logut .btn-logout {
-    width: 16.5rem;
-    font-size: 1.6rem;
-  }
-}
-.wrapper .main .container.profile .modal-logout .modal-body .list-btn-modal-logut .btn-back:hover,
-.wrapper .main .container.profile .modal-logout .modal-body .list-btn-modal-logut .btn-logout:hover {
-  color: #ffffff;
-  border: 1px solid #ffffff;
-  background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;
-}
-.wrapper .main .container.profile .modal-logout .modal-body .list-btn-modal-logut .btn-logout {
-  margin-left: 2rem;
-}
 @media screen and (min-width: 1024px) {
   .wrapper .main .container.create-notifi {
     padding: 0.5rem !important;
@@ -1362,182 +1487,6 @@ input, textarea {
   color: #fff;
   border-color: #dee2e6;
   background-color: #8b8ebb;
-}
-.wrapper .main .container.create-notifi .modal-logout {
-  padding: 0 1rem;
-  z-index: 1041;
-}
-.wrapper .main .container.create-notifi .modal-logout .modal-logout-header {
-  padding: 1.2rem 0;
-  text-align: center;
-  font-size: 1.6rem;
-  font-weight: 500;
-  line-height: 1.6;
-  color: #ffffff;
-  background: linear-gradient(90deg, #e4a1c5, #dbe9f4) no-repeat;
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .main .container.create-notifi .modal-logout .modal-logout-header {
-    font-size: 1.8rem;
-  }
-}
-.wrapper .main .container.create-notifi .modal-logout .modal-body p {
-  margin-top: 6rem;
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 1.6;
-  color: #696969;
-  text-align: center;
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .main .container.create-notifi .modal-logout .modal-body p {
-    font-size: 1.6rem;
-  }
-}
-.wrapper .main .container.create-notifi .modal-logout .modal-body .list-btn-modal-logut {
-  display: flex;
-  justify-content: center;
-  align-items: normal;
-  flex-wrap: nowrap;
-  margin: 3.5rem auto 10rem;
-}
-.wrapper .main .container.create-notifi .modal-logout .modal-body .list-btn-modal-logut .btn-back,
-.wrapper .main .container.create-notifi .modal-logout .modal-body .list-btn-modal-logut .btn-logout {
-  width: 12.5rem;
-  padding: 0.5rem 2rem;
-  font-size: 1.2rem;
-  font-weight: 500;
-  line-height: 1.6;
-  color: #696969;
-  text-align: center;
-  border-radius: 20px;
-  border: 1px solid #deecf6;
-  background: #ffffff;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .main .container.create-notifi .modal-logout .modal-body .list-btn-modal-logut .btn-back,
-.wrapper .main .container.create-notifi .modal-logout .modal-body .list-btn-modal-logut .btn-logout {
-    width: 16.5rem;
-    font-size: 1.6rem;
-  }
-}
-.wrapper .main .container.create-notifi .modal-logout .modal-body .list-btn-modal-logut .btn-back:hover,
-.wrapper .main .container.create-notifi .modal-logout .modal-body .list-btn-modal-logut .btn-logout:hover {
-  color: #ffffff;
-  border: 1px solid #ffffff;
-  background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;
-}
-.wrapper .main .container.create-notifi .modal-logout .modal-body .list-btn-modal-logut .btn-logout {
-  margin-left: 2rem;
-}
-.wrapper .main .container.create-notifi .modal-logout .modal-body .list-btn-modal {
-  display: flex;
-  justify-content: center;
-  align-items: normal;
-  flex-wrap: nowrap;
-  margin: 3.5rem auto 10rem;
-}
-.wrapper .main .container.create-notifi .modal-logout .modal-body .list-btn-modal .btn-back,
-.wrapper .main .container.create-notifi .modal-logout .modal-body .list-btn-modal .btn-logout {
-  width: 12.5rem;
-  padding: 0.5rem 2rem;
-  font-size: 1.2rem;
-  font-weight: 500;
-  line-height: 1.6;
-  color: #696969;
-  text-align: center;
-  border-radius: 20px;
-  border: 1px solid #deecf6;
-  background: #ffffff;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .main .container.create-notifi .modal-logout .modal-body .list-btn-modal .btn-back,
-.wrapper .main .container.create-notifi .modal-logout .modal-body .list-btn-modal .btn-logout {
-    width: 16.5rem;
-    font-size: 1.6rem;
-  }
-}
-.wrapper .main .container.create-notifi .modal-logout .modal-body .list-btn-modal .btn-back:hover,
-.wrapper .main .container.create-notifi .modal-logout .modal-body .list-btn-modal .btn-logout:hover {
-  color: #ffffff;
-  border: 1px solid #ffffff;
-  background: #8b8ebb;
-}
-.wrapper .main .container.create-notifi .modal-logout .modal-body .list-btn-modal .btn-logout {
-  margin-left: 2rem;
-}
-.wrapper .main .modal-logout {
-  padding: 0 1rem;
-  z-index: 1041;
-}
-.wrapper .main .modal-logout .modal-logout-header {
-  padding: 1.2rem 0;
-  text-align: center;
-  font-size: 1.6rem;
-  font-weight: 500;
-  line-height: 1.6;
-  color: #ffffff;
-  background: linear-gradient(90deg, #e4a1c5, #dbe9f4) no-repeat;
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .main .modal-logout .modal-logout-header {
-    font-size: 1.8rem;
-  }
-}
-.wrapper .main .modal-logout .modal-body p {
-  margin-top: 6rem;
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 1.6;
-  color: #696969;
-  text-align: center;
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .main .modal-logout .modal-body p {
-    font-size: 1.6rem;
-  }
-}
-.wrapper .main .modal-logout .modal-body .list-btn-modal-logut {
-  display: flex;
-  justify-content: center;
-  align-items: normal;
-  flex-wrap: nowrap;
-  margin: 3.5rem auto 10rem;
-}
-.wrapper .main .modal-logout .modal-body .list-btn-modal-logut .btn-back,
-.wrapper .main .modal-logout .modal-body .list-btn-modal-logut .btn-logout {
-  width: 12.5rem;
-  padding: 0.5rem 2rem;
-  font-size: 1.2rem;
-  font-weight: 500;
-  line-height: 1.6;
-  color: #696969;
-  text-align: center;
-  border-radius: 20px;
-  border: 1px solid #deecf6;
-  background: #ffffff;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .main .modal-logout .modal-body .list-btn-modal-logut .btn-back,
-.wrapper .main .modal-logout .modal-body .list-btn-modal-logut .btn-logout {
-    width: 16.5rem;
-    font-size: 1.6rem;
-  }
-}
-.wrapper .main .modal-logout .modal-body .list-btn-modal-logut .btn-back:hover,
-.wrapper .main .modal-logout .modal-body .list-btn-modal-logut .btn-logout:hover {
-  color: #ffffff;
-  border: 1px solid #ffffff;
-  background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;
-}
-.wrapper .main .modal-logout .modal-body .list-btn-modal-logut .btn-logout {
-  margin-left: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

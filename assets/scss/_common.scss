@@ -1,7 +1,233 @@
-input, textarea {
+input,
+textarea {
     font-size: 1.4rem !important;
     color: $cl-gray !important;
 }
+
+
+.user-list-option {
+    display: none;
+    position: absolute;
+    top: 3.5rem;
+    right: -15px;
+    padding-top: 2rem;
+
+    @include mq_min_1024 {
+        top: 3rem;
+    }
+
+    ul {
+        width: 28rem;
+        text-align: center;
+        border: 1px solid $cl-gray-light;
+        background-color: $cl-white;
+
+        @include mq_min_1024 {
+            width: 25rem;
+        }
+
+        li {
+            padding: 1.5rem 1rem;
+            @include font(1.4rem, 500, 1.8);
+            color: $cl-gray;
+
+            &:not(:last-child) {
+                border-bottom: 1px solid $cl-gray-light;
+            }
+        }
+
+        .active {
+            color: #fff;
+            background-color: #e4a1c5;
+
+            a {
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.admin-list-option {
+    display: none;
+    position: absolute;
+    top: 3.5rem;
+    right: -15px;
+    padding-top: 2rem;
+
+    @include mq_min_1024 {
+        top: 3rem;
+    }
+
+    .list-option-item {
+        width: 28rem;
+        text-align: center;
+        border: 1px solid $cl-gray-light;
+        background-color: $cl-white;
+
+        @include mq_min_1024 {
+            width: 25rem;
+        }
+
+        .title-sub-menu {
+            @include flexbox(flex,center, center, nowrap);
+            padding: 1.5rem 1rem;
+            @include font(1.4rem, 600, 1.8);
+            color: $cl-gray;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            &:not(:first-child) {
+                border-top: 1px solid $cl-gray-light;
+            }
+            a {
+                margin: 0 auto;
+                padding-left: 1.2rem;
+            }
+
+            img {
+                width: 1.2rem;
+                transition: all 0.3s ease;
+                transform: rotate(-90deg);
+            }
+
+            .handle-arrow {
+                transition: all 0.3s ease !important;
+                transform: rotate(0deg) !important;
+              }
+        }
+
+        .content-sub-menu {
+            li {
+                padding: 1.5rem 1rem;
+                @include font(1.4rem, 500, 1.8);
+                color: $cl-gray;
+                border-top: 1px solid $cl-gray-light;
+            }
+        }
+
+        .option-item {
+            padding: 1.5rem 1rem;
+            @include font(1.4rem, 600, 1.8);
+            color: $cl-gray;
+
+            &:not(:last-child) {
+                border-bottom: 1px solid $cl-gray-light;
+            }
+        }
+
+        .sub-menu {
+            padding: 0;
+            .title-sub-menu {
+                @include flexbox(flex, space-between, center, nowrap);
+                padding: 1.5rem 1rem;
+                @include font(1.4rem, 600, 1.8);
+                color: $cl-gray;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                a {
+                    margin: 0 auto;
+                }
+
+                img {
+                    width: 1.2rem;
+                    transition: all 0.3s ease;
+                    transform: rotate(-90deg);
+                }
+
+                .handle-arrow {
+                    transition: all 0.3s ease !important;
+                    transform: rotate(0deg) !important;
+                  }
+            }
+
+            .content-sub-menu {
+                li {
+                    padding: 1.5rem 1rem;
+                    @include font(1.4rem, 500, 1.8);
+                    color: $cl-gray;
+                    border-top: 1px solid $cl-gray-light;
+                }
+            }
+        }
+
+        .active {
+            color: #fff !important;
+            background-color: #8b8ebb !important;
+
+            a {
+                &:hover {
+                    color: #fff !important;
+                }
+            }
+        }
+    }
+}
+
+.modal-logout {
+    padding: 0 1rem;
+    z-index: 1041;
+
+    .modal-logout-header {
+        padding: 1.2rem 0;
+        text-align: center;
+        @include font(1.6rem, 500, 1.6);
+        color: $cl-white;
+        background: linear-gradient(90deg, #e4a1c5, #dbe9f4) no-repeat;
+
+        @include mq_min_1024 {
+            font-size: 1.8rem;
+        }
+    }
+
+    .modal-body {
+        p {
+            margin-top: 6rem;
+            @include font(1.2rem, 400, 1.6);
+            color: $cl-gray;
+            text-align: center;
+
+            @include mq_min_1024 {
+                font-size: 1.6rem;
+            }
+        }
+
+        .list-btn-modal-logut {
+            @include flexbox(flex, center, normal, nowrap);
+            margin: 3.5rem auto 10rem;
+
+            .btn-back,
+            .btn-logout {
+                width: 12.5rem;
+                padding: 0.5rem 2rem;
+                @include font(1.2rem, 500, 1.6);
+                color: $cl-gray;
+                text-align: center;
+                border-radius: 20px;
+                border: 1px solid #deecf6;
+                background: $cl-white;
+                transition: all 0.3s ease;
+                cursor: pointer;
+
+                @include mq_min_1024 {
+                    width: 16.5rem;
+                    font-size: 1.6rem;
+                }
+
+                &:hover {
+                    color: $cl-white;
+                    border: 1px solid $cl-white;
+                    background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;
+                }
+            }
+
+            .btn-logout {
+                margin-left: 2rem;
+            }
+        }
+    }
+}
+
 .text-inline {
     overflow: hidden;
     white-space: nowrap;
@@ -10,6 +236,7 @@ input, textarea {
 
 .w-22 {
     width: 18rem !important;
+
     @include mq_min_1024 {
         width: 22rem !important;
     }
@@ -21,6 +248,7 @@ input, textarea {
 
 .fz-2 {
     @include font(1.6rem, 500, 1.8);
+
     @include mq_min_1024 {
         font-size: 2rem;
     }
