@@ -246,6 +246,10 @@ textarea {
     height: 24rem !important;
 }
 
+.h-280 {
+    height: 28rem !important;
+}
+
 .fz-2 {
     @include font(1.6rem, 500, 1.8);
 
@@ -264,4 +268,32 @@ textarea {
 
 .rounded-6 {
     border-radius: 6px;
+}
+
+.list-btn {
+    margin-top: 4rem;
+    @include flexbox(flex, center, normal, nowrap);
+
+    @include mq_min_1024 {
+        justify-content: flex-end;
+    }
+
+    .btn-child {
+        width: 11rem;
+        padding: 0.5rem 1rem;
+        @include font(1.4rem, 500, 1.8);
+        text-align: center;
+        border: 1px solid #a8a7a7;
+        background-color: $cl-white;
+
+        &:first-child {
+            color: $cl-black;
+        }
+
+        &:last-child {
+            margin-left: 1rem;
+            color: $cl-white;
+            background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;
+        }
+    }
 }

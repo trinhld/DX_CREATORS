@@ -423,6 +423,10 @@ textarea {
   height: 24rem !important;
 }
 
+.h-280 {
+  height: 28rem !important;
+}
+
 .fz-2 {
   font-size: 1.6rem;
   font-weight: 500;
@@ -444,6 +448,37 @@ textarea {
 
 .rounded-6 {
   border-radius: 6px;
+}
+
+.list-btn {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: normal;
+  flex-wrap: nowrap;
+}
+@media screen and (min-width: 1024px) {
+  .list-btn {
+    justify-content: flex-end;
+  }
+}
+.list-btn .btn-child {
+  width: 11rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8;
+  text-align: center;
+  border: 1px solid #a8a7a7;
+  background-color: #ffffff;
+}
+.list-btn .btn-child:first-child {
+  color: #000000;
+}
+.list-btn .btn-child:last-child {
+  margin-left: 1rem;
+  color: #ffffff;
+  background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;
 }
 
 .header-login {
@@ -1190,6 +1225,212 @@ textarea {
   color: #000000;
 }
 .wrapper .main .container.profile .content.user-profile .list-btn .btn-child:last-child {
+  margin-left: 1rem;
+  color: #ffffff;
+  background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;
+}
+.wrapper .main .container.profile .content.admin-profile {
+  width: 100%;
+  background-color: #ffffff;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .main .container.profile .content.admin-profile {
+    padding: 2rem;
+  }
+}
+.wrapper .main .container.profile .content.admin-profile .notify-success {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.8;
+  padding: 1rem 1.5rem;
+  color: #000000;
+  border: 1px solid #e2e2e2;
+  border-left: 4px solid #8b8ebb;
+}
+.wrapper .main .container.profile .content.admin-profile h3 {
+  margin: 2rem auto 4rem;
+  padding: 0.5rem 2rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #ffffff;
+  background: linear-gradient(90deg, #e4a1c5, #dbe9f4) no-repeat;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .main .container.profile .content.admin-profile h3 {
+    margin-top: 4rem;
+  }
+}
+.wrapper .main .container.profile .content.admin-profile > img {
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 2rem auto;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .main .container.profile .content.admin-profile > img {
+    width: 18rem;
+    height: 18rem;
+  }
+}
+.wrapper .main .container.profile .content.admin-profile form .input-group {
+  height: 3.5rem;
+}
+.wrapper .main .container.profile .content.admin-profile form .input-group > p {
+  color: #696969;
+}
+.wrapper .main .container.profile .content.admin-profile form .input-group .form-edit {
+  display: flex;
+  justify-content: space-around;
+  align-items: normal;
+  flex-wrap: nowrap;
+}
+.wrapper .main .container.profile .content.admin-profile form .input-group .form-edit div {
+  width: calc(50% - 3rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.wrapper .main .container.profile .content.admin-profile form .input-group .form-edit div span {
+  margin-right: 1rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.8;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  white-space: nowrap;
+}
+.wrapper .main .container.profile .content.admin-profile form .input-group .form-edit div > input {
+  max-width: 21rem;
+  border-radius: 6px;
+}
+.wrapper .main .container.profile .content.admin-profile form .input-group .input-group-text {
+  position: relative;
+  width: 15rem;
+  height: 4rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #fff;
+  text-align: center;
+  background-color: #dfe7f2;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .main .container.profile .content.admin-profile form .input-group .input-group-text {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .main .container.profile .content.admin-profile form .input-group .input-group-text {
+    width: 18rem;
+  }
+}
+.wrapper .main .container.profile .content.admin-profile form .input-group .form-upload-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 19rem;
+}
+.wrapper .main .container.profile .content.admin-profile form .input-group .form-upload-image > img {
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.wrapper .main .container.profile .content.admin-profile form .input-group .form-upload-image .btn-control {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.wrapper .main .container.profile .content.admin-profile form .input-group .form-upload-image .btn-control .btn_upload {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  color: #212529;
+  background-color: #ffffff;
+  border: 1px solid #ced4da;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+}
+.wrapper .main .container.profile .content.admin-profile form .input-group .form-upload-image .btn-control .btn_upload input[type=file] {
+  height: 100%;
+  position: absolute;
+  filter: alpha(opacity=1);
+  -moz-opacity: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.wrapper .main .container.profile .content.admin-profile form .input-group .form-upload-image .btn-control .btn-delete-image {
+  margin-left: 2rem;
+  width: 1.8rem;
+  cursor: pointer;
+}
+.wrapper .main .container.profile .content.admin-profile form .input-group .required::after {
+  position: absolute;
+  content: "必須";
+  top: 50%;
+  right: 5px;
+  width: 35px;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+  color: #ffffff;
+  background-color: #f14a4a;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .main .container.profile .content.admin-profile form .input-group .required::after {
+    font-size: 1rem;
+  }
+}
+.wrapper .main .container.profile .content.admin-profile form .input-group p {
+  height: 4rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.8;
+}
+.wrapper .main .container.profile .content.admin-profile form .input-group p .btn-edit-profile {
+  width: 14rem;
+  margin-left: auto;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.8;
+  text-align: center;
+  border: 1px solid #a8a7a7;
+  color: #ffffff;
+  background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;
+}
+.wrapper .main .container.profile .content.admin-profile .list-btn {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: normal;
+  flex-wrap: nowrap;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .main .container.profile .content.admin-profile .list-btn {
+    justify-content: flex-end;
+  }
+}
+.wrapper .main .container.profile .content.admin-profile .list-btn .btn-child {
+  width: 11rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8;
+  text-align: center;
+  border: 1px solid #a8a7a7;
+  background-color: #ffffff;
+}
+.wrapper .main .container.profile .content.admin-profile .list-btn .btn-child:first-child {
+  color: #000000;
+}
+.wrapper .main .container.profile .content.admin-profile .list-btn .btn-child:last-child {
   margin-left: 1rem;
   color: #ffffff;
   background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;

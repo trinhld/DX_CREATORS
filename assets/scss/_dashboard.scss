@@ -477,6 +477,210 @@
                     }
                 }
             }
+
+            .content.admin-profile {
+                width: 100%;
+                background-color: $cl-white;
+
+                @include mq_min_1024 {
+                    padding: 2rem;
+                }
+
+                .notify-success {
+                    @include font(1.4rem, 600, 1.8);
+                    padding: 1rem 1.5rem;
+                    color: $cl-black;
+                    border: 1px solid #e2e2e2;
+                    border-left: 4px solid #8b8ebb;
+                }
+
+                h3 {
+                    margin: 2rem auto 4rem;
+                    padding: 0.5rem 2rem;
+                    @include font(1.8rem, 400, 1.8);
+                    color: $cl-white;
+                    background: linear-gradient(90deg, #e4a1c5, #dbe9f4) no-repeat;
+
+                    @include mq_min_1024 {
+                        margin-top: 4rem;
+                    }
+                }
+
+                &>img {
+                    width: 15rem;
+                    height: 15rem;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    margin: 2rem auto;
+
+                    @include mq_min_1024 {
+                        width: 18rem;
+                        height: 18rem;
+                    }
+                }
+
+                form {
+                    .input-group {
+                        height: 3.5rem;
+
+                        &>p {
+                            color: $cl-gray;
+                        }
+
+                        .form-edit {
+                            @include flexbox(flex, space-around, normal, nowrap);
+
+                            div {
+                                width: calc((100% / 2) - 3rem);
+                                @include flexbox(flex, space-between, center, nowrap);
+
+                                span {
+                                    margin-right: 1rem;
+                                    @include font(1.4rem, 400, 1.8);
+                                    text-overflow: ellipsis;
+                                    // overflow: hidden;
+                                    -webkit-line-clamp: 1;
+                                    -webkit-box-orient: vertical;
+                                    white-space: nowrap;
+                                }
+
+                                &>input {
+                                    max-width: 21rem;
+                                    border-radius: 6px;
+                                }
+                            }
+                        }
+
+                        .input-group-text {
+                            position: relative;
+                            width: 15rem;
+                            height: 4rem;
+                            @include font(1.1rem, 400, 1.8);
+                            color: #fff;
+                            text-align: center;
+                            background-color: #dfe7f2;
+
+                            @include mq_min_1024 {
+                                font-size: 1.4rem;
+                            }
+
+                            @include mq_min_1024 {
+                                width: 18rem;
+                            }
+                        }
+
+                        .form-upload-image {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            max-width: 19rem;
+
+                            &>img {
+                                width: 16rem;
+                                height: 16rem;
+                                border-radius: 50%;
+                                object-fit: cover;
+                            }
+
+                            .btn-control {
+                                margin-top: 1.5rem;
+                                @include flexbox(flex, flex-start, center, nowrap);
+
+                                .btn_upload {
+                                    display: inline-block;
+                                    overflow: hidden;
+                                    position: relative;
+                                    color: #212529;
+                                    background-color: $cl-white;
+                                    border: 1px solid #ced4da;
+                                    padding: 0.8rem 1.5rem;
+                                    border-radius: 6px;
+
+                                    // cursor: pointer;
+                                    input[type="file"] {
+                                        height: 100%;
+                                        position: absolute;
+                                        filter: alpha(opacity=1);
+                                        -moz-opacity: 0;
+                                        opacity: 0;
+                                        cursor: pointer;
+                                        // cursor: inherit;
+                                    }
+                                }
+
+                                .btn-delete-image {
+                                    margin-left: 2rem;
+                                    width: 1.8rem;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+
+                        .required {
+                            &::after {
+                                position: absolute;
+                                content: "必須";
+                                top: 50%;
+                                right: 5px;
+                                width: 35px;
+                                transform: translateY(-50%);
+                                font-size: 0.8rem;
+                                color: #ffffff;
+                                background-color: #f14a4a;
+
+                                @include mq_min_1024 {
+                                    font-size: 1rem;
+                                }
+                            }
+                        }
+
+                        p {
+                            height: 4rem;
+                            @include font(1.4rem, 400, 1.8);
+
+                            .btn-edit-profile {
+                                width: 14rem;
+                                margin-left: auto;
+                                padding: 0 1rem;
+                                @include font(1.2rem, 500, 1.8);
+                                text-align: center;
+                                border: 1px solid #a8a7a7;
+                                color: $cl-white;
+                                background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;
+                            }
+                        }
+                    }
+                }
+
+                .list-btn {
+                    margin-top: 4rem;
+                    @include flexbox(flex, center, normal, nowrap);
+
+                    @include mq_min_1024 {
+                        justify-content: flex-end;
+                    }
+
+                    .btn-child {
+                        width: 11rem;
+                        padding: 0.5rem 1rem;
+                        @include font(1.4rem, 500, 1.8);
+                        text-align: center;
+                        border: 1px solid #a8a7a7;
+                        background-color: $cl-white;
+
+                        &:first-child {
+                            color: $cl-black;
+                        }
+
+                        &:last-child {
+                            margin-left: 1rem;
+                            color: $cl-white;
+                            background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;
+                        }
+                    }
+                }
+            }
         }
 
         .container.create-notifi {
