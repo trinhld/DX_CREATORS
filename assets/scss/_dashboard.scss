@@ -40,15 +40,50 @@
                     display: block;
                 }
 
-                ul {
+                & > ul {
                     @include flexbox(flex, flex-start, normal, nowrap);
 
                     li {
+                        position: relative;
                         padding: 1.5rem 2.5rem;
                         @include font(1.6rem, 600, 1.6);
+                        transition: all .3s ease;
                         cursor: pointer;
+                        .sub-menu {
+                            position: absolute;
+                            top: 3.559rem;
+                            left: 0;
+                            right: 0;
+                            margin-top: 2rem;
+                            color: #212529;
+                            transition: all .3s ease;
+                            background-color: #fff;
+                            opacity: 0;
+                            visibility: hidden;
+                            & > li {
+                                padding: 1rem;
+                                font-size: 1.4rem;
+                                text-align: center;
+                                transition: all .3s ease;
+                                &:hover {
+                                    color: #fff;
+                                    background-color: #8b8ebb;
+                                }
+                            }
+                        }
+                        &:hover {
+                            color: #fff;
+                            background-color: #8b8ebb;
+                        }
+                        &:hover .sub-menu{
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                        .active {
+                            color: #fff;
+                            background-color: #8b8ebb;
+                        }
                     }
-
                     .active {
                         color: #fff;
                         background-color: #8b8ebb;

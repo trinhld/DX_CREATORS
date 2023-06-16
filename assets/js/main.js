@@ -8,12 +8,14 @@ var RUN = {
 
     // Show Menu Admin
     showMenuAdmin: () => {
-        $('.wrap-user').click(() => {
-             // $(".content-sub-menu").slideUp();
-            // $(".title-sub-menu").removeClass("active")
-            // $(".icon-arrow").removeClass("handle-arrow");
-            
+        $('.wrap-user').click((e) => {
+            e.stopPropagation();
             $('.admin-list-option').toggle();
+        });
+
+        $(window).click(function(event) {
+            event.stopPropagation();
+            $(".admin-list-option").hide();
         });
     },
 
@@ -22,6 +24,7 @@ var RUN = {
 
         $(".title-sub-menu").click(function (e) {
             e.preventDefault();
+            e.stopPropagation();
 
             // $(".content-sub-menu").slideUp();
             // $(".title-sub-menu").removeClass("active")
