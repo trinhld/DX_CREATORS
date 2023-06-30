@@ -1,4 +1,21 @@
 var RUN = {
+    // Date Picker
+    dataPicker: () => {
+        $('#datepicker').datepicker();
+        // let arrTemp = [];
+        // const listDay = $('.datepicker-days li');
+        // console.log(listDay[9]);
+        // listDay[9].css({"color": "red"})
+        // listDay.map((index, day) => 
+            // (index % 7 === 0) ? arrTemp.push(day, listDay[index + 1]) : ''
+            // console.log(day)
+            // (index % 7 === 0) ? day.css({"color": "red"}) : ''
+        // );
+        // console.log(test);
+        // arrTemp.map((item) => (item).css('color', 'red'))
+        // arrTemp.map((item) => console.log(item))
+    },
+
     // Show Menu User
     showMenuUser: () => {
         $('.wrap-user').click(() => {
@@ -90,6 +107,7 @@ var RUN = {
         RUN.showModalLogout();
         RUN.showSidebar();
         RUN.uploadImage();
+        RUN.dataPicker();
     },
 };
 

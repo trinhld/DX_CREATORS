@@ -4,6 +4,14 @@ textarea {
     color: $cl-gray !important;
 }
 
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("../images/icon_arrow_select.png") !important;
+    background-repeat: no-repeat;
+    background-size: 15px 20px !important;
+}
 
 .user-list-option {
     display: none;
@@ -228,12 +236,54 @@ textarea {
     }
 }
 
-.text-inline {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+.modal-delete {
+    .list-btn-modal-logut {
+        @include flexbox(flex, center, normal, nowrap);
+        margin: 3.5rem auto 10rem;
+
+        .btn-back,
+        .btn-logout {
+            width: 12.5rem;
+            padding: 0.5rem 2rem;
+            @include font(1.2rem, 500, 1.6);
+            color: $cl-gray;
+            text-align: center;
+            border-radius: 20px;
+            border: 1px solid #deecf6;
+            background: $cl-white;
+            transition: all 0.3s ease;
+            cursor: pointer;
+
+            @include mq_min_1024 {
+                width: 16.5rem;
+                font-size: 1.6rem;
+            }
+
+            &:hover {
+                color: $cl-white;
+                border: 1px solid $cl-white;
+                background: #8b8ebb no-repeat !important;
+            }
+        }
+
+        .btn-logout {
+            margin-left: 2rem;
+        }
+    }
+
 }
 
+.text-inline {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: nowrap;
+}
+
+.w-10 {
+    width: 10% !important;
+}
 .w-22 {
     width: 18rem !important;
 
@@ -241,11 +291,33 @@ textarea {
         width: 22rem !important;
     }
 }
+.w-md-25 {
+    @include mq_min_768 {
+        width: 25% !important;
+    }
+}
+.w-md-65 {
+    @include mq_min_768 {
+        width: 65% !important;
+    }
+}
+.w-md-50 {
+    @include mq_min_768 {
+        width: 50% !important;
+    }
+}
+.w-md-100 {
+    @include mq_min_768 {
+        width: 100% !important;
+    }
+}
 
+.h-60 {
+    height: 6rem !important;
+}
 .h-240 {
     height: 24rem !important;
 }
-
 .h-280 {
     height: 28rem !important;
 }
@@ -261,9 +333,11 @@ textarea {
 .bg-rgb-btn {
     background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;
 }
-
 .bg-purple {
     background: #8b8ebb !important;
+}
+.bg-blue {
+    background: #dfe7f2 !important;
 }
 
 .rounded-6 {
@@ -296,4 +370,75 @@ textarea {
             background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;
         }
     }
+}
+
+.datepicker-arrow {
+    border-bottom-color: #ccc;
+}
+
+.datepicker-content {
+    padding: .5rem;
+    background-color: #fff;
+    border-top-color: #ccc;
+    border-radius: 10px;
+    box-shadow: none;
+    li {
+        font-size: 1.3rem !important;
+    }
+    .selected {
+        font-weight: 600;
+        color: #000;
+        background: #999;
+        border-radius: 5px;
+        &:hover {
+            font-weight: 600;
+            color: #000;
+            background: #999;
+            border-radius: 5px;
+        }
+    }
+    .datepicker-title {
+        @include flexbox(flex, space-between, center, nowrap);
+        li {
+            &:nth-child(2) {
+                position: relative;
+                width: auto !important;
+                margin: 0 auto;
+                padding: 0 3rem 0 2rem;
+                display: inline-block !important;
+                border: 1px solid #888;
+                border-radius: 3px;
+                &::after {
+                    position: absolute;
+                    content: "⌃";
+                    color: #888;
+                    top: 45%;
+                    right: 8px;
+                    transform: translateY(-50%) rotate(180deg);
+                }
+            }
+        }
+        .datepicker-next, .datepicker-prev {
+            font-size: 2.2rem !important;
+            font-weight: 600;
+            color: #888888;
+        }
+    }
+}
+
+// .datepicker-days {
+//     li {
+//         &:first-child {
+//             color: #ff0000 !important;
+//         }
+//         &:last-child {
+//             color: #ff0000 !important;
+//         }
+//     }
+// }
+
+.ui-highlight .ui-state-default{
+    background: red !important;
+    border-color: red !important;
+    color: white !important;
 }

@@ -12,6 +12,7 @@
     }
     .header-text {
       @include font(1rem, 600, 1.6);
+      font-family: Arial, Helvetica, sans-serif;
       @include mq_min_1024 {
         font-size: 1.8rem;
       }
