@@ -92,7 +92,8 @@
             }
 
             .header-text {
-                @include font(1rem, 500, 1.6);
+                @include font(1rem, 600, 1.6);
+                font-family: Arial, Helvetica, sans-serif !important;
 
                 @include mq_min_1024 {
                     font-size: 1.8rem;
@@ -933,7 +934,7 @@
 
                     .select-item {
                         label {
-                            @include font(1.4rem, 600, 1.8);
+                            @include font(1.4rem, 500, 1.8);
                         }
 
                         select,
@@ -1022,6 +1023,278 @@
                         color: #fff;
                         border-color: #dee2e6;
                         background-color: #8b8ebb;
+                    }
+                }
+            }
+        }
+
+        .container.new-register {
+            padding: 1.8rem;
+            color: #575757;
+            background: linear-gradient(90deg, #e096be, #CDC6DF, #bcdeff) no-repeat;
+            @include mq_min_1024{
+                padding: 3.5rem 8.5rem;
+            }
+            .content {
+                padding: 1.5rem 1.5rem 3rem 1.5rem;
+                background-color: #fff;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                @include mq_min_1024{
+                    padding: 2rem 8rem 4.5rem;
+                    border-radius: 6px;
+                }
+                h2 {
+                    margin-bottom: 1rem;
+                    @include font(1.8rem, 600, 1.8);
+                    @include mq_min_1024{
+                        margin-bottom: 2.5rem;
+                        font-size: 2.2rem;
+                        text-align: center;
+                    }
+                }
+                h3 {
+                    margin-bottom: 2rem;
+                    @include font(1.8rem, 600, 1.8);
+                    @include mq_min_1024{
+                        font-size: 2.2rem;
+                        text-align: center;
+                    }
+                }
+                & > span {
+                    display: block;
+                    margin-bottom: 2rem;
+                    text-align: left;
+                    @include mq_min_1024{
+                        margin-bottom: 4rem;
+                        text-align: center;
+                    }
+                }
+                form {
+                    label {
+                        position: relative;
+                        display: inline-block;
+                        margin-bottom: .5rem;
+                        font-weight: 600 !important;
+                    }
+                    .bg-button {
+                        width: 100%;
+                        padding: .5rem 0;
+                        @include font(1.2rem, 500, 1.6);
+                        color: $cl-white;
+                        border: 0;
+                        background: linear-gradient(90deg, #5F9FCE, #DD8BB7) no-repeat;
+                        @include mq_min_768 {
+                            font-size: 1.4rem;
+                        }
+                        }
+
+                    .required {
+                        &::after {
+                            position: absolute;
+                            content: "必須";
+                            top: 50%;
+                            right: -10px;
+                            width: 35px;
+                            transform: translate(100%, -50%);
+                            font-size: 0.8rem;
+                            color: #ffffff;
+                            text-align: center;
+                            background-color: #f14a4a;
+                            @include mq_min_1024 {
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                    .input-group {
+                        position: relative;
+                        @include flexbox(flex, flex-start, normal, nowrap);                   
+                        &>p {
+                            color: $cl-gray;
+                        }
+                        .form-edit {
+                            @include flexbox(flex, flex-start, normal, nowrap);
+
+                            div {
+                                @include flexbox(flex, flex-start, center, nowrap);
+
+                                span {
+                                    margin-right: 1rem;
+                                    @include font(1.4rem, 400, 1.8);
+                                    text-overflow: ellipsis;
+                                    // overflow: hidden;
+                                    -webkit-line-clamp: 1;
+                                    -webkit-box-orient: vertical;
+                                    white-space: nowrap;
+                                }
+                            }
+
+                            &>input,
+                            select,
+                            textarea {
+                                @include font(1.3rem, 400, 1.8);
+                                border-radius: 6px;
+                            }
+
+                            &>select {
+                                max-width: 21rem;
+                            }
+                        }
+                        .form-control {
+                            border-radius: 6px;
+                        }
+                        .input-group-text {
+                            position: relative;
+                            width: 15rem;
+                            height: 100%;
+                            // height: 4rem;
+                            @include font(1.1rem, 400, 1.8);
+                            font-family: Arial, Helvetica, sans-serif;
+                            text-align: center;
+                            color: $cl-black;
+
+                            @include mq_min_1024 {
+                                font-size: 1.4rem;
+                            }
+
+                            @include mq_min_1024 {
+                                width: 18rem;
+                            }
+                        }
+                        p {
+                            padding: .8rem 1.5rem;
+                            @include font(1.4rem, 400, 1.8);
+                            font-family: Arial, Helvetica, sans-serif;
+                            border-top-left-radius: 0 !important;
+                            border-bottom-left-radius: 0 !important;
+                            .btn-edit-profile {
+                                width: 14rem;
+                                margin-left: auto;
+                                padding: 0 1rem;
+                                @include font(1.2rem, 500, 1.8);
+                                text-align: center;
+                                border: 1px solid #a8a7a7;
+                                color: $cl-white;
+                                background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;
+                            }
+                        }
+                    }
+
+                    .input-search {
+                        &::after {
+                            position: absolute;
+                            content: "";
+                            background-image: url('../images/icon_search.png');
+                            background-size: 2rem 2rem;
+                            width: 2rem;
+                            height: 2rem;
+                            top: 50%;
+                            right: 10px;
+                            transform: translateY(-50%);
+                            z-index: 9;
+                        }
+                    }
+                    .select-item {
+                        label {
+                            @include font(1.4rem, 500, 1.8);
+                        }
+
+                        select,
+                        input {
+                            width: 16rem;
+
+                            @include mq_min_1024 {
+                                width: 18rem;
+                            }
+
+                            height: 3.5rem;
+                            @include font(1.2rem, 400, 1.8);
+                            border-radius: 6px;
+                        }
+                    }
+                    .form-check-label {
+                        font-family: Arial, Helvetica, sans-serif;
+                    }
+                    .form-check-input:checked[type=radio] {
+                        background: #000;
+                    }
+                    .form-check-input:checked {
+                        background-color: #000;
+                        border-color: #000;
+                    }
+                    .form-check-input:focus {
+                        box-shadow: none;
+                    }
+                    .list-btn {
+                        margin-top: 4rem;
+                        @include flexbox(flex, center, normal, nowrap);
+    
+                        @include mq_min_1024 {
+                            justify-content: flex-end;
+                        }
+    
+                        .btn-child {
+                            width: 11rem;
+                            padding: 0.5rem 1rem;
+                            @include font(1.4rem, 500, 1.8);
+                            text-align: center;
+                            border: 1px solid #a8a7a7;
+                            background-color: $cl-white;
+    
+                            &:first-child {
+                                color: $cl-black;
+                            }
+    
+                            &:nth-child(2) {
+                                margin-left: 1rem;
+                                color: $cl-white;
+                                background: linear-gradient(90deg, #629ECE, #DB8BB7) no-repeat;
+                            }
+    
+                            &:last-child {
+                                margin-left: 1rem;
+                                color: $cl-white;
+                                background: linear-gradient(90deg, #629ECE, #DB8BB7) no-repeat;
+                            }
+                        }
+                    }
+                }
+            }
+            & > p {
+                font-size: 1.2rem;
+                @include mq_min_768 {
+                    font-size: 1.4rem;
+                }
+            }
+            .d03 {
+                .input-group {
+                    input {
+                        width: 100% !important;
+                    }
+                }
+                .content {
+                    height: 90vh;
+                    @include mq_min_1024{
+                        height: 45rem;
+                        padding: 5rem 8rem;
+                    }
+                    form {
+                        width: 100%;
+                        margin-top: 4.5rem;
+                        @include mq_min_768 {
+                            width: 45rem;
+                        }
+                    }
+                }
+            }
+            .d031 {
+                padding: 0;
+                @include mq_min_1024{
+                    padding: 3.5rem 6.5rem;
+                }
+                .content {
+                    height: 90vh;
+                    @include mq_min_1024{
+                        height: 45rem;
                     }
                 }
             }
