@@ -1,7 +1,11 @@
 var RUN = {
     // Date Picker
     dataPicker: () => {
-        $('#datepicker').datepicker();
+        $('.datepicker1').datepicker();
+        $('.datepicker2').datepicker();
+        $('.datepicker3').datepicker();
+        $('.datepicker4').datepicker();
+        $('.datepicker5').datepicker();
         // let arrTemp = [];
         // const listDay = $('.datepicker-days li');
         // console.log(listDay[9]);

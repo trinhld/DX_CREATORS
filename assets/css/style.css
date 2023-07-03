@@ -536,6 +536,36 @@ select {
   border-radius: 6px;
 }
 
+.input-search::after {
+  position: absolute;
+  content: "";
+  background-image: url("../images/icon_search.png");
+  background-size: 2rem 2rem;
+  width: 2rem;
+  height: 2rem;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  z-index: 9;
+}
+
+.input-payment {
+  position: relative;
+}
+.input-payment::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+  background-image: url("../images/icon_card.png");
+  background-repeat: no-repeat;
+  background-size: 2rem 2rem;
+  width: 2rem;
+  height: 2rem;
+  z-index: 9;
+}
+
 .list-btn {
   margin-top: 4rem;
   display: flex;
@@ -2096,18 +2126,6 @@ select {
   border: 1px solid #a8a7a7;
   color: #ffffff;
   background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;
-}
-.wrapper .main .container.new-register .content form .input-search::after {
-  position: absolute;
-  content: "";
-  background-image: url("../images/icon_search.png");
-  background-size: 2rem 2rem;
-  width: 2rem;
-  height: 2rem;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-  z-index: 9;
 }
 .wrapper .main .container.new-register .content form .select-item label {
   font-size: 1.4rem;

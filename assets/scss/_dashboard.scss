@@ -1178,21 +1178,6 @@
                             }
                         }
                     }
-
-                    .input-search {
-                        &::after {
-                            position: absolute;
-                            content: "";
-                            background-image: url('../images/icon_search.png');
-                            background-size: 2rem 2rem;
-                            width: 2rem;
-                            height: 2rem;
-                            top: 50%;
-                            right: 10px;
-                            transform: translateY(-50%);
-                            z-index: 9;
-                        }
-                    }
                     .select-item {
                         label {
                             @include font(1.4rem, 500, 1.8);
