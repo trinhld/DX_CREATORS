@@ -524,6 +524,16 @@ select {
   background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;
 }
 
+.bg-rgb-btn-2 {
+  font-size: 1rem;
+  background: linear-gradient(90deg, #629ECE, #DB8BB7) no-repeat;
+}
+@media screen and (min-width: 768px) {
+  .bg-rgb-btn-2 {
+    font-size: 1.4rem;
+  }
+}
+
 .bg-purple {
   background: #8b8ebb !important;
 }
