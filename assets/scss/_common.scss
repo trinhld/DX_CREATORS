@@ -330,6 +330,10 @@ select {
     }
 }
 
+.mb-10 {
+    margin-bottom: 10rem !important;
+}
+
 .bg-rgb-btn {
     background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;
 }
@@ -480,4 +484,22 @@ select {
     background: red !important;
     border-color: red !important;
     color: white !important;
+}
+
+.text-end-page {
+    padding: 2rem 0;
+    margin-top: auto;
+    text-align: center;
+}
+
+.fix-bottom {
+    position:absolute;
+    width:100%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    left: 50%;
+    bottom:0;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #696969;
 }
