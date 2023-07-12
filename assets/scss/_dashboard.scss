@@ -1312,6 +1312,442 @@
                 }
             }
         }
+
+        .container.manage-course {
+            @include mq_min_1024 {
+                padding: 0.5rem !important;
+                background: linear-gradient(90deg, #c3d5e1, #94d5ff, #ebceff) no-repeat;
+            }
+
+            .content {
+                width: 100%;
+                background-color: $cl-white;
+
+                @include mq_min_1024 {
+                    padding: 2rem 8rem;
+                }
+
+                .notify-success {
+                    @include font(1.4rem, 600, 1.8);
+                    padding: 1rem 1.5rem;
+                    color: $cl-black;
+                    border: 1px solid #e2e2e2;
+                    border-left: 4px solid #8b8ebb;
+                }
+
+                h3 {
+                    margin: 2rem auto 4rem;
+                    padding: 0.5rem 2rem;
+                    @include font(1.8rem, 400, 1.8);
+                    color: $cl-white;
+                    background: linear-gradient(90deg, #e4a1c5, #dbe9f4) no-repeat;
+
+                    @include mq_min_1024 {
+                        margin-top: 4rem;
+                    }
+                }
+
+                h4 {
+                    @include font(2.5rem, 600, 1.8);
+                }
+
+                .hbspt-form {
+                    form {
+                        .field {
+                            // @include flexbox(flex, flex-start, center, nowrap);
+                            display: flex !important;
+                        }
+                    }
+                }
+
+                &>img {
+                    width: 15rem;
+                    height: 15rem;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    margin: 2rem auto;
+
+                    @include mq_min_1024 {
+                        width: 18rem;
+                        height: 18rem;
+                    }
+                }
+
+                form {
+                    label {
+                        position: relative;
+                        display: inline-block;
+                        margin-bottom: .5rem;
+                        font-weight: 600 !important;
+                    }
+                    .data-form {
+                        padding: .8rem 1.5rem;
+                        @include font(1.4rem, 400, 1.8);
+                        font-family: Arial, Helvetica, sans-serif;
+                        color: #696969;
+                        border-top-left-radius: 0 !important;
+                        border-bottom-left-radius: 0 !important;
+                        ul {
+                            list-style: disc;
+                        }
+                    }
+                    .bg-button {
+                        width: 100%;
+                        padding: .5rem 0;
+                        @include font(1.2rem, 500, 1.6);
+                        color: $cl-white;
+                        border: 0;
+                        background: linear-gradient(90deg, #5F9FCE, #DD8BB7) no-repeat;
+                        @include mq_min_768 {
+                            font-size: 1.4rem;
+                        }
+                    }
+
+                    .required {
+                        &::after {
+                            position: absolute;
+                            content: "必須";
+                            top: 50%;
+                            right: -45px;
+                            width: 35px;
+                            transform: translateY(-50%);
+                            font-size: 0.8rem;
+                            color: #ffffff;
+                            text-align: center;
+                            background-color: #f14a4a;
+                            @include mq_min_1024 {
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                    .image-course {
+                        border: 1px solid #dee2e6;
+                        object-fit: cover;
+                    }
+                    .input-group {
+                        position: relative;
+                        @include flexbox(flex, flex-start, normal, nowrap);                   
+                        &>p {
+                            color: $cl-gray;
+                        }
+                        .form-edit {
+                            @include flexbox(flex, flex-start, normal, nowrap);
+
+                            div {
+                                @include flexbox(flex, flex-start, center, nowrap);
+
+                                span {
+                                    margin-right: 1rem;
+                                    @include font(1.4rem, 400, 1.8);
+                                    text-overflow: ellipsis;
+                                    // overflow: hidden;
+                                    -webkit-line-clamp: 1;
+                                    -webkit-box-orient: vertical;
+                                    white-space: nowrap;
+                                }
+                            }
+
+                            &>input,
+                            select,
+                            textarea {
+                                @include font(1.3rem, 400, 1.8);
+                                border-radius: 6px;
+                            }
+
+                            &>select {
+                                max-width: 21rem;
+                            }
+                        }
+                        .form-control {
+                            border-radius: 6px;
+                        }
+                        .input-group-text {
+                            width: 15rem;
+                            height: 100%;
+                            @include font(1.1rem, 400, 1.8);
+                            font-family: Arial, Helvetica, sans-serif;
+                            text-align: center;
+                            color: $cl-black;
+
+                            @include mq_min_1024 {
+                                font-size: 1.4rem;
+                            }
+                            @include mq_min_1024 {
+                                width: 20rem;
+                            }
+                            span {
+                                position: relative;
+                                display: inline-block;
+                            }
+                        }
+                        p {
+                            padding: .8rem 1.5rem;
+                            @include font(1.4rem, 400, 1.8);
+                            font-family: Arial, Helvetica, sans-serif;
+                            border-top-left-radius: 0 !important;
+                            border-bottom-left-radius: 0 !important;
+                            .btn-edit-profile {
+                                width: 14rem;
+                                margin-left: auto;
+                                padding: 0 1rem;
+                                @include font(1.2rem, 500, 1.8);
+                                text-align: center;
+                                border: 1px solid #a8a7a7;
+                                color: $cl-white;
+                                background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;
+                            }
+                        }
+                    }
+                    .select-item {
+                        label {
+                            @include font(1.4rem, 500, 1.8);
+                        }
+
+                        select,
+                        input {
+                            width: 16rem;
+
+                            @include mq_min_1024 {
+                                width: 18rem;
+                            }
+
+                            height: 3.5rem;
+                            @include font(1.2rem, 400, 1.8);
+                            border-radius: 6px;
+                        }
+                    }
+                    .form-select {
+                        font-size: 1.4rem;
+                        color: #696969;
+                    }
+                    .form-check-label {
+                        font-family: Arial, Helvetica, sans-serif;
+                    }
+                    .form-check-input:checked[type=radio] {
+                        background: #000;
+                    }
+                    .form-check-input:checked {
+                        background-color: #000;
+                        border-color: #000;
+                    }
+                    .form-check-input:focus {
+                        box-shadow: none;
+                    }
+                    .course-details {
+                        .accordion-item {
+                            margin-bottom: .8rem;
+                            border: 0;
+                            .accordion-button {
+                                @include font(1.4rem, 400, 1.5);
+                                color: #fff;
+                                border-radius: 5px;
+                                background-color: #8b8ebb;
+                                &:focus {
+                                    box-shadow: none !important;
+                                }
+                                &::after {
+                                    width: 2rem;
+                                    height: 2rem;
+                                    background-size: 2rem;
+                                }
+                                &:hover {
+                                    z-index: inherit;
+                                }
+                            }
+                            .icon-arrow-white {
+                                &::after {
+                                    background-image: url("../images/icon_arrow_white_svg.svg");
+                                }
+                            }
+                            .icon-arrow-purple {
+                                &::after {
+                                    background-image: url("../images/icon_arrow_purple_svg.svg");
+                                }
+                            }
+                            .accordion-body {
+                                img {
+                                    width: 15%;
+                                    border: 1px solid #dee2e6;
+                                    border-radius: 5px;
+                                    object-fit: cover;
+                                }
+                                .data-course-detail {
+                                    padding: .5rem 1rem;
+                                    border-radius: 5px;
+                                    background-color: #fff;
+                                    &:not(:last-child) {
+                                        margin-bottom: .8rem;
+                                    }
+                                }
+                                .dowload-pdf {
+                                    cursor: pointer;
+                                }
+                            }
+                            .chapter > .accordion-button{
+                                color: #212529;
+                                border: 1px solid #8b8ebb;
+                                border-radius: 5px;
+                                background-color: #fff !important;
+                            }
+                        }
+                    }
+                    .list-btn {
+                        margin-top: 4rem;
+                        @include flexbox(flex, center, normal, nowrap);
+    
+                        @include mq_min_1024 {
+                            justify-content: flex-end;
+                        }
+    
+                        .btn-child {
+                            width: 11rem;
+                            padding: 0.5rem 1rem;
+                            @include font(1.4rem, 500, 1.8);
+                            text-align: center;
+                            border: 1px solid #a8a7a7;
+                            background-color: $cl-white;
+    
+                            &:first-child {
+                                color: $cl-black;
+                            }
+    
+                            &:nth-child(2) {
+                                margin-left: 1rem;
+                                color: $cl-white;
+                                background: linear-gradient(90deg, #629ECE, #DB8BB7) no-repeat;
+                            }
+    
+                            &:last-child {
+                                margin-left: 1rem;
+                                color: $cl-white;
+                                background: linear-gradient(90deg, #629ECE, #DB8BB7) no-repeat;
+                            }
+                        }
+                    }
+                    .image-preview {
+                        width: 33.5rem;
+                        height: 19.5rem;
+                        border-radius: 5px;
+                        object-fit: cover;
+                    }
+                    .btn-control {
+                        margin-left: 1.5rem;
+                        .wrap {
+                            @include flexbox(flex, flex-start, center, nowrap);
+                            .btn_upload {
+                                display: inline-block;
+                                overflow: hidden;
+                                position: relative;
+                                color: #ffffff;
+                                font-size: 1.2rem;
+                                background-color: #8b8ebb;
+                                border: 1px solid #ced4da;
+                                padding: .5rem 3.5rem;
+                                border-radius: 8px;
+
+                                input[type="file"] {
+                                    position: absolute;
+                                    height: 100%;
+                                    filter: alpha(opacity=1);
+                                    -moz-opacity: 0;
+                                    opacity: 0;
+                                    font-weight: 400;
+                                    &::after {
+                                        position: absolute;
+                                        content: "";
+                                        top: 0;
+                                        right: 0;
+                                        bottom: 0;
+                                        left: 0;
+                                        background-color: transparent;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+
+                            .btn-delete-image-2 {
+                                margin-left: 1rem;
+                                width: 3rem;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+                .list-btn {
+                    margin-top: 4rem;
+                    @include flexbox(flex, center, normal, nowrap);
+
+                    @include mq_min_1024 {
+                        justify-content: flex-end;
+                    }
+
+                    .btn-child {
+                        width: 11rem;
+                        padding: 0.5rem 1rem;
+                        @include font(1.4rem, 500, 1.8);
+                        text-align: center;
+                        border: 1px solid #a8a7a7;
+                        background-color: $cl-white;
+
+                        &:first-child {
+                            color: $cl-black;
+                        }
+
+                        &:nth-child(2) {
+                            margin-left: 1rem;
+                            color: $cl-white;
+                            background: #8b8ebb
+                        }
+
+                        &:last-child {
+                            margin-left: 1rem;
+                            color: $cl-white;
+                            background: #8b8ebb
+                        }
+                    }
+                }
+
+                .wrapper-table {
+                    overflow-x: auto;
+
+                    table {
+                        width: 100rem;
+
+                        @include mq_min_1024 {
+                            width: 100% !important;
+                        }
+
+                        .icon-pencil-form {
+                            max-width: 2.5rem;
+                            max-height: 1.9rem;
+                            cursor: pointer;
+                        }
+
+                        .icon-trash-form {
+                            max-width: 1.5rem;
+                            max-height: 1.9rem;
+                            margin-left: 1.5rem;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .pagination {
+                    li {
+                        a {
+                            padding: .1rem 1.5rem;
+                            color: #7e7e7e;
+                        }
+                    }
+
+                    .page-item.active .page-link {
+                        color: #fff;
+                        border-color: #dee2e6;
+                        background-color: #8b8ebb;
+                    }
+                }
+            }
+        }
     }
 
     // Footer

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html itemscope="" itemtype="http://schema.org/WebPage" lang="vi">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>DX_CREATORS_UI</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <!-- Date Picker -->
+    <link rel="stylesheet" href="../assets/css/datepicker.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body>
+    <div class="wrapper"  style="font-family: Arial, Helvetica, sans-serif;">
+        <!-- Header -->
+        <header class="header-dashboard">
+            <div class="container">
+                <div class="header-button-show-menu-sp">
+                    <img src="../assets/images/icon_hamberger.png" alt="icon_hamberger" />
+                </div>
+                <a href="#" class="header-logo">
+                    <img src="../assets/images/logo.png" alt="logo" />
+                </a>
+                <div class="list-category-menu">
+                    <ul>
+                        <li>
+                            <div class="title-menu">ホーム</div>
+                        </li>
+                        <li>
+                            <div class="title-menu">アカウント管理</div>
+                            <ul class="sub-menu">
+                                <li>会員管理</li>
+                                <li>管理者管理</li>
+                            </ul>
+                        </li>
+                        <li class="active">
+                            <div class="title-menu">コース管理</div>
+                        </li>
+                        <li>
+                            <div class="title-menu">お知らせ管理</div>
+                        </li>
+                        <li>
+                            <div class="title-menu">イベント管理</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="user-notify">
+                    <img src="../assets/images/icon_bell.png" alt="icon-bell" />
+                    <span>1</span>
+                </div>
+                <div class="header-user">
+                    <div class="wrap-user">
+                        <div class="user-avatar">
+                            <img src="../assets/images/image_user.png" alt="icon_user" />
+                        </div>
+                        <div class="user-show">
+                            <img src="../assets/images/icon_show_user.png" alt="icon_show_user" />
+                        </div>
+                    </div>
+                    <div class="admin-list-option">
+                        <div class="list-option-item">
+                            <div class="title-sub-menu">ホーム</div>
+                            <div class="title-sub-menu">
+                                <a href="#">アカウント管理</a>
+                                <img class="icon-arrow" src="../assets/images/icon_show_user.png" alt="">
+                            </div>
+                            <div class="content-sub-menu">
+                                <ul>
+                                    <li><a href="#">会員管理</a></li>
+                                    <li><a href="#">管理者管理</a></li>
+                                </ul>
+                            </div>
+                            <div class="title-sub-menu">コース管理</div>
+                            <div class="title-sub-menu">
+                                <a href="#">お知らせ管理</a>
+                                <img class="icon-arrow" src="../assets/images/icon_show_user.png" alt="">
+                            </div>
+                            <div class="content-sub-menu">
+                                <ul>
+                                    <li><a href="#">会員管理</a></li>
+                                    <li><a href="#">管理者管理</a></li>
+                                </ul>
+                            </div>
+                            <div class="title-sub-menu">
+                                <a href="#">イベント管理</a>
+                                <img class="icon-arrow" src="../assets/images/icon_show_user.png" alt="">
+                            </div>
+                            <div class="content-sub-menu">
+                                <ul>
+                                    <li><a href="#">会員管理</a></li>
+                                    <li><a href="#">管理者管理</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main -->
+        <section class="main">
+            <div class="container manage-course">
+                <div class="content position-relative min-vh-100 px-md-5">
+                    <!-- <div class="notify-success mt-3">削除が完了しました。</div> -->
+                    <h4 class="my-5 fw-lighter">動画コース一覧</h4>
+                    <form>
+                        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap">
+                            <div class="form-group select-item w-100 w-md-25 me-md-5">
+                                <label for="exampleFormControlSelect1">コース名</label>
+                                <div class="input-group input-search w-100">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group select-item w-100 w-md-25 mt-4 mt-md-0">
+                                <label for="exampleFormControlSelect1">作成日</label>
+                                <div class="wraper d-flex w-100">
+                                    <select class="form-select w-50">
+                                        <option>開始日</option>
+                                        <option>開始日</option>
+                                        <option>開始日</option>
+                                    </select>
+                                    <select class="form-select w-50 ms-4">
+                                        <option>終了日</option>
+                                        <option>終了日</option>
+                                        <option>終了日</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group select-item ms-md-5 w-100 w-md-25 mt-4 mt-md-0">
+                                <label for="exampleFormControlSelect1">更新日</label>
+                                <div class="wraper d-flex w-100">
+                                    <select class="form-select w-50">
+                                        <option>開始日</option>
+                                        <option>開始日</option>
+                                        <option>開始日</option>
+                                    </select>
+                                    <select class="form-select w-50 ms-4">
+                                        <option>終了日</option>
+                                        <option>終了日</option>
+                                        <option>終了日</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group select-item ms-md-5 w-100 w-md-25 mt-4 mt-md-0">
+                                <label for="exampleFormControlSelect1">ステータス</label>
+                                <select class="form-select w-100">
+                                    <option>公開</option>
+                                    <option>公開</option>
+                                    <option>公開</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="list-btn">
+                        <button class="btn-child">クリア</button>
+                        <button class="bg-purple btn-child">検索</button>
+                        <button class="bg-purple btn-child">+ 登録</button>
+                    </div>
+                    <div class="wrapper-table">
+                        <table class="table mt-5 text-center table-bordered">
+                            <thead class="bg-purple text-white">
+                                <tr>
+                                    <th class="fw-light" scope="col">No.</th>
+                                    <th class="fw-light" scope="col"></th>
+                                    <th class="fw-light" scope="col">コース名</th>
+                                    <th class="fw-light" scope="col">ステータス</th>
+                                    <th class="fw-light" scope="col">作成日</th>
+                                    <th class="fw-light" scope="col">更新日</th>
+                                    <th class="fw-light" scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-secondary">
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>
+                                        <img style="width: 5rem; margin: 0 auto;" src="https://images.unsplash.com/photo-1503278501277-e50457741130?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="">
+                                    </td>
+                                    <td>
+                                        <a href="#" class="text-primary">ITリテラシー</a>
+                                    </td>
+                                    <td>公開</td>
+                                    <td>2022-02-22</td>
+                                    <td>2022-02-22</td>
+                                    <td>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#">
+                                                <img src="../assets/images/icon_pencil.png" alt=""
+                                                    class="icon-pencil-form">
+                                            </a>
+                                            <a data-bs-toggle="modal" href="#modalDelete">
+                                                <img src="../assets/images/icon_trash.png" alt=""
+                                                    class="icon-trash-form">
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>
+                                        <img style="width: 5rem; margin: 0 auto;" src="https://images.unsplash.com/photo-1503278501277-e50457741130?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="">
+                                    </td>
+                                    <td>
+                                        <a href="#" class="text-primary">ITリテラシー</a>
+                                    </td>
+                                    <td>公開</td>
+                                    <td>2022-02-22</td>
+                                    <td>2022-02-22</td>
+                                    <td>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#">
+                                                <img src="../assets/images/icon_pencil.png" alt=""
+                                                    class="icon-pencil-form">
+                                            </a>
+                                            <a data-bs-toggle="modal" href="#modalDelete">
+                                                <img src="../assets/images/icon_trash.png" alt=""
+                                                    class="icon-trash-form">
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>
+                                        <img style="width: 5rem; margin: 0 auto;" src="https://images.unsplash.com/photo-1503278501277-e50457741130?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="">
+                                    </td>
+                                    <td>
+                                        <a href="#" class="text-primary">ITリテラシー</a>
+                                    </td>
+                                    <td>公開</td>
+                                    <td>2022-02-22</td>
+                                    <td>2022-02-22</td>
+                                    <td>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#">
+                                                <img src="../assets/images/icon_pencil.png" alt=""
+                                                    class="icon-pencil-form">
+                                            </a>
+                                            <a data-bs-toggle="modal" href="#modalDelete">
+                                                <img src="../assets/images/icon_trash.png" alt=""
+                                                    class="icon-trash-form">
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center justify-content-md-end my-5 pb-5">
+                            <li class="page-item d-flex">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                                <a class="page-link border-start-0" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&lt;</span>
+                                </a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item d-flex">
+                                <a class="page-link border-end-0" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&gt;</span>
+                                </a>
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="text-end-page fix-bottom">© 2023 DX CREATORS. All Rights Reserved.</div>
+                </div>
+                <!-- Modal Logout -->
+                <div class="modal fade modal-logout" id="exampleModalToggle" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-logout-header">削除確認</div>
+                            <div class="modal-body">
+                                <p>削除してもよろしいでしょうか？</p>
+                                <div class="list-btn-modal-logut">
+                                    <div class="btn-back" data-bs-dismiss="modal">キャンセル</div>
+                                    <div class="btn-logout" data-bs-dismiss="modal">OK</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Delete -->
+                <div class="modal fade modal-logout modal-delete" id="modalDelete" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-logout-header bg-purple">ログアウト</div>
+                            <div class="modal-body">
+                                <p>停止処理してもよろしいでしょうか？</p>
+                                <div class="list-btn-modal-logut">
+                                    <div class="btn-back rounded-0" data-bs-dismiss="modal">キャンセル</div>
+                                    <div class="btn-logout rounded-0" data-bs-dismiss="modal">OK</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer"></footer>
+    </div>
+
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/datepicker.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
