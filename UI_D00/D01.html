@@ -1,340 +1,330 @@
 <!DOCTYPE html>
 <html itemscope="" itemtype="http://schema.org/WebPage" lang="vi">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>DX_CREATORS_UI</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+        <!-- Date Picker -->
+        <link rel="stylesheet" href="../assets/css/datepicker.min.css" />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="../assets/css/style.css" />
+    </head>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>DX_CREATORS_UI</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-    <!-- Date Picker -->
-    <link rel="stylesheet" href="../assets/css/datepicker.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../assets/css/style.css" />
-</head>
-
-<body>
-    <div class="wrapper">
-        <!-- Header -->
-        <header class="header-login">
-            <div class="container">
-                <a href="#" class="header-logo">
-                    <img src="../assets/images/logo.png" alt="#" />
-                </a>
-                <a href="#" class="header-text">フロント側のヘッダーメニューを流用</a>
-            </div>
-        </header>
-
-        <!-- Main -->
-        <section class="main">
-            <div class="container new-register">
-                <div class="content">
-                    <h2>新規会員登録</h2>
-                    <form>
-                        <div class="form-group select-item">
-                            <label for="exampleFormControlSelect1">メールアドレス</label>
-                            <div class="input-group d-flex" style="font-family: Arial, Helvetica, sans-serif;">
-                                hogehoge@gmail.com
-                            </div>
-                        </div>
-                        <div class="form-group select-item mt-md-4">
-                            <label for="exampleFormControlSelect1" class="required">生年月日</label>
-                            <div class="input-group d-flex flex-nowrap">
-                                <input type="text" class="form-control w-50 me-3" placeholder="姓：山田">
-                                <input type="text" class="form-control w-50 ms-3" placeholder="名：亮介">
-                            </div>
-                        </div>
-                        <div class="form-group select-item mt-4">
-                            <label for="exampleFormControlSelect1" class="required">お名前（ふりがな）</label>
-                            <div class="input-group d-flex flex-nowrap">
-                                <input type="text" class="form-control w-50 me-3" placeholder="せい：やまだ">
-                                <input type="text" class="form-control w-50 ms-3" placeholder="めい：りょうすけ">
-                            </div>
-                        </div>
-                        <!-- Form Checked -->
-                        <label for="exampleFormControlSelect1" class="required mt-4">性別</label>
-                        <div class="d-flex">
-                            <div class="form-check me-4">
-                                <input class="form-check-input" type="radio" name="exampleRadios" value="option1"
-                                    checked>
-                                <span class="form-check-label">
-                                    女性
-                                </span>
-                            </div>
-                            <div class="form-check mx-5">
-                                <input class="form-check-input" type="radio" name="exampleRadios" value="option1"
-                                    checked>
-                                <span class="form-check-label">
-                                    男性
-                                </span>
-                            </div>
-                            <div class="form-check ms-4">
-                                <input class="form-check-input" type="radio" name="exampleRadios" value="option1"
-                                    checked>
-                                <span class="form-check-label">
-                                    その他
-                                </span>
-                            </div>
-                        </div>
-                        <div class="form-group select-item mt-4 w-md-65">
-                            <label for="exampleFormControlSelect1" class="required">生年月日</label>
-                            <div class="input-group d-flex">
-                                <input type="text" class="form-control datepicker1" placeholder="YYYY/MM/DD">
-                            </div>
-                        </div>
-                        <div class="form-group select-item mt-4">
-                            <label for="exampleFormControlSelect1" class="required">郵便番号</label>
-                            <div class="w-md-65 d-flex">
-                                <div class="input-group w-md-50 d-flex">
-                                    <input type="text" class="form-control w-25 me-3" placeholder="123">
-                                    <input type="text" class="form-control w-25" placeholder="456">
-                                </div>
-                                <button class="w-md-50 ms-4 mx-md-4 border-0 rounded-2 text-light bg-rgb-btn-2">郵便番号から住所を自動入力</button>
-                            </div>
-                        </div>
-                        <div class="form-group select-item mt-4 w-md-65">
-                            <label for="exampleFormControlSelect1" class="required">都道府県</label>
-                            <select class="form-select w-100">
-                                <option>選択してください</option>
-                                <option>選択してください</option>
-                                <option>選択してください</option>
-                            </select>
-                        </div>
-                        <div class="form-group select-item mt-4 w-md-65">
-                            <label for="exampleFormControlSelect1" class="required">市区町村</label>
-                            <div class="input-group d-flex">
-                                <input type="text" class="form-control" placeholder="市区町村">
-                            </div>
-                        </div>
-                        <div class="form-group select-item mt-4 w-md-65">
-                            <label for="exampleFormControlSelect1" class="required">以降の住所</label>
-                            <div class="input-group d-flex">
-                                <input type="text" class="form-control" placeholder="以降の住所">
-                            </div>
-                        </div>
-                        <div class="form-group select-item mt-4 w-md-65">
-                            <label for="exampleFormControlSelect1" class="required">電話番号</label>
-                            <div class="input-group d-flex">
-                                <input type="text" class="form-control w-25" placeholder="例) 03">
-                                <input type="text" class="form-control w-25 mx-4" placeholder="1234">
-                                <input type="text" class="form-control w-25" placeholder="5678">
-                            </div>
-                        </div>
-                        <div class="form-group select-item mt-4 w-md-65">
-                            <label for="exampleFormControlSelect1" class="required">パスワード</label>
-                            <div class="input-group d-flex">
-                                <input type="password" class="form-control" value="12345678">
-                            </div>
-                        </div>
-                        <div class="form-group select-item mt-4 w-md-65">
-                            <label for="exampleFormControlSelect1" class="required">パスワード確認</label>
-                            <div class="input-group d-flex">
-                                <input type="password" class="form-control" value="12345678">
-                            </div>
-                        </div>
-                        <!-- Form Checked -->
-                        <label class="required mt-5">転職希望度</label>
-                        <div>
-                            <div class="form-check mt-2">
-                                <input class="form-check-input" type="radio" name="exampleRadios2" value="option1"
-                                    checked>
-                                <span class="form-check-label">
-                                    今すぐ
-                                </span>
-                            </div>
-                            <div class="form-check mt-2">
-                                <input class="form-check-input" type="radio" name="exampleRadios2" value="option1">
-                                <span class="form-check-label">
-                                    2~3ヶ月
-                                </span>
-                            </div>
-                            <div class="form-check mt-2">
-                                <input class="form-check-input" type="radio" name="exampleRadios2" value="option1">
-                                <span class="form-check-label">
-                                    半年以内
-                                </span>
-                            </div>
-                            <div class="form-check mt-2">
-                                <input class="form-check-input" type="radio" name="exampleRadios2" value="option1">
-                                <span class="form-check-label">
-                                    1年以内
-                                </span>
-                            </div>
-                            <div class="form-check mt-2">
-                                <input class="form-check-input" type="radio" name="exampleRadios2" value="option1">
-                                <span class="form-check-label">
-                                    今は考えていない/分からない
-                                </span>
-                            </div>
-                            <div class="form-check mt-2">
-                                <input class="form-check-input" type="radio" name="exampleRadios2" value="option1">
-                                <span class="form-check-label">
-                                    転職したい企業が見つかったら
-                                </span>
-                            </div>
-                        </div>
-                        <!-- Form CheckBox 1 -->
-                        <label class="required mt-5">現状のお悩み(複数選択可)</label>
-                        <div>
-                            <div class="form-check mt-2">
-                                <input class="form-check-input" type="checkbox" value="" name="checkbox3">
-                                <span class="form-check-label">
-                                    ライフイベントも含めた今後の働き方
-                                </span>
-                              </div>
-                            <div class="form-check mt-2">
-                                <input class="form-check-input" type="checkbox" value="" name="checkbox3">
-                                <span class="form-check-label">
-                                    給与をあげたい
-                                </span>
-                            </div>
-                            <div class="form-check mt-2">
-                                <input class="form-check-input" type="checkbox" value="" name="checkbox3">
-                                <span class="form-check-label">
-                                    残業が多い
-                                </span>
-                            </div>
-                            <div class="form-check mt-2">
-                                <input class="form-check-input" type="checkbox" value="" name="checkbox3">
-                                <span class="form-check-label">
-                                    職場での人間関係の悩み
-                                </span>
-                            </div>
-                            <div class="form-check mt-2">
-                                <input class="form-check-input" type="checkbox" value="" name="checkbox3">
-                                <span class="form-check-label">
-                                    今の職場ではスキルや経験が身につかない
-                                </span>
-                            </div>
-                            <div class="form-check mt-2">
-                                <input class="form-check-input" type="checkbox" value="" name="checkbox3">
-                                <span class="form-check-label">
-                                    将来への漠然とした不安
-                                </span>
-                            </div>
-                            <div class="form-check mt-2">
-                                <input class="form-check-input" type="checkbox" value="" name="checkbox3">
-                                <span class="form-check-label">
-                                    その他(記述式)
-                                </span>
-                            </div>
-                            <div class="form-group select-item mt-2 w-md-65">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" value="" placeholder="その他理由">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Form CheckBox 2 -->
-                        <label class="required mt-5">学びたいこと(複数選択可)</label>
-                        <div>
-                            <div class="form-check mt-2">
-                                <input class="form-check-input" type="checkbox" value="" name="checkbox3">
-                                <span class="form-check-label">
-                                    IT全般
-                                </span>
-                              </div>
-                            <div class="form-check mt-2">
-                                <input class="form-check-input" type="checkbox" value="" name="checkbox3">
-                                <span class="form-check-label">
-                                    プログラミング
-                                </span>
-                            </div>
-                            <div class="form-check mt-2">
-                                <input class="form-check-input" type="checkbox" value="" name="checkbox3">
-                                <span class="form-check-label">
-                                    論理的思考力
-                                </span>
-                            </div>
-                            <div class="form-check mt-2">
-                                <input class="form-check-input" type="checkbox" value="" name="checkbox3">
-                                <span class="form-check-label">
-                                    マネジメントスキル
-                                </span>
-                            </div>
-                            <div class="form-check mt-2">
-                                <input class="form-check-input" type="checkbox" value="" name="checkbox3">
-                                <span class="form-check-label">
-                                    資料作成方法
-                                </span>
-                            </div>
-                            <div class="form-check mt-2">
-                                <input class="form-check-input" type="checkbox" value="" name="checkbox3">
-                                <span class="form-check-label">
-                                    ツールの使い方
-                                </span>
-                            </div>
-                            <div class="form-check mt-2">
-                                <input class="form-check-input" type="checkbox" value="" name="checkbox3">
-                                <span class="form-check-label">
-                                    商談スキル
-                                </span>
-                            </div>
-                            <div class="form-check mt-2">
-                                <input class="form-check-input" type="checkbox" value="" name="checkbox3">
-                                <span class="form-check-label">
-                                    IT業界での働き方について
-                                </span>
-                            </div>
-                            <div class="form-check mt-2">
-                                <input class="form-check-input" type="checkbox" value="" name="checkbox3">
-                                <span class="form-check-label">
-                                    転職ができる書類の書き方
-                                </span>
-                            </div>
-                            <div class="form-check mt-2">
-                                <input class="form-check-input" type="checkbox" value="" name="checkbox3">
-                                <span class="form-check-label">
-                                    面接対策
-                                </span>
-                            </div>
-                            <div class="form-check mt-2">
-                                <input class="form-check-input" type="checkbox" value="" name="checkbox3">
-                                <span class="form-check-label">
-                                    キャリアプランの考え方
-                                </span>
-                            </div>
-                            <div class="form-check mt-2">
-                                <input class="form-check-input" type="checkbox" value="" name="checkbox3">
-                                <span class="form-check-label">
-                                    ビジネスマナー
-                                </span>
-                            </div>
-                            <div class="form-check mt-2">
-                                <input class="form-check-input" type="checkbox" value="" name="checkbox3">
-                                <span class="form-check-label">
-                                    その他(記述式)
-                                </span>
-                            </div>
-                            <div class="form-group select-item mt-2 pb-2 w-md-65">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" value="" placeholder="その他(記述式)">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-check mt-5">
-                            <input class="form-check-input" type="checkbox" value="" name="exampleCheckbox">
-                            <span class="form-check-label" for="flexCheckDefault" style="font-family: ComicSansMS;">
-                                利用規約にご同意の上、確認画面へお進みください。（<a href="#" class="text-decoration-underline">利用規約へ</a>）
-                            </span>
-                        </div>
-                        <div class="list-btn">
-                            <button class="btn-child">確認</button>
-                        </div>
-                        
-                    </form>
+    <body>
+        <div class="wrapper">
+            <!-- Header -->
+            <header class="header-login">
+                <div class="container">
+                    <a href="#" class="header-logo">
+                        <img src="../assets/images/logo.png" alt="#" />
+                    </a>
+                    <a href="#" class="header-text">フロント側のヘッダーメニューを流用</a>
                 </div>
-                <p class="mt-5 text-center font-weight-normal">© 2023 DX CREATORS. All Rights Reserved.</p>
-            </div>
-        </section>
+            </header>
 
-        <!-- Footer -->
-        <footer class="footer"></footer>
-    </div>
+            <!-- Main -->
+            <section class="main">
+                <div class="container new-register">
+                    <div class="content">
+                        <h2>新規会員登録</h2>
+                        <form>
+                            <div class="form-group select-item">
+                                <label for="exampleFormControlSelect1">メールアドレス</label>
+                                <div class="input-group d-flex" style="font-family: Arial, Helvetica, sans-serif">
+                                    hogehoge@gmail.com
+                                </div>
+                            </div>
+                            <div class="form-group select-item mt-md-4">
+                                <label for="exampleFormControlSelect1" class="required">生年月日</label>
+                                <div class="input-group d-flex flex-nowrap">
+                                    <input type="text" class="form-control w-50 me-3" placeholder="姓：山田" />
+                                    <input type="text" class="form-control w-50 ms-3" placeholder="名：亮介" />
+                                </div>
+                            </div>
+                            <div class="form-group select-item mt-4">
+                                <label for="exampleFormControlSelect1" class="required">お名前（ふりがな）</label>
+                                <div class="input-group d-flex flex-nowrap">
+                                    <input type="text" class="form-control w-50 me-3" placeholder="せい：やまだ" />
+                                    <input type="text" class="form-control w-50 ms-3" placeholder="めい：りょうすけ" />
+                                </div>
+                            </div>
+                            <!-- Form Checked -->
+                            <label for="exampleFormControlSelect1" class="required mt-4">性別</label>
+                            <div class="d-flex">
+                                <div class="form-check me-4">
+                                    <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="exampleRadios"
+                                        value="option1"
+                                        checked
+                                    />
+                                    <span class="form-check-label"> 女性 </span>
+                                </div>
+                                <div class="form-check mx-5">
+                                    <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="exampleRadios"
+                                        value="option1"
+                                        checked
+                                    />
+                                    <span class="form-check-label"> 男性 </span>
+                                </div>
+                                <div class="form-check ms-4">
+                                    <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="exampleRadios"
+                                        value="option1"
+                                        checked
+                                    />
+                                    <span class="form-check-label"> その他 </span>
+                                </div>
+                            </div>
+                            <div class="form-group select-item mt-4 w-md-65">
+                                <label for="exampleFormControlSelect1" class="required">生年月日</label>
+                                <div class="input-group d-flex">
+                                    <input type="text" class="form-control datepicker1" placeholder="YYYY/MM/DD" />
+                                </div>
+                            </div>
+                            <div class="form-group select-item mt-4">
+                                <label for="exampleFormControlSelect1" class="required">郵便番号</label>
+                                <div class="w-md-65 d-flex">
+                                    <div class="input-group w-md-50 d-flex">
+                                        <input type="text" class="form-control w-25 me-3" placeholder="123" />
+                                        <input type="text" class="form-control w-25" placeholder="456" />
+                                    </div>
+                                    <button class="w-md-50 ms-4 mx-md-4 border-0 rounded-2 text-light bg-rgb-btn-2">
+                                        郵便番号から住所を自動入力
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="form-group select-item mt-4 w-md-65">
+                                <label for="exampleFormControlSelect1" class="required">都道府県</label>
+                                <select class="form-select w-100">
+                                    <option>選択してください</option>
+                                    <option>選択してください</option>
+                                    <option>選択してください</option>
+                                </select>
+                            </div>
+                            <div class="form-group select-item mt-4 w-md-65">
+                                <label for="exampleFormControlSelect1" class="required">市区町村</label>
+                                <div class="input-group d-flex">
+                                    <input type="text" class="form-control" placeholder="市区町村" />
+                                </div>
+                            </div>
+                            <div class="form-group select-item mt-4 w-md-65">
+                                <label for="exampleFormControlSelect1" class="required">以降の住所</label>
+                                <div class="input-group d-flex">
+                                    <input type="text" class="form-control" placeholder="以降の住所" />
+                                </div>
+                            </div>
+                            <div class="form-group select-item mt-4 w-md-65">
+                                <label for="exampleFormControlSelect1" class="required">電話番号</label>
+                                <div class="input-group d-flex">
+                                    <input type="text" class="form-control w-25" placeholder="例) 03" />
+                                    <input type="text" class="form-control w-25 mx-4" placeholder="1234" />
+                                    <input type="text" class="form-control w-25" placeholder="5678" />
+                                </div>
+                            </div>
+                            <div class="form-group select-item mt-4 w-md-65">
+                                <label for="exampleFormControlSelect1" class="required">パスワード</label>
+                                <div class="input-group d-flex">
+                                    <input type="password" class="form-control" value="12345678" />
+                                </div>
+                            </div>
+                            <div class="form-group select-item mt-4 w-md-65">
+                                <label for="exampleFormControlSelect1" class="required">パスワード確認</label>
+                                <div class="input-group d-flex">
+                                    <input type="password" class="form-control" value="12345678" />
+                                </div>
+                            </div>
+                            <!-- Form Checked -->
+                            <label class="required mt-5">転職希望度</label>
+                            <div>
+                                <div class="form-check mt-2">
+                                    <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="exampleRadios2"
+                                        value="option1"
+                                        checked
+                                    />
+                                    <span class="form-check-label"> 今すぐ </span>
+                                </div>
+                                <div class="form-check mt-2">
+                                    <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="exampleRadios2"
+                                        value="option1"
+                                    />
+                                    <span class="form-check-label"> 2~3ヶ月 </span>
+                                </div>
+                                <div class="form-check mt-2">
+                                    <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="exampleRadios2"
+                                        value="option1"
+                                    />
+                                    <span class="form-check-label"> 半年以内 </span>
+                                </div>
+                                <div class="form-check mt-2">
+                                    <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="exampleRadios2"
+                                        value="option1"
+                                    />
+                                    <span class="form-check-label"> 1年以内 </span>
+                                </div>
+                                <div class="form-check mt-2">
+                                    <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="exampleRadios2"
+                                        value="option1"
+                                    />
+                                    <span class="form-check-label"> 今は考えていない/分からない </span>
+                                </div>
+                                <div class="form-check mt-2">
+                                    <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="exampleRadios2"
+                                        value="option1"
+                                    />
+                                    <span class="form-check-label"> 転職したい企業が見つかったら </span>
+                                </div>
+                            </div>
+                            <!-- Form CheckBox 1 -->
+                            <label class="required mt-5">現状のお悩み(複数選択可)</label>
+                            <div>
+                                <div class="form-check mt-2">
+                                    <input class="form-check-input" type="checkbox" value="" name="checkbox3" />
+                                    <span class="form-check-label"> ライフイベントも含めた今後の働き方 </span>
+                                </div>
+                                <div class="form-check mt-2">
+                                    <input class="form-check-input" type="checkbox" value="" name="checkbox3" />
+                                    <span class="form-check-label"> 給与をあげたい </span>
+                                </div>
+                                <div class="form-check mt-2">
+                                    <input class="form-check-input" type="checkbox" value="" name="checkbox3" />
+                                    <span class="form-check-label"> 残業が多い </span>
+                                </div>
+                                <div class="form-check mt-2">
+                                    <input class="form-check-input" type="checkbox" value="" name="checkbox3" />
+                                    <span class="form-check-label"> 職場での人間関係の悩み </span>
+                                </div>
+                                <div class="form-check mt-2">
+                                    <input class="form-check-input" type="checkbox" value="" name="checkbox3" />
+                                    <span class="form-check-label"> 今の職場ではスキルや経験が身につかない </span>
+                                </div>
+                                <div class="form-check mt-2">
+                                    <input class="form-check-input" type="checkbox" value="" name="checkbox3" />
+                                    <span class="form-check-label"> 将来への漠然とした不安 </span>
+                                </div>
+                                <div class="form-check mt-2">
+                                    <input class="form-check-input" type="checkbox" value="" name="checkbox3" />
+                                    <span class="form-check-label"> その他(記述式) </span>
+                                </div>
+                                <div class="form-group select-item mt-2 w-md-65">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" value="" placeholder="その他理由" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Form CheckBox 2 -->
+                            <label class="required mt-5">学びたいこと(複数選択可)</label>
+                            <div>
+                                <div class="form-check mt-2">
+                                    <input class="form-check-input" type="checkbox" value="" name="checkbox3" />
+                                    <span class="form-check-label"> IT全般 </span>
+                                </div>
+                                <div class="form-check mt-2">
+                                    <input class="form-check-input" type="checkbox" value="" name="checkbox3" />
+                                    <span class="form-check-label"> プログラミング </span>
+                                </div>
+                                <div class="form-check mt-2">
+                                    <input class="form-check-input" type="checkbox" value="" name="checkbox3" />
+                                    <span class="form-check-label"> 論理的思考力 </span>
+                                </div>
+                                <div class="form-check mt-2">
+                                    <input class="form-check-input" type="checkbox" value="" name="checkbox3" />
+                                    <span class="form-check-label"> マネジメントスキル </span>
+                                </div>
+                                <div class="form-check mt-2">
+                                    <input class="form-check-input" type="checkbox" value="" name="checkbox3" />
+                                    <span class="form-check-label"> 資料作成方法 </span>
+                                </div>
+                                <div class="form-check mt-2">
+                                    <input class="form-check-input" type="checkbox" value="" name="checkbox3" />
+                                    <span class="form-check-label"> ツールの使い方 </span>
+                                </div>
+                                <div class="form-check mt-2">
+                                    <input class="form-check-input" type="checkbox" value="" name="checkbox3" />
+                                    <span class="form-check-label"> 商談スキル </span>
+                                </div>
+                                <div class="form-check mt-2">
+                                    <input class="form-check-input" type="checkbox" value="" name="checkbox3" />
+                                    <span class="form-check-label"> IT業界での働き方について </span>
+                                </div>
+                                <div class="form-check mt-2">
+                                    <input class="form-check-input" type="checkbox" value="" name="checkbox3" />
+                                    <span class="form-check-label"> 転職ができる書類の書き方 </span>
+                                </div>
+                                <div class="form-check mt-2">
+                                    <input class="form-check-input" type="checkbox" value="" name="checkbox3" />
+                                    <span class="form-check-label"> 面接対策 </span>
+                                </div>
+                                <div class="form-check mt-2">
+                                    <input class="form-check-input" type="checkbox" value="" name="checkbox3" />
+                                    <span class="form-check-label"> キャリアプランの考え方 </span>
+                                </div>
+                                <div class="form-check mt-2">
+                                    <input class="form-check-input" type="checkbox" value="" name="checkbox3" />
+                                    <span class="form-check-label"> ビジネスマナー </span>
+                                </div>
+                                <div class="form-check mt-2">
+                                    <input class="form-check-input" type="checkbox" value="" name="checkbox3" />
+                                    <span class="form-check-label"> その他(記述式) </span>
+                                </div>
+                                <div class="form-group select-item mt-2 pb-2 w-md-65">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" value="" placeholder="その他(記述式)" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-check mt-5">
+                                <input class="form-check-input" type="checkbox" value="" name="exampleCheckbox" />
+                                <span class="form-check-label" for="flexCheckDefault" style="font-family: ComicSansMS">
+                                    利用規約にご同意の上、確認画面へお進みください。（<a
+                                        href="#"
+                                        class="text-decoration-underline"
+                                        >利用規約へ</a
+                                    >）
+                                </span>
+                            </div>
+                            <div class="list-btn">
+                                <button class="btn-child">確認</button>
+                            </div>
+                        </form>
+                    </div>
+                    <p class="mt-5 text-center font-weight-normal">© 2023 DX CREATORS. All Rights Reserved.</p>
+                </div>
+            </section>
 
-    <script src="../assets/js/jquery-3.6.0.min.js"></script>
-    <script src="../assets/js/bootstrap.min.js"></script>
-    <script src="../assets/js/datepicker.min.js"></script>
-    <script src="../assets/js/main.js"></script>
-</body>
+            <!-- Footer -->
+            <footer class="footer"></footer>
+        </div>
 
+        <script src="../assets/js/jquery-3.6.0.min.js"></script>
+        <script src="../assets/js/bootstrap.min.js"></script>
+        <script src="../assets/js/datepicker.min.js"></script>
+        <script src="../assets/js/main.js"></script>
+    </body>
 </html>

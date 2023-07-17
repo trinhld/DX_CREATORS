@@ -24,8 +24,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -33,16 +42,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -188,7 +201,8 @@ select {
   background-size: 15px 20px !important;
 }
 
-tr, td {
+tr,
+td {
   vertical-align: middle;
 }
 
@@ -551,7 +565,7 @@ tr, td {
 
 .bg-rgb-btn-2 {
   font-size: 1rem;
-  background: linear-gradient(90deg, #629ECE, #DB8BB7) no-repeat;
+  background: linear-gradient(90deg, #629ece, #db8bb7) no-repeat;
 }
 @media screen and (min-width: 768px) {
   .bg-rgb-btn-2 {
@@ -655,12 +669,13 @@ tr, td {
   background: transparent;
 }
 
-.btn-add-lesson, .btn-add-chapter {
+.btn-add-lesson,
+.btn-add-chapter {
   padding: 0 1.25rem;
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.5;
-  color: #A1A0A0;
+  color: #a1a0a0;
   cursor: pointer;
 }
 
@@ -717,7 +732,8 @@ tr, td {
   right: 8px;
   transform: translateY(-50%) rotate(180deg);
 }
-.datepicker-content .datepicker-title .datepicker-next, .datepicker-content .datepicker-title .datepicker-prev {
+.datepicker-content .datepicker-title .datepicker-next,
+.datepicker-content .datepicker-title .datepicker-prev {
   font-size: 2.2rem !important;
   font-weight: 600;
   color: #888888;
@@ -2078,7 +2094,7 @@ tr, td {
 .wrapper .main .container.new-register {
   padding: 1.8rem;
   color: #575757;
-  background: linear-gradient(90deg, #e096be, #CDC6DF, #bcdeff) no-repeat;
+  background: linear-gradient(90deg, #e096be, #cdc6df, #bcdeff) no-repeat;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .main .container.new-register {
@@ -2146,7 +2162,7 @@ tr, td {
   line-height: 1.6;
   color: #ffffff;
   border: 0;
-  background: linear-gradient(90deg, #5F9FCE, #DD8BB7) no-repeat;
+  background: linear-gradient(90deg, #5f9fce, #dd8bb7) no-repeat;
 }
 @media screen and (min-width: 768px) {
   .wrapper .main .container.new-register .content form .bg-button {
@@ -2319,12 +2335,12 @@ tr, td {
 .wrapper .main .container.new-register .content form .list-btn .btn-child:nth-child(2) {
   margin-left: 1rem;
   color: #ffffff;
-  background: linear-gradient(90deg, #629ECE, #DB8BB7) no-repeat;
+  background: linear-gradient(90deg, #629ece, #db8bb7) no-repeat;
 }
 .wrapper .main .container.new-register .content form .list-btn .btn-child:last-child {
   margin-left: 1rem;
   color: #ffffff;
-  background: linear-gradient(90deg, #629ECE, #DB8BB7) no-repeat;
+  background: linear-gradient(90deg, #629ece, #db8bb7) no-repeat;
 }
 .wrapper .main .container.new-register > p {
   font-size: 1.2rem;
@@ -2457,7 +2473,7 @@ tr, td {
   line-height: 1.6;
   color: #ffffff;
   border: 0;
-  background: linear-gradient(90deg, #5F9FCE, #DD8BB7) no-repeat;
+  background: linear-gradient(90deg, #5f9fce, #dd8bb7) no-repeat;
 }
 @media screen and (min-width: 768px) {
   .wrapper .main .container.manage-course .content form .bg-button {
@@ -2693,12 +2709,12 @@ tr, td {
 .wrapper .main .container.manage-course .content form .list-btn .btn-child:nth-child(2) {
   margin-left: 1rem;
   color: #ffffff;
-  background: linear-gradient(90deg, #629ECE, #DB8BB7) no-repeat;
+  background: linear-gradient(90deg, #629ece, #db8bb7) no-repeat;
 }
 .wrapper .main .container.manage-course .content form .list-btn .btn-child:last-child {
   margin-left: 1rem;
   color: #ffffff;
-  background: linear-gradient(90deg, #629ECE, #DB8BB7) no-repeat;
+  background: linear-gradient(90deg, #629ece, #db8bb7) no-repeat;
 }
 .wrapper .main .container.manage-course .content form .image-preview {
   width: 33.5rem;

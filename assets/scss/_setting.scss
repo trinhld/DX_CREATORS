@@ -1,10 +1,9 @@
 // @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap");
 
 @font-face {
-  font-family: ComicSansMS;
-  src: url("../fonts/ComicSansMS.ttf") format("truetype"),
-    url("../fonts/ComicSansMS.woff") format("woff"),
-    url("../fonts/ComicSansMS.woff2") format("woff2");
+    font-family: ComicSansMS;
+    src: url('../fonts/ComicSansMS.ttf') format('truetype'), url('../fonts/ComicSansMS.woff') format('woff'),
+        url('../fonts/ComicSansMS.woff2') format('woff2');
 }
 
 $cl-white: #ffffff;
@@ -16,98 +15,97 @@ $cl-green: #008060;
 $cl-orange: #ff7a59;
 $cl-red: #e65100;
 
-
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  font-size: 62.5%;
+    font-size: 62.5%;
 }
 
 body {
-  @include font(1.4rem, 400, 1.5);
-  font-family: "ComicSansMS", sans-serif;
-  // font-family: "Quicksand", sans-serif;
+    @include font(1.4rem, 400, 1.5);
+    font-family: 'ComicSansMS', sans-serif;
+    // font-family: "Quicksand", sans-serif;
 }
 
 img {
-  display: block;
-  max-width: 100%;
-  object-fit: cover;
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
 }
 
 a {
-  display: inline-block;
-  text-decoration: none;
-  color: inherit;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
 }
 
 input,
 select {
-  width: 100%;
-  line-height: normal;
+    width: 100%;
+    line-height: normal;
 }
 
 //==============================
 .wrapper {
-  max-width: 100%;
-  margin: 0 auto;
+    max-width: 100%;
+    margin: 0 auto;
 }
 .container {
-  margin: 0 auto;
-  padding: 0 15px;
-  @include mq_min_576 {
-    max-width: 540px;
-  }
-  @include mq_min_768 {
-    max-width: 720px;
-  }
-  @include mq_min_1024 {
-    max-width: 960px;
-  }
-  @include mq_min_1200 {
-    max-width: 1170px;
-  }
+    margin: 0 auto;
+    padding: 0 15px;
+    @include mq_min_576 {
+        max-width: 540px;
+    }
+    @include mq_min_768 {
+        max-width: 720px;
+    }
+    @include mq_min_1024 {
+        max-width: 960px;
+    }
+    @include mq_min_1200 {
+        max-width: 1170px;
+    }
 }
 .container-fluid {
-  max-width: 100%;
+    max-width: 100%;
 }
 .d-none {
-  display: none;
+    display: none;
 }
 .d-block {
-  display: block;
+    display: block;
 }
 .d-flex {
-  display: flex;
+    display: flex;
 }
 .justify-content-between {
-  justify-content: space-between;
+    justify-content: space-between;
 }
 .justify-content-center {
-  justify-content: center;
+    justify-content: center;
 }
 .justify-content-start {
-  justify-content: flex-start;
+    justify-content: flex-start;
 }
 .justify-content-end {
-  justify-content: flex-end;
+    justify-content: flex-end;
 }
 .align-items-center {
-  align-items: center;
+    align-items: center;
 }
 .align-items-start {
-  align-items: flex-start;
+    align-items: flex-start;
 }
 .align-items-end {
-  align-items: flex-end;
+    align-items: flex-end;
 }
 .wrap {
-  flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 .nowrap {
-  flex-wrap: nowrap;
+    flex-wrap: nowrap;
 }

@@ -8,12 +8,13 @@ select {
     -webkit-appearance: none;
     -moz-appearance: none;
     background: transparent;
-    background-image: url("../images/icon_arrow_select.png") !important;
+    background-image: url('../images/icon_arrow_select.png') !important;
     background-repeat: no-repeat;
     background-size: 15px 20px !important;
 }
 
-tr, td {
+tr,
+td {
     vertical-align: middle;
 }
 
@@ -69,7 +70,7 @@ tr, td {
     overflow: hidden;
     &::after {
         position: absolute;
-        content: "";
+        content: '';
         left: 0;
         right: 0;
         bottom: 0;
@@ -100,7 +101,7 @@ tr, td {
         }
 
         .title-sub-menu {
-            @include flexbox(flex,center, center, nowrap);
+            @include flexbox(flex, center, center, nowrap);
             padding: 1.5rem 1rem;
             @include font(1.4rem, 600, 1.8);
             color: $cl-gray;
@@ -123,7 +124,7 @@ tr, td {
             .handle-arrow {
                 transition: all 0.3s ease !important;
                 transform: rotate(0deg) !important;
-              }
+            }
         }
 
         .content-sub-menu {
@@ -167,7 +168,7 @@ tr, td {
                 .handle-arrow {
                     transition: all 0.3s ease !important;
                     transform: rotate(0deg) !important;
-                  }
+                }
             }
 
             .content-sub-menu {
@@ -291,7 +292,6 @@ tr, td {
             margin-left: 2rem;
         }
     }
-
 }
 
 .text-inline {
@@ -360,7 +360,7 @@ tr, td {
 }
 .bg-rgb-btn-2 {
     font-size: 1rem;
-    background: linear-gradient(90deg, #629ECE, #DB8BB7) no-repeat;
+    background: linear-gradient(90deg, #629ece, #db8bb7) no-repeat;
     @include mq_min_768 {
         font-size: 1.4rem;
     }
@@ -379,7 +379,7 @@ tr, td {
 .input-search {
     &::after {
         position: absolute;
-        content: "";
+        content: '';
         background-image: url('../images/icon_search.png');
         background-size: 2rem 2rem;
         width: 2rem;
@@ -395,11 +395,11 @@ tr, td {
     position: relative;
     &::after {
         position: absolute;
-        content: "";
+        content: '';
         top: 50%;
         left: 8px;
         transform: translateY(-50%);
-        background-image: url("../images/icon_card.png");
+        background-image: url('../images/icon_card.png');
         background-repeat: no-repeat;
         background-size: 2rem 2rem;
         width: 2rem;
@@ -439,7 +439,7 @@ tr, td {
 .btn-upload-file {
     position: relative;
     width: 15rem;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 8px;
     background-color: #8b8ebb;
     cursor: pointer;
@@ -459,10 +459,11 @@ tr, td {
     background: transparent;
 }
 
-.btn-add-lesson, .btn-add-chapter {
+.btn-add-lesson,
+.btn-add-chapter {
     padding: 0 1.25rem;
     @include font(1.5rem, 500, 1.5);
-    color: #A1A0A0;
+    color: #a1a0a0;
     cursor: pointer;
 }
 
@@ -470,14 +471,12 @@ tr, td {
     cursor: pointer;
 }
 
-
-
 .datepicker-arrow {
     border-bottom-color: #ccc;
 }
 
 .datepicker-content {
-    padding: .5rem;
+    padding: 0.5rem;
     background-color: #fff;
     border-top-color: #ccc;
     border-radius: 10px;
@@ -510,7 +509,7 @@ tr, td {
                 border-radius: 3px;
                 &::after {
                     position: absolute;
-                    content: "⌃";
+                    content: '⌃';
                     color: #888;
                     top: 45%;
                     right: 8px;
@@ -518,7 +517,8 @@ tr, td {
                 }
             }
         }
-        .datepicker-next, .datepicker-prev {
+        .datepicker-next,
+        .datepicker-prev {
             font-size: 2.2rem !important;
             font-weight: 600;
             color: #888888;
@@ -537,7 +537,7 @@ tr, td {
 //     }
 // }
 
-.ui-highlight .ui-state-default{
+.ui-highlight .ui-state-default {
     background: red !important;
     border-color: red !important;
     color: white !important;
@@ -550,12 +550,12 @@ tr, td {
 }
 
 .fix-bottom {
-    position:absolute;
-    width:100%;
+    position: absolute;
+    width: 100%;
     margin: 0 auto;
     padding: 2rem 0 1rem;
     left: 50%;
-    bottom:0;
+    bottom: 0;
     transform: translateX(-50%);
     text-align: center;
     color: #696969;

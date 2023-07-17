@@ -1,5 +1,4 @@
 .wrapper {
-
     // Header
     .header-dashboard {
         position: relative;
@@ -47,7 +46,7 @@
                         position: relative;
                         padding: 1.5rem 2.5rem;
                         @include font(1.6rem, 600, 1.6);
-                        transition: all .3s ease;
+                        transition: all 0.3s ease;
                         cursor: pointer;
                         .sub-menu {
                             position: absolute;
@@ -56,7 +55,7 @@
                             right: 0;
                             margin-top: 2rem;
                             color: #212529;
-                            transition: all .3s ease;
+                            transition: all 0.3s ease;
                             background-color: #fff;
                             opacity: 0;
                             visibility: hidden;
@@ -64,7 +63,7 @@
                                 padding: 1rem;
                                 font-size: 1.4rem;
                                 text-align: center;
-                                transition: all .3s ease;
+                                transition: all 0.3s ease;
                                 &:hover {
                                     color: #fff;
                                     background-color: #8b8ebb;
@@ -75,7 +74,7 @@
                             color: #fff;
                             background-color: #8b8ebb;
                         }
-                        &:hover .sub-menu{
+                        &:hover .sub-menu {
                             opacity: 1;
                             visibility: visible;
                         }
@@ -113,7 +112,7 @@
 
                 @include mq_min_1024 {
                     padding: 0.5rem 5rem;
-                    margin: .84rem 0;
+                    margin: 0.84rem 0;
                     font-size: 1.6rem;
                 }
             }
@@ -124,7 +123,7 @@
                 margin-right: 2rem;
                 cursor: pointer;
 
-                &>span {
+                & > span {
                     position: absolute;
                     height: 1.4rem;
                     width: 1.4rem;
@@ -283,7 +282,7 @@
 
                         &::before {
                             position: absolute;
-                            content: "";
+                            content: '';
                             top: -3rem;
                             left: 50%;
                             transform: translateX(-50%);
@@ -341,7 +340,7 @@
                     }
                 }
 
-                &>img {
+                & > img {
                     width: 15rem;
                     height: 15rem;
                     object-fit: cover;
@@ -358,7 +357,7 @@
                     .input-group {
                         height: 3.5rem;
 
-                        &>p {
+                        & > p {
                             color: $cl-gray;
                         }
 
@@ -379,7 +378,7 @@
                                     white-space: nowrap;
                                 }
 
-                                &>input {
+                                & > input {
                                     max-width: 21rem;
                                     border-radius: 6px;
                                 }
@@ -410,7 +409,7 @@
                             align-items: center;
                             max-width: 19rem;
 
-                            &>img {
+                            & > img {
                                 width: 18rem;
                                 height: 18rem;
                                 border-radius: 50%;
@@ -432,7 +431,7 @@
                                     border-radius: 6px;
 
                                     // cursor: pointer;
-                                    input[type="file"] {
+                                    input[type='file'] {
                                         height: 100%;
                                         position: absolute;
                                         filter: alpha(opacity=1);
@@ -454,7 +453,7 @@
                         .required {
                             &::after {
                                 position: absolute;
-                                content: "必須";
+                                content: '必須';
                                 top: 50%;
                                 right: 5px;
                                 width: 35px;
@@ -494,7 +493,7 @@
                             .input-group-text {
                                 height: 100%;
                             }
-                        }   
+                        }
                         p {
                             height: 7rem !important;
                             @include mq_min_768 {
@@ -503,7 +502,7 @@
                             }
                             & > a {
                                 display: block;
-                                margin-top: .5rem;
+                                margin-top: 0.5rem;
                                 @include mq_min_768 {
                                     display: inline-block;
                                     margin-top: 0;
@@ -570,7 +569,7 @@
                     }
                 }
 
-                &>img {
+                & > img {
                     width: 15rem;
                     height: 15rem;
                     object-fit: cover;
@@ -587,7 +586,7 @@
                     .input-group {
                         height: 3.5rem;
 
-                        &>p {
+                        & > p {
                             color: $cl-gray;
                         }
 
@@ -608,7 +607,7 @@
                                     white-space: nowrap;
                                 }
 
-                                &>input {
+                                & > input {
                                     max-width: 21rem;
                                     border-radius: 6px;
                                 }
@@ -640,7 +639,7 @@
                             align-items: center;
                             max-width: 19rem;
 
-                            &>img {
+                            & > img {
                                 width: 16rem;
                                 height: 16rem;
                                 border-radius: 50%;
@@ -662,7 +661,7 @@
                                     border-radius: 6px;
 
                                     // cursor: pointer;
-                                    input[type="file"] {
+                                    input[type='file'] {
                                         height: 100%;
                                         position: absolute;
                                         filter: alpha(opacity=1);
@@ -684,7 +683,7 @@
                         .required {
                             &::after {
                                 position: absolute;
-                                content: "必須";
+                                content: '必須';
                                 top: 50%;
                                 right: 5px;
                                 width: 35px;
@@ -794,7 +793,7 @@
                     }
                 }
 
-                &>img {
+                & > img {
                     width: 15rem;
                     height: 15rem;
                     object-fit: cover;
@@ -812,7 +811,7 @@
                         position: relative;
                         height: 3.5rem;
 
-                        &>p {
+                        & > p {
                             color: $cl-gray;
                         }
 
@@ -833,14 +832,14 @@
                                 }
                             }
 
-                            &>input,
+                            & > input,
                             select,
                             textarea {
                                 @include font(1.3rem, 400, 1.8);
                                 border-radius: 6px;
                             }
 
-                            &>select {
+                            & > select {
                                 max-width: 21rem;
                             }
                         }
@@ -869,7 +868,7 @@
                             align-items: center;
                             max-width: 19rem;
 
-                            &>img {
+                            & > img {
                                 width: 18rem;
                                 height: 18rem;
                                 border-radius: 50%;
@@ -891,7 +890,7 @@
                                     border-radius: 6px;
 
                                     // cursor: pointer;
-                                    input[type="file"] {
+                                    input[type='file'] {
                                         height: 100%;
                                         position: absolute;
                                         filter: alpha(opacity=1);
@@ -913,7 +912,7 @@
                         .required {
                             &::after {
                                 position: absolute;
-                                content: "必須";
+                                content: '必須';
                                 top: 50%;
                                 right: 5px;
                                 width: 35px;
@@ -948,7 +947,7 @@
                     .input-search {
                         &::after {
                             position: absolute;
-                            content: "";
+                            content: '';
                             background-image: url('../images/icon_search.png');
                             background-size: 2rem 2rem;
                             width: 2rem;
@@ -1003,13 +1002,13 @@
                         &:nth-child(2) {
                             margin-left: 1rem;
                             color: $cl-white;
-                            background: #8b8ebb
+                            background: #8b8ebb;
                         }
 
                         &:last-child {
                             margin-left: 1rem;
                             color: $cl-white;
-                            background: #8b8ebb
+                            background: #8b8ebb;
                         }
                     }
                 }
@@ -1042,7 +1041,7 @@
                 .pagination {
                     li {
                         a {
-                            padding: .1rem 1.5rem;
+                            padding: 0.1rem 1.5rem;
                             color: #7e7e7e;
                         }
                     }
@@ -1059,22 +1058,22 @@
         .container.new-register {
             padding: 1.8rem;
             color: #575757;
-            background: linear-gradient(90deg, #e096be, #CDC6DF, #bcdeff) no-repeat;
-            @include mq_min_1024{
+            background: linear-gradient(90deg, #e096be, #cdc6df, #bcdeff) no-repeat;
+            @include mq_min_1024 {
                 padding: 3.5rem 8.5rem;
             }
             .content {
                 padding: 1.5rem 1.5rem 3rem 1.5rem;
                 background-color: #fff;
                 box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-                @include mq_min_1024{
+                @include mq_min_1024 {
                     padding: 2rem 8rem 4.5rem;
                     border-radius: 6px;
                 }
                 h2 {
                     margin-bottom: 1rem;
                     @include font(1.8rem, 600, 1.8);
-                    @include mq_min_1024{
+                    @include mq_min_1024 {
                         margin-bottom: 2.5rem;
                         font-size: 2.2rem;
                         text-align: center;
@@ -1083,7 +1082,7 @@
                 h3 {
                     margin-bottom: 2rem;
                     @include font(1.8rem, 600, 1.8);
-                    @include mq_min_1024{
+                    @include mq_min_1024 {
                         font-size: 2.2rem;
                         text-align: center;
                     }
@@ -1092,7 +1091,7 @@
                     display: block;
                     margin-bottom: 2rem;
                     text-align: left;
-                    @include mq_min_1024{
+                    @include mq_min_1024 {
                         margin-bottom: 4rem;
                         text-align: center;
                     }
@@ -1101,25 +1100,25 @@
                     label {
                         position: relative;
                         display: inline-block;
-                        margin-bottom: .5rem;
+                        margin-bottom: 0.5rem;
                         font-weight: 600 !important;
                     }
                     .bg-button {
                         width: 100%;
-                        padding: .5rem 0;
+                        padding: 0.5rem 0;
                         @include font(1.2rem, 500, 1.6);
                         color: $cl-white;
                         border: 0;
-                        background: linear-gradient(90deg, #5F9FCE, #DD8BB7) no-repeat;
+                        background: linear-gradient(90deg, #5f9fce, #dd8bb7) no-repeat;
                         @include mq_min_768 {
                             font-size: 1.4rem;
                         }
-                        }
+                    }
 
                     .required {
                         &::after {
                             position: absolute;
-                            content: "必須";
+                            content: '必須';
                             top: 50%;
                             right: -10px;
                             width: 35px;
@@ -1135,8 +1134,8 @@
                     }
                     .input-group {
                         position: relative;
-                        @include flexbox(flex, flex-start, normal, nowrap);                   
-                        &>p {
+                        @include flexbox(flex, flex-start, normal, nowrap);
+                        & > p {
                             color: $cl-gray;
                         }
                         .form-edit {
@@ -1156,14 +1155,14 @@
                                 }
                             }
 
-                            &>input,
+                            & > input,
                             select,
                             textarea {
                                 @include font(1.3rem, 400, 1.8);
                                 border-radius: 6px;
                             }
 
-                            &>select {
+                            & > select {
                                 max-width: 21rem;
                             }
                         }
@@ -1189,7 +1188,7 @@
                             }
                         }
                         p {
-                            padding: .8rem 1.5rem;
+                            padding: 0.8rem 1.5rem;
                             @include font(1.4rem, 400, 1.8);
                             font-family: Arial, Helvetica, sans-serif;
                             border-top-left-radius: 0 !important;
@@ -1227,7 +1226,7 @@
                     .form-check-label {
                         font-family: Arial, Helvetica, sans-serif;
                     }
-                    .form-check-input:checked[type=radio] {
+                    .form-check-input:checked[type='radio'] {
                         background: #000;
                     }
                     .form-check-input:checked {
@@ -1240,11 +1239,11 @@
                     .list-btn {
                         margin-top: 4rem;
                         @include flexbox(flex, center, normal, nowrap);
-    
+
                         @include mq_min_1024 {
                             justify-content: flex-end;
                         }
-    
+
                         .btn-child {
                             width: 11rem;
                             padding: 0.5rem 1rem;
@@ -1252,21 +1251,21 @@
                             text-align: center;
                             border: 1px solid #a8a7a7;
                             background-color: $cl-white;
-    
+
                             &:first-child {
                                 color: $cl-black;
                             }
-    
+
                             &:nth-child(2) {
                                 margin-left: 1rem;
                                 color: $cl-white;
-                                background: linear-gradient(90deg, #629ECE, #DB8BB7) no-repeat;
+                                background: linear-gradient(90deg, #629ece, #db8bb7) no-repeat;
                             }
-    
+
                             &:last-child {
                                 margin-left: 1rem;
                                 color: $cl-white;
-                                background: linear-gradient(90deg, #629ECE, #DB8BB7) no-repeat;
+                                background: linear-gradient(90deg, #629ece, #db8bb7) no-repeat;
                             }
                         }
                     }
@@ -1286,7 +1285,7 @@
                 }
                 .content {
                     height: 90vh;
-                    @include mq_min_1024{
+                    @include mq_min_1024 {
                         height: 45rem;
                         padding: 5rem 8rem;
                     }
@@ -1301,12 +1300,12 @@
             }
             .d031 {
                 padding: 0;
-                @include mq_min_1024{
+                @include mq_min_1024 {
                     padding: 3.5rem 6.5rem;
                 }
                 .content {
                     height: 90vh;
-                    @include mq_min_1024{
+                    @include mq_min_1024 {
                         height: 45rem;
                     }
                 }
@@ -1360,7 +1359,7 @@
                     }
                 }
 
-                &>img {
+                & > img {
                     width: 15rem;
                     height: 15rem;
                     object-fit: cover;
@@ -1377,11 +1376,11 @@
                     label {
                         position: relative;
                         display: inline-block;
-                        margin-bottom: .5rem;
+                        margin-bottom: 0.5rem;
                         font-weight: 600 !important;
                     }
                     .data-form {
-                        padding: .8rem 1.5rem;
+                        padding: 0.8rem 1.5rem;
                         @include font(1.4rem, 400, 1.8);
                         font-family: Arial, Helvetica, sans-serif;
                         color: #696969;
@@ -1393,11 +1392,11 @@
                     }
                     .bg-button {
                         width: 100%;
-                        padding: .5rem 0;
+                        padding: 0.5rem 0;
                         @include font(1.2rem, 500, 1.6);
                         color: $cl-white;
                         border: 0;
-                        background: linear-gradient(90deg, #5F9FCE, #DD8BB7) no-repeat;
+                        background: linear-gradient(90deg, #5f9fce, #dd8bb7) no-repeat;
                         @include mq_min_768 {
                             font-size: 1.4rem;
                         }
@@ -1406,7 +1405,7 @@
                     .required {
                         &::after {
                             position: absolute;
-                            content: "必須";
+                            content: '必須';
                             top: 50%;
                             right: -45px;
                             width: 35px;
@@ -1426,8 +1425,8 @@
                     }
                     .input-group {
                         position: relative;
-                        @include flexbox(flex, flex-start, normal, nowrap);                   
-                        &>p {
+                        @include flexbox(flex, flex-start, normal, nowrap);
+                        & > p {
                             color: $cl-gray;
                         }
                         .form-edit {
@@ -1447,14 +1446,14 @@
                                 }
                             }
 
-                            &>input,
+                            & > input,
                             select,
                             textarea {
                                 @include font(1.3rem, 400, 1.8);
                                 border-radius: 6px;
                             }
 
-                            &>select {
+                            & > select {
                                 max-width: 21rem;
                             }
                         }
@@ -1481,7 +1480,7 @@
                             }
                         }
                         p {
-                            padding: .8rem 1.5rem;
+                            padding: 0.8rem 1.5rem;
                             @include font(1.4rem, 400, 1.8);
                             font-family: Arial, Helvetica, sans-serif;
                             border-top-left-radius: 0 !important;
@@ -1523,7 +1522,7 @@
                     .form-check-label {
                         font-family: Arial, Helvetica, sans-serif;
                     }
-                    .form-check-input:checked[type=radio] {
+                    .form-check-input:checked[type='radio'] {
                         background: #000;
                     }
                     .form-check-input:checked {
@@ -1535,7 +1534,7 @@
                     }
                     .course-details {
                         .accordion-item {
-                            margin-bottom: .8rem;
+                            margin-bottom: 0.8rem;
                             border: 0;
                             .accordion-button {
                                 @include font(1.4rem, 400, 1.5);
@@ -1556,12 +1555,12 @@
                             }
                             .icon-arrow-white {
                                 &::after {
-                                    background-image: url("../images/icon_arrow_white_svg.svg");
+                                    background-image: url('../images/icon_arrow_white_svg.svg');
                                 }
                             }
                             .icon-arrow-purple {
                                 &::after {
-                                    background-image: url("../images/icon_arrow_purple_svg.svg");
+                                    background-image: url('../images/icon_arrow_purple_svg.svg');
                                 }
                             }
                             .accordion-body {
@@ -1572,18 +1571,18 @@
                                     object-fit: cover;
                                 }
                                 .data-course-detail {
-                                    padding: .5rem 1rem;
+                                    padding: 0.5rem 1rem;
                                     border-radius: 5px;
                                     background-color: #fff;
                                     &:not(:last-child) {
-                                        margin-bottom: .8rem;
+                                        margin-bottom: 0.8rem;
                                     }
                                 }
                                 .dowload-pdf {
                                     cursor: pointer;
                                 }
                             }
-                            .chapter > .accordion-button{
+                            .chapter > .accordion-button {
                                 color: #212529;
                                 border: 1px solid #8b8ebb;
                                 border-radius: 5px;
@@ -1594,11 +1593,11 @@
                     .list-btn {
                         margin-top: 4rem;
                         @include flexbox(flex, center, normal, nowrap);
-    
+
                         @include mq_min_1024 {
                             justify-content: flex-end;
                         }
-    
+
                         .btn-child {
                             width: 11rem;
                             padding: 0.5rem 1rem;
@@ -1606,21 +1605,21 @@
                             text-align: center;
                             border: 1px solid #a8a7a7;
                             background-color: $cl-white;
-    
+
                             &:first-child {
                                 color: $cl-black;
                             }
-    
+
                             &:nth-child(2) {
                                 margin-left: 1rem;
                                 color: $cl-white;
-                                background: linear-gradient(90deg, #629ECE, #DB8BB7) no-repeat;
+                                background: linear-gradient(90deg, #629ece, #db8bb7) no-repeat;
                             }
-    
+
                             &:last-child {
                                 margin-left: 1rem;
                                 color: $cl-white;
-                                background: linear-gradient(90deg, #629ECE, #DB8BB7) no-repeat;
+                                background: linear-gradient(90deg, #629ece, #db8bb7) no-repeat;
                             }
                         }
                     }
@@ -1642,10 +1641,10 @@
                                 font-size: 1.2rem;
                                 background-color: #8b8ebb;
                                 border: 1px solid #ced4da;
-                                padding: .5rem 3.5rem;
+                                padding: 0.5rem 3.5rem;
                                 border-radius: 8px;
 
-                                input[type="file"] {
+                                input[type='file'] {
                                     position: absolute;
                                     height: 100%;
                                     filter: alpha(opacity=1);
@@ -1654,7 +1653,7 @@
                                     font-weight: 400;
                                     &::after {
                                         position: absolute;
-                                        content: "";
+                                        content: '';
                                         top: 0;
                                         right: 0;
                                         bottom: 0;
@@ -1696,13 +1695,13 @@
                         &:nth-child(2) {
                             margin-left: 1rem;
                             color: $cl-white;
-                            background: #8b8ebb
+                            background: #8b8ebb;
                         }
 
                         &:last-child {
                             margin-left: 1rem;
                             color: $cl-white;
-                            background: #8b8ebb
+                            background: #8b8ebb;
                         }
                     }
                 }
@@ -1735,7 +1734,7 @@
                 .pagination {
                     li {
                         a {
-                            padding: .1rem 1.5rem;
+                            padding: 0.1rem 1.5rem;
                             color: #7e7e7e;
                         }
                     }

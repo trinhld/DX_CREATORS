@@ -1,217 +1,254 @@
 <!DOCTYPE html>
 <html itemscope="" itemtype="http://schema.org/WebPage" lang="vi">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>DX_CREATORS_UI</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="../assets/css/style.css" />
+    </head>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>DX_CREATORS_UI</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../assets/css/style.css" />
-</head>
-
-<body>
-    <div class="wrapper">
-        <!-- Header -->
-        <header class="header-dashboard">
-            <div class="container">
-                <div class="header-button-show-menu-sp">
-                    <img src="../assets/images/icon_hamberger.png" alt="icon_hamberger" />
-                </div>
-                <a href="#" class="header-logo">
-                    <img src="../assets/images/logo.png" alt="logo" />
-                </a>
-                <div class="list-category-menu">
-                    <ul>
-                        <li>
-                            <div class="title-menu">ホーム</div>
-                        </li>
-                        <li>
-                            <div class="title-menu">アカウント管理</div>
-                            <ul class="sub-menu">
-                                <li>会員管理</li>
-                                <li>管理者管理</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <div class="title-menu">コース管理</div>
-                        </li>
-                        <li>
-                            <div class="title-menu">お知らせ管理</div>
-                        </li>
-                    </ul>
-                </div>
-                <!-- <div class="header-text-gradient">コース検索？お仕事検索？お知らせ表示バー？（仮）</div> -->
-                <div class="user-notify">
-                    <img src="../assets/images/icon_bell.png" alt="icon-bell" />
-                    <span>1</span>
-                </div>
-                <div class="header-user">
-                    <div class="wrap-user">
-                        <div class="user-avatar">
-                            <img src="../assets/images/image_user.png" alt="icon_user" />
-                        </div>
-                        <div class="user-show">
-                            <img src="../assets/images/icon_show_user.png" alt="icon_show_user" />
-                        </div>
+    <body>
+        <div class="wrapper">
+            <!-- Header -->
+            <header class="header-dashboard">
+                <div class="container">
+                    <div class="header-button-show-menu-sp">
+                        <img src="../assets/images/icon_hamberger.png" alt="icon_hamberger" />
                     </div>
-                    <div class="admin-list-option">
-                        <div class="list-option-item">
-                            <div class="title-sub-menu">ホーム</div>
-                            <div class="title-sub-menu">
-                                <a href="#">アカウント管理</a>
-                                <img class="icon-arrow" src="../assets/images/icon_show_user.png" alt="">
-                            </div>
-                            <div class="content-sub-menu">
-                                <ul>
-                                    <li><a href="#">会員管理</a></li>
-                                    <li><a href="#">管理者管理</a></li>
+                    <a href="#" class="header-logo">
+                        <img src="../assets/images/logo.png" alt="logo" />
+                    </a>
+                    <div class="list-category-menu">
+                        <ul>
+                            <li>
+                                <div class="title-menu">ホーム</div>
+                            </li>
+                            <li>
+                                <div class="title-menu">アカウント管理</div>
+                                <ul class="sub-menu">
+                                    <li>会員管理</li>
+                                    <li>管理者管理</li>
                                 </ul>
-                            </div>
-                            <div class="title-sub-menu">コース管理</div>
-                            <div class="title-sub-menu">
-                                <a href="#">お知らせ管理</a>
-                                <img class="icon-arrow" src="../assets/images/icon_show_user.png" alt="">
-                            </div>
-                            <div class="content-sub-menu">
-                                <ul>
-                                    <li><a href="#">会員管理</a></li>
-                                    <li><a href="#">管理者管理</a></li>
-                                </ul>
-                            </div>
-                            <div class="title-sub-menu">
-                                <a href="#">イベント管理</a>
-                                <img class="icon-arrow" src="../assets/images/icon_show_user.png" alt="">
-                            </div>
-                            <div class="content-sub-menu">
-                                <ul>
-                                    <li><a href="#">会員管理</a></li>
-                                    <li><a href="#">管理者管理</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                            </li>
+                            <li>
+                                <div class="title-menu">コース管理</div>
+                            </li>
+                            <li>
+                                <div class="title-menu">お知らせ管理</div>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-            </div>
-        </header>
-
-        <!-- Main -->
-        <section class="main">
-            <div class="container create-notifi">
-                <div class="content px-md-5">
-                    <h4 class="my-5">管理者登録</h4>
-                    <form class="list-input d-md-flex">
-                        <div>
-                            <div class="input-group align-items-normal mb-4">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text bg-purple required">名前</span>
-                                </div>
-                                <div class="form-edit form-control">
-                                    <div>
-                                        <span>姓</span>
-                                        <input type="text" class="form-control rounded-6" aria-label="name"
-                                            aria-describedby="basic-addon1" value="山田"/>
-                                    </div>
-                                    <div class="ms-5">
-                                        <span>名</span>
-                                        <input type="text" class="form-control rounded-6" aria-label="name"
-                                            aria-describedby="basic-addon1" value="涼介"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="input-group align-items-normal mb-4">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text bg-purple">電話番号​</span>
-                                </div>
-                                <div class="form-edit form-control">
-                                    <input type="text" class="form-control" aria-label="name"
-                                        aria-describedby="basic-addon1" value="03-1234-5678" />
-                                </div>
-                            </div>
-                            <div class="input-group align-items-normal mb-4">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text bg-purple required">生年月日</span>
-                                </div>
-                                <div class="form-edit form-control">
-                                    <input type="date" class="form-control" aria-label="name"
-                                        aria-describedby="basic-addon1" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="ms-md-4">
-                            <div class="input-group align-items-normal mb-4">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text bg-purple required">なまえ（ふりがな）</span>
-                                </div>
-                                <div class="form-edit form-control">
-                                    <div>
-                                        <span>せい</span>
-                                        <input type="text" class="form-control rounded-6" aria-label="name"
-                                            aria-describedby="basic-addon1" value="やまだ"/>
-                                    </div>
-                                    <div class="ms-5">
-                                        <span>めい</span>
-                                        <input type="text" class="form-control rounded-6" aria-label="name"
-                                            aria-describedby="basic-addon1" value="りょうすけ"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="input-group align-items-normal mb-4">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text bg-purple required">メールアドレス​</span>
-                                </div>
-                                <div class="form-edit form-control">
-                                    <input type="text" class="form-control" aria-label="name"
-                                        aria-describedby="basic-addon1" value="aaa@gmail.com"/>
-                                </div>
-                            </div>
-                            <div class="input-group align-items-normal mb-4">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text bg-purple">アカウント区分</span>
-                                </div>
-                                <div class="form-edit form-control">
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>管理者</option>
-                                        <option value="1">管理者</option>
-                                        <option value="3">管理者</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                    <div class="list-btn">
-                        <button class="btn-child">戻る</button>
-                        <button class="bg-purple btn-child">登録</button>
+                    <!-- <div class="header-text-gradient">コース検索？お仕事検索？お知らせ表示バー？（仮）</div> -->
+                    <div class="user-notify">
+                        <img src="../assets/images/icon_bell.png" alt="icon-bell" />
+                        <span>1</span>
                     </div>
-                </div>
-                <!-- Modal Logout -->
-                <div class="modal fade modal-logout" id="exampleModalToggle" aria-hidden="true"
-                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-logout-header">ログアウト</div>
-                            <div class="modal-body">
-                                <p>本当にログアウトしますか？</p>
-                                <div class="list-btn-modal-logut">
-                                    <div class="btn-back" data-bs-dismiss="modal">戻る</div>
-                                    <div class="btn-logout" data-bs-dismiss="modal">ログアウト</div>
+                    <div class="header-user">
+                        <div class="wrap-user">
+                            <div class="user-avatar">
+                                <img src="../assets/images/image_user.png" alt="icon_user" />
+                            </div>
+                            <div class="user-show">
+                                <img src="../assets/images/icon_show_user.png" alt="icon_show_user" />
+                            </div>
+                        </div>
+                        <div class="admin-list-option">
+                            <div class="list-option-item">
+                                <div class="title-sub-menu">ホーム</div>
+                                <div class="title-sub-menu">
+                                    <a href="#">アカウント管理</a>
+                                    <img class="icon-arrow" src="../assets/images/icon_show_user.png" alt="" />
+                                </div>
+                                <div class="content-sub-menu">
+                                    <ul>
+                                        <li><a href="#">会員管理</a></li>
+                                        <li><a href="#">管理者管理</a></li>
+                                    </ul>
+                                </div>
+                                <div class="title-sub-menu">コース管理</div>
+                                <div class="title-sub-menu">
+                                    <a href="#">お知らせ管理</a>
+                                    <img class="icon-arrow" src="../assets/images/icon_show_user.png" alt="" />
+                                </div>
+                                <div class="content-sub-menu">
+                                    <ul>
+                                        <li><a href="#">会員管理</a></li>
+                                        <li><a href="#">管理者管理</a></li>
+                                    </ul>
+                                </div>
+                                <div class="title-sub-menu">
+                                    <a href="#">イベント管理</a>
+                                    <img class="icon-arrow" src="../assets/images/icon_show_user.png" alt="" />
+                                </div>
+                                <div class="content-sub-menu">
+                                    <ul>
+                                        <li><a href="#">会員管理</a></li>
+                                        <li><a href="#">管理者管理</a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </header>
 
-        <!-- Footer -->
-        <footer class="footer"></footer>
-    </div>
+            <!-- Main -->
+            <section class="main">
+                <div class="container create-notifi">
+                    <div class="content px-md-5">
+                        <h4 class="my-5">管理者登録</h4>
+                        <form class="list-input d-md-flex">
+                            <div>
+                                <div class="input-group align-items-normal mb-4">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text bg-purple required">名前</span>
+                                    </div>
+                                    <div class="form-edit form-control">
+                                        <div>
+                                            <span>姓</span>
+                                            <input
+                                                type="text"
+                                                class="form-control rounded-6"
+                                                aria-label="name"
+                                                aria-describedby="basic-addon1"
+                                                value="山田"
+                                            />
+                                        </div>
+                                        <div class="ms-5">
+                                            <span>名</span>
+                                            <input
+                                                type="text"
+                                                class="form-control rounded-6"
+                                                aria-label="name"
+                                                aria-describedby="basic-addon1"
+                                                value="涼介"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-group align-items-normal mb-4">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text bg-purple">電話番号​</span>
+                                    </div>
+                                    <div class="form-edit form-control">
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            aria-label="name"
+                                            aria-describedby="basic-addon1"
+                                            value="03-1234-5678"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="input-group align-items-normal mb-4">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text bg-purple required">生年月日</span>
+                                    </div>
+                                    <div class="form-edit form-control">
+                                        <input
+                                            type="date"
+                                            class="form-control"
+                                            aria-label="name"
+                                            aria-describedby="basic-addon1"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
 
-    <script src="../assets/js/jquery-3.6.0.min.js"></script>
-    <script src="../assets/js/bootstrap.min.js"></script>
-    <script src="../assets/js/main.js"></script>
-</body>
+                            <div class="ms-md-4">
+                                <div class="input-group align-items-normal mb-4">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text bg-purple required">なまえ（ふりがな）</span>
+                                    </div>
+                                    <div class="form-edit form-control">
+                                        <div>
+                                            <span>せい</span>
+                                            <input
+                                                type="text"
+                                                class="form-control rounded-6"
+                                                aria-label="name"
+                                                aria-describedby="basic-addon1"
+                                                value="やまだ"
+                                            />
+                                        </div>
+                                        <div class="ms-5">
+                                            <span>めい</span>
+                                            <input
+                                                type="text"
+                                                class="form-control rounded-6"
+                                                aria-label="name"
+                                                aria-describedby="basic-addon1"
+                                                value="りょうすけ"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-group align-items-normal mb-4">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text bg-purple required">メールアドレス​</span>
+                                    </div>
+                                    <div class="form-edit form-control">
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            aria-label="name"
+                                            aria-describedby="basic-addon1"
+                                            value="aaa@gmail.com"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="input-group align-items-normal mb-4">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text bg-purple">アカウント区分</span>
+                                    </div>
+                                    <div class="form-edit form-control">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>管理者</option>
+                                            <option value="1">管理者</option>
+                                            <option value="3">管理者</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="list-btn">
+                            <button class="btn-child">戻る</button>
+                            <button class="bg-purple btn-child">登録</button>
+                        </div>
+                    </div>
+                    <!-- Modal Logout -->
+                    <div
+                        class="modal fade modal-logout"
+                        id="exampleModalToggle"
+                        aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel"
+                        tabindex="-1"
+                    >
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-logout-header">ログアウト</div>
+                                <div class="modal-body">
+                                    <p>本当にログアウトしますか？</p>
+                                    <div class="list-btn-modal-logut">
+                                        <div class="btn-back" data-bs-dismiss="modal">戻る</div>
+                                        <div class="btn-logout" data-bs-dismiss="modal">ログアウト</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
+            <!-- Footer -->
+            <footer class="footer"></footer>
+        </div>
+
+        <script src="../assets/js/jquery-3.6.0.min.js"></script>
+        <script src="../assets/js/bootstrap.min.js"></script>
+        <script src="../assets/js/main.js"></script>
+    </body>
 </html>

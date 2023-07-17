@@ -1,283 +1,328 @@
 <!DOCTYPE html>
 <html itemscope="" itemtype="http://schema.org/WebPage" lang="vi">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>DX_CREATORS_UI</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="../assets/css/style.css" />
+    </head>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>DX_CREATORS_UI</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../assets/css/style.css" />
-</head>
-
-<body>
-    <div class="wrapper">
-        <!-- Header -->
-        <header class="header-dashboard">
-            <div class="container">
-                <div class="header-button-show-menu-sp">
-                    <img src="../assets/images/icon_hamberger.png" alt="icon_hamberger" />
-                </div>
-                <a href="#" class="header-logo">
-                    <img src="../assets/images/logo.png" alt="logo" />
-                </a>
-                <!-- <div class="header-text-gradient">コース検索？お仕事検索？お知らせ表示バー？（仮）</div> -->
-                <div class="user-notify">
-                    <img src="../assets/images/icon_bell.png" alt="icon-bell" />
-                    <span>1</span>
-                </div>
-                <div class="header-user">
-                    <div class="wrap-user">
-                        <div class="user-avatar">
-                            <img src="../assets/images/image_user.png" alt="icon_user" />
+    <body>
+        <div class="wrapper">
+            <!-- Header -->
+            <header class="header-dashboard">
+                <div class="container">
+                    <div class="header-button-show-menu-sp">
+                        <img src="../assets/images/icon_hamberger.png" alt="icon_hamberger" />
+                    </div>
+                    <a href="#" class="header-logo">
+                        <img src="../assets/images/logo.png" alt="logo" />
+                    </a>
+                    <!-- <div class="header-text-gradient">コース検索？お仕事検索？お知らせ表示バー？（仮）</div> -->
+                    <div class="user-notify">
+                        <img src="../assets/images/icon_bell.png" alt="icon-bell" />
+                        <span>1</span>
+                    </div>
+                    <div class="header-user">
+                        <div class="wrap-user">
+                            <div class="user-avatar">
+                                <img src="../assets/images/image_user.png" alt="icon_user" />
+                            </div>
+                            <div class="user-show">
+                                <img src="../assets/images/icon_show_user.png" alt="icon_show_user" />
+                            </div>
                         </div>
-                        <div class="user-show">
-                            <img src="../assets/images/icon_show_user.png" alt="icon_show_user" />
+                        <div class="user-list-option">
+                            <ul>
+                                <li><a href="#">プロフィール編集</a></li>
+                                <li><a href="#">予約確認</a></li>
+                                <li><a href="#">プラン確認・変更</a></li>
+                                <li><a href="#">パスワード変更</a></li>
+                                <li><a href="#">メールアドレス変更</a></li>
+                                <li><a href="#">よくあるご質問</a></li>
+                                <li><a href="#">利用規約</a></li>
+                                <li>
+                                    <a class="btn-show-logout" data-bs-toggle="modal" href="#exampleModalToggle"
+                                        >ログアウト</a
+                                    >
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="user-list-option">
-                        <ul>
-                            <li><a href="#">プロフィール編集</a></li>
-                            <li><a href="#">予約確認</a></li>
-                            <li><a href="#">プラン確認・変更</a></li>
-                            <li><a href="#">パスワード変更</a></li>
-                            <li><a href="#">メールアドレス変更</a></li>
-                            <li><a href="#">よくあるご質問</a></li>
-                            <li><a href="#">利用規約</a></li>
-                            <li>
-                                <a class="btn-show-logout" data-bs-toggle="modal" href="#exampleModalToggle">ログアウト</a>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
-            </div>
-        </header>
+            </header>
 
-        <!-- Main -->
-        <section class="main">
-            <div class="container create-notifi">
-                <div class="content px-md-5">
-                    <h4 class="my-5">お知らせ一覧</h4>
-                    <form>
-                        <div class="d-flex justify-content-start flex-wrap">
-                            <div class="form-group select-item">
-                                <label for="exampleFormControlSelect1">配信日</label>
-                                <div class="wraper d-flex">
+            <!-- Main -->
+            <section class="main">
+                <div class="container create-notifi">
+                    <div class="content px-md-5">
+                        <h4 class="my-5">お知らせ一覧</h4>
+                        <form>
+                            <div class="d-flex justify-content-start flex-wrap">
+                                <div class="form-group select-item">
+                                    <label for="exampleFormControlSelect1">配信日</label>
+                                    <div class="wraper d-flex">
+                                        <select class="form-select">
+                                            <option>開始日</option>
+                                            <option>開始日</option>
+                                            <option>開始日</option>
+                                        </select>
+                                        <select class="form-select ms-4">
+                                            <option>開始日</option>
+                                            <option>開始日</option>
+                                            <option>開始日</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group select-item mt-5 mt-md-0 ms-md-5">
+                                    <label for="exampleFormControlSelect1">カテゴリー</label>
                                     <select class="form-select">
-                                        <option>開始日</option>
-                                        <option>開始日</option>
-                                        <option>開始日</option>
-                                    </select>
-                                    <select class="form-select ms-4">
-                                        <option>開始日</option>
-                                        <option>開始日</option>
-                                        <option>開始日</option>
+                                        <option>カテゴリー選択</option>
+                                        <option>カテゴリー選択</option>
+                                        <option>カテゴリー選択</option>
                                     </select>
                                 </div>
-                            </div>
-                            <div class="form-group select-item mt-5 mt-md-0 ms-md-5">
-                                <label for="exampleFormControlSelect1">カテゴリー</label>
-                                <select class="form-select">
-                                    <option>カテゴリー選択</option>
-                                    <option>カテゴリー選択</option>
-                                    <option>カテゴリー選択</option>
-                                </select>
-                            </div>
-                            <div class="form-group select-item mt-5 mt-md-0 ms-4 ms-md-5">
-                                <label for="exampleFormControlSelect1">タイトル</label>
-                                <div class="input-group input-search">
-                                    <input type="text" class="form-control">
+                                <div class="form-group select-item mt-5 mt-md-0 ms-4 ms-md-5">
+                                    <label for="exampleFormControlSelect1">タイトル</label>
+                                    <div class="input-group input-search">
+                                        <input type="text" class="form-control" />
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group select-item mt-5 mt-md-0 ms-md-5">
-                                <label for="exampleFormControlSelect1">配信者</label>
-                                <select class="form-select">
-                                    <option>管理者選択</option>
-                                    <option>管理者選択</option>
-                                    <option>管理者選択</option>
-                                </select>
-                            </div>
-                            <div class="form-group select-item mt-5">
-                                <label for="exampleFormControlSelect1">更新日</label>
-                                <div class="wraper d-flex">
+                                <div class="form-group select-item mt-5 mt-md-0 ms-md-5">
+                                    <label for="exampleFormControlSelect1">配信者</label>
                                     <select class="form-select">
-                                        <option>開始日</option>
-                                        <option>開始日</option>
-                                        <option>開始日</option>
+                                        <option>管理者選択</option>
+                                        <option>管理者選択</option>
+                                        <option>管理者選択</option>
                                     </select>
-                                    <select class="form-select ms-4">
-                                        <option>終了日</option>
-                                        <option>終了日</option>
-                                        <option>終了日</option>
+                                </div>
+                                <div class="form-group select-item mt-5">
+                                    <label for="exampleFormControlSelect1">更新日</label>
+                                    <div class="wraper d-flex">
+                                        <select class="form-select">
+                                            <option>開始日</option>
+                                            <option>開始日</option>
+                                            <option>開始日</option>
+                                        </select>
+                                        <select class="form-select ms-4">
+                                            <option>終了日</option>
+                                            <option>終了日</option>
+                                            <option>終了日</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group select-item mt-5 ms-md-5">
+                                    <label for="exampleFormControlSelect1">更新者</label>
+                                    <select class="form-select">
+                                        <option>管理者選択</option>
+                                        <option>管理者選択</option>
+                                        <option>管理者選択</option>
+                                    </select>
+                                </div>
+                                <div class="form-group select-item mt-5 ms-4 ms-md-5">
+                                    <label for="exampleFormControlSelect1">送信先</label>
+                                    <select class="form-select">
+                                        <option>全て</option>
+                                        <option>全て</option>
+                                        <option>全て</option>
                                     </select>
                                 </div>
                             </div>
-                            <div class="form-group select-item mt-5 ms-md-5">
-                                <label for="exampleFormControlSelect1">更新者</label>
-                                <select class="form-select">
-                                    <option>管理者選択</option>
-                                    <option>管理者選択</option>
-                                    <option>管理者選択</option>
-                                </select>
-                            </div>
-                            <div class="form-group select-item mt-5 ms-4 ms-md-5">
-                                <label for="exampleFormControlSelect1">送信先</label>
-                                <select class="form-select">
-                                    <option>全て</option>
-                                    <option>全て</option>
-                                    <option>全て</option>
-                                </select>
-                            </div>
+                        </form>
+                        <div class="list-btn">
+                            <button class="btn-child">クリア</button>
+                            <button class="bg-purple btn-child">検索</button>
                         </div>
-                    </form>
-                    <div class="list-btn">
-                        <button class="btn-child">クリア</button>
-                        <button class="bg-purple btn-child">検索</button>
+                        <div class="wrapper-table">
+                            <table class="table mt-5 text-center table-bordered">
+                                <thead class="bg-purple text-white">
+                                    <tr>
+                                        <th scope="col">No.</th>
+                                        <th scope="col">配信日</th>
+                                        <th scope="col">カテゴリー</th>
+                                        <th scope="col">タイトル</th>
+                                        <th scope="col">作成日</th>
+                                        <th scope="col">更新日</th>
+                                        <th scope="col">送信先</th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-secondary">
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>2023-03-03</td>
+                                        <td>全般</td>
+                                        <td>2023年度キャンペーン開始</td>
+                                        <td>2023-03-04</td>
+                                        <td>2023-03-04</td>
+                                        <td>ユーザー管理者</td>
+                                        <td>
+                                            <div class="d-flex justify-content-center">
+                                                <img
+                                                    src="../assets/images/icon_pencil.png"
+                                                    alt=""
+                                                    class="icon-pencil-form"
+                                                />
+                                                <img
+                                                    src="../assets/images/icon_trash.png"
+                                                    alt=""
+                                                    class="icon-trash-form"
+                                                />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>2023-03-03</td>
+                                        <td>全般</td>
+                                        <td>2023年度キャンペーン開始</td>
+                                        <td>2023-03-04</td>
+                                        <td>2023-03-04</td>
+                                        <td>ユーザー管理者</td>
+                                        <td>
+                                            <div class="d-flex justify-content-center">
+                                                <img
+                                                    src="../assets/images/icon_pencil.png"
+                                                    alt=""
+                                                    class="icon-pencil-form"
+                                                />
+                                                <img
+                                                    src="../assets/images/icon_trash.png"
+                                                    alt=""
+                                                    class="icon-trash-form"
+                                                />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>2023-03-03</td>
+                                        <td>全般</td>
+                                        <td>2023年度キャンペーン開始</td>
+                                        <td>2023-03-04</td>
+                                        <td>2023-03-04</td>
+                                        <td>ユーザー管理者</td>
+                                        <td>
+                                            <div class="d-flex justify-content-center">
+                                                <img
+                                                    src="../assets/images/icon_pencil.png"
+                                                    alt=""
+                                                    class="icon-pencil-form"
+                                                />
+                                                <img
+                                                    src="../assets/images/icon_trash.png"
+                                                    alt=""
+                                                    class="icon-trash-form"
+                                                />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>2023-03-03</td>
+                                        <td>全般</td>
+                                        <td>2023年度キャンペーン開始</td>
+                                        <td>2023-03-04</td>
+                                        <td>2023-03-04</td>
+                                        <td>ユーザー管理者</td>
+                                        <td>
+                                            <div class="d-flex justify-content-center">
+                                                <img
+                                                    src="../assets/images/icon_pencil.png"
+                                                    alt=""
+                                                    class="icon-pencil-form"
+                                                />
+                                                <img
+                                                    src="../assets/images/icon_trash.png"
+                                                    alt=""
+                                                    class="icon-trash-form"
+                                                />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>2023-03-03</td>
+                                        <td>全般</td>
+                                        <td>2023年度キャンペーン開始</td>
+                                        <td>2023-03-04</td>
+                                        <td>2023-03-04</td>
+                                        <td>ユーザー管理者</td>
+                                        <td>
+                                            <div class="d-flex justify-content-center">
+                                                <img
+                                                    src="../assets/images/icon_pencil.png"
+                                                    alt=""
+                                                    class="icon-pencil-form"
+                                                />
+                                                <img
+                                                    src="../assets/images/icon_trash.png"
+                                                    alt=""
+                                                    class="icon-trash-form"
+                                                />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center justify-content-md-end my-5 pb-5">
+                                <li class="page-item d-flex">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                    <a class="page-link border-start-0" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&lt;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item d-flex">
+                                    <a class="page-link border-end-0" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&gt;</span>
+                                    </a>
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
-                    <div class="wrapper-table">
-                        <table class="table mt-5 text-center table-bordered">
-                            <thead class="bg-purple text-white">
-                                <tr>
-                                    <th scope="col">No.</th>
-                                    <th scope="col">配信日</th>
-                                    <th scope="col">カテゴリー</th>
-                                    <th scope="col">タイトル</th>
-                                    <th scope="col">作成日</th>
-                                    <th scope="col">更新日</th>
-                                    <th scope="col">送信先</th>
-                                    <th scope="col"></th>
-                                </tr>
-                            </thead>
-                            <tbody class="text-secondary">
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>2023-03-03</td>
-                                    <td>全般</td>
-                                    <td>2023年度キャンペーン開始</td>
-                                    <td>2023-03-04</td>
-                                    <td>2023-03-04</td>
-                                    <td>ユーザー管理者</td>
-                                    <td>
-                                        <div class="d-flex justify-content-center">
-                                            <img src="../assets/images/icon_pencil.png" alt="" class="icon-pencil-form">
-                                            <img src="../assets/images/icon_trash.png" alt="" class="icon-trash-form">
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>2023-03-03</td>
-                                    <td>全般</td>
-                                    <td>2023年度キャンペーン開始</td>
-                                    <td>2023-03-04</td>
-                                    <td>2023-03-04</td>
-                                    <td>ユーザー管理者</td>
-                                    <td>
-                                        <div class="d-flex justify-content-center">
-                                            <img src="../assets/images/icon_pencil.png" alt="" class="icon-pencil-form">
-                                            <img src="../assets/images/icon_trash.png" alt="" class="icon-trash-form">
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>2023-03-03</td>
-                                    <td>全般</td>
-                                    <td>2023年度キャンペーン開始</td>
-                                    <td>2023-03-04</td>
-                                    <td>2023-03-04</td>
-                                    <td>ユーザー管理者</td>
-                                    <td>
-                                        <div class="d-flex justify-content-center">
-                                            <img src="../assets/images/icon_pencil.png" alt="" class="icon-pencil-form">
-                                            <img src="../assets/images/icon_trash.png" alt="" class="icon-trash-form">
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>2023-03-03</td>
-                                    <td>全般</td>
-                                    <td>2023年度キャンペーン開始</td>
-                                    <td>2023-03-04</td>
-                                    <td>2023-03-04</td>
-                                    <td>ユーザー管理者</td>
-                                    <td>
-                                        <div class="d-flex justify-content-center">
-                                            <img src="../assets/images/icon_pencil.png" alt="" class="icon-pencil-form">
-                                            <img src="../assets/images/icon_trash.png" alt="" class="icon-trash-form">
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">5</th>
-                                    <td>2023-03-03</td>
-                                    <td>全般</td>
-                                    <td>2023年度キャンペーン開始</td>
-                                    <td>2023-03-04</td>
-                                    <td>2023-03-04</td>
-                                    <td>ユーザー管理者</td>
-                                    <td>
-                                        <div class="d-flex justify-content-center">
-                                            <img src="../assets/images/icon_pencil.png" alt="" class="icon-pencil-form">
-                                            <img src="../assets/images/icon_trash.png" alt="" class="icon-trash-form">
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination justify-content-center justify-content-md-end my-5 pb-5">
-                            <li class="page-item d-flex">
-                                <a class="page-link" href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                </a>
-                                <a class="page-link border-start-0" href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&lt;</span>
-                                </a>
-                            </li>
-                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item d-flex">
-                                <a class="page-link border-end-0" href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&gt;</span>
-                                </a>
-                                <a class="page-link" href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <!-- Modal Logout -->
-                <div class="modal fade modal-logout" id="exampleModalToggle" aria-hidden="true"
-                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-logout-header">ログアウト</div>
-                            <div class="modal-body">
-                                <p>本当にログアウトしますか？</p>
-                                <div class="list-btn-modal-logut">
-                                    <div class="btn-back" data-bs-dismiss="modal">戻る</div>
-                                    <div class="btn-logout" data-bs-dismiss="modal">ログアウト</div>
+                    <!-- Modal Logout -->
+                    <div
+                        class="modal fade modal-logout"
+                        id="exampleModalToggle"
+                        aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel"
+                        tabindex="-1"
+                    >
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-logout-header">ログアウト</div>
+                                <div class="modal-body">
+                                    <p>本当にログアウトしますか？</p>
+                                    <div class="list-btn-modal-logut">
+                                        <div class="btn-back" data-bs-dismiss="modal">戻る</div>
+                                        <div class="btn-logout" data-bs-dismiss="modal">ログアウト</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Footer -->
-        <footer class="footer"></footer>
-    </div>
+            <!-- Footer -->
+            <footer class="footer"></footer>
+        </div>
 
-    <script src="../assets/js/jquery-3.6.0.min.js"></script>
-    <script src="../assets/js/bootstrap.min.js"></script>
-    <script src="../assets/js/main.js"></script>
-</body>
-
+        <script src="../assets/js/jquery-3.6.0.min.js"></script>
+        <script src="../assets/js/bootstrap.min.js"></script>
+        <script src="../assets/js/main.js"></script>
+    </body>
 </html>
