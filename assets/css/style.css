@@ -662,6 +662,27 @@ td {
   cursor: pointer;
 }
 
+.btn-upload-file-2 {
+  position: relative;
+}
+.btn-upload-file-2 input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+}
+.btn-upload-file-2 input::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+}
+
 .btn-delete-file-upload {
   border: 0;
   font-size: 1.6rem;
@@ -2673,6 +2694,26 @@ td {
   margin-bottom: 0.8rem;
 }
 .wrapper .main .container.manage-course .content form .course-details .accordion-item .accordion-body .dowload-pdf {
+  cursor: pointer;
+}
+.wrapper .main .container.manage-course .content form .course-details .accordion-item .accordion-body .picture__image {
+  position: relative;
+}
+.wrapper .main .container.manage-course .content form .course-details .accordion-item .accordion-body .picture__image .picture__input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+}
+.wrapper .main .container.manage-course .content form .course-details .accordion-item .accordion-body .picture__image .picture__input::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   cursor: pointer;
 }
 .wrapper .main .container.manage-course .content form .course-details .accordion-item .chapter > .accordion-button {

@@ -452,6 +452,27 @@ td {
     }
 }
 
+.btn-upload-file-2 {
+    position: relative;
+    input {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        &::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            cursor: pointer;
+        }
+    }
+}
+
 .btn-delete-file-upload {
     border: 0;
     font-size: 1.6rem;

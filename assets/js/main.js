@@ -77,31 +77,23 @@ var RUN = {
   },
 
   handleClickUploadImage: () => {
-    const inputFile = document.querySelector('#picture__input');
-    const pictureImage = document.querySelector('.picture__image');
-    // const pictureImageTxt = "Choose an image";
-    // pictureImage.innerHTML = pictureImageTxt;
+    const inputFile = $('.picture__input');
 
-    inputFile?.addEventListener('change', function (e) {
+    inputFile?.change(function (e) {
+      const pictureChange = $(this).parent().find('img');
       const inputTarget = e.target;
       const file = inputTarget.files[0];
 
       if (file) {
         const reader = new FileReader();
-
-        reader.addEventListener('load', function (e) {
+        reader.onload = function (e) {
           const readerTarget = e.target;
-
           const img = document.createElement('img');
           img.src = readerTarget.result;
-          img.classList.add('picture__img');
-          pictureImage.innerHTML = '';
-          pictureImage.appendChild(img);
-        });
+          pictureChange.replaceWith(img);
+        };
 
         reader.readAsDataURL(file);
-      } else {
-        pictureImage.innerHTML = pictureImageTxt;
       }
     });
   },
@@ -133,10 +125,7 @@ var RUN = {
     $('.btn-delete-image').click(function (e) {
       e.preventDefault();
       $('#imag').val('');
-      $('.image-preview').attr(
-        'src',
-        'https://t4.ftcdn.net/jpg/03/46/93/61/360_F_346936114_RaxE6OQogebgAWTalE1myseY1Hbb5qPM.jpg',
-      );
+      $('.image-preview').attr('src', 'https://t4.ftcdn.net/jpg/03/46/93/61/360_F_346936114_RaxE6OQogebgAWTalE1myseY1Hbb5qPM.jpg');
     });
   },
 
@@ -177,6 +166,28 @@ var RUN = {
     });
   },
 
+  // Upload File
+  uploadFile: () => {
+    $('.nameFile').hide();
+    $('.btn-delete-file-upload').hide();
+    $('.btn-upload-file-2').change(function () {
+      const nameFile = $(this).find('input[type="file"]')[0].files[0].name;
+      if (nameFile) {
+        $(this).parent().find('.nameFile').show();
+        $(this).next('.nameFile').text(nameFile);
+        $(this).parent().next('.desciption-file-upload').hide();
+        $(this).parent().find('.btn-delete-file-upload').show();
+      }
+    });
+    // ===
+    $('.btn-delete-file-upload').click(function () {
+      $(this).parent().find('.nameFile').hide();
+      $(this).parent().find('.nameFile').text('');
+      $(this).hide();
+      $(this).parent().next('.desciption-file-upload').show();
+    });
+  },
+
   // Add Rows
   addRows: () => {
     const uuidv4 = () => {
@@ -186,19 +197,13 @@ var RUN = {
     };
 
     $('.add-row-1').click(() => {
-      $('.wrap-row-1').append(
-        `<input id=${uuidv4()} type="text" class="form-control mb-2" value="" placeholder="説明文">`,
-      );
+      $('.wrap-row-1').append(`<input id=${uuidv4()} type="text" class="form-control mb-2" value="" placeholder="説明文">`);
     });
     $('.add-row-2').click(() => {
-      $('.wrap-row-2').append(
-        `<input id=${uuidv4()} type="text" class="form-control mb-2" value="" placeholder="説明文">`,
-      );
+      $('.wrap-row-2').append(`<input id=${uuidv4()} type="text" class="form-control mb-2" value="" placeholder="説明文">`);
     });
     $('.add-row-3').click(() => {
-      $('.wrap-row-3').append(
-        `<input id=${uuidv4()} type="text" class="form-control mb-2" value="" placeholder="説明文">`,
-      );
+      $('.wrap-row-3').append(`<input id=${uuidv4()} type="text" class="form-control mb-2" value="" placeholder="説明文">`);
     });
   },
 
@@ -211,6 +216,7 @@ var RUN = {
     RUN.showSidebar();
     RUN.uploadImage();
     RUN.uploadImage2();
+    RUN.uploadFile();
     RUN.dataPicker();
     RUN.addRows();
     RUN.handleClickUploadImage();

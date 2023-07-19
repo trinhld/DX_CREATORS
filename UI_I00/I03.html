@@ -110,10 +110,7 @@
                             <!-- Course-details -->
                             <div class="course-details accordion mb-5" id="accordionParent1">
                                 <div class="accordion-item">
-                                    <div
-                                        class="d-flex justify-content-between align-items-center rounded-6"
-                                        style="background-color: #8b8ebb"
-                                    >
+                                    <div class="d-flex justify-content-between align-items-center rounded-6" style="background-color: #8b8ebb">
                                         <h2 class="accordion-header w-100" id="headingOneParent1">
                                             <div
                                                 class="accordion-button icon-arrow-white w-100 d-flex justify-content-between"
@@ -135,12 +132,7 @@
                                                     alt=""
                                                 />
                                             </a>
-                                            <img
-                                                class="ms-2"
-                                                style="width: 2.5rem"
-                                                src="../assets/images/icon_out.png"
-                                                alt=""
-                                            />
+                                            <img class="ms-2" style="width: 2.5rem" src="../assets/images/icon_out.png" alt="" />
                                         </div>
                                     </div>
                                     <div
@@ -149,10 +141,7 @@
                                         aria-labelledby="headingOneParent1"
                                         data-bs-parent="#accordionParent1"
                                     >
-                                        <div
-                                            class="accordion-body"
-                                            style="border: 1px solid #8b8ebb; border-radius: 5px"
-                                        >
+                                        <div class="accordion-body" style="border: 1px solid #8b8ebb; border-radius: 5px">
                                             <div class="w-100 mb-2 d-flex justify-content-between align-items-center">
                                                 <div class="w-50 input-group flex-nowrap">
                                                     <div class="input-group-prepend">
@@ -177,12 +166,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="w-100 px-3 form-control border rounded-0 text-inline">
-                                                    <input
-                                                        type="text"
-                                                        class="form-control"
-                                                        value="タイトル"
-                                                        placeholder="タイトル"
-                                                    />
+                                                    <input type="text" class="form-control" value="タイトル" placeholder="タイトル" />
                                                 </div>
                                             </div>
                                             <div class="input-group flex-nowrap mb-2">
@@ -192,13 +176,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="w-100 px-3 form-control border rounded-0 text-inline">
-                                                    <textarea
-                                                        class="form-control"
-                                                        style="min-height: 8rem"
-                                                        placeholder="説明文"
-                                                    >
-説明文</textarea
-                                                    >
+                                                    <textarea class="form-control" style="min-height: 8rem" placeholder="説明文">説明文</textarea>
                                                 </div>
                                             </div>
 
@@ -206,10 +184,7 @@
                                             <div class="mt-4 accordion" id="accordionChild1">
                                                 <div class="accordion-item">
                                                     <div class="d-flex justify-content-between align-items-center">
-                                                        <h2
-                                                            class="accordion-header w-100 chapter"
-                                                            id="headingOneChild1"
-                                                        >
+                                                        <h2 class="accordion-header w-100 chapter" id="headingOneChild1">
                                                             <div
                                                                 class="accordion-button icon-arrow-purple w-100 d-flex justify-content-between"
                                                                 type="button"
@@ -247,29 +222,15 @@
                                                         <div class="accordion-body" style="background-color: #f8f8f8">
                                                             <div class="d-flex justify-content-start">
                                                                 <div style="width: 15%; height: 10rem">
-                                                                    <label
-                                                                        class="picture w-100 h-100"
-                                                                        for="picture__input"
-                                                                    >
+                                                                    <label class="picture w-100 h-100" for="picture__input">
                                                                         <div class="picture__image w-100 h-100">
-                                                                            <img
-                                                                                class="w-100 h-100"
-                                                                                src="../assets/images/image_upload.png"
-                                                                            />
+                                                                            <img class="w-100 h-100" src="../assets/images/image_upload.png" />
+                                                                            <input type="file" name="picture__input" class="picture__input" />
                                                                         </div>
                                                                     </label>
-                                                                    <input
-                                                                        type="file"
-                                                                        name="picture__input"
-                                                                        class="d-none"
-                                                                        id="picture__input"
-                                                                    />
                                                                 </div>
                                                                 <div class="ms-3 d-flex flex-column" style="width: 85%">
-                                                                    <div
-                                                                        class="data-course-detail m-0"
-                                                                        style="min-height: 3.5rem"
-                                                                    >
+                                                                    <div class="data-course-detail m-0" style="min-height: 3.5rem">
                                                                         <input
                                                                             type="text"
                                                                             class="form-control input-group h-100"
@@ -279,14 +240,24 @@
                                                                     <div class="my-2" style="font-size: 1.2rem">
                                                                         ※ 動画リソースを下記に入力してください
                                                                     </div>
-                                                                    <div
-                                                                        class="data-course-detail m-0"
-                                                                        style="min-height: 3.5rem"
-                                                                    >
+                                                                    <div class="d-flex data-course-detail m-0" style="min-height: 3.5rem">
                                                                         <input
                                                                             type="text"
                                                                             class="form-control input-group h-100"
                                                                             placeholder="リソース"
+                                                                        />
+                                                                        <input
+                                                                            type="number"
+                                                                            class="form-control input-group w-25 h-100 ms-4"
+                                                                            placeholder="動画時間（分）"
+                                                                            min="0"
+                                                                        />
+                                                                        <input
+                                                                            type="number"
+                                                                            class="form-control input-group w-25 h-100 ms-4"
+                                                                            placeholder="動画時間（秒）"
+                                                                            min="0"
+                                                                            max="60"
                                                                         />
                                                                     </div>
                                                                 </div>
@@ -299,24 +270,20 @@
                                                                     placeholder="チャプター概要 "
                                                                 ></textarea>
                                                             </div>
-                                                            <div
-                                                                class="d-flex justify-content-start align-items-center"
-                                                            >
-                                                                <div
-                                                                    class="d-flex justify-content-start align-items-center px-1 py-0 rounded-3"
-                                                                    style="width: 30%; border: 1px solid #8b8ebb"
-                                                                >
-                                                                    <input type="file" class="inputFileUpload" />
-                                                                    <button
-                                                                        class="btn-delete-file-upload"
-                                                                        type="button"
+                                                            <div class="d-flex justify-content-start align-items-center">
+                                                                <div class="d-flex justify-content-start align-items-center">
+                                                                    <div
+                                                                        class="btn-upload-file-2 rounded-6 px-4 py-2 fs-5 text-light"
+                                                                        style="background-color: #8b8ebb"
                                                                     >
-                                                                        ✕
-                                                                    </button>
+                                                                        <input type="file" class="inputFileUpload" />
+                                                                        資料アップロード
+                                                                    </div>
+                                                                    <div class="nameFile ms-4 text-inline" style="width: 22rem"></div>
+                                                                    <button class="btn-delete-file-upload" type="button">✕</button>
                                                                 </div>
-                                                                <div class="ms-4" style="font-size: 1.2rem">
-                                                                    ※
-                                                                    アップロードできるファイルの形式は、画像(JPG/JPEG/PNG)またはPDFです。
+                                                                <div class="ms-4 fs-5 desciption-file-upload">
+                                                                    ※ アップロードできるファイルの形式は、画像(JPG/JPEG/PNG)またはPDFです。
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -324,10 +291,7 @@
                                                 </div>
                                                 <div class="accordion-item">
                                                     <div class="d-flex justify-content-between align-items-center">
-                                                        <h2
-                                                            class="accordion-header w-100 chapter"
-                                                            id="headingOneChild2"
-                                                        >
+                                                        <h2 class="accordion-header w-100 chapter" id="headingOneChild2">
                                                             <div
                                                                 class="accordion-button icon-arrow-purple w-100 d-flex justify-content-between"
                                                                 type="button"
@@ -365,29 +329,15 @@
                                                         <div class="accordion-body" style="background-color: #f8f8f8">
                                                             <div class="d-flex justify-content-start">
                                                                 <div style="width: 15%; height: 10rem">
-                                                                    <label
-                                                                        class="picture w-100 h-100"
-                                                                        for="picture__input"
-                                                                    >
+                                                                    <label class="picture w-100 h-100" for="picture__input">
                                                                         <div class="picture__image w-100 h-100">
-                                                                            <img
-                                                                                class="w-100 h-100"
-                                                                                src="../assets/images/image_upload.png"
-                                                                            />
+                                                                            <img class="w-100 h-100" src="../assets/images/image_upload.png" />
+                                                                            <input type="file" name="picture__input" class="picture__input" />
                                                                         </div>
                                                                     </label>
-                                                                    <input
-                                                                        type="file"
-                                                                        name="picture__input"
-                                                                        class="d-none"
-                                                                        id="picture__input"
-                                                                    />
                                                                 </div>
                                                                 <div class="ms-3 d-flex flex-column" style="width: 85%">
-                                                                    <div
-                                                                        class="data-course-detail m-0"
-                                                                        style="min-height: 3.5rem"
-                                                                    >
+                                                                    <div class="data-course-detail m-0" style="min-height: 3.5rem">
                                                                         <input
                                                                             type="text"
                                                                             class="form-control input-group h-100"
@@ -397,14 +347,24 @@
                                                                     <div class="my-2" style="font-size: 1.2rem">
                                                                         ※ 動画リソースを下記に入力してください
                                                                     </div>
-                                                                    <div
-                                                                        class="data-course-detail m-0"
-                                                                        style="min-height: 3.5rem"
-                                                                    >
+                                                                    <div class="d-flex data-course-detail m-0" style="min-height: 3.5rem">
                                                                         <input
                                                                             type="text"
                                                                             class="form-control input-group h-100"
                                                                             placeholder="リソース"
+                                                                        />
+                                                                        <input
+                                                                            type="number"
+                                                                            class="form-control input-group w-25 h-100 ms-4"
+                                                                            placeholder="動画時間（分）"
+                                                                            min="0"
+                                                                        />
+                                                                        <input
+                                                                            type="number"
+                                                                            class="form-control input-group w-25 h-100 ms-4"
+                                                                            placeholder="動画時間（秒）"
+                                                                            min="0"
+                                                                            max="60"
                                                                         />
                                                                     </div>
                                                                 </div>
@@ -417,24 +377,20 @@
                                                                     placeholder="チャプター概要 "
                                                                 ></textarea>
                                                             </div>
-                                                            <div
-                                                                class="d-flex justify-content-start align-items-center"
-                                                            >
-                                                                <div
-                                                                    class="d-flex justify-content-start align-items-center px-1 py-0 rounded-3"
-                                                                    style="width: 30%; border: 1px solid #8b8ebb"
-                                                                >
-                                                                    <input type="file" class="inputFileUpload" />
-                                                                    <button
-                                                                        class="btn-delete-file-upload"
-                                                                        type="button"
+                                                            <div class="d-flex justify-content-start align-items-center">
+                                                                <div class="d-flex justify-content-start align-items-center">
+                                                                    <div
+                                                                        class="btn-upload-file-2 rounded-6 px-4 py-2 fs-5 text-light"
+                                                                        style="background-color: #8b8ebb"
                                                                     >
-                                                                        ✕
-                                                                    </button>
+                                                                        <input type="file" class="inputFileUpload" />
+                                                                        資料アップロード
+                                                                    </div>
+                                                                    <div class="nameFile ms-4 text-inline" style="width: 22rem"></div>
+                                                                    <button class="btn-delete-file-upload" type="button">✕</button>
                                                                 </div>
-                                                                <div class="ms-4" style="font-size: 1.2rem">
-                                                                    ※
-                                                                    アップロードできるファイルの形式は、画像(JPG/JPEG/PNG)またはPDFです。
+                                                                <div class="ms-4 fs-5 desciption-file-upload">
+                                                                    ※ アップロードできるファイルの形式は、画像(JPG/JPEG/PNG)またはPDFです。
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -513,12 +469,8 @@
                                 <div class="modal-body">
                                     <p>削除してもよろしいでしょうか？</p>
                                     <div class="list-btn-modal-logut">
-                                        <div class="bg-purple text-light btn-back rounded-0" data-bs-dismiss="modal">
-                                            キャンセル
-                                        </div>
-                                        <div class="bg-purple text-light btn-logout rounded-0" data-bs-dismiss="modal">
-                                            OK
-                                        </div>
+                                        <div class="bg-purple text-light btn-back rounded-0" data-bs-dismiss="modal">キャンセル</div>
+                                        <div class="bg-purple text-light btn-logout rounded-0" data-bs-dismiss="modal">OK</div>
                                     </div>
                                 </div>
                             </div>
@@ -539,12 +491,8 @@
                                 <div class="modal-body">
                                     <p>削除してもよろしいでしょうか？</p>
                                     <div class="list-btn-modal-logut">
-                                        <div class="bg-purple text-light btn-back rounded-0" data-bs-dismiss="modal">
-                                            キャンセル
-                                        </div>
-                                        <div class="bg-purple text-light btn-logout rounded-0" data-bs-dismiss="modal">
-                                            OK
-                                        </div>
+                                        <div class="bg-purple text-light btn-back rounded-0" data-bs-dismiss="modal">キャンセル</div>
+                                        <div class="bg-purple text-light btn-logout rounded-0" data-bs-dismiss="modal">OK</div>
                                     </div>
                                 </div>
                             </div>
