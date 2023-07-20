@@ -188,12 +188,23 @@ var RUN = {
     });
   },
 
+  // Show Iframe
+  showIframe: () => {
+    $('.input-iframe').on('input', function () {
+      const dataIframe = $(this).val();
+      const checkExistIframe = dataIframe.search('iframe');
+      if (checkExistIframe !== -1) {
+        $(this).parent().parent().parent().find('.picture__image').html($(this).val());
+      } else {
+        $(this).parent().parent().parent().find('.picture__image').html('<img class="w-100 h-100" src="../assets/images/image_upload.png" />');
+      }
+    });
+  },
+
   // Add Rows
   addRows: () => {
     const uuidv4 = () => {
-      return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, (c) =>
-        (c ^ (crypto.getRandomValues(new Uint8Array(1))[0] & (15 >> (c / 4)))).toString(16),
-      );
+      return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, (c) => (c ^ (crypto.getRandomValues(new Uint8Array(1))[0] & (15 >> (c / 4)))).toString(16));
     };
 
     $('.add-row-1').click(() => {
@@ -219,6 +230,7 @@ var RUN = {
     RUN.uploadFile();
     RUN.dataPicker();
     RUN.addRows();
+    RUN.showIframe();
     RUN.handleClickUploadImage();
     RUN.handleDeleteFileUpload();
   },
