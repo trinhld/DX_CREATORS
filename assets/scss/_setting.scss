@@ -2,8 +2,7 @@
 
 @font-face {
     font-family: ComicSansMS;
-    src: url('../fonts/ComicSansMS.ttf') format('truetype'), url('../fonts/ComicSansMS.woff') format('woff'),
-        url('../fonts/ComicSansMS.woff2') format('woff2');
+    src: url('../fonts/ComicSansMS.ttf') format('truetype'), url('../fonts/ComicSansMS.woff') format('woff'), url('../fonts/ComicSansMS.woff2') format('woff2');
 }
 
 $cl-white: #ffffff;
@@ -57,17 +56,30 @@ select {
 .container {
     margin: 0 auto;
     padding: 0 15px;
+    // @include mq_min_576 {
+    //     max-width: 540px;
+    // }
+    // @include mq_min_768 {
+    //     max-width: 720px;
+    // }
+    // @include mq_min_1024 {
+    //     max-width: 960px;
+    // }
+    // @include mq_min_1200 {
+    //     max-width: 1170px;
+    // }
+
     @include mq_min_576 {
-        max-width: 540px;
+        max-width: inherit;
     }
     @include mq_min_768 {
-        max-width: 720px;
+        max-width: inherit;
     }
     @include mq_min_1024 {
-        max-width: 960px;
+        max-width: inherit;
     }
     @include mq_min_1200 {
-        max-width: 1170px;
+        max-width: inherit;
     }
 }
 .container-fluid {

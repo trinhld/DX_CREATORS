@@ -115,22 +115,22 @@ select {
 }
 @media screen and (min-width: 576px) {
   .container {
-    max-width: 540px;
+    max-width: inherit;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: inherit;
   }
 }
 @media screen and (min-width: 1024px) {
   .container {
-    max-width: 960px;
+    max-width: inherit;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1170px;
+    max-width: inherit;
   }
 }
 
