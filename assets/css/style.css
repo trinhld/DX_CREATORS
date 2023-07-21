@@ -792,7 +792,6 @@ td {
 .picture__image img {
   width: 100% !important;
   height: 100% !important;
-  cursor: pointer;
 }
 
 .header-login {
