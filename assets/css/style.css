@@ -794,6 +794,15 @@ td {
   height: 100% !important;
 }
 
+.border-rgb-mobile {
+  border: 0.8rem solid #edceee;
+}
+@media screen and (min-width: 1024px) {
+  .border-rgb-mobile {
+    border: 0;
+  }
+}
+
 .header-login {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   padding: 1rem 0;
@@ -2037,7 +2046,7 @@ td {
 }
 .wrapper .main .container.create-notifi .content form .select-item select,
 .wrapper .main .container.create-notifi .content form .select-item input {
-  width: 16rem;
+  width: 15rem;
   height: 3.5rem;
   font-size: 1.2rem;
   font-weight: 400;
@@ -2306,7 +2315,7 @@ td {
 }
 .wrapper .main .container.new-register .content form .select-item select,
 .wrapper .main .container.new-register .content form .select-item input {
-  width: 16rem;
+  width: 15rem;
   height: 3.5rem;
   font-size: 1.2rem;
   font-weight: 400;
@@ -2624,7 +2633,7 @@ td {
 }
 .wrapper .main .container.manage-course .content form .select-item select,
 .wrapper .main .container.manage-course .content form .select-item input {
-  width: 16rem;
+  width: 15rem;
   height: 3.5rem;
   font-size: 1.2rem;
   font-weight: 400;

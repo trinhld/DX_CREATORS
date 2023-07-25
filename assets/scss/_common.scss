@@ -594,3 +594,10 @@ td {
         // cursor: pointer;
     }
 }
+
+.border-rgb-mobile {
+    border: 0.8rem solid #edceee;
+    @include mq_min_1024 {
+        border: 0;
+    }
+}

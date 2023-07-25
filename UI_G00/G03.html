@@ -45,9 +45,7 @@
                                 <li><a href="#">よくあるご質問</a></li>
                                 <li><a href="#">利用規約</a></li>
                                 <li>
-                                    <a class="btn-show-logout" data-bs-toggle="modal" href="#exampleModalToggle"
-                                        >ログアウト</a
-                                    >
+                                    <a class="btn-show-logout" data-bs-toggle="modal" href="#exampleModalToggle">ログアウト</a>
                                 </li>
                             </ul>
                         </div>
@@ -56,9 +54,9 @@
             </header>
 
             <!-- Main -->
-            <section class="main">
+            <section class="main border-rgb-mobile">
                 <div class="container create-notifi">
-                    <div class="content px-md-5">
+                    <div class="content px-md-5" style="min-height: 100vh">
                         <h4 class="my-5">お知らせ一覧</h4>
                         <form>
                             <div class="d-flex justify-content-start flex-wrap">
@@ -92,14 +90,14 @@
                                     </div>
                                 </div>
                                 <div class="form-group select-item mt-5 mt-md-0 ms-md-5">
-                                    <label for="exampleFormControlSelect1">配信者</label>
+                                    <label for="exampleFormControlSelect1">送信先</label>
                                     <select class="form-select">
-                                        <option>管理者選択</option>
-                                        <option>管理者選択</option>
-                                        <option>管理者選択</option>
+                                        <option>全て</option>
+                                        <option>全て</option>
+                                        <option>全て</option>
                                     </select>
                                 </div>
-                                <div class="form-group select-item mt-5">
+                                <!-- <div class="form-group select-item mt-5">
                                     <label for="exampleFormControlSelect1">更新日</label>
                                     <div class="wraper d-flex">
                                         <select class="form-select">
@@ -129,7 +127,7 @@
                                         <option>全て</option>
                                         <option>全て</option>
                                     </select>
-                                </div>
+                                </div> -->
                             </div>
                         </form>
                         <div class="list-btn">
@@ -161,16 +159,10 @@
                                         <td>ユーザー管理者</td>
                                         <td>
                                             <div class="d-flex justify-content-center">
-                                                <img
-                                                    src="../assets/images/icon_pencil.png"
-                                                    alt=""
-                                                    class="icon-pencil-form"
-                                                />
-                                                <img
-                                                    src="../assets/images/icon_trash.png"
-                                                    alt=""
-                                                    class="icon-trash-form"
-                                                />
+                                                <img src="../assets/images/icon_pencil.png" alt="" class="icon-pencil-form" />
+                                                <a data-bs-toggle="modal" href="#modalDelete">
+                                                    <img src="../assets/images/icon_trash.png" alt="" class="icon-trash-form" />
+                                                </a>
                                             </div>
                                         </td>
                                     </tr>
@@ -184,16 +176,10 @@
                                         <td>ユーザー管理者</td>
                                         <td>
                                             <div class="d-flex justify-content-center">
-                                                <img
-                                                    src="../assets/images/icon_pencil.png"
-                                                    alt=""
-                                                    class="icon-pencil-form"
-                                                />
-                                                <img
-                                                    src="../assets/images/icon_trash.png"
-                                                    alt=""
-                                                    class="icon-trash-form"
-                                                />
+                                                <img src="../assets/images/icon_pencil.png" alt="" class="icon-pencil-form" />
+                                                <a data-bs-toggle="modal" href="#modalDelete">
+                                                    <img src="../assets/images/icon_trash.png" alt="" class="icon-trash-form" />
+                                                </a>
                                             </div>
                                         </td>
                                     </tr>
@@ -207,16 +193,10 @@
                                         <td>ユーザー管理者</td>
                                         <td>
                                             <div class="d-flex justify-content-center">
-                                                <img
-                                                    src="../assets/images/icon_pencil.png"
-                                                    alt=""
-                                                    class="icon-pencil-form"
-                                                />
-                                                <img
-                                                    src="../assets/images/icon_trash.png"
-                                                    alt=""
-                                                    class="icon-trash-form"
-                                                />
+                                                <img src="../assets/images/icon_pencil.png" alt="" class="icon-pencil-form" />
+                                                <a data-bs-toggle="modal" href="#modalDelete">
+                                                    <img src="../assets/images/icon_trash.png" alt="" class="icon-trash-form" />
+                                                </a>
                                             </div>
                                         </td>
                                     </tr>
@@ -230,16 +210,10 @@
                                         <td>ユーザー管理者</td>
                                         <td>
                                             <div class="d-flex justify-content-center">
-                                                <img
-                                                    src="../assets/images/icon_pencil.png"
-                                                    alt=""
-                                                    class="icon-pencil-form"
-                                                />
-                                                <img
-                                                    src="../assets/images/icon_trash.png"
-                                                    alt=""
-                                                    class="icon-trash-form"
-                                                />
+                                                <img src="../assets/images/icon_pencil.png" alt="" class="icon-pencil-form" />
+                                                <a data-bs-toggle="modal" href="#modalDelete">
+                                                    <img src="../assets/images/icon_trash.png" alt="" class="icon-trash-form" />
+                                                </a>
                                             </div>
                                         </td>
                                     </tr>
@@ -253,16 +227,10 @@
                                         <td>ユーザー管理者</td>
                                         <td>
                                             <div class="d-flex justify-content-center">
-                                                <img
-                                                    src="../assets/images/icon_pencil.png"
-                                                    alt=""
-                                                    class="icon-pencil-form"
-                                                />
-                                                <img
-                                                    src="../assets/images/icon_trash.png"
-                                                    alt=""
-                                                    class="icon-trash-form"
-                                                />
+                                                <img src="../assets/images/icon_pencil.png" alt="" class="icon-pencil-form" />
+                                                <a data-bs-toggle="modal" href="#modalDelete">
+                                                    <img src="../assets/images/icon_trash.png" alt="" class="icon-trash-form" />
+                                                </a>
                                             </div>
                                         </td>
                                     </tr>
@@ -294,13 +262,7 @@
                         </nav>
                     </div>
                     <!-- Modal Logout -->
-                    <div
-                        class="modal fade modal-logout"
-                        id="exampleModalToggle"
-                        aria-hidden="true"
-                        aria-labelledby="exampleModalToggleLabel"
-                        tabindex="-1"
-                    >
+                    <div class="modal fade modal-logout" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-logout-header">ログアウト</div>
@@ -309,6 +271,22 @@
                                     <div class="list-btn-modal-logut">
                                         <div class="btn-back" data-bs-dismiss="modal">戻る</div>
                                         <div class="btn-logout" data-bs-dismiss="modal">ログアウト</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal Delete -->
+                    <div class="modal fade modal-logout modal-delete" id="modalDelete" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-logout-header bg-purple">削除処理確認</div>
+                                <div class="modal-body">
+                                    <p>お知らせを削除してもよろしいでしょうか？</p>
+                                    <div class="list-btn-modal-logut">
+                                        <div class="btn-back rounded-0" data-bs-dismiss="modal">キャンセル</div>
+                                        <div class="btn-logout rounded-0" data-bs-dismiss="modal">OK</div>
                                     </div>
                                 </div>
                             </div>

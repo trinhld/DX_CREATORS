@@ -98,15 +98,15 @@
             </header>
 
             <!-- Main -->
-            <section class="main">
+            <section class="main border-rgb-mobile">
                 <div class="container create-notifi">
-                    <div class="content px-md-5">
+                    <div class="content px-md-5" style="min-height: 100vh">
                         <div class="notify-success mt-3">停止処理が完了しました。</div>
                         <h4 class="my-5">管理者情報一覧</h4>
                         <form>
                             <div class="d-flex justify-content-start flex-wrap">
                                 <div class="form-group select-item">
-                                    <label for="exampleFormControlSelect1">タイトル</label>
+                                    <label for="exampleFormControlSelect1">名前</label>
                                     <!-- <div class="input-group input-search"> -->
                                     <div class="input-group">
                                         <input type="text" class="form-control" />
@@ -141,8 +141,10 @@
                                         <option>ステータス</option>
                                     </select>
                                 </div>
+                            </div>
+                            <div class="d-flex justify-content-start flex-wrap">
                                 <div class="form-group select-item mt-5">
-                                    <label for="exampleFormControlSelect1">ステータス</label>
+                                    <label for="exampleFormControlSelect1">登録日</label>
                                     <div class="wraper d-flex">
                                         <div class="input-group">
                                             <input type="text" class="form-control datepicker2" />
@@ -204,18 +206,10 @@
                                         <td>
                                             <div class="d-flex justify-content-center">
                                                 <a href="#">
-                                                    <img
-                                                        src="../assets/images/icon_pencil.png"
-                                                        alt=""
-                                                        class="icon-pencil-form"
-                                                    />
+                                                    <img src="../assets/images/icon_pencil.png" alt="" class="icon-pencil-form" />
                                                 </a>
                                                 <a data-bs-toggle="modal" href="#modalDelete">
-                                                    <img
-                                                        src="../assets/images/icon_trash.png"
-                                                        alt=""
-                                                        class="icon-trash-form"
-                                                    />
+                                                    <img src="../assets/images/icon_trash.png" alt="" class="icon-trash-form" />
                                                 </a>
                                             </div>
                                         </td>
@@ -236,18 +230,10 @@
                                         <td>
                                             <div class="d-flex justify-content-center">
                                                 <a href="#">
-                                                    <img
-                                                        src="../assets/images/icon_pencil.png"
-                                                        alt=""
-                                                        class="icon-pencil-form"
-                                                    />
+                                                    <img src="../assets/images/icon_pencil.png" alt="" class="icon-pencil-form" />
                                                 </a>
                                                 <a data-bs-toggle="modal" href="#modalDelete">
-                                                    <img
-                                                        src="../assets/images/icon_trash.png"
-                                                        alt=""
-                                                        class="icon-trash-form"
-                                                    />
+                                                    <img src="../assets/images/icon_trash.png" alt="" class="icon-trash-form" />
                                                 </a>
                                             </div>
                                         </td>
@@ -268,18 +254,10 @@
                                         <td>
                                             <div class="d-flex justify-content-center">
                                                 <a href="#">
-                                                    <img
-                                                        src="../assets/images/icon_pencil.png"
-                                                        alt=""
-                                                        class="icon-pencil-form"
-                                                    />
+                                                    <img src="../assets/images/icon_pencil.png" alt="" class="icon-pencil-form" />
                                                 </a>
                                                 <a data-bs-toggle="modal" href="#modalDelete">
-                                                    <img
-                                                        src="../assets/images/icon_trash.png"
-                                                        alt=""
-                                                        class="icon-trash-form"
-                                                    />
+                                                    <img src="../assets/images/icon_trash.png" alt="" class="icon-trash-form" />
                                                 </a>
                                             </div>
                                         </td>
@@ -300,18 +278,10 @@
                                         <td>
                                             <div class="d-flex justify-content-center">
                                                 <a href="#">
-                                                    <img
-                                                        src="../assets/images/icon_pencil.png"
-                                                        alt=""
-                                                        class="icon-pencil-form"
-                                                    />
+                                                    <img src="../assets/images/icon_pencil.png" alt="" class="icon-pencil-form" />
                                                 </a>
                                                 <a data-bs-toggle="modal" href="#modalDelete">
-                                                    <img
-                                                        src="../assets/images/icon_trash.png"
-                                                        alt=""
-                                                        class="icon-trash-form"
-                                                    />
+                                                    <img src="../assets/images/icon_trash.png" alt="" class="icon-trash-form" />
                                                 </a>
                                             </div>
                                         </td>
@@ -332,18 +302,10 @@
                                         <td>
                                             <div class="d-flex justify-content-center">
                                                 <a href="#">
-                                                    <img
-                                                        src="../assets/images/icon_pencil.png"
-                                                        alt=""
-                                                        class="icon-pencil-form"
-                                                    />
+                                                    <img src="../assets/images/icon_pencil.png" alt="" class="icon-pencil-form" />
                                                 </a>
                                                 <a data-bs-toggle="modal" href="#modalDelete">
-                                                    <img
-                                                        src="../assets/images/icon_trash.png"
-                                                        alt=""
-                                                        class="icon-trash-form"
-                                                    />
+                                                    <img src="../assets/images/icon_trash.png" alt="" class="icon-trash-form" />
                                                 </a>
                                             </div>
                                         </td>
@@ -376,13 +338,7 @@
                         </nav>
                     </div>
                     <!-- Modal Logout -->
-                    <div
-                        class="modal fade modal-logout"
-                        id="exampleModalToggle"
-                        aria-hidden="true"
-                        aria-labelledby="exampleModalToggleLabel"
-                        tabindex="-1"
-                    >
+                    <div class="modal fade modal-logout" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-logout-header">ログアウト</div>
@@ -398,13 +354,7 @@
                     </div>
 
                     <!-- Modal Delete -->
-                    <div
-                        class="modal fade modal-logout modal-delete"
-                        id="modalDelete"
-                        aria-hidden="true"
-                        aria-labelledby="exampleModalToggleLabel"
-                        tabindex="-1"
-                    >
+                    <div class="modal fade modal-logout modal-delete" id="modalDelete" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-logout-header bg-purple">ログアウト</div>
