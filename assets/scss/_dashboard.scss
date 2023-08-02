@@ -1767,6 +1767,373 @@
                 }
             }
         }
+
+        .container.payment {
+            @include mq_min_1024 {
+                padding: 0.5rem !important;
+                background: linear-gradient(90deg, #c3d5e1, #94d5ff, #ebceff) no-repeat;
+            }
+
+            .content {
+                width: 100%;
+                background-color: $cl-white;
+
+                @include mq_min_1024 {
+                    padding: 2rem 8rem;
+                }
+
+                .notify-success {
+                    @include font(1.4rem, 600, 1.8);
+                    padding: 1rem 1.5rem;
+                    color: $cl-black;
+                    border: 1px solid #e2e2e2;
+                    border-left: 4px solid #8b8ebb;
+                }
+
+                h3 {
+                    margin: 2rem auto 4rem;
+                    padding: 0.5rem 2rem;
+                    @include font(1.8rem, 400, 1.8);
+                    color: $cl-white;
+                    background: linear-gradient(90deg, #e4a1c5, #dbe9f4) no-repeat;
+
+                    @include mq_min_1024 {
+                        margin-top: 4rem;
+                    }
+                }
+
+                h4 {
+                    @include font(2.5rem, 600, 1.8);
+                }
+
+                .hbspt-form {
+                    form {
+                        .field {
+                            // @include flexbox(flex, flex-start, center, nowrap);
+                            display: flex !important;
+                        }
+                    }
+                }
+
+                & > img {
+                    width: 15rem;
+                    height: 15rem;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    margin: 2rem auto;
+
+                    @include mq_min_1024 {
+                        width: 18rem;
+                        height: 18rem;
+                    }
+                }
+
+                form {
+                    label {
+                        position: relative;
+                        display: inline-block;
+                        margin-bottom: 0.5rem;
+                        font-weight: 600 !important;
+                    }
+                    .bg-button {
+                        width: 100%;
+                        padding: 0.5rem 0;
+                        @include font(1.2rem, 500, 1.6);
+                        color: $cl-white;
+                        border: 0;
+                        background: linear-gradient(90deg, #5f9fce, #dd8bb7) no-repeat;
+                        @include mq_min_768 {
+                            font-size: 1.4rem;
+                        }
+                    }
+
+                    .required {
+                        &::after {
+                            position: absolute;
+                            content: '必須';
+                            top: 50%;
+                            right: -10px;
+                            width: 35px;
+                            transform: translate(100%, -50%);
+                            font-size: 0.8rem;
+                            color: #ffffff;
+                            text-align: center;
+                            background-color: #f14a4a;
+                            @include mq_min_1024 {
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                    .input-group {
+                        position: relative;
+                        @include flexbox(flex, flex-start, normal, nowrap);
+                        & > p {
+                            color: $cl-gray;
+                        }
+                        .form-edit {
+                            @include flexbox(flex, flex-start, normal, nowrap);
+
+                            div {
+                                @include flexbox(flex, flex-start, center, nowrap);
+
+                                span {
+                                    margin-right: 1rem;
+                                    @include font(1.4rem, 400, 1.8);
+                                    text-overflow: ellipsis;
+                                    // overflow: hidden;
+                                    -webkit-line-clamp: 1;
+                                    -webkit-box-orient: vertical;
+                                    white-space: nowrap;
+                                }
+                            }
+
+                            & > input,
+                            select,
+                            textarea {
+                                @include font(1.3rem, 400, 1.8);
+                                border-radius: 6px;
+                            }
+
+                            & > select {
+                                max-width: 21rem;
+                            }
+                        }
+                        .form-control {
+                            border-radius: 6px;
+                        }
+                        .input-group-text {
+                            position: relative;
+                            width: 15rem;
+                            height: 100%;
+                            // height: 4rem;
+                            @include font(1.1rem, 400, 1.8);
+                            font-family: Arial, Helvetica, sans-serif;
+                            text-align: center;
+                            color: $cl-black;
+
+                            @include mq_min_1024 {
+                                font-size: 1.4rem;
+                            }
+
+                            @include mq_min_1024 {
+                                width: 18rem;
+                            }
+                        }
+                        p {
+                            padding: 0.8rem 1.5rem;
+                            @include font(1.4rem, 400, 1.8);
+                            font-family: Arial, Helvetica, sans-serif;
+                            border-top-left-radius: 0 !important;
+                            border-bottom-left-radius: 0 !important;
+                            .btn-edit-profile {
+                                width: 14rem;
+                                margin-left: auto;
+                                padding: 0 1rem;
+                                @include font(1.2rem, 500, 1.8);
+                                text-align: center;
+                                border: 1px solid #a8a7a7;
+                                color: $cl-white;
+                                background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;
+                            }
+                        }
+                    }
+                    .select-item {
+                        label {
+                            @include font(1.4rem, 500, 1.8);
+                        }
+
+                        select,
+                        input {
+                            width: 15rem;
+
+                            @include mq_min_1024 {
+                                width: 18rem;
+                            }
+
+                            height: 3.5rem;
+                            @include font(1.2rem, 400, 1.8);
+                            border-radius: 6px;
+                        }
+                    }
+                    .form-check-label {
+                        font-family: Arial, Helvetica, sans-serif;
+                    }
+                    .form-check-input:checked[type='radio'] {
+                        background: #000;
+                    }
+                    .form-check-input:checked {
+                        background-color: #000;
+                        border-color: #000;
+                    }
+                    .form-check-input:focus {
+                        box-shadow: none;
+                    }
+                    .list-btn {
+                        margin-top: 4rem;
+                        @include flexbox(flex, center, normal, nowrap);
+
+                        @include mq_min_1024 {
+                            justify-content: flex-end;
+                        }
+
+                        .btn-child {
+                            width: 11rem;
+                            padding: 0.5rem 1rem;
+                            @include font(1.4rem, 500, 1.8);
+                            text-align: center;
+                            border: 1px solid #a8a7a7;
+                            background-color: $cl-white;
+
+                            &:first-child {
+                                color: $cl-black;
+                            }
+
+                            &:nth-child(2) {
+                                margin-left: 1rem;
+                                color: $cl-white;
+                                background: linear-gradient(90deg, #629ece, #db8bb7) no-repeat;
+                            }
+
+                            &:last-child {
+                                margin-left: 1rem;
+                                color: $cl-white;
+                                background: linear-gradient(90deg, #629ece, #db8bb7) no-repeat;
+                            }
+                        }
+                    }
+                }
+
+                .list-btn {
+                    margin-top: 4rem;
+                    @include flexbox(flex, center, normal, nowrap);
+
+                    @include mq_min_1024 {
+                        justify-content: flex-end;
+                    }
+
+                    .btn-child {
+                        width: 11rem;
+                        padding: 0.5rem 1rem;
+                        @include font(1.4rem, 500, 1.8);
+                        text-align: center;
+                        border: 1px solid #a8a7a7;
+                        background-color: $cl-white;
+
+                        &:first-child {
+                            color: $cl-black;
+                        }
+
+                        &:nth-child(2) {
+                            margin-left: 1rem;
+                            color: $cl-white;
+                            background: #8b8ebb;
+                        }
+
+                        &:last-child {
+                            margin-left: 1rem;
+                            color: $cl-white;
+                            background: #8b8ebb;
+                        }
+                    }
+                }
+
+                .wrapper-table {
+                    overflow-x: auto;
+
+                    table {
+                        width: 100rem;
+
+                        @include mq_min_1024 {
+                            width: 100% !important;
+                        }
+
+                        .icon-pencil-form {
+                            max-width: 2.5rem;
+                            max-height: 1.9rem;
+                            cursor: pointer;
+                        }
+
+                        .icon-trash-form {
+                            max-width: 1.5rem;
+                            max-height: 1.9rem;
+                            margin-left: 1.5rem;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .pagination {
+                    li {
+                        a {
+                            padding: 0.1rem 1.5rem;
+                            color: #7e7e7e;
+                        }
+                    }
+
+                    .page-item.active .page-link {
+                        color: #000;
+                        border-color: #dee2e6;
+                        background-color: #dfe7f2;
+                    }
+                }
+
+                .wrapper-card {
+                    margin-top: 3rem;
+                    padding: 0.3rem 1rem;
+                    border-radius: 6px;
+                    border: 1px solid #dfe7f2;
+                    .card-item {
+                        @include flexbox(flex, flex-start, center, nowrap);
+                        padding: 1rem;
+                        &:not(:last-child) {
+                            border-bottom: 1px solid #dfe7f2;
+                        }
+                        & > img {
+                            width: 3rem;
+                        }
+                        & > span {
+                            display: inline-block;
+                            margin: 0 1.5rem;
+                        }
+                        .card-default {
+                            color: #fff;
+                            margin-left: 3rem;
+                            padding: 0.3rem 2rem;
+                            background: linear-gradient(90deg, #c3d5e1, #57a1d0, #ab92bc) no-repeat;
+                        }
+                        .list-btn-card {
+                            @include flexbox(flex, flex-start, normal, nowrap);
+                            margin-left: auto;
+                            .btn-card {
+                                padding: 0.3rem 2rem;
+                                border: 1px solid #cecece;
+                                & > img {
+                                    width: 2rem;
+                                    margin-right: 0.5rem;
+                                }
+                                font-weight: bold;
+                                &:not(:last-child) {
+                                    margin-right: 1.5rem;
+                                }
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+                .btn-card-plus {
+                    width: 20rem;
+                    margin: 1.8rem 0 0 auto;
+                    padding: 0.3rem 2rem;
+                    border: 1px solid #cecece;
+                    & > img {
+                        width: 2rem;
+                        margin-right: 0.5rem;
+                    }
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+            }
+        }
     }
 
     // Footer

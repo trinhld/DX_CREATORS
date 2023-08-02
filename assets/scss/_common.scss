@@ -23,6 +23,10 @@ td {
     vertical-align: middle;
 }
 
+a:hover {
+    color: unset;
+}
+
 .user-list-option {
     display: none;
     position: absolute;
