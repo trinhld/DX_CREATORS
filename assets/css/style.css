@@ -2136,7 +2136,7 @@ a:hover {
 }
 @media screen and (min-width: 1024px) {
   .wrapper .main .container.new-register {
-    padding: 3.5rem 8.5rem;
+    padding: 3.5rem 12rem;
   }
 }
 .wrapper .main .container.new-register .content {
@@ -2391,22 +2391,13 @@ a:hover {
 .wrapper .main .container.new-register .d03 .input-group input {
   width: 100% !important;
 }
-.wrapper .main .container.new-register .d03 .content {
-  height: 90vh;
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .main .container.new-register .d03 .content {
-    height: 45rem;
-    padding: 5rem 8rem;
-  }
-}
 .wrapper .main .container.new-register .d03 .content form {
   width: 100%;
   margin-top: 4.5rem;
 }
 @media screen and (min-width: 768px) {
   .wrapper .main .container.new-register .d03 .content form {
-    width: 45rem;
+    width: 85rem;
   }
 }
 .wrapper .main .container.new-register .d031 {
