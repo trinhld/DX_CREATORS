@@ -807,6 +807,16 @@ a:hover {
   }
 }
 
+.btn-form-custom button {
+  transition: all 0.3s ease;
+}
+.btn-form-custom button:focus {
+  box-shadow: none;
+}
+.btn-form-custom:hover button {
+  color: #fff;
+}
+
 .header-login {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   padding: 1rem 0;

@@ -605,3 +605,15 @@ a:hover {
         border: 0;
     }
 }
+
+.btn-form-custom {
+    button {
+        transition: all 0.3s ease;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    &:hover button {
+        color: #fff;
+    }
+}
