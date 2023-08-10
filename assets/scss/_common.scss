@@ -364,6 +364,10 @@ a:hover {
     margin-bottom: 10rem !important;
 }
 
+.bg-rgb {
+    background: linear-gradient(90deg, #de8cb7, #d1e2ec, #fff) no-repeat;
+}
+
 .bg-rgb-btn {
     background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;
 }
@@ -616,4 +620,8 @@ a:hover {
     &:hover button {
         color: #fff;
     }
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: '>';
 }

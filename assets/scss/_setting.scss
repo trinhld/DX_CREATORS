@@ -42,6 +42,10 @@ a {
     color: inherit;
 }
 
+th {
+    white-space: nowrap;
+}
+
 input,
 select {
     width: 100%;
@@ -87,6 +91,18 @@ select {
 }
 .d-none {
     display: none;
+}
+.sp {
+    display: block;
+    @include mq_min_1024 {
+        display: none;
+    }
+}
+.pc {
+    display: none;
+    @include mq_min_1024 {
+        display: block;
+    }
 }
 .d-block {
     display: block;

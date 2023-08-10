@@ -218,10 +218,18 @@ var RUN = {
     });
   },
 
+  // Show Payment Item
+  showPaymentItem: () => {
+    $('.icon-arrow-payment-item').on('click', function () {
+      $(this).parent().toggleClass('show-payment-item');
+    });
+  },
+
   // Initial
   init: () => {
     RUN.showMenuUser();
     RUN.showMenuAdmin();
+    RUN.showPaymentItem();
     RUN.handleAccordionMenuAdmin();
     RUN.showModalLogout();
     RUN.showSidebar();

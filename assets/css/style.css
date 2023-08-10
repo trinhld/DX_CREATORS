@@ -98,6 +98,10 @@ a {
   color: inherit;
 }
 
+th {
+  white-space: nowrap;
+}
+
 input,
 select {
   width: 100%;
@@ -140,6 +144,24 @@ select {
 
 .d-none {
   display: none;
+}
+
+.sp {
+  display: block;
+}
+@media screen and (min-width: 1024px) {
+  .sp {
+    display: none;
+  }
+}
+
+.pc {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .pc {
+    display: block;
+  }
 }
 
 .d-block {
@@ -568,6 +590,10 @@ a:hover {
   margin-bottom: 10rem !important;
 }
 
+.bg-rgb {
+  background: linear-gradient(90deg, #de8cb7, #d1e2ec, #fff) no-repeat;
+}
+
 .bg-rgb-btn {
   background: linear-gradient(90deg, #0d85c7, #bf5da0) no-repeat;
 }
@@ -815,6 +841,10 @@ a:hover {
 }
 .btn-form-custom:hover button {
   color: #fff;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
 }
 
 .header-login {
@@ -3196,6 +3226,34 @@ a:hover {
   max-height: 1.9rem;
   margin-left: 1.5rem;
   cursor: pointer;
+}
+.wrapper .main .container.payment .content .wrapper-table .payment-item {
+  position: relative;
+  height: 9.8rem;
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid #ced4da;
+  border-radius: 10px;
+  color: #7d7d7d;
+  overflow: hidden;
+}
+.wrapper .main .container.payment .content .wrapper-table .payment-item .icon-arrow-payment-item {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%) rotate(-90deg);
+}
+.wrapper .main .container.payment .content .wrapper-table .payment-item li:not(:last-child) {
+  padding-bottom: 0.5rem;
+}
+.wrapper .main .container.payment .content .wrapper-table .show-payment-item {
+  height: auto;
+}
+.wrapper .main .container.payment .content .wrapper-table .show-payment-item .icon-arrow-payment-item {
+  top: 15%;
+  transform: rotate(0deg);
 }
 .wrapper .main .container.payment .content .pagination li a {
   padding: 0.1rem 1.5rem;
