@@ -404,23 +404,6 @@ a:hover {
     }
 }
 
-.input-payment {
-    position: relative;
-    &::after {
-        position: absolute;
-        content: '';
-        top: 50%;
-        left: 8px;
-        transform: translateY(-50%);
-        background-image: url('../images/icon_card.png');
-        background-repeat: no-repeat;
-        background-size: 2rem 2rem;
-        width: 2rem;
-        height: 2rem;
-        z-index: 9;
-    }
-}
-
 .list-btn {
     margin-top: 4rem;
     @include flexbox(flex, center, normal, nowrap);
@@ -624,4 +607,10 @@ a:hover {
 
 .breadcrumb-item + .breadcrumb-item::before {
     content: '>';
+}
+
+.hight-light-title {
+    margin-bottom: 1rem !important;
+    padding: 0.5rem 1rem;
+    border-left: 4px solid #dfe7f2;
 }

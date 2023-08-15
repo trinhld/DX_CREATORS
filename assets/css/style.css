@@ -633,23 +633,6 @@ a:hover {
   z-index: 9;
 }
 
-.input-payment {
-  position: relative;
-}
-.input-payment::after {
-  position: absolute;
-  content: "";
-  top: 50%;
-  left: 8px;
-  transform: translateY(-50%);
-  background-image: url("../images/icon_card.png");
-  background-repeat: no-repeat;
-  background-size: 2rem 2rem;
-  width: 2rem;
-  height: 2rem;
-  z-index: 9;
-}
-
 .list-btn {
   margin-top: 4rem;
   display: flex;
@@ -845,6 +828,12 @@ a:hover {
 
 .breadcrumb-item + .breadcrumb-item::before {
   content: ">";
+}
+
+.hight-light-title {
+  margin-bottom: 1rem !important;
+  padding: 0.5rem 1rem;
+  border-left: 4px solid #dfe7f2;
 }
 
 .header-login {
@@ -3170,6 +3159,22 @@ a:hover {
   color: #ffffff;
   background: linear-gradient(90deg, #629ece, #db8bb7) no-repeat;
 }
+@media screen and (min-width: 1024px) {
+  .wrapper .main .container.payment .content .info-card {
+    margin-bottom: 6rem;
+  }
+}
+.wrapper .main .container.payment .content .info-card .info-card-row .title-row-card {
+  padding: 0.8rem 0;
+  border-left: 4.5px solid #dfe7f2;
+}
+.wrapper .main .container.payment .content .info-card .info-card-row .content-row-card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 0.8rem 1.2rem;
+}
 .wrapper .main .container.payment .content .list-btn {
   margin-top: 4rem;
   display: flex;
@@ -3264,66 +3269,141 @@ a:hover {
   border-color: #dee2e6;
   background-color: #dfe7f2;
 }
-.wrapper .main .container.payment .content .wrapper-card {
+.wrapper .main .container.payment .content .wrapper-card.pc {
   margin-top: 3rem;
   padding: 0.3rem 1rem;
   border-radius: 6px;
   border: 1px solid #dfe7f2;
 }
-.wrapper .main .container.payment .content .wrapper-card .card-item {
+.wrapper .main .container.payment .content .wrapper-card.pc .card-item {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
   padding: 1rem;
 }
-.wrapper .main .container.payment .content .wrapper-card .card-item:not(:last-child) {
+.wrapper .main .container.payment .content .wrapper-card.pc .card-item:not(:last-child) {
   border-bottom: 1px solid #dfe7f2;
 }
-.wrapper .main .container.payment .content .wrapper-card .card-item > img {
+.wrapper .main .container.payment .content .wrapper-card.pc .card-item > img {
   width: 3rem;
 }
-.wrapper .main .container.payment .content .wrapper-card .card-item > span {
+.wrapper .main .container.payment .content .wrapper-card.pc .card-item > span {
   display: inline-block;
   margin: 0 1.5rem;
 }
-.wrapper .main .container.payment .content .wrapper-card .card-item .card-default {
+.wrapper .main .container.payment .content .wrapper-card.pc .card-item .card-default {
   color: #fff;
   margin-left: 3rem;
   padding: 0.3rem 2rem;
   background: linear-gradient(90deg, #c3d5e1, #57a1d0, #ab92bc) no-repeat;
 }
-.wrapper .main .container.payment .content .wrapper-card .card-item .list-btn-card {
+.wrapper .main .container.payment .content .wrapper-card.pc .card-item .list-btn-card {
   display: flex;
   justify-content: flex-start;
   align-items: normal;
   flex-wrap: nowrap;
   margin-left: auto;
 }
-.wrapper .main .container.payment .content .wrapper-card .card-item .list-btn-card .btn-card {
+.wrapper .main .container.payment .content .wrapper-card.pc .card-item .list-btn-card .btn-card {
   padding: 0.3rem 2rem;
   border: 1px solid #cecece;
   font-weight: bold;
   cursor: pointer;
 }
-.wrapper .main .container.payment .content .wrapper-card .card-item .list-btn-card .btn-card > img {
+.wrapper .main .container.payment .content .wrapper-card.pc .card-item .list-btn-card .btn-card > img {
   width: 2rem;
   margin-right: 0.5rem;
 }
-.wrapper .main .container.payment .content .wrapper-card .card-item .list-btn-card .btn-card:not(:last-child) {
+.wrapper .main .container.payment .content .wrapper-card.pc .card-item .list-btn-card .btn-card:not(:last-child) {
   margin-right: 1.5rem;
 }
-.wrapper .main .container.payment .content .btn-card-plus {
-  width: 20rem;
-  margin: 1.8rem 0 0 auto;
+.wrapper .main .container.payment .content .wrapper-card.sp .card-item {
+  padding: 1.2rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #dfe7f2;
+}
+.wrapper .main .container.payment .content .wrapper-card.sp .card-item:not(:first-child) {
+  margin-top: 1rem;
+}
+.wrapper .main .container.payment .content .wrapper-card.sp .card-item .card-default {
+  margin-top: 2rem;
+  padding: 0.3rem 2rem;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(90deg, #c3d5e1, #57a1d0, #ab92bc) no-repeat;
+}
+.wrapper .main .container.payment .content .list-btn-card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: normal;
+  flex-wrap: nowrap;
+}
+.wrapper .main .container.payment .content .list-btn-card .btn-card {
   padding: 0.3rem 2rem;
   border: 1px solid #cecece;
   font-weight: bold;
   cursor: pointer;
 }
-.wrapper .main .container.payment .content .btn-card-plus > img {
+.wrapper .main .container.payment .content .list-btn-card .btn-card > img {
   width: 2rem;
   margin-right: 0.5rem;
+}
+.wrapper .main .container.payment .content .list-btn-card .btn-card:not(:last-child) {
+  margin-right: 1rem;
+}
+.wrapper .main .container.payment .input-payment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .wrapper .main .container.payment .input-payment {
+    flex-wrap: nowrap;
+  }
+}
+.wrapper .main .container.payment .input-payment input {
+  width: 100% !important;
+}
+.wrapper .main .container.payment .input-payment input:first-child {
+  position: relative;
+}
+.wrapper .main .container.payment .input-payment input:first-child::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+  background-image: url("../images/icon_card.png");
+  background-repeat: no-repeat;
+  background-size: 2rem 2rem;
+  width: 2rem;
+  height: 2rem;
+  z-index: 9;
+}
+@media screen and (min-width: 768px) {
+  .wrapper .main .container.payment .input-payment input:first-child {
+    width: 50% !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .wrapper .main .container.payment .input-payment input:nth-child(2) {
+    width: 15% !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .wrapper .main .container.payment .input-payment input:nth-child(3) {
+    width: 35% !important;
+  }
+}
+.wrapper .main .container.payment .input-payment input:not(:first-child) {
+  margin-top: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .wrapper .main .container.payment .input-payment input:not(:first-child) {
+    margin-top: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

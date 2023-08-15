@@ -2002,6 +2002,23 @@
                     }
                 }
 
+                .info-card {
+                    // padding: 1.5rem 1rem;
+                    @include mq_min_1024 {
+                        margin-bottom: 6rem;
+                    }
+                    .info-card-row {
+                        .title-row-card {
+                            padding: 0.8rem 0;
+                            border-left: 4.5px solid #dfe7f2;
+                        }
+                        .content-row-card {
+                            @include flexbox(flex, flex-start, center, nowrap);
+                            padding: 0.8rem 1.2rem;
+                        }
+                    }
+                }
+
                 .list-btn {
                     margin-top: 4rem;
                     @include flexbox(flex, center, normal, nowrap);
@@ -2108,7 +2125,7 @@
                     }
                 }
 
-                .wrapper-card {
+                .wrapper-card.pc {
                     margin-top: 3rem;
                     padding: 0.3rem 1rem;
                     border-radius: 6px;
@@ -2151,17 +2168,83 @@
                         }
                     }
                 }
-                .btn-card-plus {
-                    width: 20rem;
-                    margin: 1.8rem 0 0 auto;
-                    padding: 0.3rem 2rem;
-                    border: 1px solid #cecece;
-                    & > img {
-                        width: 2rem;
-                        margin-right: 0.5rem;
+                .wrapper-card.sp {
+                    .card-item {
+                        padding: 1.2rem 1.5rem;
+                        border-radius: 8px;
+                        border: 1px solid #dfe7f2;
+                        &:not(:first-child) {
+                            margin-top: 1rem;
+                        }
+                        .card-default {
+                            margin-top: 2rem;
+                            padding: 0.3rem 2rem;
+                            text-align: center;
+                            color: #fff;
+                            background: linear-gradient(90deg, #c3d5e1, #57a1d0, #ab92bc) no-repeat;
+                        }
                     }
-                    font-weight: bold;
-                    cursor: pointer;
+                }
+                .list-btn-card {
+                    @include flexbox(flex, flex-start, normal, nowrap);
+                    .btn-card {
+                        padding: 0.3rem 2rem;
+                        border: 1px solid #cecece;
+                        & > img {
+                            width: 2rem;
+                            margin-right: 0.5rem;
+                        }
+                        font-weight: bold;
+                        &:not(:last-child) {
+                            margin-right: 1rem;
+                        }
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .input-payment {
+                @include flexbox(flex, space-between, center, wrap);
+                @include mq_min_768 {
+                    flex-wrap: nowrap;
+                }
+                input {
+                    width: 100% !important;
+                    &:first-child {
+                        position: relative;
+                        &::after {
+                            position: absolute;
+                            content: '';
+                            top: 50%;
+                            left: 8px;
+                            transform: translateY(-50%);
+                            background-image: url('../images/icon_card.png');
+                            background-repeat: no-repeat;
+                            background-size: 2rem 2rem;
+                            width: 2rem;
+                            height: 2rem;
+                            z-index: 9;
+                        }
+                        @include mq_min_768 {
+                            width: 50% !important;
+                        }
+                    }
+                    &:nth-child(2) {
+                        @include mq_min_768 {
+                            width: 15% !important;
+                        }
+                    }
+                    &:nth-child(3) {
+                        @include mq_min_768 {
+                            width: 35% !important;
+                        }
+                    }
+                    &:not(:first-child) {
+                        margin-top: 0.5rem;
+                        @include mq_min_768 {
+                            margin-top: 0;
+                        }
+                    }
                 }
             }
         }

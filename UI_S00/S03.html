@@ -103,14 +103,17 @@
                         </div>
                     </div>
                     <div class="content user-profile">
-                        <nav class="mt-4" aria-label="breadcrumb">
+                        <div class="notify-success mt-3 mt-md-0">削除が完了しました。</div>
+                        <nav class="mt-4 pc" aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="#" class="text-decoration-underline">ホーム</a></li>
                                 <li class="breadcrumb-item" aria-current="page"><a href="#">お支払い管理</a></li>
                             </ol>
                         </nav>
                         <h4 class="text-light fw-light fs-2 px-4 mt-4 bg-rgb">現在のお支払いカード</h4>
-                        <form class="list-input pt-5">
+
+                        <!-- PC -->
+                        <form class="list-input pt-5 info-card pc">
                             <div class="input-group flex-nowrap mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text bg-blue">　カード番号</span>
@@ -134,12 +137,28 @@
                             </div>
                         </form>
 
-                        <h4 class="text-light fw-light fs-2 px-4 bg-rgb" style="margin-top: 6rem">カード一覧</h4>
+                        <!-- SP -->
+                        <div class="info-card p-4 sp">
+                            <div class="info-card-row">
+                                <div class="title-row-card">　カード番号</div>
+                                <div class="content-row-card">xxxx-xxxx-xxxx-1234</div>
+                            </div>
+                            <div class="info-card-row">
+                                <div class="title-row-card">　有効期限</div>
+                                <div class="content-row-card">2024/05</div>
+                            </div>
+                            <div class="info-card-row">
+                                <div class="title-row-card">　カードブランド</div>
+                                <div class="content-row-card"><img style="width: 3rem" src="../assets/images/image_card_1.png" alt="" /> <span class="ms-3">master card</span></div>
+                            </div>
+                        </div>
+
+                        <h4 class="text-light fw-light fs-2 px-4 bg-rgb">カード一覧</h4>
                         <div class="pt-5">
-                            <p>
+                            <p class="pc">
                                 注意事項をここに表示注意事項をここに表示注意事項をここに表示注意事項をここに表示注意事項をここに表示注意事項をここに表示注意事項をここに表示注意事項をここに表示注意事項をここに表示注意事項をここに表示注意事項をここに表示注意事項をここに表示事項をここに表示事項をここに表示事項をここに表示事項をここに表示事項をここに表示事項をここに表示
                             </p>
-                            <div class="wrapper-card">
+                            <div class="wrapper-card pc">
                                 <div class="card-item">
                                     <img src="../assets/images/image_card_1.png" alt="" />
                                     <span>xxxx-xxxx-xxxx-1234</span>
@@ -177,9 +196,68 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="btn-card-plus bg-blue d-flex align-items-center">
-                                <img src="../assets/images/icon_plus_card.png" alt="" />
-                                新しいカードを登録
+                            <div class="wrapper-card sp">
+                                <div class="card-item">
+                                    <div class="d-flex justify-content-start align-items-center">
+                                        <div style="width: 8rem">
+                                            <img src="../assets/images/image_card_1.png" alt="" />
+                                        </div>
+                                        <span class="ms-4">xxxx-xxxx-xxxx-1234</span>
+                                    </div>
+                                    <div class="d-flex justify-content-start align-items-center mt-3">
+                                        <span class="fw-bolder" style="width: 8rem">有効期限</span>
+                                        <span class="ms-4">2024/05</span>
+                                    </div>
+                                    <div class="card-default">デフォルト</div>
+                                </div>
+                                <div class="card-item">
+                                    <div class="d-flex justify-content-start align-items-center">
+                                        <div style="width: 8rem">
+                                            <img src="../assets/images/image_card_2.png" alt="" />
+                                        </div>
+                                        <span class="ms-4">xxxx-xxxx-xxxx-1234</span>
+                                    </div>
+                                    <div class="d-flex justify-content-start align-items-center mt-3">
+                                        <span class="fw-bolder" style="width: 8rem">有効期限</span>
+                                        <span class="ms-4">2024/05</span>
+                                    </div>
+                                    <div class="list-btn-card d-flex align-items-normal mt-3">
+                                        <a data-bs-toggle="modal" href="#modalDefaultCard" class="w-100 btn-card d-flex justify-content-center align-items-center">
+                                            <img src="../assets/images/icon_check_card.png" alt="" />
+                                            デフォルト設定
+                                        </a>
+                                        <a data-bs-toggle="modal" href="#modalDeleteCard">
+                                            <img src="../assets/images/icon_delete_card.png" alt="" style="width: 3.2rem" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-item">
+                                    <div class="d-flex justify-content-start align-items-center">
+                                        <div style="width: 8rem">
+                                            <img src="../assets/images/image_card_3.png" alt="" />
+                                        </div>
+                                        <span class="ms-4">xxxx-xxxx-xxxx-1234</span>
+                                    </div>
+                                    <div class="d-flex justify-content-start align-items-center mt-3">
+                                        <span class="fw-bolder" style="width: 8rem">有効期限</span>
+                                        <span class="ms-4">2024/05</span>
+                                    </div>
+                                    <div class="list-btn-card d-flex align-items-normal mt-3">
+                                        <a data-bs-toggle="modal" href="#modalDefaultCard" class="w-100 btn-card d-flex justify-content-center align-items-center">
+                                            <img src="../assets/images/icon_check_card.png" alt="" />
+                                            デフォルト設定
+                                        </a>
+                                        <a data-bs-toggle="modal" href="#modalDeleteCard">
+                                            <img src="../assets/images/icon_delete_card.png" alt="" style="width: 3.2rem" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-md-end">
+                                <div class="w-100 w-md-25 mt-4 mb-10 py-1 fw-bold btn-card-plus bg-blue d-flex align-items-center justify-content-center">
+                                    <img style="width: 3rem; margin-right: 0.5rem" src="../assets/images/icon_plus_card.png" alt="" />
+                                    新しいカードを登録
+                                </div>
                             </div>
                         </div>
                         <div class="text-end-page fix-bottom">© 2023 DX CREATORS. All Rights Reserved.</div>
