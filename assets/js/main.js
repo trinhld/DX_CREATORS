@@ -6,6 +6,15 @@ var RUN = {
     $('.datepicker3').datepicker();
     $('.datepicker4').datepicker();
     $('.datepicker5').datepicker();
+    $('.datepicker-custom').datepicker({
+      dateFormat: 'yy/mm',
+    });
+
+    /* After Select Month -> Hìdden Popup */
+    $('.datepicker-custom').on('change', function () {
+      $('.datepicker-container').hide();
+    });
+
     // let arrTemp = [];
     // const listDay = $('.datepicker-days li');
     // console.log(listDay[9]);

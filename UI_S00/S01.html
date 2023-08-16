@@ -6,6 +6,8 @@
         <title>DX_CREATORS_UI</title>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+        <!-- Date Picker -->
+        <link rel="stylesheet" href="../assets/css/datepicker.min.css" />
         <!-- Custom CSS -->
         <link rel="stylesheet" href="../assets/css/style.css" />
     </head>
@@ -128,11 +130,9 @@
                         <form class="mt-4 mt-md-5 d-flex justify-content-between align-items-center">
                             <div class="w-100 w-md-25 form-group select-item">
                                 <label class="d-block mb-2 hight-light-title">支払月</label>
-                                <select class="w-100 form-select">
-                                    <option>支払月</option>
-                                    <option>支払月</option>
-                                    <option>支払月</option>
-                                </select>
+                                <div class="input-group">
+                                    <input type="text" class="form-control datepicker-custom" placeholder="YYYY/MM" />
+                                </div>
                             </div>
                             <div class="pc">
                                 <div class="list-btn" style="margin-top: 3rem">
@@ -351,6 +351,7 @@
 
         <script src="../assets/js/jquery-3.6.0.min.js"></script>
         <script src="../assets/js/bootstrap.min.js"></script>
+        <script src="../assets/js/datepicker.min.js"></script>
         <script src="../assets/js/main.js"></script>
     </body>
 </html>
