@@ -614,3 +614,51 @@ a:hover {
     padding: 0.5rem 1rem;
     border-left: 4px solid #dfe7f2;
 }
+
+.export-pdf {
+    padding: 2rem;
+    border: 1px solid #d9d9d9;
+    @include mq_min_768 {
+        padding: 3rem;
+    }
+    @include mq_min_1024 {
+        padding: 4rem;
+    }
+    h5 {
+        position: relative;
+        margin-left: -3.5rem;
+        &::after {
+            position: absolute;
+            content: '';
+            width: 35%;
+            height: 1px;
+            background-color: #000;
+            left: 0;
+            bottom: 4px;
+            margin-left: 3.5rem;
+            @include mq_min_768 {
+                width: 41%;
+            }
+            @include mq_min_1024 {
+                width: 43%;
+            }
+            @include mq_min_1200 {
+                width: 45%;
+            }
+        }
+    }
+    .price {
+        border: 1px dashed #5f5f5f;
+    }
+    .text-end-file {
+        & > div {
+            width: 100%;
+            @include mq_min_768 {
+                width: 50%;
+            }
+            @include mq_min_1024 {
+                width: 25%;
+            }
+        }
+    }
+}

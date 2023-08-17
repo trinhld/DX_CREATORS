@@ -65,10 +65,6 @@ table {
   border-spacing: 0;
 }
 
-@font-face {
-  font-family: ComicSansMS;
-  src: url("../fonts/ComicSansMS.ttf") format("truetype"), url("../fonts/ComicSansMS.woff") format("woff"), url("../fonts/ComicSansMS.woff2") format("woff2");
-}
 *,
 *::before,
 *::after {
@@ -83,7 +79,7 @@ body {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.5;
-  font-family: "ComicSansMS", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 img {
@@ -135,6 +131,31 @@ select {
 @media screen and (min-width: 1200px) {
   .container {
     max-width: inherit;
+  }
+}
+
+.container-custom {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media screen and (min-width: 576px) {
+  .container-custom {
+    max-width: 540px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container-custom {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container-custom {
+    max-width: 960px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-custom {
+    max-width: 1170px;
   }
 }
 
@@ -834,6 +855,66 @@ a:hover {
   margin-bottom: 1rem !important;
   padding: 0.5rem 1rem;
   border-left: 4px solid #dfe7f2;
+}
+
+.export-pdf {
+  padding: 2rem;
+  border: 1px solid #d9d9d9;
+}
+@media screen and (min-width: 768px) {
+  .export-pdf {
+    padding: 3rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .export-pdf {
+    padding: 4rem;
+  }
+}
+.export-pdf h5 {
+  position: relative;
+  margin-left: -3.5rem;
+}
+.export-pdf h5::after {
+  position: absolute;
+  content: "";
+  width: 35%;
+  height: 1px;
+  background-color: #000;
+  left: 0;
+  bottom: 4px;
+  margin-left: 3.5rem;
+}
+@media screen and (min-width: 768px) {
+  .export-pdf h5::after {
+    width: 41%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .export-pdf h5::after {
+    width: 43%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .export-pdf h5::after {
+    width: 45%;
+  }
+}
+.export-pdf .price {
+  border: 1px dashed #5f5f5f;
+}
+.export-pdf .text-end-file > div {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .export-pdf .text-end-file > div {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .export-pdf .text-end-file > div {
+    width: 25%;
+  }
 }
 
 .header-login {

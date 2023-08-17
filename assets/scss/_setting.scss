@@ -1,9 +1,9 @@
 // @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap");
 
-@font-face {
-    font-family: ComicSansMS;
-    src: url('../fonts/ComicSansMS.ttf') format('truetype'), url('../fonts/ComicSansMS.woff') format('woff'), url('../fonts/ComicSansMS.woff2') format('woff2');
-}
+// @font-face {
+//     font-family: ComicSansMS;
+//     src: url('../fonts/ComicSansMS.ttf') format('truetype'), url('../fonts/ComicSansMS.woff') format('woff'), url('../fonts/ComicSansMS.woff2') format('woff2');
+// }
 
 $cl-white: #ffffff;
 $cl-blue: #48a9ff;
@@ -26,8 +26,9 @@ html {
 
 body {
     @include font(1.4rem, 400, 1.5);
-    font-family: 'ComicSansMS', sans-serif;
+    // font-family: 'ComicSansMS', sans-serif;
     // font-family: "Quicksand", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 img {
@@ -86,6 +87,24 @@ select {
         max-width: inherit;
     }
 }
+
+.container-custom {
+    margin: 0 auto;
+    padding: 0 15px;
+    @include mq_min_576 {
+        max-width: 540px;
+    }
+    @include mq_min_768 {
+        max-width: 720px;
+    }
+    @include mq_min_1024 {
+        max-width: 960px;
+    }
+    @include mq_min_1200 {
+        max-width: 1170px;
+    }
+}
+
 .container-fluid {
     max-width: 100%;
 }
