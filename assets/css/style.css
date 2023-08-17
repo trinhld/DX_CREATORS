@@ -3444,13 +3444,16 @@ a:hover {
     flex-wrap: nowrap;
   }
 }
-.wrapper .main .container.payment .input-payment input {
-  width: 100% !important;
-}
-.wrapper .main .container.payment .input-payment input:first-child {
+.wrapper .main .container.payment .input-payment .input-payment-card-icon {
   position: relative;
+  width: 100%;
 }
-.wrapper .main .container.payment .input-payment input:first-child::after {
+@media screen and (min-width: 768px) {
+  .wrapper .main .container.payment .input-payment .input-payment-card-icon {
+    width: 50% !important;
+  }
+}
+.wrapper .main .container.payment .input-payment .input-payment-card-icon::after {
   position: absolute;
   content: "";
   top: 50%;
@@ -3463,10 +3466,8 @@ a:hover {
   height: 2rem;
   z-index: 9;
 }
-@media screen and (min-width: 768px) {
-  .wrapper .main .container.payment .input-payment input:first-child {
-    width: 50% !important;
-  }
+.wrapper .main .container.payment .input-payment input {
+  width: 100% !important;
 }
 @media screen and (min-width: 768px) {
   .wrapper .main .container.payment .input-payment input:nth-child(2) {

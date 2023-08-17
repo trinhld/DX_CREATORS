@@ -2208,27 +2208,28 @@
                 @include mq_min_768 {
                     flex-wrap: nowrap;
                 }
+                .input-payment-card-icon {
+                    position: relative;
+                    width: 100%;
+                    @include mq_min_768 {
+                        width: 50% !important;
+                    }
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        top: 50%;
+                        left: 8px;
+                        transform: translateY(-50%);
+                        background-image: url('../images/icon_card.png');
+                        background-repeat: no-repeat;
+                        background-size: 2rem 2rem;
+                        width: 2rem;
+                        height: 2rem;
+                        z-index: 9;
+                    }
+                }
                 input {
                     width: 100% !important;
-                    &:first-child {
-                        position: relative;
-                        &::after {
-                            position: absolute;
-                            content: '';
-                            top: 50%;
-                            left: 8px;
-                            transform: translateY(-50%);
-                            background-image: url('../images/icon_card.png');
-                            background-repeat: no-repeat;
-                            background-size: 2rem 2rem;
-                            width: 2rem;
-                            height: 2rem;
-                            z-index: 9;
-                        }
-                        @include mq_min_768 {
-                            width: 50% !important;
-                        }
-                    }
                     &:nth-child(2) {
                         @include mq_min_768 {
                             width: 15% !important;
