@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html itemscope="" itemtype="http://schema.org/WebPage" lang="vi">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>DX_CREATORS_UI</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+        <!-- Date Picker -->
+        <link rel="stylesheet" href="../assets/css/datepicker.min.css" />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="../assets/css/style.css" />
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <!-- Header -->
+            <header class="header-dashboard">
+                <div class="container">
+                    <div class="header-button-show-menu-sp">
+                        <img src="../assets/images/icon_hamberger.png" alt="icon_hamberger" />
+                    </div>
+                    <a href="#" class="header-logo">
+                        <img src="../assets/images/logo.png" alt="logo" />
+                    </a>
+                    <div class="list-category-menu">
+                        <ul>
+                            <li>
+                                <div class="title-menu">ホーム</div>
+                            </li>
+                            <li>
+                                <div class="title-menu">アカウント管理</div>
+                                <ul class="sub-menu">
+                                    <li>会員管理</li>
+                                    <li>管理者管理</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="title-menu">コース管理</div>
+                            </li>
+                            <li>
+                                <div class="title-menu">お知らせ管理</div>
+                            </li>
+                            <li class="active">
+                                <div class="title-menu">金額管理</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <div class="header-text-gradient">コース検索？お仕事検索？お知らせ表示バー？（仮）</div> -->
+                    <div class="user-notify">
+                        <img src="../assets/images/icon_bell.png" alt="icon-bell" />
+                        <span>1</span>
+                    </div>
+                    <div class="header-user">
+                        <div class="wrap-user">
+                            <div class="user-avatar">
+                                <img src="../assets/images/image_user.png" alt="icon_user" />
+                            </div>
+                            <div class="user-show">
+                                <img src="../assets/images/icon_show_user.png" alt="icon_show_user" />
+                            </div>
+                        </div>
+                        <div class="admin-list-option">
+                            <div class="list-option-item">
+                                <div class="title-sub-menu">ホーム</div>
+                                <div class="title-sub-menu">
+                                    <a href="#">アカウント管理</a>
+                                    <img class="icon-arrow" src="../assets/images/icon_show_user.png" alt="" />
+                                </div>
+                                <div class="content-sub-menu">
+                                    <ul>
+                                        <li><a href="#">会員管理</a></li>
+                                        <li><a href="#">管理者管理</a></li>
+                                    </ul>
+                                </div>
+                                <div class="title-sub-menu">コース管理</div>
+                                <div class="title-sub-menu">
+                                    <a href="#">お知らせ管理</a>
+                                    <img class="icon-arrow" src="../assets/images/icon_show_user.png" alt="" />
+                                </div>
+                                <div class="content-sub-menu">
+                                    <ul>
+                                        <li><a href="#">会員管理</a></li>
+                                        <li><a href="#">管理者管理</a></li>
+                                    </ul>
+                                </div>
+                                <div class="title-sub-menu">
+                                    <a href="#">イベント管理</a>
+                                    <img class="icon-arrow" src="../assets/images/icon_show_user.png" alt="" />
+                                </div>
+                                <div class="content-sub-menu">
+                                    <ul>
+                                        <li><a href="#">会員管理</a></li>
+                                        <li><a href="#">管理者管理</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Main -->
+            <section class="main border-rgb-mobile">
+                <div class="container create-notifi">
+                    <div class="content px-md-5" style="min-height: 100vh">
+                        <div class="notify-success mt-3">変更が完了しました。</div>
+                        <h4 class="mt-5">金額一覧</h4>
+                        <p class="my-3 fs-3" style="color: #616161">＊キャンペーン金額が設定されていれば、適用期間中は通常金額ではなくキャンペーン金額が適用されます。</p>
+                        <h5 class="my-3 fs-3 fw-bold" style="color: #616161">現在の適用金額</h5>
+                        <div class="wrapper-table" style="width: 80rem">
+                            <table class="table mt-3 text-center table-bordered">
+                                <tbody class="text-dark">
+                                    <tr class="bg-purple text-light">
+                                        <td></td>
+                                        <td style="width: 35%">初回</td>
+                                        <td style="width: 35%">２回目以降</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bg-purple text-light">入会金</td>
+                                        <td>
+                                            <div class="d-flex justify-content-between align-items-center flex-nowrap">
+                                                <span class="m-auto" style="padding-left: 8rem">100,000円</span>
+                                                <a href="#" class="px-5 py-1 text-light bg-purple">CP</a>
+                                            </div>
+                                        </td>
+                                        <td class="disabled" style="background-color: #e0e0e0"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bg-purple text-light">サブスクリプション</td>
+                                        <td>
+                                            <div class="d-flex justify-content-between align-items-center flex-nowrap">
+                                                <span class="m-auto" style="padding-left: 8rem">300,000円</span>
+                                                <a href="#" class="px-5 py-1 text-light bg-purple">CP</a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex justify-content-between align-items-center flex-nowrap">
+                                                <span class="m-auto" style="padding-left: 8rem">200,000円</span>
+                                                <a href="#" class="px-5 py-1 text-light bg-purple">CP</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs mt-5">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-bs-toggle="tab" href="#tab1">通常金額・説明会経由金額</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#tab2">初回キャンペーン金額</a>
+                            </li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane container active" id="tab1">
+                                <div class="wrapper-table">
+                                    <table class="table mt-5 text-center table-bordered">
+                                        <tbody class="text-secondary">
+                                            <tr class="bg-purple text-light">
+                                                <td>No</td>
+                                                <td>金額区分</td>
+                                                <td>入会金</td>
+                                                <td>サブスクリプション金額</td>
+                                                <td>備考</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    <a href="#" class="text-primary">通常金額</a>
+                                                </td>
+                                                <td>10円</td>
+                                                <td>5円</td>
+                                                <td>この金額は通常の金額です。</td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center">
+                                                        <a href="#">
+                                                            <img src="../assets/images/icon_pencil_1.png" alt="" style="max-width: 2.5rem" />
+                                                        </a>
+                                                        <a data-bs-toggle="modal" href="#modalDelete">
+                                                            <img src="../assets/images/icon_back_time.png" alt="" style="max-width: 2.5rem; margin-left: 1.2rem" />
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>
+                                                    <a href="#" class="text-primary">説明会経由金額</a>
+                                                </td>
+                                                <td>10円</td>
+                                                <td>5円</td>
+                                                <td></td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center">
+                                                        <a href="#">
+                                                            <img src="../assets/images/icon_pencil_1.png" alt="" style="max-width: 2.5rem" />
+                                                        </a>
+                                                        <a data-bs-toggle="modal" href="#modalDelete">
+                                                            <img src="../assets/images/icon_back_time.png" alt="" style="max-width: 2.5rem; margin-left: 1.2rem" />
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>
+                                                    <a href="#" class="text-primary">通常金額</a>
+                                                </td>
+                                                <td>10円</td>
+                                                <td>5円</td>
+                                                <td>この金額は通常の金額です。</td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center">
+                                                        <a href="#">
+                                                            <img src="../assets/images/icon_pencil_1.png" alt="" style="max-width: 2.5rem" />
+                                                        </a>
+                                                        <a data-bs-toggle="modal" href="#modalDelete">
+                                                            <img src="../assets/images/icon_back_time.png" alt="" style="max-width: 2.5rem; margin-left: 1.2rem" />
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>
+                                                    <a href="#" class="text-primary">通常金額</a>
+                                                </td>
+                                                <td>10円</td>
+                                                <td>5円</td>
+                                                <td>この金額は通常の金額です。</td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center">
+                                                        <a href="#">
+                                                            <img src="../assets/images/icon_pencil_1.png" alt="" style="max-width: 2.5rem" />
+                                                        </a>
+                                                        <a data-bs-toggle="modal" href="#modalDelete">
+                                                            <img src="../assets/images/icon_back_time.png" alt="" style="max-width: 2.5rem; margin-left: 1.2rem" />
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>
+                                                    <a href="#" class="text-primary">通常金額</a>
+                                                </td>
+                                                <td>10円</td>
+                                                <td>5円</td>
+                                                <td>この金額は通常の金額です。</td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center">
+                                                        <a href="#">
+                                                            <img src="../assets/images/icon_pencil_1.png" alt="" style="max-width: 2.5rem" />
+                                                        </a>
+                                                        <a data-bs-toggle="modal" href="#modalDelete">
+                                                            <img src="../assets/images/icon_back_time.png" alt="" style="max-width: 2.5rem; margin-left: 1.2rem" />
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane container fade" id="tab2">
+                                <div class="list-btn m-0">
+                                    <button class="mt-5 bg-purple btn-child">登録</button>
+                                </div>
+                                <div class="wrapper-table">
+                                    <table class="table mt-5 text-center table-bordered">
+                                        <tbody class="text-secondary">
+                                            <tr class="bg-purple text-light">
+                                                <td>No</td>
+                                                <td>金額区分</td>
+                                                <td>入会金</td>
+                                                <td>サブスクリプション金額</td>
+                                                <td>適用期間</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    <a href="#" class="text-primary">初回キャンペーン金額</a>
+                                                </td>
+                                                <td>10円</td>
+                                                <td>5円</td>
+                                                <td>2023/08/17～2023/08/23</td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center">
+                                                        <a href="#">
+                                                            <img src="../assets/images/icon_pencil_1.png" alt="" style="max-width: 2.5rem" />
+                                                        </a>
+                                                        <a data-bs-toggle="modal" href="#modalDelete">
+                                                            <img src="../assets/images/icon_delete_3.png" alt="" style="margin-left: 1rem; max-width: 2.5rem" />
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>
+                                                    <a href="#" class="text-primary">初回キャンペーン金額</a>
+                                                </td>
+                                                <td>10円</td>
+                                                <td>5円</td>
+                                                <td>2023/08/17～2023/08/23</td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center">
+                                                        <a href="#">
+                                                            <img src="../assets/images/icon_pencil_1.png" alt="" style="max-width: 2.5rem" />
+                                                        </a>
+                                                        <a data-bs-toggle="modal" href="#modalDelete">
+                                                            <img src="../assets/images/icon_delete_3.png" alt="" style="margin-left: 1rem; max-width: 2.5rem" />
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>
+                                                    <a href="#" class="text-primary">初回キャンペーン金額</a>
+                                                </td>
+                                                <td>10円</td>
+                                                <td>5円</td>
+                                                <td>2023/08/17～2023/08/23</td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center">
+                                                        <a href="#">
+                                                            <img src="../assets/images/icon_pencil_1.png" alt="" style="max-width: 2.5rem" />
+                                                        </a>
+                                                        <a data-bs-toggle="modal" href="#modalDelete">
+                                                            <img src="../assets/images/icon_delete_3.png" alt="" style="margin-left: 1rem; max-width: 2.5rem" />
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>
+                                                    <a href="#" class="text-primary">初回キャンペーン金額</a>
+                                                </td>
+                                                <td>10円</td>
+                                                <td>5円</td>
+                                                <td>2023/08/17～2023/08/23</td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center">
+                                                        <a href="#">
+                                                            <img src="../assets/images/icon_pencil_1.png" alt="" style="max-width: 2.5rem" />
+                                                        </a>
+                                                        <a data-bs-toggle="modal" href="#modalDelete">
+                                                            <img src="../assets/images/icon_delete_3.png" alt="" style="margin-left: 1rem; max-width: 2.5rem" />
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>
+                                                    <a href="#" class="text-primary">初回キャンペーン金額</a>
+                                                </td>
+                                                <td>10円</td>
+                                                <td>5円</td>
+                                                <td>2023/08/17～2023/08/23</td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center">
+                                                        <a href="#">
+                                                            <img src="../assets/images/icon_pencil_1.png" alt="" style="max-width: 2.5rem" />
+                                                        </a>
+                                                        <a data-bs-toggle="modal" href="#modalDelete">
+                                                            <img src="../assets/images/icon_delete_3.png" alt="" style="margin-left: 1rem; max-width: 2.5rem" />
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-center justify-content-md-end my-5 pb-5">
+                                        <li class="page-item d-flex">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                            <a class="page-link border-start-0" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&lt;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item d-flex">
+                                            <a class="page-link border-end-0" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&gt;</span>
+                                            </a>
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal Logout -->
+                    <div class="modal fade modal-logout" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-logout-header">ログアウト</div>
+                                <div class="modal-body">
+                                    <p>本当にログアウトしますか？</p>
+                                    <div class="list-btn-modal-logut">
+                                        <div class="btn-back" data-bs-dismiss="modal">戻る</div>
+                                        <div class="btn-logout" data-bs-dismiss="modal">ログアウト</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal Delete -->
+                    <div class="modal fade modal-logout modal-delete" id="modalDelete" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-logout-header bg-purple">削除処理確認</div>
+                                <div class="modal-body">
+                                    <p>削除してもよろしいでしょうか？</p>
+                                    <div class="list-btn-modal-logut">
+                                        <div class="btn-back rounded-0" data-bs-dismiss="modal">キャンセル</div>
+                                        <div class="btn-logout rounded-0" data-bs-dismiss="modal">OK</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer"></footer>
+        </div>
+
+        <script src="../assets/js/jquery-3.6.0.min.js"></script>
+        <script src="../assets/js/bootstrap.min.js"></script>
+        <script src="../assets/js/datepicker.min.js"></script>
+        <script src="../assets/js/main.js"></script>
+    </body>
+</html>

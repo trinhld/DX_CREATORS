@@ -4,6 +4,10 @@ textarea {
     color: $cl-gray !important;
 }
 
+input::placeholder {
+    color: #a1a0a0 !important;
+}
+
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -659,6 +663,66 @@ a:hover {
             @include mq_min_1024 {
                 width: 25%;
             }
+        }
+    }
+}
+
+.nav-tabs .nav-link {
+    padding: 1rem 2rem;
+    color: #fff;
+    background: #8b8ebb;
+}
+.tab-content {
+    border: 1px solid #dee2e6;
+    border-top: 0;
+    padding-bottom: 0.5rem;
+}
+
+.custom-icon-calendar {
+    width: 15px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+
+.ui-datepicker {
+    margin-top: 0.4rem;
+    border-radius: 8px;
+    .ui-corner-all {
+        user-select: none;
+        cursor: pointer;
+    }
+    .ui-datepicker-header {
+        border: none;
+        background-color: #fff;
+        .ui-icon {
+            text-indent: initial;
+            margin-left: -0.5rem !important;
+        }
+        .ui-datepicker-title {
+            padding: 0 1rem;
+            border: 1px solid #888;
+            border-radius: 3px;
+        }
+    }
+    .ui-datepicker-calendar {
+        .ui-state-default {
+            padding: 0.5rem !important;
+        }
+        .ui-state-default {
+            text-align: center;
+            border: 0;
+            border-radius: 3px;
+        }
+        .ui-state-highlight {
+            border-radius: 3px;
+        }
+        .ui-state-active {
+            font-weight: 600;
+            color: #000;
+            background: #999;
+            border-radius: 3px;
         }
     }
 }

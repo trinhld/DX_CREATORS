@@ -14,19 +14,81 @@ var RUN = {
     $('.datepicker-custom').on('change', function () {
       $('.datepicker-container').hide();
     });
+  },
 
-    // let arrTemp = [];
-    // const listDay = $('.datepicker-days li');
-    // console.log(listDay[9]);
-    // listDay[9].css({"color": "red"})
-    // listDay.map((index, day) =>
-    // (index % 7 === 0) ? arrTemp.push(day, listDay[index + 1]) : ''
-    // console.log(day)
-    // (index % 7 === 0) ? day.css({"color": "red"}) : ''
-    // );
-    // console.log(test);
-    // arrTemp.map((item) => (item).css('color', 'red'))
-    // arrTemp.map((item) => console.log(item))
+  handleDatePicker: () => {
+    function formatDate(date) {
+      var d = new Date(date),
+        month = '' + (d.getMonth() + 1),
+        day = '' + d.getDate(),
+        year = d.getFullYear();
+
+      if (month.length < 2) month = '0' + month;
+      if (day.length < 2) day = '0' + day;
+
+      return [year, month, day].join('/');
+    }
+
+    /* -------- */
+
+    // const compareDates = (d1, d2) => {
+    //   let date1 = new Date(d1).getTime();
+    //   let date2 = new Date(d2).getTime();
+
+    //   if (date1 < date2) {
+    //     return 1;
+    //   } else if (date1 > date2) {
+    //     return 2;
+    //   } else {
+    //     return 3;
+    //   }
+    // };
+
+    // const clearDataDate = () => {
+    //   if (!book_1.datepicker('getDate') && !book_2.datepicker('getDate')) {
+    //     book_1.datepicker('destroy');
+    //     book_1.datepicker({ dateFormat: 'yy/mm/dd', minDate: '' });
+    //     book_1.val('');
+    //     book_2.datepicker('destroy');
+    //     book_2.datepicker({ dateFormat: 'yy/mm/dd', minDate: '' });
+    //     book_2.val('');
+    //   }
+    // };
+
+    // var date = new Date();
+    // console.log(date.getDate() + 2);
+
+    /* -------- */
+    const book_1 = $('.datepicker-book-1');
+    const book_2 = $('.datepicker-book-2');
+
+    book_1.datepicker({ dateFormat: 'yy/mm/dd' });
+    book_2.datepicker({ dateFormat: 'yy/mm/dd' });
+
+    book_1.on('change', function () {
+      if (!book_2.datepicker('getDate')) {
+        book_2.datepicker('destroy');
+        let date = formatDate($(this).datepicker('getDate'));
+        book_2.val('');
+        book_2.datepicker({ dateFormat: 'yy/mm/dd', minDate: date });
+      }
+    });
+    // book_1.on('input', function () {
+    //   clearDataDate();
+    // });
+
+    book_2.on('change', function () {
+      if (!book_1.datepicker('getDate')) {
+        book_1.datepicker('destroy');
+        let date = formatDate($(this).datepicker('getDate'));
+        book_1.val('');
+        book_1.datepicker({ dateFormat: 'yy/mm/dd', minDate: date });
+        clearDataDate();
+      }
+    });
+    // book_2.on('input', function () {
+    //   clearDataDate();
+    // });
   },
 
   // Show Menu User
@@ -250,6 +312,7 @@ var RUN = {
     RUN.showIframe();
     RUN.handleClickUploadImage();
     RUN.handleDeleteFileUpload();
+    RUN.handleDatePicker();
   },
 };
 
