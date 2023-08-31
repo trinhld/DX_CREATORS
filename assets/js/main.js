@@ -16,6 +16,7 @@ var RUN = {
     });
   },
 
+  // Handle Date Picker
   handleDatePicker: () => {
     function formatDate(date) {
       var d = new Date(date),
@@ -30,65 +31,62 @@ var RUN = {
     }
 
     /* -------- */
+    const compareDates = (d1, d2) => {
+      let date1 = new Date(d1).getTime();
+      let date2 = new Date(d2).getTime();
 
-    // const compareDates = (d1, d2) => {
-    //   let date1 = new Date(d1).getTime();
-    //   let date2 = new Date(d2).getTime();
-
-    //   if (date1 < date2) {
-    //     return 1;
-    //   } else if (date1 > date2) {
-    //     return 2;
-    //   } else {
-    //     return 3;
-    //   }
-    // };
-
-    // const clearDataDate = () => {
-    //   if (!book_1.datepicker('getDate') && !book_2.datepicker('getDate')) {
-    //     book_1.datepicker('destroy');
-    //     book_1.datepicker({ dateFormat: 'yy/mm/dd', minDate: '' });
-    //     book_1.val('');
-    //     book_2.datepicker('destroy');
-    //     book_2.datepicker({ dateFormat: 'yy/mm/dd', minDate: '' });
-    //     book_2.val('');
-    //   }
-    // };
-
-    // var date = new Date();
-    // console.log(date.getDate() + 2);
+      if (date1 < date2) {
+        return 1;
+      } else if (date1 > date2) {
+        return 2;
+      } else {
+        return 3;
+      }
+    };
 
     /* -------- */
     const book_1 = $('.datepicker-book-1');
     const book_2 = $('.datepicker-book-2');
-
     book_1.datepicker({ dateFormat: 'yy/mm/dd' });
     book_2.datepicker({ dateFormat: 'yy/mm/dd' });
 
-    book_1.on('change', function () {
-      if (!book_2.datepicker('getDate')) {
-        book_2.datepicker('destroy');
-        let date = formatDate($(this).datepicker('getDate'));
-        book_2.val('');
-        book_2.datepicker({ dateFormat: 'yy/mm/dd', minDate: date });
-      }
-    });
-    // book_1.on('input', function () {
-    //   clearDataDate();
-    // });
+    book_2.attr('disabled', true); /* Default Disable Book 2 */
 
-    book_2.on('change', function () {
-      if (!book_1.datepicker('getDate')) {
-        book_1.datepicker('destroy');
-        let date = formatDate($(this).datepicker('getDate'));
-        book_1.val('');
-        book_1.datepicker({ dateFormat: 'yy/mm/dd', minDate: date });
-        clearDataDate();
+    book_1.on('change', function () {
+      const data_book = $(this).datepicker('getDate');
+      const handle_date_book = formatDate(data_book);
+      book_2.datepicker('destroy');
+      book_2.attr('disabled', false);
+      book_2.val(handle_date_book);
+      book_2.datepicker({ dateFormat: 'yy/mm/dd', minDate: handle_date_book });
+
+      if (!data_book) {
+        book_2.datepicker('destroy');
+        book_2.val('');
+        book_2.attr('disabled', true);
       }
     });
-    // book_2.on('input', function () {
-    //   clearDataDate();
-    // });
+
+    book_1.on('input', function () {
+      const data_book = $(this).datepicker('getDate');
+      const handle_date_book = formatDate(data_book);
+      book_2.datepicker('destroy');
+      book_2.attr('disabled', false);
+      book_2.val('');
+      book_2.datepicker({ dateFormat: 'yy/mm/dd', minDate: handle_date_book });
+      if (!data_book) {
+        book_2.datepicker('destroy');
+        book_2.val('');
+        book_2.attr('disabled', true);
+      }
+    });
+
+    book_2.on('blur', function () {
+      const checkdate = compareDates(formatDate(book_1.datepicker('getDate')), formatDate(book_2.datepicker('getDate')));
+      if (checkdate === 2) {
+        book_2.val(formatDate(book_1.datepicker('getDate')));
+      }
+    });
   },
 
   // Show Menu User
