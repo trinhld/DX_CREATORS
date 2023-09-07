@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html itemscope="" itemtype="http://schema.org/WebPage" lang="vi">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>DX_CREATORS_UI</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+        <!-- Date Picker -->
+        <link rel="stylesheet" href="../assets/css/datepicker.min.css" />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="../assets/css/style.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <!-- Header -->
+            <header class="header-dashboard py-2">
+                <div class="container">
+                    <div class="header-button-show-menu-sp">
+                        <img src="../assets/images/icon_hamberger.png" alt="icon_hamberger" />
+                    </div>
+                    <a href="#" class="header-logo">
+                        <img src="../assets/images/logo.png" alt="logo" />
+                    </a>
+                    <!-- <div class="header-text-gradient">コース検索？お仕事検索？お知らせ表示バー？（仮）</div> -->
+                    <div class="user-notify">
+                        <img src="../assets/images/icon_bell.png" alt="icon-bell" />
+                        <span>1</span>
+                    </div>
+                    <div class="header-user">
+                        <div class="wrap-user">
+                            <div class="user-avatar">
+                                <img src="../assets/images/image_user.png" alt="icon_user" />
+                            </div>
+                            <div class="user-show">
+                                <img src="../assets/images/icon_show_user.png" alt="icon_show_user" />
+                            </div>
+                        </div>
+                        <div class="user-list-option">
+                            <ul>
+                                <li><a href="#">プロフィール編集</a></li>
+                                <li><a href="#">予約確認</a></li>
+                                <li><a href="#">プラン確認・変更</a></li>
+                                <li><a href="#">パスワード変更</a></li>
+                                <li><a href="#">メールアドレス変更</a></li>
+                                <li><a href="#">よくあるご質問</a></li>
+                                <li><a href="#">利用規約</a></li>
+                                <li>
+                                    <a class="btn-show-logout" data-bs-toggle="modal" href="#exampleModalToggle">ログアウト</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Main -->
+            <section class="main">
+                <div class="container profile payment custom-charts" style="font-family: Arial, Helvetica, sans-serif">
+                    <div class="sidebar">
+                        <div class="sidebar-header">
+                            <div class="info-user">
+                                <p>First name and Last name</p>
+                                <span
+                                    >DX creator rank : level 5
+                                    <img src="../assets/images/icon_level.png" alt="" />
+                                </span>
+                            </div>
+                            <div class="img-user">
+                                <img src="../assets/images/image_user_1.png" alt="" />
+                            </div>
+                        </div>
+                        <div class="sidebar-body">
+                            <ul>
+                                <li>
+                                    <span>ホーム</span>
+                                    <img src="../assets/images/icon_home.png" alt="" />
+                                </li>
+                                <li>
+                                    <span>アセスメント</span>
+                                    <img src="../assets/images/icon_user.png" alt="" />
+                                </li>
+                                <li>
+                                    <span>仮機能2</span>
+                                    <img src="../assets/images/icon_gmail.png" alt="" />
+                                </li>
+                                <li>
+                                    <span>仮機能3</span>
+                                    <img src="../assets/images/icon_cart.png" alt="" />
+                                </li>
+                                <li>
+                                    <span>仮機能4</span>
+                                    <img src="../assets/images/icon_dowload.png" alt="" />
+                                </li>
+                                <li>
+                                    <span>仮機能5</span>
+                                    <img src="../assets/images/icon_global.png" alt="" />
+                                </li>
+                                <li>
+                                    <span>お問い合わせ</span>
+                                    <img src="../assets/images/icon_fly.png" alt="" />
+                                </li>
+                            </ul>
+                            <div class="text-cp">CPバナーなどを貼ると良い</div>
+                        </div>
+                    </div>
+                    <div class="content user-profile" style="color: #616161">
+                        <nav class="mt-4" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#" class="text-decoration-underline">ホーム</a></li>
+                                <li class="breadcrumb-item" aria-current="page"><a href="#">アセスメント</a></li>
+                            </ol>
+                        </nav>
+                        <h4 class="text-light fw-bold fs-2 px-4 mt-4 bg-rgb">アセスメント</h4>
+                        <div class="d-flex flex-column-reverse flex-md-row justify-content-md-start align-items-center mt-4">
+                            <div class="mt-3 mt-md-0 d-md-inline-block text-center fw-bold" style="padding: 0.5rem 8rem; background-color: #f9cce1">ランク D</div>
+                            <p class="ms-md-5">＊各コースにおいて5レッスン以上のテストを完了するとアセスメントが表示されます。</p>
+                        </div>
+
+                        <div class="list-chart mt-4 d-md-flex">
+                            <div id="chart_1" class="w-100 w-md-50"></div>
+                            <div id="chart_2" class="w-100 w-md-50"></div>
+                        </div>
+
+                        <div style="font-size: 1.4rem">
+                            <table class="w-100 text-center">
+                                <tr class="d-flex flex-wrap flex-md-nowrap">
+                                    <td class="d-flex">
+                                        <div class="d-flex align-items-center" style="margin-top: 2rem">
+                                            <span class="me-4" style="white-space: nowrap">・ITリテラシー</span>
+                                            <div class="d-flex">
+                                                <p class="me-2" style="white-space: nowrap">1 / 30 テスト完了</p>
+                                                <div style="width: 2rem">
+                                                    <img src="../assets/images/icon_detal.png" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="w-100">
+                                        <div class="progress-wrap ms-0 ms-md-5">
+                                            <p class="fs-6 text-center">進捗度 25％</p>
+                                            <div class="w-100 progress my-2 rounded-8" style="height: 1.8rem">
+                                                <div class="progress-bar" role="progressbar" style="width: 25%; background-color: #e95098" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td class="d-flex ms-md-4">
+                                        <div class="d-flex align-items-center" style="margin-top: 2rem">
+                                            <span class="me-4" style="white-space: nowrap">・ITリテラシー</span>
+                                            <div class="d-flex">
+                                                <p class="me-2" style="white-space: nowrap">1 / 30 テスト完了</p>
+                                                <div style="width: 2rem">
+                                                    <img src="../assets/images/icon_detal.png" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="w-100">
+                                        <div class="progress-wrap ms-0 ms-md-5 w-auto">
+                                            <p class="fs-6 text-center">進捗度 25％</p>
+                                            <div class="w-100 w-md-100 progress my-2 rounded-8" style="height: 1.8rem">
+                                                <div class="progress-bar" role="progressbar" style="width: 25%; background-color: #e95098" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!--  -->
+                                <tr class="d-flex flex-wrap flex-md-nowrap">
+                                    <td class="d-flex">
+                                        <div class="d-flex align-items-center" style="margin-top: 2rem">
+                                            <span class="me-4" style="white-space: nowrap">・ITリテラシー</span>
+                                            <div class="d-flex">
+                                                <p class="me-2" style="white-space: nowrap">1 / 30 テスト完了</p>
+                                                <div style="width: 2rem">
+                                                    <img src="../assets/images/icon_detal.png" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="w-100">
+                                        <div class="progress-wrap ms-0 ms-md-5">
+                                            <p class="fs-6 text-center">進捗度 25％</p>
+                                            <div class="w-100 progress my-2 rounded-8" style="height: 1.8rem">
+                                                <div class="progress-bar" role="progressbar" style="width: 25%; background-color: #e95098" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td class="d-flex ms-md-4">
+                                        <div class="d-flex align-items-center" style="margin-top: 2rem">
+                                            <span class="me-4" style="white-space: nowrap">・ITリテラシー</span>
+                                            <div class="d-flex">
+                                                <p class="me-2" style="white-space: nowrap">1 / 30 テスト完了</p>
+                                                <div style="width: 2rem">
+                                                    <img src="../assets/images/icon_detal.png" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="w-100">
+                                        <div class="progress-wrap ms-0 ms-md-5 w-auto">
+                                            <p class="fs-6 text-center">進捗度 25％</p>
+                                            <div class="w-100 w-md-100 progress my-2 rounded-8" style="height: 1.8rem">
+                                                <div class="progress-bar" role="progressbar" style="width: 25%; background-color: #e95098" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!--  -->
+                                <tr class="d-flex flex-wrap flex-md-nowrap">
+                                    <td class="d-flex">
+                                        <div class="d-flex align-items-center" style="margin-top: 2rem">
+                                            <span class="me-4" style="white-space: nowrap">・ITリテラシー</span>
+                                            <div class="d-flex">
+                                                <p class="me-2" style="white-space: nowrap">1 / 30 テスト完了</p>
+                                                <div style="width: 2rem">
+                                                    <img src="../assets/images/icon_detal.png" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="w-100">
+                                        <div class="progress-wrap ms-0 ms-md-5">
+                                            <p class="fs-6 text-center">進捗度 25％</p>
+                                            <div class="w-100 progress my-2 rounded-8" style="height: 1.8rem">
+                                                <div class="progress-bar" role="progressbar" style="width: 25%; background-color: #e95098" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td class="d-flex ms-md-4">
+                                        <div class="d-flex align-items-center" style="margin-top: 2rem">
+                                            <span class="me-4" style="white-space: nowrap">・ITリテラシー</span>
+                                            <div class="d-flex">
+                                                <p class="me-2" style="white-space: nowrap">1 / 30 テスト完了</p>
+                                                <div style="width: 2rem">
+                                                    <img src="../assets/images/icon_detal.png" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="w-100">
+                                        <div class="progress-wrap ms-0 ms-md-5 w-auto">
+                                            <p class="fs-6 text-center">進捗度 25％</p>
+                                            <div class="w-100 w-md-100 progress my-2 rounded-8" style="height: 1.8rem">
+                                                <div class="progress-bar" role="progressbar" style="width: 25%; background-color: #e95098" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <h4 class="mt-5 text-light fw-bold fs-2 px-4 mt-4 bg-rgb">目標</h4>
+
+                        <div class="d-md-flex justify-content-between align-items-center mt-5" style="margin-bottom: 8rem">
+                            <p class="text-center">　12月末までに初級講座、全て完了させる。</p>
+                            <div class="d-md-flex align-items-center">
+                                <p class="py-4 py-md-0 text-center">目標設定日：2023年8月15日</p>
+                                <div class="list-btn mt-0">
+                                    <a class="btn-child ms-0 ms-md-4" data-bs-toggle="modal" href="#modalRegisterTarget">編集</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-end-page fix-bottom">© 2023 DX CREATORS. All Rights Reserved.</div>
+                    </div>
+
+                    <!-- Modal Logout -->
+                    <div class="modal fade modal-logout" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-logout-header">ログアウト</div>
+                                <div class="modal-body">
+                                    <p>本当にログアウトしますか？</p>
+                                    <div class="list-btn-modal-logut">
+                                        <div class="btn-back" data-bs-dismiss="modal">戻る</div>
+                                        <div class="btn-logout" data-bs-dismiss="modal">ログアウト</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal Register Target -->
+                    <div class="modal fade modal-logout" id="modalRegisterTarget" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-logout-header">目標</div>
+                                <div class="modal-body" style="padding: 6rem">
+                                    <form>
+                                        <div class="form-group">
+                                            <textarea class="form-control rounded-6" rows="3" placeholder="目標をご入力ください。"></textarea>
+                                        </div>
+                                        <div class="list-btn justify-content-between">
+                                            <a href="#" data-bs-dismiss="modal" class="w-50 btn-child rounded-6">戻る</a>
+                                            <button class="w-50 ms-5 btn-child rounded-6">保存</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer"></footer>
+        </div>
+
+        <script src="../assets/js/jquery-3.6.0.min.js"></script>
+        <script src="../assets/js/bootstrap.min.js"></script>
+        <script src="../assets/js/datepicker.min.js"></script>
+        <script src="../assets/js/highcharts.min.js"></script>
+        <script src="../assets/js/main.js"></script>
+    </body>
+</html>

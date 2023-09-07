@@ -8,6 +8,10 @@ input::placeholder {
     color: #a1a0a0 !important;
 }
 
+textarea::placeholder {
+    color: #a1a0a0 !important;
+}
+
 select {
     -webkit-appearance: none;
     -moz-appearance: none;

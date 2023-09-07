@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html itemscope="" itemtype="http://schema.org/WebPage" lang="vi">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>DX_CREATORS_UI</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+        <!-- Date Picker -->
+        <link rel="stylesheet" href="../assets/css/datepicker.min.css" />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="../assets/css/style.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <!-- Header -->
+            <header class="header-dashboard py-2">
+                <div class="container">
+                    <div class="header-button-show-menu-sp">
+                        <img src="../assets/images/icon_hamberger.png" alt="icon_hamberger" />
+                    </div>
+                    <a href="#" class="header-logo">
+                        <img src="../assets/images/logo.png" alt="logo" />
+                    </a>
+                    <!-- <div class="header-text-gradient">コース検索？お仕事検索？お知らせ表示バー？（仮）</div> -->
+                    <div class="user-notify">
+                        <img src="../assets/images/icon_bell.png" alt="icon-bell" />
+                        <span>1</span>
+                    </div>
+                    <div class="header-user">
+                        <div class="wrap-user">
+                            <div class="user-avatar">
+                                <img src="../assets/images/image_user.png" alt="icon_user" />
+                            </div>
+                            <div class="user-show">
+                                <img src="../assets/images/icon_show_user.png" alt="icon_show_user" />
+                            </div>
+                        </div>
+                        <div class="user-list-option">
+                            <ul>
+                                <li><a href="#">プロフィール編集</a></li>
+                                <li><a href="#">予約確認</a></li>
+                                <li><a href="#">プラン確認・変更</a></li>
+                                <li><a href="#">パスワード変更</a></li>
+                                <li><a href="#">メールアドレス変更</a></li>
+                                <li><a href="#">よくあるご質問</a></li>
+                                <li><a href="#">利用規約</a></li>
+                                <li>
+                                    <a class="btn-show-logout" data-bs-toggle="modal" href="#exampleModalToggle">ログアウト</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Main -->
+            <section class="main">
+                <div class="container profile payment custom-charts" style="font-family: Arial, Helvetica, sans-serif">
+                    <div class="sidebar">
+                        <div class="sidebar-header">
+                            <div class="info-user">
+                                <p>First name and Last name</p>
+                                <span
+                                    >DX creator rank : level 5
+                                    <img src="../assets/images/icon_level.png" alt="" />
+                                </span>
+                            </div>
+                            <div class="img-user">
+                                <img src="../assets/images/image_user_1.png" alt="" />
+                            </div>
+                        </div>
+                        <div class="sidebar-body">
+                            <ul>
+                                <li>
+                                    <span>ホーム</span>
+                                    <img src="../assets/images/icon_home.png" alt="" />
+                                </li>
+                                <li>
+                                    <span>アセスメント</span>
+                                    <img src="../assets/images/icon_user.png" alt="" />
+                                </li>
+                                <li>
+                                    <span>仮機能2</span>
+                                    <img src="../assets/images/icon_gmail.png" alt="" />
+                                </li>
+                                <li>
+                                    <span>仮機能3</span>
+                                    <img src="../assets/images/icon_cart.png" alt="" />
+                                </li>
+                                <li>
+                                    <span>仮機能4</span>
+                                    <img src="../assets/images/icon_dowload.png" alt="" />
+                                </li>
+                                <li>
+                                    <span>仮機能5</span>
+                                    <img src="../assets/images/icon_global.png" alt="" />
+                                </li>
+                                <li>
+                                    <span>お問い合わせ</span>
+                                    <img src="../assets/images/icon_fly.png" alt="" />
+                                </li>
+                            </ul>
+                            <div class="text-cp">CPバナーなどを貼ると良い</div>
+                        </div>
+                    </div>
+                    <div class="content user-profile" style="color: #616161">
+                        <nav class="mt-4 pc" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#" class="text-decoration-underline">ホーム</a></li>
+                                <li class="breadcrumb-item" aria-current="page"><a href="#">4タイプ性格診断</a></li>
+                            </ol>
+                        </nav>
+                        <h4 class="text-light fw-bold fs-2 px-4 mt-4 bg-rgb">4タイプ性格診断</h4>
+                        <p class="mt-5">＊質問に答えてあなたの本当の姿と巡り会いましょう</p>
+                        <div class="progress-wrap mt-4">
+                            <p class="text-end">進行状況 N %</p>
+                            <div class="w-100 progress my-2 rounded-8" style="height: 2.5rem">
+                                <div class="progress-bar" role="progressbar" style="width: 0%; background-color: #e95098" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="wrapper-table">
+                            <form action="#">
+                                <table class="table mt-5 text-center table-bordered border-light">
+                                    <thead class="bg-blue text-dark">
+                                        <tr style="height: 4rem">
+                                            <td>質問</td>
+                                            <td>当てはまる</td>
+                                            <td>どちらかといえばあてはまる</td>
+                                            <td>どちらかといえばあてはまらない　</td>
+                                            <td>あてはまらない</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-secondary">
+                                        <tr class="border-bottom">
+                                            <td class="text-start py-4">
+                                                <span class="me-3 rounded-8" style="padding: 5px 9px; background-color: #dfe7f2">1</span>
+                                                自己主張することが下手だと思う
+                                            </td>
+                                            <td class="py-4">
+                                                <div class="form-check d-flex justify-content-center">
+                                                    <input class="form-check-input" type="radio" name="radio-1" />
+                                                </div>
+                                            </td>
+                                            <td class="py-4">
+                                                <div class="form-check d-flex justify-content-center">
+                                                    <input class="form-check-input" type="radio" name="radio-1" />
+                                                </div>
+                                            </td>
+                                            <td class="py-4">
+                                                <div class="form-check d-flex justify-content-center">
+                                                    <input class="form-check-input" type="radio" name="radio-1" />
+                                                </div>
+                                            </td>
+                                            <td class="py-4">
+                                                <div class="form-check d-flex justify-content-center">
+                                                    <input class="form-check-input" type="radio" name="radio-1" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-bottom">
+                                            <td class="text-start py-4">
+                                                <span class="me-3 rounded-8" style="padding: 5px 9px; background-color: #dfe7f2">2</span>
+                                                常に未来に対して情熱を持っているほうだ
+                                            </td>
+                                            <td class="py-4">
+                                                <div class="form-check d-flex justify-content-center">
+                                                    <input class="form-check-input" type="radio" name="radio-2" />
+                                                </div>
+                                            </td>
+                                            <td class="py-4">
+                                                <div class="form-check d-flex justify-content-center">
+                                                    <input class="form-check-input" type="radio" name="radio-2" />
+                                                </div>
+                                            </td>
+                                            <td class="py-4">
+                                                <div class="form-check d-flex justify-content-center">
+                                                    <input class="form-check-input" type="radio" name="radio-2" />
+                                                </div>
+                                            </td>
+                                            <td class="py-4">
+                                                <div class="form-check d-flex justify-content-center">
+                                                    <input class="form-check-input" type="radio" name="radio-2" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-bottom">
+                                            <td class="text-start py-4">
+                                                <span class="me-3 rounded-8" style="padding: 5px 9px; background-color: #dfe7f2">3</span>
+                                                他人の為にしたことを感謝されないと悔しく思うことがよくある
+                                            </td>
+                                            <td class="py-4">
+                                                <div class="form-check d-flex justify-content-center">
+                                                    <input class="form-check-input" type="radio" name="radio-3" />
+                                                </div>
+                                            </td>
+                                            <td class="py-4">
+                                                <div class="form-check d-flex justify-content-center">
+                                                    <input class="form-check-input" type="radio" name="radio-3" />
+                                                </div>
+                                            </td>
+                                            <td class="py-4">
+                                                <div class="form-check d-flex justify-content-center">
+                                                    <input class="form-check-input" type="radio" name="radio-3" />
+                                                </div>
+                                            </td>
+                                            <td class="py-4">
+                                                <div class="form-check d-flex justify-content-center">
+                                                    <input class="form-check-input" type="radio" name="radio-3" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-bottom">
+                                            <td class="text-start py-4">
+                                                <span class="me-3 rounded-8" style="padding: 5px 9px; background-color: #dfe7f2">4</span>
+                                                競争心が強い
+                                            </td>
+                                            <td class="py-4">
+                                                <div class="form-check d-flex justify-content-center">
+                                                    <input class="form-check-input" type="radio" name="radio-4" />
+                                                </div>
+                                            </td>
+                                            <td class="py-4">
+                                                <div class="form-check d-flex justify-content-center">
+                                                    <input class="form-check-input" type="radio" name="radio-4" />
+                                                </div>
+                                            </td>
+                                            <td class="py-4">
+                                                <div class="form-check d-flex justify-content-center">
+                                                    <input class="form-check-input" type="radio" name="radio-4" />
+                                                </div>
+                                            </td>
+                                            <td class="py-4">
+                                                <div class="form-check d-flex justify-content-center">
+                                                    <input class="form-check-input" type="radio" name="radio-4" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+                        </div>
+
+                        <button class="w-25 mt-5 m-auto border-0 d-flex justify-content-between py-2 px-5 bg-rgb-btn-2 text-light">
+                            <span class="m-auto">診断結果はこちらです</span>
+                            <div style="width: 1.8rem; transform: rotate(-90deg)">
+                                <img src="../assets/images/icon_arrow_white_svg.svg" alt="" />
+                            </div>
+                        </button>
+
+                        <div class="text-end-page fix-bottom">© 2023 DX CREATORS. All Rights Reserved.</div>
+                    </div>
+
+                    <!-- Modal Logout -->
+                    <div class="modal fade modal-logout" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-logout-header">ログアウト</div>
+                                <div class="modal-body">
+                                    <p>本当にログアウトしますか？</p>
+                                    <div class="list-btn-modal-logut">
+                                        <div class="btn-back" data-bs-dismiss="modal">戻る</div>
+                                        <div class="btn-logout" data-bs-dismiss="modal">ログアウト</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal Register Target -->
+                    <div class="modal fade modal-logout" id="modalRegisterTarget" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-logout-header">目標</div>
+                                <div class="modal-body" style="padding: 6rem">
+                                    <form>
+                                        <div class="form-group">
+                                            <textarea class="form-control rounded-6" rows="3" placeholder="目標をご入力ください。"></textarea>
+                                        </div>
+                                        <div class="list-btn justify-content-between">
+                                            <a href="#" data-bs-dismiss="modal" class="w-50 btn-child rounded-6">戻る</a>
+                                            <button class="w-50 ms-5 btn-child rounded-6">保存</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer"></footer>
+        </div>
+
+        <script src="../assets/js/jquery-3.6.0.min.js"></script>
+        <script src="../assets/js/bootstrap.min.js"></script>
+        <script src="../assets/js/datepicker.min.js"></script>
+        <script src="../assets/js/highcharts.min.js"></script>
+        <script src="../assets/js/main.js"></script>
+    </body>
+</html>

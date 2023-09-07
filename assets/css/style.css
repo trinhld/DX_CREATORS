@@ -229,6 +229,10 @@ select {
   flex-wrap: nowrap;
 }
 
+.rounded-8 {
+  border-radius: 8px;
+}
+
 input,
 textarea {
   font-size: 1.4rem !important;
@@ -236,6 +240,10 @@ textarea {
 }
 
 input::placeholder {
+  color: #a1a0a0 !important;
+}
+
+textarea::placeholder {
   color: #a1a0a0 !important;
 }
 
@@ -3549,6 +3557,20 @@ a:hover {
   .wrapper .main .container.payment .input-payment input:not(:first-child) {
     margin-top: 0;
   }
+}
+
+.custom-charts .form-check-input {
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 2px solid #b4c4df;
+}
+.custom-charts .form-check-input:checked[type=radio] {
+  box-shadow: none;
+  border-color: #dfe7f2 !important;
+  background: #9a9a9a !important;
+}
+.custom-charts .progress {
+  background-color: #dfe7f2;
 }
 
 /*# sourceMappingURL=style.css.map */

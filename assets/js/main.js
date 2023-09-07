@@ -294,6 +294,159 @@ var RUN = {
     });
   },
 
+  // Handle Chart
+  handleChart: () => {
+    // Chart 1
+    Highcharts.chart('chart_1', {
+      chart: {
+        polar: true,
+        type: 'line',
+        style: {
+          fontSize: '16px',
+        },
+      },
+      title: {
+        text: '点数',
+        y: 20,
+      },
+      pane: {
+        size: '80%',
+      },
+      xAxis: {
+        categories: ['ITリテラシー', 'ITツール演習', 'ディレクター基礎', 'コース5', 'コース６', 'DX CREATORS'],
+        tickmarkPlacement: 'on',
+        lineWidth: 0,
+      },
+      yAxis: {
+        gridLineInterpolation: 'polygon',
+        lineWidth: 0,
+        tickPositions: [2, 4, 6, 8, 10],
+      },
+      tooltip: {
+        shared: true,
+      },
+      series: [
+        {
+          name: '',
+          data: [10, 9, 9, 7, 9, 6] /* Add Data For Chart */,
+          pointPlacement: 'on',
+          color: '#E95098',
+          fillOpacity: 0.5,
+          type: 'area',
+        },
+      ],
+      plotOptions: {
+        area: {
+          marker: {
+            enabled: false,
+          },
+        },
+      },
+      exporting: { enabled: false },
+      credits: {
+        enabled: false,
+      },
+      legend: { enabled: false },
+      responsive: {
+        rules: [
+          {
+            condition: {
+              maxWidth: 500,
+            },
+            chartOptions: {
+              chart: {
+                style: {
+                  fontSize: '12px',
+                },
+              },
+              title: {
+                y: 60,
+              },
+              pane: {
+                size: '60%',
+              },
+            },
+          },
+        ],
+      },
+    });
+
+    // Chart 2
+    Highcharts.chart('chart_2', {
+      chart: {
+        polar: true,
+        type: 'line',
+        style: {
+          fontSize: '16px',
+        },
+      },
+      title: {
+        text: '点数',
+        y: 20,
+      },
+      pane: {
+        size: '80%',
+      },
+      xAxis: {
+        categories: ['ITリテラシー', 'ITツール演習', 'ディレクター基礎', 'コース5', 'コース６', 'DX CREATORS'],
+        tickmarkPlacement: 'on',
+        lineWidth: 0,
+      },
+      yAxis: {
+        gridLineInterpolation: 'polygon',
+        lineWidth: 0,
+        tickPositions: [2, 4, 6, 8, 10],
+      },
+      tooltip: {
+        shared: true,
+      },
+      series: [
+        {
+          name: '',
+          data: [2, 2, 2, 7, 9, 6] /* Add Data For Chart */,
+          pointPlacement: 'on',
+          color: '#E95098',
+          fillOpacity: 0.5,
+          type: 'area',
+        },
+      ],
+      plotOptions: {
+        area: {
+          marker: {
+            enabled: false,
+          },
+        },
+      },
+      exporting: { enabled: false },
+      credits: {
+        enabled: false,
+      },
+      legend: { enabled: false },
+      responsive: {
+        rules: [
+          {
+            condition: {
+              maxWidth: 500,
+            },
+            chartOptions: {
+              chart: {
+                style: {
+                  fontSize: '12px',
+                },
+              },
+              title: {
+                y: 60,
+              },
+              pane: {
+                size: '55%',
+              },
+            },
+          },
+        ],
+      },
+    });
+  },
+
   // Initial
   init: () => {
     RUN.showMenuUser();
@@ -311,6 +464,7 @@ var RUN = {
     RUN.handleClickUploadImage();
     RUN.handleDeleteFileUpload();
     RUN.handleDatePicker();
+    RUN.handleChart();
   },
 };
 

@@ -1,0 +1,15 @@
+.custom-charts {
+    .form-check-input {
+        width: 1.6rem;
+        height: 1.6rem;
+        border: 2px solid #b4c4df;
+    }
+    .form-check-input:checked[type='radio'] {
+        box-shadow: none;
+        border-color: #dfe7f2 !important;
+        background: #9a9a9a !important;
+    }
+    .progress {
+        background-color: #dfe7f2;
+    }
+}
