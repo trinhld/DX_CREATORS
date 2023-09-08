@@ -451,17 +451,38 @@ var RUN = {
 
   // Handle Post Test
   handlePostTest: () => {
-    $('.btn-add-test').on('click', function () {
-      const count_input_test = $(this).parent().find('.list-post-test input').length + 1;
-      $(this).parent().find('.list-post-test').append(`<input type="text" class="form-control mt-2" placeholder="選択肢 ${count_input_test}">`);
-
+    /* Add Answer Test */
+    $('.btn-add-test').on('click', function (e) {
+      e.preventDefault();
+      const _this = this;
       let listOptionSelect = '';
       let i = 1;
+      const count_input_test = $(this).parent().find('.list-post-test input').length + 1;
+
+      if (count_input_test === 4) {
+        $(this).hide();
+      }
+      $(this)
+        .parent()
+        .find('.list-post-test')
+        .append(`<div class='d-flex justify-content-center align-items-center'><input type="text" class="form-control mb-2" placeholder="選択肢 ${count_input_test}"><div class='btn-delete-test mx-4 fs-4'>✕</div></div>`);
+
+      /* Update Select Answer */
       while (i <= count_input_test) {
         listOptionSelect += `<option>${i}</option>`;
         i++;
       }
       $('.answer-test').html(`<select class="form-control form-select answer-test">${listOptionSelect}</select>`);
+
+      /* Delete Answer Test */
+      $('.btn-delete-test').on('click', function (e) {
+        e.preventDefault();
+        $(this).parent().remove();
+        const count_input_test_2 = $(_this).parent().find('.list-post-test input').length;
+        if (count_input_test_2 !== 4) {
+          $(_this).show();
+        }
+      });
     });
   },
 
