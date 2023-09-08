@@ -296,154 +296,172 @@ var RUN = {
 
   // Handle Chart
   handleChart: () => {
-    // Chart 1
-    Highcharts.chart('chart_1', {
-      chart: {
-        polar: true,
-        type: 'line',
-        style: {
-          fontSize: '16px',
-        },
-      },
-      title: {
-        text: '点数',
-        y: 20,
-      },
-      pane: {
-        size: '80%',
-      },
-      xAxis: {
-        categories: ['ITリテラシー', 'ITツール演習', 'ディレクター基礎', 'コース5', 'コース６', 'DX CREATORS'],
-        tickmarkPlacement: 'on',
-        lineWidth: 0,
-      },
-      yAxis: {
-        gridLineInterpolation: 'polygon',
-        lineWidth: 0,
-        tickPositions: [2, 4, 6, 8, 10],
-      },
-      tooltip: {
-        shared: true,
-      },
-      series: [
-        {
-          name: '',
-          data: [10, 9, 9, 7, 9, 6] /* Add Data For Chart */,
-          pointPlacement: 'on',
-          color: '#E95098',
-          fillOpacity: 0.5,
-          type: 'area',
-        },
-      ],
-      plotOptions: {
-        area: {
-          marker: {
-            enabled: false,
+    if ($('#chart_1').length && $('#chart_2').length) {
+      // Chart 1
+      Highcharts.chart('chart_1', {
+        chart: {
+          polar: true,
+          type: 'line',
+          style: {
+            fontSize: '16px',
           },
         },
-      },
-      exporting: { enabled: false },
-      credits: {
-        enabled: false,
-      },
-      legend: { enabled: false },
-      responsive: {
-        rules: [
+        title: {
+          text: '点数',
+          y: 20,
+        },
+        pane: {
+          size: '80%',
+        },
+        xAxis: {
+          categories: ['ITリテラシー', 'ITツール演習', 'ディレクター基礎', 'コース5', 'コース６', 'DX CREATORS'],
+          tickmarkPlacement: 'on',
+          lineWidth: 0,
+        },
+        yAxis: {
+          gridLineInterpolation: 'polygon',
+          lineWidth: 0,
+          tickPositions: [2, 4, 6, 8, 10],
+        },
+        tooltip: {
+          shared: true,
+        },
+        series: [
           {
-            condition: {
-              maxWidth: 500,
-            },
-            chartOptions: {
-              chart: {
-                style: {
-                  fontSize: '12px',
-                },
-              },
-              title: {
-                y: 60,
-              },
-              pane: {
-                size: '60%',
-              },
-            },
+            name: '',
+            data: [10, 9, 9, 7, 9, 6] /* Add Data For Chart */,
+            pointPlacement: 'on',
+            color: '#E95098',
+            fillOpacity: 0.5,
+            type: 'area',
           },
         ],
-      },
-    });
+        plotOptions: {
+          area: {
+            marker: {
+              enabled: false,
+            },
+          },
+        },
+        exporting: { enabled: false },
+        credits: {
+          enabled: false,
+        },
+        legend: { enabled: false },
+        responsive: {
+          rules: [
+            {
+              condition: {
+                maxWidth: 500,
+              },
+              chartOptions: {
+                chart: {
+                  style: {
+                    fontSize: '12px',
+                  },
+                },
+                title: {
+                  y: 60,
+                },
+                pane: {
+                  size: '60%',
+                },
+              },
+            },
+          ],
+        },
+      });
 
-    // Chart 2
-    Highcharts.chart('chart_2', {
-      chart: {
-        polar: true,
-        type: 'line',
-        style: {
-          fontSize: '16px',
-        },
-      },
-      title: {
-        text: '点数',
-        y: 20,
-      },
-      pane: {
-        size: '80%',
-      },
-      xAxis: {
-        categories: ['ITリテラシー', 'ITツール演習', 'ディレクター基礎', 'コース5', 'コース６', 'DX CREATORS'],
-        tickmarkPlacement: 'on',
-        lineWidth: 0,
-      },
-      yAxis: {
-        gridLineInterpolation: 'polygon',
-        lineWidth: 0,
-        tickPositions: [2, 4, 6, 8, 10],
-      },
-      tooltip: {
-        shared: true,
-      },
-      series: [
-        {
-          name: '',
-          data: [2, 2, 2, 7, 9, 6] /* Add Data For Chart */,
-          pointPlacement: 'on',
-          color: '#E95098',
-          fillOpacity: 0.5,
-          type: 'area',
-        },
-      ],
-      plotOptions: {
-        area: {
-          marker: {
-            enabled: false,
+      // Chart 2
+      Highcharts.chart('chart_2', {
+        chart: {
+          polar: true,
+          type: 'line',
+          style: {
+            fontSize: '16px',
           },
         },
-      },
-      exporting: { enabled: false },
-      credits: {
-        enabled: false,
-      },
-      legend: { enabled: false },
-      responsive: {
-        rules: [
+        title: {
+          text: '点数',
+          y: 20,
+        },
+        pane: {
+          size: '80%',
+        },
+        xAxis: {
+          categories: ['ITリテラシー', 'ITツール演習', 'ディレクター基礎', 'コース5', 'コース６', 'DX CREATORS'],
+          tickmarkPlacement: 'on',
+          lineWidth: 0,
+        },
+        yAxis: {
+          gridLineInterpolation: 'polygon',
+          lineWidth: 0,
+          tickPositions: [2, 4, 6, 8, 10],
+        },
+        tooltip: {
+          shared: true,
+        },
+        series: [
           {
-            condition: {
-              maxWidth: 500,
-            },
-            chartOptions: {
-              chart: {
-                style: {
-                  fontSize: '12px',
-                },
-              },
-              title: {
-                y: 60,
-              },
-              pane: {
-                size: '55%',
-              },
-            },
+            name: '',
+            data: [2, 2, 2, 7, 9, 6] /* Add Data For Chart */,
+            pointPlacement: 'on',
+            color: '#E95098',
+            fillOpacity: 0.5,
+            type: 'area',
           },
         ],
-      },
+        plotOptions: {
+          area: {
+            marker: {
+              enabled: false,
+            },
+          },
+        },
+        exporting: { enabled: false },
+        credits: {
+          enabled: false,
+        },
+        legend: { enabled: false },
+        responsive: {
+          rules: [
+            {
+              condition: {
+                maxWidth: 500,
+              },
+              chartOptions: {
+                chart: {
+                  style: {
+                    fontSize: '12px',
+                  },
+                },
+                title: {
+                  y: 60,
+                },
+                pane: {
+                  size: '55%',
+                },
+              },
+            },
+          ],
+        },
+      });
+    }
+  },
+
+  // Handle Post Test
+  handlePostTest: () => {
+    $('.btn-add-test').on('click', function () {
+      const count_input_test = $(this).parent().find('.list-post-test input').length + 1;
+      $(this).parent().find('.list-post-test').append(`<input type="text" class="form-control mt-2" placeholder="選択肢 ${count_input_test}">`);
+
+      let listOptionSelect = '';
+      let i = 1;
+      while (i <= count_input_test) {
+        listOptionSelect += `<option>${i}</option>`;
+        i++;
+      }
+      $('.answer-test').html(`<select class="form-control form-select answer-test">${listOptionSelect}</select>`);
     });
   },
 
@@ -465,6 +483,7 @@ var RUN = {
     RUN.handleDeleteFileUpload();
     RUN.handleDatePicker();
     RUN.handleChart();
+    RUN.handlePostTest();
   },
 };
 

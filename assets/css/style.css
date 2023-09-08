@@ -742,7 +742,8 @@ a:hover {
 }
 
 .btn-add-lesson,
-.btn-add-chapter {
+.btn-add-chapter,
+.btn-add-test {
   padding: 0 1.25rem;
   font-size: 1.5rem;
   font-weight: 500;
@@ -986,6 +987,10 @@ a:hover {
   color: #000;
   background: #999;
   border-radius: 3px;
+}
+
+.btn-add-test {
+  user-select: none;
 }
 
 .header-login {
