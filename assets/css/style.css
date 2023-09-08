@@ -229,10 +229,6 @@ select {
   flex-wrap: nowrap;
 }
 
-.rounded-8 {
-  border-radius: 8px;
-}
-
 input,
 textarea {
   font-size: 1.4rem !important;
@@ -240,10 +236,6 @@ textarea {
 }
 
 input::placeholder {
-  color: #a1a0a0 !important;
-}
-
-textarea::placeholder {
   color: #a1a0a0 !important;
 }
 
@@ -742,8 +734,7 @@ a:hover {
 }
 
 .btn-add-lesson,
-.btn-add-chapter,
-.btn-add-test {
+.btn-add-chapter {
   padding: 0 1.25rem;
   font-size: 1.5rem;
   font-weight: 500;
@@ -987,15 +978,6 @@ a:hover {
   color: #000;
   background: #999;
   border-radius: 3px;
-}
-
-.btn-add-test {
-  user-select: none;
-}
-
-.btn-delete-test {
-  user-select: none;
-  cursor: pointer;
 }
 
 .header-login {
@@ -3569,6 +3551,7 @@ a:hover {
   }
 }
 
+/* ====== Start Update CSS - 09/09 ====== */
 .custom-charts .form-check-input {
   width: 1.6rem;
   height: 1.6rem;
@@ -3582,5 +3565,30 @@ a:hover {
 .custom-charts .progress {
   background-color: #dfe7f2;
 }
+
+textarea::placeholder {
+  color: #a1a0a0 !important;
+}
+
+.btn-add-test {
+  padding: 0 1.25rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #a1a0a0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn-delete-test {
+  user-select: none;
+  cursor: pointer;
+}
+
+.rounded-8 {
+  border-radius: 8px;
+}
+
+/* ====== End Update CSS - 09/09 ====== */
 
 /*# sourceMappingURL=style.css.map */

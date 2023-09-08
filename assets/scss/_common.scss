@@ -8,10 +8,6 @@ input::placeholder {
     color: #a1a0a0 !important;
 }
 
-textarea::placeholder {
-    color: #a1a0a0 !important;
-}
-
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -485,8 +481,7 @@ a:hover {
 }
 
 .btn-add-lesson,
-.btn-add-chapter,
-.btn-add-test {
+.btn-add-chapter {
     padding: 0 1.25rem;
     @include font(1.5rem, 500, 1.5);
     color: #a1a0a0;
@@ -730,13 +725,4 @@ a:hover {
             border-radius: 3px;
         }
     }
-}
-
-.btn-add-test {
-    user-select: none;
-}
-
-.btn-delete-test {
-    user-select: none;
-    cursor: pointer;
 }
