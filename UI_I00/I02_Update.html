@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html itemscope="" itemtype="http://schema.org/WebPage" lang="vi">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>DX_CREATORS_UI</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+        <!-- Date Picker -->
+        <link rel="stylesheet" href="../assets/css/datepicker.min.css" />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="../assets/css/style.css" />
+    </head>
+
+    <body>
+        <div class="wrapper" style="font-family: Arial, Helvetica, sans-serif">
+            <!-- Header -->
+            <header class="header-dashboard">
+                <div class="container">
+                    <div class="header-button-show-menu-sp">
+                        <img src="../assets/images/icon_hamberger.png" alt="icon_hamberger" />
+                    </div>
+                    <a href="#" class="header-logo">
+                        <img src="../assets/images/logo.png" alt="logo" />
+                    </a>
+                    <div class="list-category-menu">
+                        <ul>
+                            <li>
+                                <div class="title-menu">ホーム</div>
+                            </li>
+                            <li>
+                                <div class="title-menu">アカウント管理</div>
+                                <ul class="sub-menu">
+                                    <li>会員管理</li>
+                                    <li>管理者管理</li>
+                                </ul>
+                            </li>
+                            <li class="active">
+                                <div class="title-menu">コース管理</div>
+                            </li>
+                            <li>
+                                <div class="title-menu">お知らせ管理</div>
+                            </li>
+                            <li>
+                                <div class="title-menu">イベント管理</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="user-notify">
+                        <img src="../assets/images/icon_bell.png" alt="icon-bell" />
+                        <span>1</span>
+                    </div>
+                    <div class="header-user">
+                        <div class="wrap-user">
+                            <div class="user-avatar">
+                                <img src="../assets/images/image_user.png" alt="icon_user" />
+                            </div>
+                            <div class="user-show">
+                                <img src="../assets/images/icon_show_user.png" alt="icon_show_user" />
+                            </div>
+                        </div>
+                        <div class="admin-list-option">
+                            <div class="list-option-item">
+                                <div class="title-sub-menu">ホーム</div>
+                                <div class="title-sub-menu">
+                                    <a href="#">アカウント管理</a>
+                                    <img class="icon-arrow" src="../assets/images/icon_show_user.png" alt="" />
+                                </div>
+                                <div class="content-sub-menu">
+                                    <ul>
+                                        <li><a href="#">会員管理</a></li>
+                                        <li><a href="#">管理者管理</a></li>
+                                    </ul>
+                                </div>
+                                <div class="title-sub-menu">コース管理</div>
+                                <div class="title-sub-menu">
+                                    <a href="#">お知らせ管理</a>
+                                    <img class="icon-arrow" src="../assets/images/icon_show_user.png" alt="" />
+                                </div>
+                                <div class="content-sub-menu">
+                                    <ul>
+                                        <li><a href="#">会員管理</a></li>
+                                        <li><a href="#">管理者管理</a></li>
+                                    </ul>
+                                </div>
+                                <div class="title-sub-menu">
+                                    <a href="#">イベント管理</a>
+                                    <img class="icon-arrow" src="../assets/images/icon_show_user.png" alt="" />
+                                </div>
+                                <div class="content-sub-menu">
+                                    <ul>
+                                        <li><a href="#">会員管理</a></li>
+                                        <li><a href="#">管理者管理</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Main -->
+            <section class="main">
+                <div class="container manage-course">
+                    <div class="content position-relative min-vh-100 px-md-5">
+                        <!-- <div class="notify-success mt-3">削除が完了しました。</div> -->
+                        <form class="list-input">
+                            <!-- Form 1 -->
+                            <div class="mt-5 mb-3 fz-2 fw-lighter">コース新規登録</div>
+                            <div class="d-flex justify-content-end align-items-center">
+                                <div class="w-50 input-group flex-nowrap mb-3">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text bg-purple text-light">
+                                            <span class="required">　ステータス</span>
+                                        </div>
+                                    </div>
+                                    <div class="w-100 px-3 form-control border rounded-0 text-inline">
+                                        <select class="form-control form-select">
+                                            <option>公開中</option>
+                                            <option>公開中</option>
+                                            <option>公開中</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-group flex-nowrap mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text bg-purple text-light">
+                                        <span class="required">　コース​名</span>
+                                    </div>
+                                </div>
+                                <div class="w-100 px-3 form-control border rounded-0 text-inline">
+                                    <input type="text" class="form-control" placeholder="タイトル" />
+                                </div>
+                            </div>
+
+                            <!-- Course-details -->
+                            <div class="course-details accordion mb-5" id="accordionParent1">
+                                <div class="accordion-item">
+                                    <div class="d-flex justify-content-between align-items-center rounded-6" style="background-color: #8b8ebb">
+                                        <h2 class="accordion-header w-100" id="headingOneParent1">
+                                            <div
+                                                class="accordion-button icon-arrow-white w-100 d-flex justify-content-between"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#collapseOneParent1"
+                                                aria-expanded="true"
+                                                aria-controls="collapseOneParent1"
+                                            >
+                                                <p>レッスン１</p>
+                                            </div>
+                                        </h2>
+                                        <div class="d-flex position-absolute" style="right: 9rem">
+                                            <a data-bs-toggle="modal" href="#modalDeleteCourse2">
+                                                <img class="delete-course-details" style="width: 2.5rem" src="../assets/images/icon_trash_3.png" alt="" />
+                                            </a>
+                                            <img class="ms-2" style="width: 2.5rem" src="../assets/images/icon_out.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div id="collapseOneParent1" class="accordion-collapse collapse show" aria-labelledby="headingOneParent1" data-bs-parent="#accordionParent1">
+                                        <div class="accordion-body" style="border: 1px solid #8b8ebb; border-radius: 5px">
+                                            <div class="w-100 mb-2 d-flex justify-content-between align-items-center">
+                                                <div class="w-50 input-group flex-nowrap">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text bg-purple text-light">
+                                                            <span class="required">　ステータス</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="w-100 px-3 form-control border rounded-0 text-inline">
+                                                        <select class="form-control form-select">
+                                                            <option>公開中</option>
+                                                            <option>公開中</option>
+                                                            <option>公開中</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <!-- <p class="w-25 pe-5 text-end">登録日: 2022-02-22</p> -->
+                                            </div>
+                                            <div class="input-group flex-nowrap mb-2">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text bg-purple text-light">
+                                                        <span class="required">　レッスン​タイトル</span>
+                                                    </div>
+                                                </div>
+                                                <div class="w-100 px-3 form-control border rounded-0 text-inline">
+                                                    <input type="text" class="form-control" value="タイトル" placeholder="タイトル" />
+                                                </div>
+                                            </div>
+                                            <div class="input-group flex-nowrap mb-2">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text bg-purple text-light">
+                                                        <span class="required">　レッスン説明</span>
+                                                    </div>
+                                                </div>
+                                                <div class="w-100 px-3 form-control border rounded-0 text-inline">
+                                                    <textarea class="form-control" style="min-height: 8rem" placeholder="説明文">説明文</textarea>
+                                                </div>
+                                            </div>
+                                            <div class="input-group flex-nowrap mb-3">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text bg-purple text-light">
+                                                        <span class="required">　レッスンサムネイル</span>
+                                                    </div>
+                                                </div>
+                                                <div class="w-100 px-3 py-2 border d-flex align-items-center">
+                                                    <img class="image-preview" style="width: 33.5rem; height: 19.5rem" src="../assets/images/image_upload.png" />
+                                                    <div class="btn-control">
+                                                        <div class="wrap">
+                                                            <span class="btn_upload">
+                                                                <input type="file" id="imag2" title="" />
+                                                                画像アップロード
+                                                            </span>
+                                                            <div class="name-image-2 ms-3 text-inline" style="width: 220px"></div>
+                                                            <div class="btn-delete-image-2 fs-2" style="color: #8b8ebb">✕</div>
+                                                        </div>
+                                                        <div class="fw-light mt-3" style="color: #616161">※ アップロードできるファイルの形式は、JPG/JPEG/GIF/PDF/ZIPです。</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Accordion Child -->
+                                            <div class="mt-4 accordion" id="accordionChild1">
+                                                <div class="accordion-item">
+                                                    <div class="position-relative d-flex justify-content-between align-items-center">
+                                                        <h2 class="accordion-header w-100 chapter" id="headingOneChild1">
+                                                            <div
+                                                                class="accordion-button icon-arrow-purple w-100 d-flex justify-content-between"
+                                                                type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#collapseOneChild1"
+                                                                aria-expanded="true"
+                                                                aria-controls="collapseOneChild1"
+                                                            >
+                                                                <p>チャプター１</p>
+                                                            </div>
+                                                        </h2>
+                                                        <div class="d-flex position-absolute" style="right: 5rem">
+                                                            <a data-bs-toggle="modal" href="#modalDeleteCourse2">
+                                                                <img class="border-0" style="width: 2.5rem" src="../assets/images/icon_trash_4.png" alt="" />
+                                                            </a>
+                                                            <img class="ms-2 border-0" style="width: 2.5rem" src="../assets/images/icon_out_2.png" alt="" />
+                                                        </div>
+                                                    </div>
+                                                    <div id="collapseOneChild1" class="accordion-collapse collapse show" aria-labelledby="headingOneChild1" data-bs-parent="#accordionChild1">
+                                                        <div class="accordion-body" style="background-color: #f8f8f8">
+                                                            <div class="d-flex justify-content-start">
+                                                                <div style="width: 18rem; height: 10rem">
+                                                                    <label class="picture w-100 h-100" for="picture__input">
+                                                                        <div class="picture__image w-100 h-100 rounded-6 overflow-hidden">
+                                                                            <!-- <img class="w-100 h-100" src="../assets/images/image_upload.png" />
+                                                                            <input type="file" name="picture__input" class="picture__input" /> -->
+                                                                            <img class="w-100 h-100 image-iframe" src="../assets/images/image_upload.png" />
+                                                                        </div>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="ms-3 d-flex flex-column" style="width: 85%">
+                                                                    <div class="data-course-detail m-0" style="min-height: 3.5rem">
+                                                                        <input type="text" class="form-control input-group h-100" placeholder="チャプタータイトル" />
+                                                                    </div>
+                                                                    <div class="my-2" style="font-size: 1.2rem">※ 動画リソースを下記に入力してください</div>
+                                                                    <div class="d-flex data-course-detail m-0" style="min-height: 3.5rem">
+                                                                        <input type="text" class="input-iframe form-control input-group h-100" placeholder="リソース" />
+                                                                        <input type="number" class="form-control input-group w-25 h-100 ms-4" placeholder="動画時間（分）" min="0" />
+                                                                        <input type="number" class="form-control input-group w-25 h-100 ms-4" placeholder="動画時間（秒）" min="0" max="60" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="data-course-detail my-3">
+                                                                <textarea class="form-control" style="min-height: 5rem" value="コース概要 " placeholder="チャプター概要 "></textarea>
+                                                            </div>
+                                                            <div>
+                                                                <div class="d-flex justify-content-start align-items-center">
+                                                                    <div class="btn-upload-file-2 rounded-6 px-4 py-2 fs-5 text-light" style="background-color: #8b8ebb">
+                                                                        <input type="file" class="inputFileUpload" />
+                                                                        資料アップロード
+                                                                    </div>
+                                                                    <div class="nameFile ms-4 text-inline" style="width: 22rem"></div>
+                                                                    <button class="btn-delete-file-upload" type="button">✕</button>
+                                                                </div>
+                                                                <div class="mt-3 fs-5 desciption-file-upload">※ アップロードできるファイルの形式は、画像(JPG/JPEG/PNG)またはPDF、ZIP形式です。</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <div class="position-relative d-flex justify-content-between align-items-center">
+                                                        <h2 class="accordion-header w-100 chapter" id="headingOneChild2">
+                                                            <div
+                                                                class="accordion-button icon-arrow-purple w-100 d-flex justify-content-between"
+                                                                type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#collapseOneChild2"
+                                                                aria-expanded="true"
+                                                                aria-controls="collapseOneChild2"
+                                                            >
+                                                                <p>チャプター２</p>
+                                                            </div>
+                                                        </h2>
+                                                        <div class="d-flex position-absolute" style="right: 5rem">
+                                                            <a data-bs-toggle="modal" href="#modalDeleteCourse2">
+                                                                <img class="border-0" style="width: 2.5rem" src="../assets/images/icon_trash_4.png" alt="" />
+                                                            </a>
+                                                            <img class="ms-2 border-0" style="width: 2.5rem" src="../assets/images/icon_out_2.png" alt="" />
+                                                        </div>
+                                                    </div>
+                                                    <div id="collapseOneChild2" class="accordion-collapse collapse show" aria-labelledby="headingOneChild1" data-bs-parent="#accordionChild1">
+                                                        <div class="accordion-body" style="background-color: #f8f8f8">
+                                                            <div class="d-flex justify-content-start">
+                                                                <div style="width: 18rem; height: 10rem">
+                                                                    <label class="picture w-100 h-100" for="picture__input">
+                                                                        <div class="picture__image w-100 h-100 rounded-6 overflow-hidden">
+                                                                            <!-- <img class="w-100 h-100" src="../assets/images/image_upload.png" />
+                                                                            <input type="file" name="picture__input" class="picture__input" /> -->
+                                                                            <img class="w-100 h-100 image-iframe" src="../assets/images/image_upload.png" />
+                                                                        </div>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="ms-3 d-flex flex-column" style="width: 85%">
+                                                                    <div class="data-course-detail m-0" style="min-height: 3.5rem">
+                                                                        <input type="text" class="form-control input-group h-100" placeholder="チャプタータイトル" />
+                                                                    </div>
+                                                                    <div class="my-2" style="font-size: 1.2rem">※ 動画リソースを下記に入力してください</div>
+                                                                    <div class="d-flex data-course-detail m-0" style="min-height: 3.5rem">
+                                                                        <input type="text" class="input-iframe form-control input-group h-100" placeholder="リソース" />
+                                                                        <input type="number" class="form-control input-group w-25 h-100 ms-4" placeholder="動画時間（分）" min="0" />
+                                                                        <input type="number" class="form-control input-group w-25 h-100 ms-4" placeholder="動画時間（秒）" min="0" max="60" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="data-course-detail my-3">
+                                                                <textarea class="form-control" style="min-height: 5rem" value="コース概要 " placeholder="チャプター概要 "></textarea>
+                                                            </div>
+                                                            <div>
+                                                                <div class="d-flex justify-content-start align-items-center">
+                                                                    <div class="btn-upload-file-2 rounded-6 px-4 py-2 fs-5 text-light" style="background-color: #8b8ebb">
+                                                                        <input type="file" class="inputFileUpload" />
+                                                                        資料アップロード
+                                                                    </div>
+                                                                    <div class="nameFile ms-4 text-inline" style="width: 22rem"></div>
+                                                                    <button class="btn-delete-file-upload" type="button">✕</button>
+                                                                </div>
+                                                                <div class="mt-3 fs-5 desciption-file-upload">※ アップロードできるファイルの形式は、画像(JPG/JPEG/PNG)またはPDF、ZIP形式です。</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-add-chapter py-2">＋ チャプターを追加</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-add-chapter px-0 py-3">＋ レッスンを追加</div>
+                            </div>
+
+                            <div class="list-btn mt-5">
+                                <button class="btn-child">戻る</button>
+                                <button class="btn-child bg-purple">次へ</button>
+                            </div>
+                        </form>
+                        <div class="text-end-page fix-bottom">© 2023 DX CREATORS. All Rights Reserved.</div>
+                    </div>
+                    <!-- Modal Logout -->
+                    <div class="modal fade modal-logout" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-logout-header">削除確認</div>
+                                <div class="modal-body">
+                                    <p>削除してもよろしいでしょうか？</p>
+                                    <div class="list-btn-modal-logut">
+                                        <div class="btn-back" data-bs-dismiss="modal">キャンセル</div>
+                                        <div class="btn-logout" data-bs-dismiss="modal">OK</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal Delete -->
+                    <div class="modal fade modal-logout modal-delete" id="modalDelete" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-logout-header bg-purple">ログアウト</div>
+                                <div class="modal-body">
+                                    <p>停止処理してもよろしいでしょうか？</p>
+                                    <div class="list-btn-modal-logut">
+                                        <div class="btn-back rounded-0" data-bs-dismiss="modal">キャンセル</div>
+                                        <div class="btn-logout rounded-0" data-bs-dismiss="modal">OK</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer"></footer>
+        </div>
+
+        <script src="../assets/js/jquery-3.6.0.min.js"></script>
+        <script src="../assets/js/bootstrap.min.js"></script>
+        <script src="../assets/js/datepicker.min.js"></script>
+        <script src="../assets/js/main.js"></script>
+    </body>
+</html>
