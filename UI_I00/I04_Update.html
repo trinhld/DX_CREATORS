@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html itemscope="" itemtype="http://schema.org/WebPage" lang="vi">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>DX_CREATORS_UI</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+        <!-- Date Picker -->
+        <link rel="stylesheet" href="../assets/css/datepicker.min.css" />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="../assets/css/style.css" />
+    </head>
+
+    <body>
+        <div class="wrapper" style="font-family: Arial, Helvetica, sans-serif">
+            <!-- Header -->
+            <header class="header-dashboard">
+                <div class="container">
+                    <div class="header-button-show-menu-sp">
+                        <img src="../assets/images/icon_hamberger.png" alt="icon_hamberger" />
+                    </div>
+                    <a href="#" class="header-logo">
+                        <img src="../assets/images/logo.png" alt="logo" />
+                    </a>
+                    <div class="list-category-menu">
+                        <ul>
+                            <li>
+                                <div class="title-menu">ホーム</div>
+                            </li>
+                            <li>
+                                <div class="title-menu">アカウント管理</div>
+                                <ul class="sub-menu">
+                                    <li>会員管理</li>
+                                    <li>管理者管理</li>
+                                </ul>
+                            </li>
+                            <li class="active">
+                                <div class="title-menu">コース管理</div>
+                            </li>
+                            <li>
+                                <div class="title-menu">お知らせ管理</div>
+                            </li>
+                            <li>
+                                <div class="title-menu">イベント管理</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="user-notify">
+                        <img src="../assets/images/icon_bell.png" alt="icon-bell" />
+                        <span>1</span>
+                    </div>
+                    <div class="header-user">
+                        <div class="wrap-user">
+                            <div class="user-avatar">
+                                <img src="../assets/images/image_user.png" alt="icon_user" />
+                            </div>
+                            <div class="user-show">
+                                <img src="../assets/images/icon_show_user.png" alt="icon_show_user" />
+                            </div>
+                        </div>
+                        <div class="admin-list-option">
+                            <div class="list-option-item">
+                                <div class="title-sub-menu">ホーム</div>
+                                <div class="title-sub-menu">
+                                    <a href="#">アカウント管理</a>
+                                    <img class="icon-arrow" src="../assets/images/icon_show_user.png" alt="" />
+                                </div>
+                                <div class="content-sub-menu">
+                                    <ul>
+                                        <li><a href="#">会員管理</a></li>
+                                        <li><a href="#">管理者管理</a></li>
+                                    </ul>
+                                </div>
+                                <div class="title-sub-menu">コース管理</div>
+                                <div class="title-sub-menu">
+                                    <a href="#">お知らせ管理</a>
+                                    <img class="icon-arrow" src="../assets/images/icon_show_user.png" alt="" />
+                                </div>
+                                <div class="content-sub-menu">
+                                    <ul>
+                                        <li><a href="#">会員管理</a></li>
+                                        <li><a href="#">管理者管理</a></li>
+                                    </ul>
+                                </div>
+                                <div class="title-sub-menu">
+                                    <a href="#">イベント管理</a>
+                                    <img class="icon-arrow" src="../assets/images/icon_show_user.png" alt="" />
+                                </div>
+                                <div class="content-sub-menu">
+                                    <ul>
+                                        <li><a href="#">会員管理</a></li>
+                                        <li><a href="#">管理者管理</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Main -->
+            <section class="main">
+                <div class="container manage-course">
+                    <div class="content position-relative min-vh-100 px-md-5">
+                        <!-- <div class="notify-success mt-3">削除が完了しました。</div> -->
+                        <form class="list-input">
+                            <!-- Form 1 -->
+                            <div class="mt-5 mb-3 fz-2 fw-lighter">コース新規登録</div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="input-group flex-nowrap mb-3 me-4">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text bg-purple text-light">
+                                            <span>　レッスン数</span>
+                                        </div>
+                                    </div>
+                                    <p class="w-100 px-3 form-control border rounded-0 text-inline">全８レッスン</p>
+                                </div>
+                                <!-- -- -->
+                                <div class="input-group flex-nowrap mb-3 ms-4">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text bg-purple text-light">
+                                            <span>　ステータス</span>
+                                        </div>
+                                    </div>
+                                    <p class="w-100 px-3 form-control border rounded-0 text-inline">公開</p>
+                                </div>
+                            </div>
+                            <div class="input-group flex-nowrap mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text bg-purple text-light">
+                                        <span>　コースタイトル</span>
+                                    </div>
+                                </div>
+                                <p class="w-100 px-3 form-control border rounded-0 text-inline">基礎から学ぶITリテラシー</p>
+                            </div>
+
+                            <!-- Course-details -->
+                            <div class="course-details accordion mb-5" id="accordionParent1">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOneParent1">
+                                        <div
+                                            class="accordion-button icon-arrow-white w-100 d-flex justify-content-between"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOneParent1"
+                                            aria-expanded="true"
+                                            aria-controls="collapseOneParent1"
+                                        >
+                                            <p>レッスン１</p>
+                                        </div>
+                                    </h2>
+                                    <div id="collapseOneParent1" class="accordion-collapse collapse show" aria-labelledby="headingOneParent1" data-bs-parent="#accordionParent1">
+                                        <div class="accordion-body" style="border: 1px solid #8b8ebb; border-radius: 5px">
+                                            <div class="w-100 mb-2 d-flex justify-content-between align-items-center">
+                                                <div class="w-75 input-group flex-nowrap">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text bg-purple text-light">
+                                                            <span>　ステータス</span>
+                                                        </div>
+                                                    </div>
+                                                    <p class="w-100 px-3 form-control border rounded-0 text-inline">公開</p>
+                                                </div>
+                                                <p class="w-25 pe-5 text-end">登録日: 2022-02-22</p>
+                                            </div>
+                                            <div class="input-group flex-nowrap mb-2">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text bg-purple text-light">
+                                                        <span>　レッスン​タイトル</span>
+                                                    </div>
+                                                </div>
+                                                <p class="w-100 px-3 form-control border rounded-0 text-inline">はじめに</p>
+                                            </div>
+                                            <div class="input-group flex-nowrap mb-2">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text bg-purple text-light">
+                                                        <span>　レッスン説明</span>
+                                                    </div>
+                                                </div>
+                                                <p class="w-100 px-3 form-control border rounded-0 text-inline">今回のLessonでは、ITリテラシーを学ぶ前に「IT」とは何かについて学んでいきましょう。</p>
+                                            </div>
+                                            <div class="input-group flex-nowrap mb-2">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text bg-purple text-light">
+                                                        <span>　レッスン​タイトル</span>
+                                                    </div>
+                                                </div>
+                                                <p class="w-100 px-3 form-control border rounded-0 text-inline">はじめに</p>
+                                            </div>
+                                            <div class="input-group flex-nowrap mb-2">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text bg-purple text-light">
+                                                        <span>　レッスンサムネイル</span>
+                                                    </div>
+                                                </div>
+                                                <div class="w-100 px-3 py-2 border d-flex align-items-center">
+                                                    <img class="image-preview" style="width: 19rem; height: 10rem" src="../assets/images/image_upload.png" />
+                                                </div>
+                                            </div>
+                                            <div class="input-group flex-nowrap mb-2">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text bg-purple text-light">
+                                                        <span>　確認テスト</span>
+                                                    </div>
+                                                </div>
+                                                <div class="w-100 px-3 py-2 border d-flex align-items-center">
+                                                    <a href="#" class="px-5 py-3 rounded-6 text-light bg-purple">テスト管理</a>
+                                                    <div class="ms-5 px-4 py-1 fs-5 fw-bold rounded-6 text-dark" style="background-color: #dfdfdf">設定済み</div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Accordion Child -->
+                                            <div class="mt-4 accordion" id="accordionChild1">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header chapter" id="headingOneChild1">
+                                                        <div
+                                                            class="accordion-button icon-arrow-purple w-100 d-flex justify-content-between"
+                                                            type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#collapseOneChild1"
+                                                            aria-expanded="true"
+                                                            aria-controls="collapseOneChild1"
+                                                        >
+                                                            <p>チャプター１</p>
+                                                        </div>
+                                                    </h2>
+                                                    <div id="collapseOneChild1" class="accordion-collapse collapse show" aria-labelledby="headingOneChild1" data-bs-parent="#accordionChild1">
+                                                        <div class="accordion-body" style="background-color: #f8f8f8; border-radius: 6px">
+                                                            <div class="d-flex justify-content-start">
+                                                                <div class="wrap-image-chapter" style="width: 18rem; height: 10rem">
+                                                                    <img class="w-100" src="../assets/images/image_chapter.png" alt="" />
+                                                                </div>
+                                                                <div class="ms-3 d-flex flex-column" style="width: 85%">
+                                                                    <div class="data-course-detail text-inline" style="min-height: 3rem">ITって何者？</div>
+                                                                    <div class="data-course-detail h-100 overlay-data-course">&lt;iframe src="https://www.youtube.com/embed/CVtYUfsBWQM" width="500" height="300"&gt;&lt;/iframe&gt;</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="data-course-detail my-3">
+                                                                ITを使うとできることは？<br />
+                                                                社会の中のIT
+                                                            </div>
+                                                            <div class="dowload-pdf d-flex mt-4">
+                                                                <img class="border-0 me-3" src="../assets/images/icon_dowload_pdf.png" style="width: 2rem" alt="" />
+                                                                <p class="name-file">ITリテラシーlesson1資料.pdf</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header chapter" id="headingOneChild2">
+                                                        <div
+                                                            class="accordion-button icon-arrow-purple w-100 d-flex justify-content-between"
+                                                            type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#collapseOneChild2"
+                                                            aria-expanded="true"
+                                                            aria-controls="collapseOneChild2"
+                                                        >
+                                                            <p>チャプター２</p>
+                                                        </div>
+                                                    </h2>
+                                                    <div id="collapseOneChild2" class="accordion-collapse collapse show" aria-labelledby="headingOneChild2" data-bs-parent="#accordionChild1">
+                                                        <div class="accordion-body" style="background-color: #f8f8f8; border-radius: 6px">
+                                                            <div class="d-flex justify-content-start">
+                                                                <div class="wrap-image-chapter" style="width: 18rem; height: 10rem">
+                                                                    <img class="w-100" src="../assets/images/image_chapter.png" alt="" />
+                                                                </div>
+                                                                <div class="ms-3 d-flex flex-column" style="width: 85%">
+                                                                    <div class="data-course-detail text-inline" style="min-height: 3rem">ITって何者？</div>
+                                                                    <div class="data-course-detail h-100 overlay-data-course">&lt;iframe src="https://www.youtube.com/embed/CVtYUfsBWQM" width="500" height="300"&gt;&lt;/iframe&gt;</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="data-course-detail my-3">
+                                                                ITを使うとできることは？<br />
+                                                                社会の中のIT
+                                                            </div>
+                                                            <div class="dowload-pdf d-flex mt-4">
+                                                                <img class="border-0 me-3" src="../assets/images/icon_dowload_pdf.png" style="width: 2rem" alt="" />
+                                                                <p class="name-file">ITリテラシーlesson1資料.pdf</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOneParent2">
+                                        <div
+                                            class="accordion-button icon-arrow-white w-100 d-flex justify-content-between"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOneParent2"
+                                            aria-expanded="true"
+                                            aria-controls="collapseOneParent2"
+                                        >
+                                            <p>レッスン2</p>
+                                        </div>
+                                    </h2>
+                                    <div id="collapseOneParent2" class="accordion-collapse collapse show" aria-labelledby="headingOneParent2" data-bs-parent="#accordionParent1">
+                                        <div class="accordion-body" style="border: 1px solid #8b8ebb; border-radius: 5px">
+                                            <div class="w-100 mb-2 d-flex justify-content-between align-items-center">
+                                                <div class="w-75 input-group flex-nowrap">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text bg-purple text-light">
+                                                            <span>　ステータス</span>
+                                                        </div>
+                                                    </div>
+                                                    <p class="w-100 px-3 form-control border rounded-0 text-inline">公開</p>
+                                                </div>
+                                                <p class="w-25 pe-5 text-end">登録日: 2022-02-22</p>
+                                            </div>
+                                            <div class="input-group flex-nowrap mb-2">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text bg-purple text-light">
+                                                        <span>　レッスン​タイトル</span>
+                                                    </div>
+                                                </div>
+                                                <p class="w-100 px-3 form-control border rounded-0 text-inline">はじめに</p>
+                                            </div>
+                                            <div class="input-group flex-nowrap mb-2">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text bg-purple text-light">
+                                                        <span>　レッスン説明</span>
+                                                    </div>
+                                                </div>
+                                                <p class="w-100 px-3 form-control border rounded-0 text-inline">今回のLessonでは、ITリテラシーを学ぶ前に「IT」とは何かについて学んでいきましょう。</p>
+                                            </div>
+                                            <div class="input-group flex-nowrap mb-2">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text bg-purple text-light">
+                                                        <span>　レッスン​タイトル</span>
+                                                    </div>
+                                                </div>
+                                                <p class="w-100 px-3 form-control border rounded-0 text-inline">はじめに</p>
+                                            </div>
+                                            <div class="input-group flex-nowrap mb-2">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text bg-purple text-light">
+                                                        <span>　レッスンサムネイル</span>
+                                                    </div>
+                                                </div>
+                                                <div class="w-100 px-3 py-2 border d-flex align-items-center">
+                                                    <img class="image-preview" style="width: 19rem; height: 10rem" src="../assets/images/image_upload.png" />
+                                                </div>
+                                            </div>
+                                            <div class="input-group flex-nowrap mb-2">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text bg-purple text-light">
+                                                        <span>　確認テスト</span>
+                                                    </div>
+                                                </div>
+                                                <div class="w-100 px-3 py-2 border d-flex align-items-center">
+                                                    <a href="#" class="px-5 py-3 rounded-6 text-light bg-purple">テスト管理</a>
+                                                    <div class="ms-5 px-4 py-1 fs-5 fw-bold rounded-6 text-dark" style="background-color: #dfdfdf">設定済み</div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Accordion Child -->
+                                            <div class="mt-4 accordion" id="accordionChild2">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header chapter" id="headingOneChild3">
+                                                        <div
+                                                            class="accordion-button icon-arrow-purple w-100 d-flex justify-content-between"
+                                                            type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#collapseOneChild3"
+                                                            aria-expanded="true"
+                                                            aria-controls="collapseOneChild3"
+                                                        >
+                                                            <p>チャプター１</p>
+                                                        </div>
+                                                    </h2>
+                                                    <div id="collapseOneChild3" class="accordion-collapse collapse show" aria-labelledby="headingOneChild1" data-bs-parent="#accordionChild1">
+                                                        <div class="accordion-body" style="background-color: #f8f8f8; border-radius: 6px">
+                                                            <div class="d-flex justify-content-start">
+                                                                <div class="wrap-image-chapter" style="width: 18rem; height: 10rem">
+                                                                    <img class="w-100" src="../assets/images/image_chapter.png" alt="" />
+                                                                </div>
+                                                                <div class="ms-3 d-flex flex-column" style="width: 85%">
+                                                                    <div class="data-course-detail text-inline" style="min-height: 3rem">ITって何者？</div>
+                                                                    <div class="data-course-detail h-100 overlay-data-course">&lt;iframe src="https://www.youtube.com/embed/CVtYUfsBWQM" width="500" height="300"&gt;&lt;/iframe&gt;</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="data-course-detail my-3">
+                                                                ITを使うとできることは？<br />
+                                                                社会の中のIT
+                                                            </div>
+                                                            <div class="dowload-pdf d-flex mt-4">
+                                                                <img class="border-0 me-3" src="../assets/images/icon_dowload_pdf.png" style="width: 2rem" alt="" />
+                                                                <p class="name-file">ITリテラシーlesson1資料.pdf</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header chapter" id="headingOneChild4">
+                                                        <div
+                                                            class="accordion-button icon-arrow-purple w-100 d-flex justify-content-between"
+                                                            type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#collapseOneChild4"
+                                                            aria-expanded="true"
+                                                            aria-controls="collapseOneChild4"
+                                                        >
+                                                            <p>チャプター２</p>
+                                                        </div>
+                                                    </h2>
+                                                    <div id="collapseOneChild4" class="accordion-collapse collapse show" aria-labelledby="headingOneChild2" data-bs-parent="#accordionChild1">
+                                                        <div class="accordion-body" style="background-color: #f8f8f8; border-radius: 6px">
+                                                            <div class="d-flex justify-content-start">
+                                                                <div class="wrap-image-chapter" style="width: 18rem; height: 10rem">
+                                                                    <img class="w-100" src="../assets/images/image_chapter.png" alt="" />
+                                                                </div>
+                                                                <div class="ms-3 d-flex flex-column" style="width: 85%">
+                                                                    <div class="data-course-detail text-inline" style="min-height: 3rem">ITって何者？</div>
+                                                                    <div class="data-course-detail h-100 overlay-data-course">&lt;iframe src="https://www.youtube.com/embed/CVtYUfsBWQM" width="500" height="300"&gt;&lt;/iframe&gt;</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="data-course-detail my-3">
+                                                                ITを使うとできることは？<br />
+                                                                社会の中のIT
+                                                            </div>
+                                                            <div class="dowload-pdf d-flex mt-4">
+                                                                <img class="border-0 me-3" src="../assets/images/icon_dowload_pdf.png" style="width: 2rem" alt="" />
+                                                                <p class="name-file">ITリテラシーlesson1資料.pdf</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="list-btn mt-5">
+                                <button class="btn-child">戻る</button>
+                                <button class="btn-child bg-purple">編集</button>
+                            </div>
+                        </form>
+                        <div class="text-end-page fix-bottom">© 2023 DX CREATORS. All Rights Reserved.</div>
+                    </div>
+                    <!-- Modal Logout -->
+                    <div class="modal fade modal-logout" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-logout-header">削除確認</div>
+                                <div class="modal-body">
+                                    <p>削除してもよろしいでしょうか？</p>
+                                    <div class="list-btn-modal-logut">
+                                        <div class="btn-back" data-bs-dismiss="modal">キャンセル</div>
+                                        <div class="btn-logout" data-bs-dismiss="modal">OK</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal Delete -->
+                    <div class="modal fade modal-logout modal-delete" id="modalDelete" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-logout-header bg-purple">ログアウト</div>
+                                <div class="modal-body">
+                                    <p>停止処理してもよろしいでしょうか？</p>
+                                    <div class="list-btn-modal-logut">
+                                        <div class="btn-back rounded-0" data-bs-dismiss="modal">キャンセル</div>
+                                        <div class="btn-logout rounded-0" data-bs-dismiss="modal">OK</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer"></footer>
+        </div>
+
+        <script src="../assets/js/jquery-3.6.0.min.js"></script>
+        <script src="../assets/js/bootstrap.min.js"></script>
+        <script src="../assets/js/datepicker.min.js"></script>
+        <script src="../assets/js/main.js"></script>
+    </body>
+</html>
