@@ -290,13 +290,22 @@
     }
 }
 
+.show-list-status-chapter {
+    padding: 2rem;
+    border: 1px solid #cad3e7;
+    background-color: #fff;
+    li {
+        @include flexbox(flex, flex-start, center, nowrap);
+        padding: 1rem;
+        font-size: 1.3rem;
+        cursor: pointer;
+        &:not(:last-child) {
+            border-bottom: 1px solid #cad3e7;
+        }
+        img {
+            margin-left: 1rem;
+        }
+    }
+}
+
 /* ====== End Update CSS - 12/09 ====== */
-.vertical-slider {
-    transform: rotate(90deg);
-    width: 300px; /* Điều chỉnh kích thước theo yêu cầu */
-    height: 500px; /* Điều chỉnh kích thước theo yêu cầu */
-}
-.vertical-slider .slick-slide {
-    transform: rotate(-90deg);
-    transform-origin: left bottom;
-}
