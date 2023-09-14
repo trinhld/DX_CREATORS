@@ -3590,5 +3590,343 @@ textarea::placeholder {
 }
 
 /* ====== End Update CSS - 09/09 ====== */
+/* ====== Start Update CSS - 12/09 ====== */
+.position-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.custom-tabs .nav-link {
+  padding: 0.8rem 3rem;
+  color: #838383;
+  font-weight: bold;
+  background: #fff;
+  border: 1px solid #cad3e7;
+  border-radius: 8px;
+}
+@media screen and (min-width: 1024px) {
+  .custom-tabs .nav-link {
+    padding: 0.8rem 8rem;
+  }
+}
+.custom-tabs .nav-link.active {
+  color: #fff !important;
+  background: linear-gradient(90deg, #c065a4, #9ac4e4) no-repeat !important;
+}
+
+.status-chapter {
+  user-select: none;
+}
+
+.tab-pane {
+  padding: 2rem 0;
+}
+@media screen and (min-width: 768px) {
+  .tab-pane {
+    padding: 0 1.5rem;
+  }
+}
+
+.wrapper-list-course {
+  display: flex;
+  justify-content: flex-start;
+  align-items: normal;
+  flex-wrap: nowrap;
+  margin: 0 -1rem;
+}
+.wrapper-list-course .course-item {
+  width: calc(33.3333333333% - 2rem);
+  height: 15rem;
+  margin: 0 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: normal;
+  flex-wrap: nowrap;
+  border: 1px solid #cad3e7;
+}
+.wrapper-list-course .course-item .course-item-img {
+  width: 35%;
+}
+.wrapper-list-course .course-item .course-item-img img {
+  height: 100%;
+}
+.wrapper-list-course .course-item .course-item-content {
+  width: 65%;
+  padding: 1.2rem;
+}
+.wrapper-list-course .course-item .course-item-content p {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.wrapper-list-course .course-item .course-item-content .name-course {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.wrapper-list-course .course-item .course-item-content .progress {
+  border: 1px solid #cad3e7;
+  background-color: #fff;
+}
+.wrapper-list-course .course-item .course-item-content .status-chapter {
+  cursor: pointer;
+}
+.wrapper-list-course .course-item .course-item-content .show-list-status-chapter {
+  position: absolute;
+  width: 100%;
+  left: 1px;
+  bottom: 0;
+  transform: translateY(100%);
+  border: 1px solid #cad3e7;
+  background-color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+.wrapper-list-course .course-item .course-item-content .show-list-status-chapter li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 0.5rem 1rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.wrapper-list-course .course-item .course-item-content .show-list-status-chapter li:not(:last-child) {
+  border-bottom: 1px solid #cad3e7;
+}
+.wrapper-list-course .course-item .course-item-content .show-list-status-chapter li img {
+  margin-left: 1rem;
+}
+.wrapper-list-course .course-item .course-item-content .active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.btn-click-pre-chapter,
+.btn-click-next-chapter {
+  position: absolute;
+}
+@media screen and (min-width: 1024px) {
+  .btn-click-pre-chapter,
+.btn-click-next-chapter {
+    top: 50%;
+  }
+}
+.btn-click-pre-chapter img,
+.btn-click-next-chapter img {
+  width: 4rem;
+  cursor: pointer;
+}
+
+.btn-click-pre-chapter {
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%) rotate(90deg);
+}
+@media screen and (min-width: 1024px) {
+  .btn-click-pre-chapter {
+    top: 50%;
+    left: -30px;
+    transform: translateY(-50%) rotate(0deg);
+  }
+}
+
+.btn-click-next-chapter {
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%) rotate(90deg);
+}
+@media screen and (min-width: 1024px) {
+  .btn-click-next-chapter {
+    top: 50%;
+    left: auto;
+    bottom: auto;
+    right: -30px;
+    transform: translateY(-50%) rotate(0deg);
+  }
+}
+
+.wrap-list-chapter-select {
+  margin-top: 4rem;
+}
+.wrap-list-chapter-select .list-chapter-select-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: normal;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+.wrap-list-chapter-select .list-chapter-select-title .chapter-title {
+  width: calc(33.3333333333% - 1rem);
+  margin: 0.8rem 0.5rem;
+  padding: 0.8rem 0.5rem;
+  text-align: center;
+  color: #838383;
+  font-weight: bold;
+  border: 1px solid #cad3e7;
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+}
+@media screen and (min-width: 1024px) {
+  .wrap-list-chapter-select .list-chapter-select-title .chapter-title {
+    width: calc(20% - 2rem);
+    margin: 0.8rem 1rem;
+  }
+}
+.wrap-list-chapter-select .list-chapter-select-title .active {
+  color: #fff;
+  background: linear-gradient(90deg, #c065a4, #9ac4e4) no-repeat !important;
+}
+.wrap-list-chapter-select .list-chapter-select-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: normal;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #cad3e7;
+}
+.wrap-list-chapter-select .list-chapter-select-content .chapter-select-item {
+  width: 100%;
+  height: 15rem;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: normal;
+  flex-wrap: nowrap;
+  border: 1px solid #cad3e7;
+}
+.wrap-list-chapter-select .list-chapter-select-content .chapter-select-item .course-item-img {
+  width: 35%;
+}
+.wrap-list-chapter-select .list-chapter-select-content .chapter-select-item .course-item-img img {
+  height: 100%;
+}
+.wrap-list-chapter-select .list-chapter-select-content .chapter-select-item .course-item-content {
+  width: 65%;
+  padding: 1.2rem;
+}
+.wrap-list-chapter-select .list-chapter-select-content .chapter-select-item .course-item-content p {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.wrap-list-chapter-select .list-chapter-select-content .chapter-select-item .course-item-content .name-course {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.wrap-list-chapter-select .list-chapter-select-content .chapter-select-item .course-item-content .progress {
+  border: 1px solid #cad3e7;
+  background-color: #fff;
+}
+.wrap-list-chapter-select .list-chapter-select-content .chapter-select-item .course-item-content .status-chapter {
+  cursor: pointer;
+}
+.wrap-list-chapter-select .list-chapter-select-content .chapter-select-item .course-item-content .show-list-status-chapter {
+  position: absolute;
+  width: 100%;
+  left: 1px;
+  bottom: 0;
+  transform: translateY(100%);
+  border: 1px solid #cad3e7;
+  background-color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+.wrap-list-chapter-select .list-chapter-select-content .chapter-select-item .course-item-content .show-list-status-chapter li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 0.5rem 1rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.wrap-list-chapter-select .list-chapter-select-content .chapter-select-item .course-item-content .show-list-status-chapter li:not(:last-child) {
+  border-bottom: 1px solid #cad3e7;
+}
+.wrap-list-chapter-select .list-chapter-select-content .chapter-select-item .course-item-content .show-list-status-chapter li img {
+  margin-left: 1rem;
+}
+.wrap-list-chapter-select .list-chapter-select-content .chapter-select-item .course-item-content .active {
+  opacity: 1;
+  visibility: visible;
+}
+@media screen and (min-width: 1024px) {
+  .wrap-list-chapter-select .list-chapter-select-content .chapter-select-item {
+    width: calc(33.3333333333% - 4rem);
+    margin: 1.5rem 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .info-chapter-left {
+    position: relative;
+    padding: 2rem 4rem;
+  }
+}
+
+.info-chapter-right {
+  background-color: #ededed;
+}
+@media screen and (min-width: 1024px) {
+  .info-chapter-right {
+    width: 45rem;
+  }
+}
+
+.size-video-chapter {
+  height: 18rem;
+}
+@media screen and (min-width: 768px) {
+  .size-video-chapter {
+    width: 40rem;
+    height: 22rem;
+  }
+}
+
+.custom-btn-chapter-info {
+  width: 100% !important;
+}
+@media screen and (min-width: 768px) {
+  .custom-btn-chapter-info {
+    width: 15rem !important;
+  }
+}
+
+.chapter-info .form-check-input {
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 1px solid #222222;
+}
+.chapter-info .form-check-input:checked[type=radio] {
+  box-shadow: none;
+  border-color: #222222;
+  background: #222222 !important;
+}
+
+/* ====== End Update CSS - 12/09 ====== */
+.vertical-slider {
+  transform: rotate(90deg);
+  width: 300px; /* Điều chỉnh kích thước theo yêu cầu */
+  height: 500px; /* Điều chỉnh kích thước theo yêu cầu */
+}
+
+.vertical-slider .slick-slide {
+  transform: rotate(-90deg);
+  transform-origin: left bottom;
+}
 
 /*# sourceMappingURL=style.css.map */

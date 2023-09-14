@@ -486,6 +486,78 @@ var RUN = {
     });
   },
 
+  // Handle List Chapter
+  handleListChapter: () => {
+    $('.wrapper-list-course').slick({
+      infinite: false,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      prevArrow: $('.btn-click-pre-chapter'),
+      nextArrow: $('.btn-click-next-chapter'),
+      responsive: [
+        {
+          breakpoint: 576,
+          settings: {
+            vertical: true,
+            slidesToShow: 2,
+          },
+        },
+      ],
+    });
+
+    // Run Fist Tab Default
+    var runFirstTab = $('#tab1').find('.slick-slider');
+    runFirstTab.slick('unslick');
+    runFirstTab.slick({
+      infinite: false,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      prevArrow: $('.btn-click-pre-chapter'),
+      nextArrow: $('.btn-click-next-chapter'),
+      responsive: [
+        {
+          breakpoint: 576,
+          settings: {
+            vertical: true,
+            slidesToShow: 2,
+          },
+        },
+      ],
+    });
+
+    // Fix Slick Slider Using Multitabs
+    $('a[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
+      var tabContentId = $(e.target).attr('href');
+      var slickSlider = $(tabContentId).find('.slick-slider');
+
+      slickSlider.slick('unslick');
+      slickSlider.slick({
+        infinite: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: $('.btn-click-pre-chapter'),
+        nextArrow: $('.btn-click-next-chapter'),
+        responsive: [
+          {
+            breakpoint: 576,
+            settings: {
+              vertical: true,
+              slidesToShow: 2,
+            },
+          },
+        ],
+      });
+    });
+  },
+
+  handleShowStatusChapter: () => {
+    $('.status-chapter').on('click', function () {
+      const temp = $(this).parent().parent().parent().find('.show-list-status-chapter');
+      console.log(temp);
+      temp.toggleClass('active');
+    });
+  },
+
   // Initial
   init: () => {
     RUN.showMenuUser();
@@ -505,6 +577,8 @@ var RUN = {
     RUN.handleDatePicker();
     RUN.handleChart();
     RUN.handlePostTest();
+    RUN.handleListChapter();
+    RUN.handleShowStatusChapter();
   },
 };
 

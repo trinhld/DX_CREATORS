@@ -1,0 +1,302 @@
+/* ====== Start Update CSS - 12/09 ====== */
+
+.position-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.custom-tabs {
+    .nav-link {
+        padding: 0.8rem 3rem;
+        color: #838383;
+        font-weight: bold;
+        background: #fff;
+        border: 1px solid #cad3e7;
+        border-radius: 8px;
+        @include mq_min_1024 {
+            padding: 0.8rem 8rem;
+        }
+    }
+    .nav-link.active {
+        color: #fff !important;
+        background: linear-gradient(90deg, #c065a4, #9ac4e4) no-repeat !important;
+    }
+}
+
+.status-chapter {
+    user-select: none;
+}
+
+.tab-pane {
+    padding: 2rem 0;
+    @include mq_min_768 {
+        padding: 0 1.5rem;
+    }
+}
+
+.wrapper-list-course {
+    @include flexbox(flex, flex-start, normal, nowrap);
+    margin: 0 -1rem;
+    .course-item {
+        width: calc((100% / 3) - 2rem);
+        height: 15rem;
+        margin: 0 1rem;
+        @include flexbox(flex, flex-start, normal, nowrap);
+        border: 1px solid #cad3e7;
+        // overflow: hidden;
+        .course-item-img {
+            width: 35%;
+            img {
+                height: 100%;
+            }
+        }
+        .course-item-content {
+            width: 65%;
+            padding: 1.2rem;
+            p {
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+            .name-course {
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+            .progress {
+                border: 1px solid #cad3e7;
+                background-color: #fff;
+            }
+            .status-chapter {
+                cursor: pointer;
+            }
+            .show-list-status-chapter {
+                position: absolute;
+                width: 100%;
+                left: 1px;
+                bottom: 0;
+                transform: translateY(100%);
+                border: 1px solid #cad3e7;
+                background-color: #fff;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s ease;
+                z-index: 2;
+                li {
+                    @include flexbox(flex, flex-start, center, nowrap);
+                    padding: 0.5rem 1rem;
+                    font-size: 1.3rem;
+                    cursor: pointer;
+                    &:not(:last-child) {
+                        border-bottom: 1px solid #cad3e7;
+                    }
+                    img {
+                        margin-left: 1rem;
+                    }
+                }
+            }
+            .active {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+
+.btn-click-pre-chapter,
+.btn-click-next-chapter {
+    position: absolute;
+    @include mq_min_1024 {
+        top: 50%;
+    }
+    img {
+        width: 4rem;
+        cursor: pointer;
+    }
+}
+
+.btn-click-pre-chapter {
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+    @include mq_min_1024 {
+        top: 50%;
+        left: -30px;
+        transform: translateY(-50%) rotate(0deg);
+    }
+}
+.btn-click-next-chapter {
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+    @include mq_min_1024 {
+        top: 50%;
+        left: auto;
+        bottom: auto;
+        right: -30px;
+        transform: translateY(-50%) rotate(0deg);
+    }
+}
+
+.wrap-list-chapter-select {
+    margin-top: 4rem;
+    .list-chapter-select-title {
+        @include flexbox(flex, flex-start, normal, wrap);
+        margin: 0 -1rem;
+        .chapter-title {
+            width: calc((100% / 3) - 1rem);
+            margin: 0.8rem 0.5rem;
+            padding: 0.8rem 0.5rem;
+            text-align: center;
+            color: #838383;
+            font-weight: bold;
+            border: 1px solid #cad3e7;
+            border-radius: 8px;
+            background-color: #fff;
+            cursor: pointer;
+            @include mq_min_1024 {
+                width: calc((100% / 5) - 2rem);
+                margin: 0.8rem 1rem;
+            }
+        }
+        .active {
+            color: #fff;
+            background: linear-gradient(90deg, #c065a4, #9ac4e4) no-repeat !important;
+        }
+    }
+    .list-chapter-select-content {
+        @include flexbox(flex, flex-start, normal, wrap);
+        margin-top: 2rem;
+        padding: 1rem 1.5rem;
+        border-radius: 8px;
+        border: 1px solid #cad3e7;
+
+        .chapter-select-item {
+            width: 100%;
+            height: 15rem;
+            margin: 1rem 0;
+            @include flexbox(flex, flex-start, normal, nowrap);
+            border: 1px solid #cad3e7;
+            // overflow: hidden;
+            .course-item-img {
+                width: 35%;
+                img {
+                    height: 100%;
+                }
+            }
+            .course-item-content {
+                width: 65%;
+                padding: 1.2rem;
+                p {
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                }
+                .name-course {
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                }
+                .progress {
+                    border: 1px solid #cad3e7;
+                    background-color: #fff;
+                }
+                .status-chapter {
+                    cursor: pointer;
+                }
+                .show-list-status-chapter {
+                    position: absolute;
+                    width: 100%;
+                    left: 1px;
+                    bottom: 0;
+                    transform: translateY(100%);
+                    border: 1px solid #cad3e7;
+                    background-color: #fff;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all 0.3s ease;
+                    z-index: 2;
+                    li {
+                        @include flexbox(flex, flex-start, center, nowrap);
+                        padding: 0.5rem 1rem;
+                        font-size: 1.3rem;
+                        cursor: pointer;
+                        &:not(:last-child) {
+                            border-bottom: 1px solid #cad3e7;
+                        }
+                        img {
+                            margin-left: 1rem;
+                        }
+                    }
+                }
+                .active {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+
+            @include mq_min_1024 {
+                width: calc((100% / 3) - 4rem);
+                margin: 1.5rem 2rem;
+            }
+        }
+    }
+}
+
+.info-chapter-left {
+    @include mq_min_1024 {
+        position: relative;
+        padding: 2rem 4rem;
+    }
+}
+
+.info-chapter-right {
+    background-color: #ededed;
+    @include mq_min_1024 {
+        width: 45rem;
+    }
+}
+
+.size-video-chapter {
+    height: 18rem;
+    @include mq_min_768 {
+        width: 40rem;
+        height: 22rem;
+    }
+}
+
+.custom-btn-chapter-info {
+    width: 100% !important;
+    @include mq_min_768 {
+        width: 15rem !important;
+    }
+}
+
+.chapter-info {
+    .form-check-input {
+        width: 1.6rem;
+        height: 1.6rem;
+        border: 1px solid #222222;
+    }
+    .form-check-input:checked[type='radio'] {
+        box-shadow: none;
+        border-color: #222222;
+        background: #222222 !important;
+    }
+}
+
+/* ====== End Update CSS - 12/09 ====== */
+.vertical-slider {
+    transform: rotate(90deg);
+    width: 300px; /* Điều chỉnh kích thước theo yêu cầu */
+    height: 500px; /* Điều chỉnh kích thước theo yêu cầu */
+}
+.vertical-slider .slick-slide {
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+}
