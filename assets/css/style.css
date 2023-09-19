@@ -3598,7 +3598,7 @@ textarea::placeholder {
 }
 
 .custom-tabs .nav-link {
-  padding: 0.8rem 3rem;
+  padding: 0.8rem 2rem;
   color: #838383;
   font-weight: bold;
   background: #fff;
@@ -3771,6 +3771,10 @@ textarea::placeholder {
   border: 1px solid #cad3e7;
   border-radius: 8px;
   background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: normal;
+  flex-wrap: nowrap;
   cursor: pointer;
 }
 @media screen and (min-width: 1024px) {
@@ -3778,6 +3782,9 @@ textarea::placeholder {
     width: calc(20% - 2rem);
     margin: 0.8rem 1rem;
   }
+}
+.wrap-list-chapter-select .list-chapter-select-title .chapter-title > a {
+  width: 100%;
 }
 .wrap-list-chapter-select .list-chapter-select-title .active {
   color: #fff;

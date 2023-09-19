@@ -8,7 +8,7 @@
 
 .custom-tabs {
     .nav-link {
-        padding: 0.8rem 3rem;
+        padding: 0.8rem 2rem;
         color: #838383;
         font-weight: bold;
         background: #fff;
@@ -156,10 +156,14 @@
             border: 1px solid #cad3e7;
             border-radius: 8px;
             background-color: #fff;
+            @include flexbox(flex, center, normal, nowrap);
             cursor: pointer;
             @include mq_min_1024 {
                 width: calc((100% / 5) - 2rem);
                 margin: 0.8rem 1rem;
+            }
+            & > a {
+                width: 100%;
             }
         }
         .active {
