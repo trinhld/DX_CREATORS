@@ -553,7 +553,6 @@ var RUN = {
   handleShowStatusChapter: () => {
     $('.status-chapter').on('click', function () {
       const temp = $(this).parent().parent().parent().find('.show-list-status-chapter');
-      console.log(temp);
       temp.toggleClass('active');
     });
   },
