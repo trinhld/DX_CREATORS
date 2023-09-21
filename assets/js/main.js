@@ -557,6 +557,14 @@ var RUN = {
     });
   },
 
+  handeleBtnDetailAnswer: () => {
+    $('.btn-detail-answer').on('click', function () {
+      const elementNext = $(this).parent().parent().next();
+      $('.content-detail-answer').not($(elementNext)).hide();
+      $(elementNext).toggle();
+    });
+  },
+
   // Initial
   init: () => {
     RUN.showMenuUser();
@@ -578,6 +586,7 @@ var RUN = {
     RUN.handlePostTest();
     RUN.handleListChapter();
     RUN.handleShowStatusChapter();
+    RUN.handeleBtnDetailAnswer();
   },
 };
 

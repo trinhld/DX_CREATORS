@@ -3945,6 +3945,10 @@ textarea::placeholder {
   margin-left: 1rem;
 }
 
+.content-detail-answer {
+  display: none;
+}
+
 /* ====== End Update CSS - 12/09 ====== */
 
 /*# sourceMappingURL=style.css.map */
