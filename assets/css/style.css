@@ -3949,6 +3949,22 @@ textarea::placeholder {
   display: none;
 }
 
+.wrap-list-process {
+  display: flex;
+  justify-content: flex-start;
+  align-items: normal;
+  flex-wrap: wrap;
+}
+.wrap-list-process .process-item {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .wrap-list-process .process-item {
+    width: calc(50% - 1rem);
+    margin: 0 0.5rem;
+  }
+}
+
 /* ====== End Update CSS - 12/09 ====== */
 
 /*# sourceMappingURL=style.css.map */

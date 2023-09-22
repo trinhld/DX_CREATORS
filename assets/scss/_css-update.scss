@@ -316,4 +316,15 @@
     display: none;
 }
 
+.wrap-list-process {
+    @include flexbox(flex, flex-start, normal, wrap);
+    .process-item {
+        width: 100%;
+        @include mq_min_1024 {
+            width: calc((100% / 2) - 1rem);
+            margin: 0 0.5rem;
+        }
+    }
+}
+
 /* ====== End Update CSS - 12/09 ====== */
