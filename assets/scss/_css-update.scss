@@ -327,4 +327,14 @@
     }
 }
 
+.limit-name-course {
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: nowrap;
+    width: 12rem;
+}
+
 /* ====== End Update CSS - 12/09 ====== */
