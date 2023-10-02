@@ -337,4 +337,35 @@
     width: 12rem;
 }
 
+.not-read {
+    position: relative;
+    display: inline-block;
+    margin-right: 4.5rem;
+    &::after {
+        position: absolute;
+        content: '未読';
+        top: 50%;
+        right: -10px;
+        width: 35px;
+        transform: translate(100%, -50%);
+        font-size: 0.8rem;
+        color: #ffffff;
+        text-align: center;
+        background-color: #f14a4a;
+        @include mq_min_1024 {
+            font-size: 1rem;
+        }
+    }
+}
+
+.not-read-inline {
+    width: 4.5rem;
+    padding: 0 1rem;
+    font-size: 0.8rem;
+    color: #ffffff;
+    text-align: center;
+    background-color: #f14a4a;
+    white-space: nowrap;
+}
+
 /* ====== End Update CSS - 12/09 ====== */
