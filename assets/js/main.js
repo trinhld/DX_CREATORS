@@ -489,6 +489,8 @@ var RUN = {
   // Handle List Chapter
   handleListChapter: () => {
     if ($('.wrapper-list-course').length) {
+      $('.btn-click-pre-chapter').addClass('d-none');
+      $('.btn-click-next-chapter').removeClass('d-none');
       $('.wrapper-list-course').slick({
         infinite: false,
         slidesToShow: 3,
@@ -506,9 +508,25 @@ var RUN = {
         ],
       });
 
+      $('.wrapper-list-course').on('afterChange', function (event, slick, currentSlide) {
+        if (currentSlide === slick.slideCount - 3) {
+          $('.btn-click-next-chapter').addClass('d-none');
+        } else {
+          $('.btn-click-next-chapter').removeClass('d-none');
+        }
+
+        if (currentSlide) {
+          $('.btn-click-pre-chapter').removeClass('d-none');
+        } else {
+          $('.btn-click-pre-chapter').addClass('d-none');
+        }
+      });
+
       // Run Fist Tab Default
       var runFirstTab = $('#tab1').find('.slick-slider');
       runFirstTab.slick('unslick');
+      $('.btn-click-pre-chapter').addClass('d-none');
+      $('.btn-click-next-chapter').removeClass('d-none');
       runFirstTab.slick({
         infinite: false,
         slidesToShow: 3,
@@ -532,6 +550,8 @@ var RUN = {
         var slickSlider = $(tabContentId).find('.slick-slider');
 
         slickSlider.slick('unslick');
+        $('.btn-click-pre-chapter').addClass('d-none');
+        $('.btn-click-next-chapter').removeClass('d-none');
         slickSlider.slick({
           infinite: false,
           slidesToShow: 3,
