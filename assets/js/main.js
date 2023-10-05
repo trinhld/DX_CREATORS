@@ -488,50 +488,8 @@ var RUN = {
 
   // Handle List Chapter
   handleListChapter: () => {
-    $('.wrapper-list-course').slick({
-      infinite: false,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      prevArrow: $('.btn-click-pre-chapter'),
-      nextArrow: $('.btn-click-next-chapter'),
-      responsive: [
-        {
-          breakpoint: 576,
-          settings: {
-            vertical: true,
-            slidesToShow: 2,
-          },
-        },
-      ],
-    });
-
-    // Run Fist Tab Default
-    var runFirstTab = $('#tab1').find('.slick-slider');
-    runFirstTab.slick('unslick');
-    runFirstTab.slick({
-      infinite: false,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      prevArrow: $('.btn-click-pre-chapter'),
-      nextArrow: $('.btn-click-next-chapter'),
-      responsive: [
-        {
-          breakpoint: 576,
-          settings: {
-            vertical: true,
-            slidesToShow: 2,
-          },
-        },
-      ],
-    });
-
-    // Fix Slick Slider Using Multitabs
-    $('a[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
-      var tabContentId = $(e.target).attr('href');
-      var slickSlider = $(tabContentId).find('.slick-slider');
-
-      slickSlider.slick('unslick');
-      slickSlider.slick({
+    if ($('.wrapper-list-course').length) {
+      $('.wrapper-list-course').slick({
         infinite: false,
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -547,7 +505,51 @@ var RUN = {
           },
         ],
       });
-    });
+
+      // Run Fist Tab Default
+      var runFirstTab = $('#tab1').find('.slick-slider');
+      runFirstTab.slick('unslick');
+      runFirstTab.slick({
+        infinite: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: $('.btn-click-pre-chapter'),
+        nextArrow: $('.btn-click-next-chapter'),
+        responsive: [
+          {
+            breakpoint: 576,
+            settings: {
+              vertical: true,
+              slidesToShow: 2,
+            },
+          },
+        ],
+      });
+
+      // Fix Slick Slider Using Multitabs
+      $('a[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
+        var tabContentId = $(e.target).attr('href');
+        var slickSlider = $(tabContentId).find('.slick-slider');
+
+        slickSlider.slick('unslick');
+        slickSlider.slick({
+          infinite: false,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          prevArrow: $('.btn-click-pre-chapter'),
+          nextArrow: $('.btn-click-next-chapter'),
+          responsive: [
+            {
+              breakpoint: 576,
+              settings: {
+                vertical: true,
+                slidesToShow: 2,
+              },
+            },
+          ],
+        });
+      });
+    }
   },
 
   handleShowStatusChapter: () => {
@@ -562,6 +564,17 @@ var RUN = {
       const elementNext = $(this).parent().parent().next();
       $('.content-detail-answer').not($(elementNext)).hide();
       $(elementNext).toggle();
+    });
+  },
+
+  handleClickDisableInput: () => {
+    $('.check-form-payment').on('change', function () {
+      let formInput = $(this).parent().parent().find('.form-control');
+      if (this.checked) {
+        formInput.attr({ disabled: true });
+      } else {
+        formInput.attr({ disabled: false });
+      }
     });
   },
 
@@ -587,6 +600,7 @@ var RUN = {
     RUN.handleListChapter();
     RUN.handleShowStatusChapter();
     RUN.handeleBtnDetailAnswer();
+    RUN.handleClickDisableInput();
   },
 };
 

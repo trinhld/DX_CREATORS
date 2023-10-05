@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html itemscope="" itemtype="http://schema.org/WebPage" lang="vi">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>DX_CREATORS_UI</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+        <!-- Date Picker -->
+        <link rel="stylesheet" href="../assets/css/datepicker.min.css" />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="../assets/css/style.css" />
+    </head>
+
+    <body>
+        <div class="wrapper" style="font-family: Arial, Helvetica, sans-serif">
+            <!-- Header -->
+            <header class="header-dashboard">
+                <div class="container">
+                    <div class="header-button-show-menu-sp">
+                        <img src="../assets/images/icon_hamberger.png" alt="icon_hamberger" />
+                    </div>
+                    <a href="#" class="header-logo">
+                        <img src="../assets/images/logo.png" alt="logo" />
+                    </a>
+                    <div class="list-category-menu">
+                        <ul>
+                            <li>
+                                <div class="title-menu">ホーム</div>
+                            </li>
+                            <li>
+                                <div class="title-menu">アカウント管理</div>
+                                <ul class="sub-menu">
+                                    <li>会員管理</li>
+                                    <li>管理者管理</li>
+                                </ul>
+                            </li>
+                            <li class="active">
+                                <div class="title-menu">コース管理</div>
+                            </li>
+                            <li>
+                                <div class="title-menu">お知らせ管理</div>
+                            </li>
+                            <li>
+                                <div class="title-menu">イベント管理</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="user-notify">
+                        <img src="../assets/images/icon_bell.png" alt="icon-bell" />
+                        <span>1</span>
+                    </div>
+                    <div class="header-user">
+                        <div class="wrap-user">
+                            <div class="user-avatar">
+                                <img src="../assets/images/image_user.png" alt="icon_user" />
+                            </div>
+                            <div class="user-show">
+                                <img src="../assets/images/icon_show_user.png" alt="icon_show_user" />
+                            </div>
+                        </div>
+                        <div class="admin-list-option">
+                            <div class="list-option-item">
+                                <div class="title-sub-menu">ホーム</div>
+                                <div class="title-sub-menu">
+                                    <a href="#">アカウント管理</a>
+                                    <img class="icon-arrow" src="../assets/images/icon_show_user.png" alt="" />
+                                </div>
+                                <div class="content-sub-menu">
+                                    <ul>
+                                        <li><a href="#">会員管理</a></li>
+                                        <li><a href="#">管理者管理</a></li>
+                                    </ul>
+                                </div>
+                                <div class="title-sub-menu">コース管理</div>
+                                <div class="title-sub-menu">
+                                    <a href="#">お知らせ管理</a>
+                                    <img class="icon-arrow" src="../assets/images/icon_show_user.png" alt="" />
+                                </div>
+                                <div class="content-sub-menu">
+                                    <ul>
+                                        <li><a href="#">会員管理</a></li>
+                                        <li><a href="#">管理者管理</a></li>
+                                    </ul>
+                                </div>
+                                <div class="title-sub-menu">
+                                    <a href="#">イベント管理</a>
+                                    <img class="icon-arrow" src="../assets/images/icon_show_user.png" alt="" />
+                                </div>
+                                <div class="content-sub-menu">
+                                    <ul>
+                                        <li><a href="#">会員管理</a></li>
+                                        <li><a href="#">管理者管理</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Main -->
+            <section class="main">
+                <div class="container manage-course">
+                    <div class="content position-relative min-vh-100 px-md-5">
+                        <!-- <div class="notify-success mt-3">削除が完了しました。</div> -->
+                        <form class="list-input">
+                            <div class="mt-5 mb-3 fz-2 fw-bold">プラン登録</div>
+                            <div class="mb-3 text-danger fs-4">金額の最低設定金額は50円です。</div>
+                            <div class="input-group flex-nowrap mb-3 me-4">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text bg-purple text-light" style="width: 32rem">
+                                        <span class="required">　ステータス</span>
+                                    </div>
+                                </div>
+                                <div class="px-3 form-control border rounded-0 text-inline">
+                                    <select class="form-control form-select w-25">
+                                        <option>公開</option>
+                                        <option>非公開</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input-group flex-nowrap mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text bg-purple text-light" style="width: 32rem">
+                                        <span class="required">　プラン名</span>
+                                    </div>
+                                </div>
+                                <div class="w-100 px-3 form-control border rounded-0 text-inline">
+                                    <input type="text" class="form-control w-25" value="キャンペーン2" placeholder="" />
+                                </div>
+                            </div>
+
+                            <div class="input-group flex-nowrap mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text bg-purple text-light" style="width: 32rem">
+                                        <span class="required">　入会金</span>
+                                    </div>
+                                </div>
+                                <div class="w-100 d-flex justify-content-start align-items-center px-3 form-control border rounded-0">
+                                    <input type="text" class="form-control w-25" value="" placeholder="" />
+                                    <div class="ms-2 fs-4" style="line-height: 0">円</div>
+                                    <div class="form-check d-flex justify-content-center align-items-center" style="margin-left: 6rem">
+                                        <input class="form-check-input check-form-payment" type="checkbox" value="" name="checkbox1" />
+                                        <span class="form-check-label fs-5 ms-3 mt-2">請求しない</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="input-group flex-nowrap mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text bg-purple text-light" style="width: 32rem">
+                                        <span class="required">　事務手数料</span>
+                                    </div>
+                                </div>
+                                <div class="w-100 d-flex justify-content-start align-items-center px-3 form-control border rounded-0">
+                                    <input type="text" class="form-control w-25" value="" placeholder="" />
+                                    <div class="ms-2 fs-4" style="line-height: 0">円</div>
+                                    <div class="form-check d-flex justify-content-center align-items-center" style="margin-left: 6rem">
+                                        <input class="form-check-input check-form-payment" type="checkbox" value="1000円" name="checkbox2" />
+                                        <span class="form-check-label fs-5 ms-3 mt-2">請求しない</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="input-group flex-nowrap mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text bg-purple text-light" style="width: 32rem">
+                                        <span class="required">　サブスクリプショントライアル期間</span>
+                                    </div>
+                                </div>
+                                <div class="w-100 d-flex justify-content-start align-items-center px-3 form-control border rounded-0">
+                                    <input type="text" class="form-control w-25" value="" placeholder="" />
+                                    <div class="ms-2 fs-4" style="line-height: 0">カ月</div>
+                                    <div class="form-check d-flex justify-content-center align-items-center" style="margin-left: 4.5rem">
+                                        <input class="form-check-input check-form-payment" type="checkbox" value="1000円" name="checkbox3" />
+                                        <span class="form-check-label fs-5 ms-3 mt-2">設定しない</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="input-group flex-nowrap mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text bg-purple text-light" style="width: 32rem">
+                                        <span class="required">　サブスクリプション金額</span>
+                                    </div>
+                                </div>
+                                <div class="w-100 d-flex justify-content-start align-items-center px-3 form-control border rounded-0">
+                                    <input type="text" class="form-control w-25" value="" placeholder="" />
+                                    <div class="ms-2 fs-4" style="line-height: 0">円</div>
+                                    <div class="form-check d-flex justify-content-center align-items-center" style="margin-left: 6rem">
+                                        <input class="form-check-input check-form-payment" type="checkbox" value="1000円" name="checkbox4" />
+                                        <span class="form-check-label fs-5 ms-3 mt-2">請求しない</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="input-group flex-nowrap mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text bg-purple text-light" style="width: 32rem">
+                                        <span class="required">　入会適用期間</span>
+                                    </div>
+                                </div>
+                                <div class="w-100 d-flex justify-content-start align-items-center px-3 form-control border rounded-0">
+                                    <div class="d-flex justify-content-start align-items-center">
+                                        <div class="input-group" style="width: 18rem">
+                                            <input type="text" class="form-control datepicker-book-1 hasDatepicker" placeholder="yyyy/mm/dd" id="dp1696411814371" />
+                                            <img src="../assets/images/icon_calendar.png" alt="" class="custom-icon-calendar" />
+                                        </div>
+                                        <span class="mx-5 fw-bold">~</span>
+                                        <div class="input-group" style="width: 18rem">
+                                            <input type="text" class="form-control datepicker-book-2 hasDatepicker" placeholder="yyyy/mm/dd" id="dp1696411814372" disabled="disabled" />
+                                            <img src="../assets/images/icon_calendar.png" alt="" class="custom-icon-calendar" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="input-group flex-nowrap mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text bg-purple text-light" style="width: 32rem">
+                                        <span>　備考</span>
+                                    </div>
+                                </div>
+                                <div class="w-100 px-3 form-control border rounded-0 text-inline">
+                                    <textarea class="form-control" style="min-height: 8rem" value="" placeholder=""></textarea>
+                                </div>
+                            </div>
+                            <div class="list-btn">
+                                <button class="btn-child">戻る</button>
+                                <button class="bg-purple btn-child">登録</button>
+                            </div>
+                        </form>
+                        <div class="text-end-page fix-bottom">© 2023 DX CREATORS. All Rights Reserved.</div>
+                    </div>
+                    <!-- Modal Logout -->
+                    <div class="modal fade modal-logout" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-logout-header">削除確認</div>
+                                <div class="modal-body">
+                                    <p>削除してもよろしいでしょうか？</p>
+                                    <div class="list-btn-modal-logut">
+                                        <div class="btn-back" data-bs-dismiss="modal">キャンセル</div>
+                                        <div class="btn-logout" data-bs-dismiss="modal">OK</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal Delete -->
+                    <div class="modal fade modal-logout modal-delete" id="modalDelete" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-logout-header bg-purple">ログアウト</div>
+                                <div class="modal-body">
+                                    <p>停止処理してもよろしいでしょうか？</p>
+                                    <div class="list-btn-modal-logut">
+                                        <div class="btn-back rounded-0" data-bs-dismiss="modal">キャンセル</div>
+                                        <div class="btn-logout rounded-0" data-bs-dismiss="modal">OK</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer"></footer>
+        </div>
+
+        <script src="../assets/js/jquery-3.6.0.min.js"></script>
+        <script src="../assets/js/bootstrap.min.js"></script>
+        <script src="../assets/js/datepicker.min.js"></script>
+        <script src="../assets/js/main.js"></script>
+    </body>
+</html>
